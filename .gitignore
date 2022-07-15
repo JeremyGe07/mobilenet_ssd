@@ -131,4 +131,4 @@ dmypy.json
 # my settings
 models(full)/
 VOC2007/
-VOC2007/*
+VOC2007(old)/
