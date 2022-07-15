@@ -1,0 +1,5 @@
+size            folder             ep     loss       AP
+ws 1.0   ep1000ws1pr    945      3.24       66.15%
+ws 0.25 ep2400ws025   2175     3.42       54.60%
+ws 0.15   ws0.15bs16    1595     3.46       52%
+277kb prune277ep2000 1950    4.49       49.32%

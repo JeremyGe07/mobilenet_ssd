@@ -1,2 +1,0 @@
-net is similar to 4header with 4 extra layers. But newly-designed anchor boxs : 3 new size boxs for each pixel and only chang fang xing
-in 4header:6boxs with same size as usual.
