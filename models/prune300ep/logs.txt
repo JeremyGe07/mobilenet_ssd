@@ -1,0 +1,437 @@
+2022-06-14 09:00:18,750 - root - INFO - Use Cuda.
+2022-06-14 09:00:18,751 - root - INFO - Namespace(balance_data=False, base_net='mobilenet_v1_size_224_alpha_0.25_top.pth', base_net_lr=None, batch_size=8, checkpoint_folder='models/prune300ep', dataset_type='voc', datasets=['VOC2007'], debug_steps=100, extra_layers_lr=None, freeze_base_net=False, freeze_net=False, gamma=0.1, gpu='1', loss='smoothl1', lr=0.01, mb2_width_mult=1.0, milestones='80,100', momentum=0.9, net='mb1-ssd-lite-025extra', num_epochs=300, num_workers=4, optimizer='SGD', pretrained_ssd=None, resume=None, s=0.0001, scheduler='cosine', sr=True, t_max=300.0, use_cuda=True, validation_dataset='./VOC2007', validation_epochs=5, weight_decay=0.0005, width_mult=0.25)
+2022-06-14 09:00:18,752 - root - INFO - Prepare training datasets.
+2022-06-14 09:00:18,753 - root - INFO - No labels file, using default VOC classes.
+2022-06-14 09:00:18,775 - root - INFO - Stored labels into file models/prune300ep/voc-model-labels.txt.
+2022-06-14 09:00:18,776 - root - INFO - Train dataset size: 971
+2022-06-14 09:00:18,776 - root - INFO - Prepare Validation datasets.
+2022-06-14 09:00:18,777 - root - INFO - No labels file, using default VOC classes.
+2022-06-14 09:00:18,777 - root - INFO - validation dataset size: 108
+2022-06-14 09:00:18,777 - root - INFO - Build network.
+2022-06-14 09:00:18,799 - root - INFO - Init from base net mobilenet_v1_size_224_alpha_0.25_top.pth
+2022-06-14 09:00:18,808 - root - INFO - Took 0.01 seconds to load the model.
+2022-06-14 09:00:22,414 - root - INFO - Learning rate: 0.01, Base net learning rate: 0.01, Extra Layers learning rate: 0.01.
+2022-06-14 09:00:22,415 - root - INFO - Uses CosineAnnealingLR scheduler.
+2022-06-14 09:00:22,415 - root - INFO - Start training from epoch 0.
+2022-06-14 09:00:32,183 - root - INFO - Epoch: 0, Step: 100, Average Loss: 6.1202, Average Regression Loss 3.5291, Average Classification Loss: 2.5911
+2022-06-14 09:00:35,029 - root - INFO - Epoch: 0, Validation Loss: 5.3297, Validation Regression Loss 3.0356, Validation Classification Loss: 2.2941
+2022-06-14 09:00:35,061 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-0-Loss-5.329713582992554.pth
+2022-06-14 09:00:45,037 - root - INFO - Epoch: 1, Step: 100, Average Loss: 5.6059, Average Regression Loss 3.3006, Average Classification Loss: 2.3053
+2022-06-14 09:00:56,525 - root - INFO - Epoch: 2, Step: 100, Average Loss: 5.4367, Average Regression Loss 3.1388, Average Classification Loss: 2.2979
+2022-06-14 09:01:08,564 - root - INFO - Epoch: 3, Step: 100, Average Loss: 5.5354, Average Regression Loss 3.2360, Average Classification Loss: 2.2994
+2022-06-14 09:01:19,206 - root - INFO - Epoch: 4, Step: 100, Average Loss: 5.4848, Average Regression Loss 3.1879, Average Classification Loss: 2.2969
+2022-06-14 09:01:30,149 - root - INFO - Epoch: 5, Step: 100, Average Loss: 5.4123, Average Regression Loss 3.1123, Average Classification Loss: 2.3000
+2022-06-14 09:01:34,123 - root - INFO - Epoch: 5, Validation Loss: 5.1163, Validation Regression Loss 2.8462, Validation Classification Loss: 2.2701
+2022-06-14 09:01:34,188 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-5-Loss-5.116324833461216.pth
+2022-06-14 09:01:42,420 - root - INFO - Epoch: 6, Step: 100, Average Loss: 5.3702, Average Regression Loss 3.0741, Average Classification Loss: 2.2961
+2022-06-14 09:01:54,102 - root - INFO - Epoch: 7, Step: 100, Average Loss: 5.2678, Average Regression Loss 2.9756, Average Classification Loss: 2.2923
+2022-06-14 09:02:04,913 - root - INFO - Epoch: 8, Step: 100, Average Loss: 5.1974, Average Regression Loss 2.9014, Average Classification Loss: 2.2960
+2022-06-14 09:02:15,968 - root - INFO - Epoch: 9, Step: 100, Average Loss: 5.1427, Average Regression Loss 2.8544, Average Classification Loss: 2.2882
+2022-06-14 09:02:34,066 - root - INFO - Epoch: 10, Step: 100, Average Loss: 5.2300, Average Regression Loss 2.9368, Average Classification Loss: 2.2932
+2022-06-14 09:02:37,954 - root - INFO - Epoch: 10, Validation Loss: 5.0138, Validation Regression Loss 2.7417, Validation Classification Loss: 2.2721
+2022-06-14 09:02:38,021 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-10-Loss-5.013822964259556.pth
+2022-06-14 09:02:54,722 - root - INFO - Epoch: 11, Step: 100, Average Loss: 5.1540, Average Regression Loss 2.8615, Average Classification Loss: 2.2925
+2022-06-14 09:03:13,773 - root - INFO - Epoch: 12, Step: 100, Average Loss: 5.2431, Average Regression Loss 2.9487, Average Classification Loss: 2.2944
+2022-06-14 09:03:33,589 - root - INFO - Epoch: 13, Step: 100, Average Loss: 5.2118, Average Regression Loss 2.9229, Average Classification Loss: 2.2889
+2022-06-14 09:03:54,163 - root - INFO - Epoch: 14, Step: 100, Average Loss: 5.1916, Average Regression Loss 2.9024, Average Classification Loss: 2.2892
+2022-06-14 09:04:12,723 - root - INFO - Epoch: 15, Step: 100, Average Loss: 5.0894, Average Regression Loss 2.8012, Average Classification Loss: 2.2882
+2022-06-14 09:04:16,723 - root - INFO - Epoch: 15, Validation Loss: 4.9136, Validation Regression Loss 2.6423, Validation Classification Loss: 2.2713
+2022-06-14 09:04:16,789 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-15-Loss-4.913628680365426.pth
+2022-06-14 09:04:32,854 - root - INFO - Epoch: 16, Step: 100, Average Loss: 5.0692, Average Regression Loss 2.7832, Average Classification Loss: 2.2859
+2022-06-14 09:04:51,587 - root - INFO - Epoch: 17, Step: 100, Average Loss: 5.0831, Average Regression Loss 2.7941, Average Classification Loss: 2.2890
+2022-06-14 09:05:13,211 - root - INFO - Epoch: 18, Step: 100, Average Loss: 4.9971, Average Regression Loss 2.7113, Average Classification Loss: 2.2858
+2022-06-14 09:05:34,185 - root - INFO - Epoch: 19, Step: 100, Average Loss: 4.9516, Average Regression Loss 2.6633, Average Classification Loss: 2.2883
+2022-06-14 09:05:54,358 - root - INFO - Epoch: 20, Step: 100, Average Loss: 4.9085, Average Regression Loss 2.6206, Average Classification Loss: 2.2879
+2022-06-14 09:05:58,777 - root - INFO - Epoch: 20, Validation Loss: 4.7943, Validation Regression Loss 2.5297, Validation Classification Loss: 2.2646
+2022-06-14 09:05:58,873 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-20-Loss-4.794318675994873.pth
+2022-06-14 09:06:15,098 - root - INFO - Epoch: 21, Step: 100, Average Loss: 4.9603, Average Regression Loss 2.6728, Average Classification Loss: 2.2875
+2022-06-14 09:06:36,111 - root - INFO - Epoch: 22, Step: 100, Average Loss: 4.9126, Average Regression Loss 2.6287, Average Classification Loss: 2.2839
+2022-06-14 09:06:52,524 - root - INFO - Epoch: 23, Step: 100, Average Loss: 4.8691, Average Regression Loss 2.5836, Average Classification Loss: 2.2855
+2022-06-14 09:07:11,515 - root - INFO - Epoch: 24, Step: 100, Average Loss: 4.8710, Average Regression Loss 2.5843, Average Classification Loss: 2.2867
+2022-06-14 09:07:30,399 - root - INFO - Epoch: 25, Step: 100, Average Loss: 4.8886, Average Regression Loss 2.6043, Average Classification Loss: 2.2843
+2022-06-14 09:07:34,623 - root - INFO - Epoch: 25, Validation Loss: 4.7281, Validation Regression Loss 2.4666, Validation Classification Loss: 2.2615
+2022-06-14 09:07:34,686 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-25-Loss-4.728116410119193.pth
+2022-06-14 09:07:50,983 - root - INFO - Epoch: 26, Step: 100, Average Loss: 4.8726, Average Regression Loss 2.5885, Average Classification Loss: 2.2841
+2022-06-14 09:08:11,372 - root - INFO - Epoch: 27, Step: 100, Average Loss: 4.9156, Average Regression Loss 2.6316, Average Classification Loss: 2.2840
+2022-06-14 09:08:28,632 - root - INFO - Epoch: 28, Step: 100, Average Loss: 4.8726, Average Regression Loss 2.5903, Average Classification Loss: 2.2823
+2022-06-14 09:08:49,119 - root - INFO - Epoch: 29, Step: 100, Average Loss: 4.8200, Average Regression Loss 2.5354, Average Classification Loss: 2.2846
+2022-06-14 09:09:08,959 - root - INFO - Epoch: 30, Step: 100, Average Loss: 4.8114, Average Regression Loss 2.5284, Average Classification Loss: 2.2829
+2022-06-14 09:09:14,430 - root - INFO - Epoch: 30, Validation Loss: 4.7015, Validation Regression Loss 2.4420, Validation Classification Loss: 2.2596
+2022-06-14 09:09:14,520 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-30-Loss-4.701515776770456.pth
+2022-06-14 09:09:33,301 - root - INFO - Epoch: 31, Step: 100, Average Loss: 4.8318, Average Regression Loss 2.5489, Average Classification Loss: 2.2829
+2022-06-14 09:09:52,012 - root - INFO - Epoch: 32, Step: 100, Average Loss: 4.8026, Average Regression Loss 2.5196, Average Classification Loss: 2.2829
+2022-06-14 09:10:12,979 - root - INFO - Epoch: 33, Step: 100, Average Loss: 4.8103, Average Regression Loss 2.5283, Average Classification Loss: 2.2820
+2022-06-14 09:10:31,335 - root - INFO - Epoch: 34, Step: 100, Average Loss: 4.8846, Average Regression Loss 2.6005, Average Classification Loss: 2.2841
+2022-06-14 09:10:50,707 - root - INFO - Epoch: 35, Step: 100, Average Loss: 4.6875, Average Regression Loss 2.4056, Average Classification Loss: 2.2820
+2022-06-14 09:10:54,991 - root - INFO - Epoch: 35, Validation Loss: 4.5748, Validation Regression Loss 2.3168, Validation Classification Loss: 2.2580
+2022-06-14 09:10:55,031 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-35-Loss-4.574764558247158.pth
+2022-06-14 09:11:09,451 - root - INFO - Epoch: 36, Step: 100, Average Loss: 4.6873, Average Regression Loss 2.4062, Average Classification Loss: 2.2811
+2022-06-14 09:11:29,322 - root - INFO - Epoch: 37, Step: 100, Average Loss: 4.7333, Average Regression Loss 2.4530, Average Classification Loss: 2.2803
+2022-06-14 09:11:49,685 - root - INFO - Epoch: 38, Step: 100, Average Loss: 4.7037, Average Regression Loss 2.4208, Average Classification Loss: 2.2829
+2022-06-14 09:12:08,879 - root - INFO - Epoch: 39, Step: 100, Average Loss: 4.6693, Average Regression Loss 2.3901, Average Classification Loss: 2.2792
+2022-06-14 09:12:28,919 - root - INFO - Epoch: 40, Step: 100, Average Loss: 4.6990, Average Regression Loss 2.4172, Average Classification Loss: 2.2818
+2022-06-14 09:12:33,674 - root - INFO - Epoch: 40, Validation Loss: 4.5460, Validation Regression Loss 2.2865, Validation Classification Loss: 2.2595
+2022-06-14 09:12:33,704 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-40-Loss-4.546019622257778.pth
+2022-06-14 09:12:48,556 - root - INFO - Epoch: 41, Step: 100, Average Loss: 4.6384, Average Regression Loss 2.3576, Average Classification Loss: 2.2808
+2022-06-14 09:13:07,451 - root - INFO - Epoch: 42, Step: 100, Average Loss: 4.6856, Average Regression Loss 2.4059, Average Classification Loss: 2.2798
+2022-06-14 09:13:27,506 - root - INFO - Epoch: 43, Step: 100, Average Loss: 4.6778, Average Regression Loss 2.3973, Average Classification Loss: 2.2805
+2022-06-14 09:13:47,100 - root - INFO - Epoch: 44, Step: 100, Average Loss: 4.5995, Average Regression Loss 2.3177, Average Classification Loss: 2.2818
+2022-06-14 09:14:06,841 - root - INFO - Epoch: 45, Step: 100, Average Loss: 4.6134, Average Regression Loss 2.3365, Average Classification Loss: 2.2769
+2022-06-14 09:14:11,190 - root - INFO - Epoch: 45, Validation Loss: 4.5789, Validation Regression Loss 2.3212, Validation Classification Loss: 2.2578
+2022-06-14 09:14:11,277 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-45-Loss-4.578924894332886.pth
+2022-06-14 09:14:26,880 - root - INFO - Epoch: 46, Step: 100, Average Loss: 4.6209, Average Regression Loss 2.3448, Average Classification Loss: 2.2761
+2022-06-14 09:14:47,930 - root - INFO - Epoch: 47, Step: 100, Average Loss: 4.6458, Average Regression Loss 2.3692, Average Classification Loss: 2.2765
+2022-06-14 09:15:06,455 - root - INFO - Epoch: 48, Step: 100, Average Loss: 4.5912, Average Regression Loss 2.3107, Average Classification Loss: 2.2805
+2022-06-14 09:15:23,641 - root - INFO - Epoch: 49, Step: 100, Average Loss: 4.6329, Average Regression Loss 2.3534, Average Classification Loss: 2.2795
+2022-06-14 09:15:45,800 - root - INFO - Epoch: 50, Step: 100, Average Loss: 4.5940, Average Regression Loss 2.3153, Average Classification Loss: 2.2787
+2022-06-14 09:15:49,720 - root - INFO - Epoch: 50, Validation Loss: 4.4548, Validation Regression Loss 2.2024, Validation Classification Loss: 2.2523
+2022-06-14 09:15:49,763 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-50-Loss-4.454761675425938.pth
+2022-06-14 09:16:06,930 - root - INFO - Epoch: 51, Step: 100, Average Loss: 4.5836, Average Regression Loss 2.3046, Average Classification Loss: 2.2790
+2022-06-14 09:16:28,526 - root - INFO - Epoch: 52, Step: 100, Average Loss: 4.5473, Average Regression Loss 2.2686, Average Classification Loss: 2.2787
+2022-06-14 09:16:48,505 - root - INFO - Epoch: 53, Step: 100, Average Loss: 4.6146, Average Regression Loss 2.3362, Average Classification Loss: 2.2784
+2022-06-14 09:17:11,054 - root - INFO - Epoch: 54, Step: 100, Average Loss: 4.6148, Average Regression Loss 2.3372, Average Classification Loss: 2.2776
+2022-06-14 09:17:31,818 - root - INFO - Epoch: 55, Step: 100, Average Loss: 4.6107, Average Regression Loss 2.3351, Average Classification Loss: 2.2756
+2022-06-14 09:17:35,797 - root - INFO - Epoch: 55, Validation Loss: 4.4289, Validation Regression Loss 2.1770, Validation Classification Loss: 2.2519
+2022-06-14 09:17:35,864 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-55-Loss-4.428947022983006.pth
+2022-06-14 09:17:51,204 - root - INFO - Epoch: 56, Step: 100, Average Loss: 4.4823, Average Regression Loss 2.2034, Average Classification Loss: 2.2789
+2022-06-14 09:18:08,941 - root - INFO - Epoch: 57, Step: 100, Average Loss: 4.5947, Average Regression Loss 2.3173, Average Classification Loss: 2.2774
+2022-06-14 09:18:28,447 - root - INFO - Epoch: 58, Step: 100, Average Loss: 4.6218, Average Regression Loss 2.3449, Average Classification Loss: 2.2768
+2022-06-14 09:18:48,214 - root - INFO - Epoch: 59, Step: 100, Average Loss: 4.5745, Average Regression Loss 2.3006, Average Classification Loss: 2.2739
+2022-06-14 09:19:07,416 - root - INFO - Epoch: 60, Step: 100, Average Loss: 4.4967, Average Regression Loss 2.2249, Average Classification Loss: 2.2719
+2022-06-14 09:19:12,186 - root - INFO - Epoch: 60, Validation Loss: 4.3926, Validation Regression Loss 2.1403, Validation Classification Loss: 2.2523
+2022-06-14 09:19:12,230 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-60-Loss-4.392639347485134.pth
+2022-06-14 09:19:31,531 - root - INFO - Epoch: 61, Step: 100, Average Loss: 4.5511, Average Regression Loss 2.2792, Average Classification Loss: 2.2719
+2022-06-14 09:19:52,711 - root - INFO - Epoch: 62, Step: 100, Average Loss: 4.4494, Average Regression Loss 2.1738, Average Classification Loss: 2.2755
+2022-06-14 09:20:10,252 - root - INFO - Epoch: 63, Step: 100, Average Loss: 4.4421, Average Regression Loss 2.1668, Average Classification Loss: 2.2753
+2022-06-14 09:20:29,729 - root - INFO - Epoch: 64, Step: 100, Average Loss: 4.4789, Average Regression Loss 2.2038, Average Classification Loss: 2.2751
+2022-06-14 09:20:51,206 - root - INFO - Epoch: 65, Step: 100, Average Loss: 4.4930, Average Regression Loss 2.2193, Average Classification Loss: 2.2737
+2022-06-14 09:20:55,431 - root - INFO - Epoch: 65, Validation Loss: 4.3154, Validation Regression Loss 2.0682, Validation Classification Loss: 2.2472
+2022-06-14 09:20:55,499 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-65-Loss-4.315393039158413.pth
+2022-06-14 09:21:11,988 - root - INFO - Epoch: 66, Step: 100, Average Loss: 4.4509, Average Regression Loss 2.1780, Average Classification Loss: 2.2729
+2022-06-14 09:21:31,572 - root - INFO - Epoch: 67, Step: 100, Average Loss: 4.5501, Average Regression Loss 2.2722, Average Classification Loss: 2.2779
+2022-06-14 09:21:51,648 - root - INFO - Epoch: 68, Step: 100, Average Loss: 4.4682, Average Regression Loss 2.1915, Average Classification Loss: 2.2767
+2022-06-14 09:22:12,069 - root - INFO - Epoch: 69, Step: 100, Average Loss: 4.5200, Average Regression Loss 2.2444, Average Classification Loss: 2.2756
+2022-06-14 09:22:31,594 - root - INFO - Epoch: 70, Step: 100, Average Loss: 4.4193, Average Regression Loss 2.1474, Average Classification Loss: 2.2719
+2022-06-14 09:22:35,227 - root - INFO - Epoch: 70, Validation Loss: 4.4096, Validation Regression Loss 2.1613, Validation Classification Loss: 2.2483
+2022-06-14 09:22:35,286 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-70-Loss-4.40959906578064.pth
+2022-06-14 09:22:51,786 - root - INFO - Epoch: 71, Step: 100, Average Loss: 4.4528, Average Regression Loss 2.1787, Average Classification Loss: 2.2741
+2022-06-14 09:23:12,251 - root - INFO - Epoch: 72, Step: 100, Average Loss: 4.4483, Average Regression Loss 2.1745, Average Classification Loss: 2.2739
+2022-06-14 09:23:32,057 - root - INFO - Epoch: 73, Step: 100, Average Loss: 4.4177, Average Regression Loss 2.1454, Average Classification Loss: 2.2723
+2022-06-14 09:23:50,169 - root - INFO - Epoch: 74, Step: 100, Average Loss: 4.4109, Average Regression Loss 2.1391, Average Classification Loss: 2.2717
+2022-06-14 09:24:08,068 - root - INFO - Epoch: 75, Step: 100, Average Loss: 4.3049, Average Regression Loss 2.0299, Average Classification Loss: 2.2749
+2022-06-14 09:24:12,763 - root - INFO - Epoch: 75, Validation Loss: 4.3173, Validation Regression Loss 2.0721, Validation Classification Loss: 2.2452
+2022-06-14 09:24:12,800 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-75-Loss-4.317331280027117.pth
+2022-06-14 09:24:28,267 - root - INFO - Epoch: 76, Step: 100, Average Loss: 4.4698, Average Regression Loss 2.2002, Average Classification Loss: 2.2696
+2022-06-14 09:24:47,460 - root - INFO - Epoch: 77, Step: 100, Average Loss: 4.4583, Average Regression Loss 2.1865, Average Classification Loss: 2.2719
+2022-06-14 09:25:10,164 - root - INFO - Epoch: 78, Step: 100, Average Loss: 4.4252, Average Regression Loss 2.1554, Average Classification Loss: 2.2698
+2022-06-14 09:25:30,031 - root - INFO - Epoch: 79, Step: 100, Average Loss: 4.3806, Average Regression Loss 2.1114, Average Classification Loss: 2.2692
+2022-06-14 09:25:51,121 - root - INFO - Epoch: 80, Step: 100, Average Loss: 4.3693, Average Regression Loss 2.1057, Average Classification Loss: 2.2636
+2022-06-14 09:25:55,301 - root - INFO - Epoch: 80, Validation Loss: 4.2658, Validation Regression Loss 2.0242, Validation Classification Loss: 2.2416
+2022-06-14 09:25:55,378 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-80-Loss-4.265812584332058.pth
+2022-06-14 09:26:13,934 - root - INFO - Epoch: 81, Step: 100, Average Loss: 4.4411, Average Regression Loss 2.1728, Average Classification Loss: 2.2683
+2022-06-14 09:26:35,330 - root - INFO - Epoch: 82, Step: 100, Average Loss: 4.3905, Average Regression Loss 2.1178, Average Classification Loss: 2.2727
+2022-06-14 09:26:56,483 - root - INFO - Epoch: 83, Step: 100, Average Loss: 4.3084, Average Regression Loss 2.0363, Average Classification Loss: 2.2721
+2022-06-14 09:27:18,532 - root - INFO - Epoch: 84, Step: 100, Average Loss: 4.5097, Average Regression Loss 2.2357, Average Classification Loss: 2.2740
+2022-06-14 09:27:39,160 - root - INFO - Epoch: 85, Step: 100, Average Loss: 4.3527, Average Regression Loss 2.0846, Average Classification Loss: 2.2681
+2022-06-14 09:27:44,579 - root - INFO - Epoch: 85, Validation Loss: 4.2195, Validation Regression Loss 1.9756, Validation Classification Loss: 2.2438
+2022-06-14 09:27:44,706 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-85-Loss-4.2194726296833585.pth
+2022-06-14 09:28:02,899 - root - INFO - Epoch: 86, Step: 100, Average Loss: 4.3588, Average Regression Loss 2.0945, Average Classification Loss: 2.2644
+2022-06-14 09:28:22,047 - root - INFO - Epoch: 87, Step: 100, Average Loss: 4.4001, Average Regression Loss 2.1308, Average Classification Loss: 2.2693
+2022-06-14 09:28:42,903 - root - INFO - Epoch: 88, Step: 100, Average Loss: 4.4466, Average Regression Loss 2.1794, Average Classification Loss: 2.2672
+2022-06-14 09:29:02,979 - root - INFO - Epoch: 89, Step: 100, Average Loss: 4.4196, Average Regression Loss 2.1496, Average Classification Loss: 2.2700
+2022-06-14 09:29:21,263 - root - INFO - Epoch: 90, Step: 100, Average Loss: 4.3561, Average Regression Loss 2.0910, Average Classification Loss: 2.2650
+2022-06-14 09:29:25,628 - root - INFO - Epoch: 90, Validation Loss: 4.2361, Validation Regression Loss 1.9807, Validation Classification Loss: 2.2554
+2022-06-14 09:29:25,741 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-90-Loss-4.2360869986670355.pth
+2022-06-14 09:29:43,361 - root - INFO - Epoch: 91, Step: 100, Average Loss: 4.3247, Average Regression Loss 2.0590, Average Classification Loss: 2.2657
+2022-06-14 09:30:02,443 - root - INFO - Epoch: 92, Step: 100, Average Loss: 4.4292, Average Regression Loss 2.1643, Average Classification Loss: 2.2649
+2022-06-14 09:30:20,149 - root - INFO - Epoch: 93, Step: 100, Average Loss: 4.2265, Average Regression Loss 1.9583, Average Classification Loss: 2.2682
+2022-06-14 09:30:41,463 - root - INFO - Epoch: 94, Step: 100, Average Loss: 4.3482, Average Regression Loss 2.0781, Average Classification Loss: 2.2701
+2022-06-14 09:31:03,117 - root - INFO - Epoch: 95, Step: 100, Average Loss: 4.4225, Average Regression Loss 2.1558, Average Classification Loss: 2.2668
+2022-06-14 09:31:06,819 - root - INFO - Epoch: 95, Validation Loss: 4.1477, Validation Regression Loss 1.9051, Validation Classification Loss: 2.2426
+2022-06-14 09:31:06,878 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-95-Loss-4.147726501737322.pth
+2022-06-14 09:31:23,135 - root - INFO - Epoch: 96, Step: 100, Average Loss: 4.3704, Average Regression Loss 2.1025, Average Classification Loss: 2.2679
+2022-06-14 09:31:43,836 - root - INFO - Epoch: 97, Step: 100, Average Loss: 4.2335, Average Regression Loss 1.9663, Average Classification Loss: 2.2672
+2022-06-14 09:32:04,308 - root - INFO - Epoch: 98, Step: 100, Average Loss: 4.3612, Average Regression Loss 2.0893, Average Classification Loss: 2.2719
+2022-06-14 09:32:22,721 - root - INFO - Epoch: 99, Step: 100, Average Loss: 4.2925, Average Regression Loss 2.0310, Average Classification Loss: 2.2615
+2022-06-14 09:32:41,811 - root - INFO - Epoch: 100, Step: 100, Average Loss: 4.3796, Average Regression Loss 2.1116, Average Classification Loss: 2.2679
+2022-06-14 09:32:45,381 - root - INFO - Epoch: 100, Validation Loss: 4.1798, Validation Regression Loss 1.9424, Validation Classification Loss: 2.2373
+2022-06-14 09:32:45,443 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-100-Loss-4.179767523493085.pth
+2022-06-14 09:33:02,268 - root - INFO - Epoch: 101, Step: 100, Average Loss: 4.2952, Average Regression Loss 2.0271, Average Classification Loss: 2.2681
+2022-06-14 09:33:23,812 - root - INFO - Epoch: 102, Step: 100, Average Loss: 4.3033, Average Regression Loss 2.0375, Average Classification Loss: 2.2658
+2022-06-14 09:33:42,888 - root - INFO - Epoch: 103, Step: 100, Average Loss: 4.3299, Average Regression Loss 2.0582, Average Classification Loss: 2.2717
+2022-06-14 09:34:03,035 - root - INFO - Epoch: 104, Step: 100, Average Loss: 4.3565, Average Regression Loss 2.0867, Average Classification Loss: 2.2698
+2022-06-14 09:34:21,904 - root - INFO - Epoch: 105, Step: 100, Average Loss: 4.3261, Average Regression Loss 2.0583, Average Classification Loss: 2.2679
+2022-06-14 09:34:26,023 - root - INFO - Epoch: 105, Validation Loss: 4.2393, Validation Regression Loss 1.9803, Validation Classification Loss: 2.2590
+2022-06-14 09:34:26,117 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-105-Loss-4.239338534218924.pth
+2022-06-14 09:34:44,294 - root - INFO - Epoch: 106, Step: 100, Average Loss: 4.2886, Average Regression Loss 2.0224, Average Classification Loss: 2.2662
+2022-06-14 09:35:03,782 - root - INFO - Epoch: 107, Step: 100, Average Loss: 4.3084, Average Regression Loss 2.0397, Average Classification Loss: 2.2687
+2022-06-14 09:35:23,448 - root - INFO - Epoch: 108, Step: 100, Average Loss: 4.3342, Average Regression Loss 2.0685, Average Classification Loss: 2.2657
+2022-06-14 09:35:43,465 - root - INFO - Epoch: 109, Step: 100, Average Loss: 4.2727, Average Regression Loss 2.0113, Average Classification Loss: 2.2613
+2022-06-14 09:36:04,802 - root - INFO - Epoch: 110, Step: 100, Average Loss: 4.2968, Average Regression Loss 2.0322, Average Classification Loss: 2.2646
+2022-06-14 09:36:08,175 - root - INFO - Epoch: 110, Validation Loss: 4.1663, Validation Regression Loss 1.9264, Validation Classification Loss: 2.2399
+2022-06-14 09:36:08,267 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-110-Loss-4.166348201887948.pth
+2022-06-14 09:36:22,616 - root - INFO - Epoch: 111, Step: 100, Average Loss: 4.3057, Average Regression Loss 2.0403, Average Classification Loss: 2.2654
+2022-06-14 09:36:43,993 - root - INFO - Epoch: 112, Step: 100, Average Loss: 4.2680, Average Regression Loss 2.0024, Average Classification Loss: 2.2656
+2022-06-14 09:37:02,205 - root - INFO - Epoch: 113, Step: 100, Average Loss: 4.2875, Average Regression Loss 2.0265, Average Classification Loss: 2.2610
+2022-06-14 09:37:19,644 - root - INFO - Epoch: 114, Step: 100, Average Loss: 4.2564, Average Regression Loss 1.9969, Average Classification Loss: 2.2595
+2022-06-14 09:37:38,539 - root - INFO - Epoch: 115, Step: 100, Average Loss: 4.2608, Average Regression Loss 1.9959, Average Classification Loss: 2.2650
+2022-06-14 09:37:42,678 - root - INFO - Epoch: 115, Validation Loss: 4.2025, Validation Regression Loss 1.9579, Validation Classification Loss: 2.2447
+2022-06-14 09:37:42,762 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-115-Loss-4.202511583055768.pth
+2022-06-14 09:37:58,238 - root - INFO - Epoch: 116, Step: 100, Average Loss: 4.2390, Average Regression Loss 1.9707, Average Classification Loss: 2.2683
+2022-06-14 09:38:15,869 - root - INFO - Epoch: 117, Step: 100, Average Loss: 4.2537, Average Regression Loss 1.9897, Average Classification Loss: 2.2640
+2022-06-14 09:38:36,198 - root - INFO - Epoch: 118, Step: 100, Average Loss: 4.2690, Average Regression Loss 2.0044, Average Classification Loss: 2.2646
+2022-06-14 09:38:57,727 - root - INFO - Epoch: 119, Step: 100, Average Loss: 4.2222, Average Regression Loss 1.9571, Average Classification Loss: 2.2651
+2022-06-14 09:39:17,757 - root - INFO - Epoch: 120, Step: 100, Average Loss: 4.2474, Average Regression Loss 1.9819, Average Classification Loss: 2.2655
+2022-06-14 09:39:21,920 - root - INFO - Epoch: 120, Validation Loss: 4.1351, Validation Regression Loss 1.8965, Validation Classification Loss: 2.2386
+2022-06-14 09:39:21,966 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-120-Loss-4.13510719367436.pth
+2022-06-14 09:39:38,494 - root - INFO - Epoch: 121, Step: 100, Average Loss: 4.2946, Average Regression Loss 2.0305, Average Classification Loss: 2.2641
+2022-06-14 09:39:58,002 - root - INFO - Epoch: 122, Step: 100, Average Loss: 4.2276, Average Regression Loss 1.9628, Average Classification Loss: 2.2648
+2022-06-14 09:40:16,941 - root - INFO - Epoch: 123, Step: 100, Average Loss: 4.2465, Average Regression Loss 1.9800, Average Classification Loss: 2.2665
+2022-06-14 09:40:36,711 - root - INFO - Epoch: 124, Step: 100, Average Loss: 4.2752, Average Regression Loss 2.0072, Average Classification Loss: 2.2680
+2022-06-14 09:40:56,344 - root - INFO - Epoch: 125, Step: 100, Average Loss: 4.1763, Average Regression Loss 1.9153, Average Classification Loss: 2.2610
+2022-06-14 09:41:00,718 - root - INFO - Epoch: 125, Validation Loss: 4.1016, Validation Regression Loss 1.8612, Validation Classification Loss: 2.2404
+2022-06-14 09:41:00,765 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-125-Loss-4.101632748331342.pth
+2022-06-14 09:41:17,559 - root - INFO - Epoch: 126, Step: 100, Average Loss: 4.2083, Average Regression Loss 1.9561, Average Classification Loss: 2.2523
+2022-06-14 09:41:35,034 - root - INFO - Epoch: 127, Step: 100, Average Loss: 4.2110, Average Regression Loss 1.9442, Average Classification Loss: 2.2668
+2022-06-14 09:41:54,365 - root - INFO - Epoch: 128, Step: 100, Average Loss: 4.1986, Average Regression Loss 1.9348, Average Classification Loss: 2.2639
+2022-06-14 09:42:12,863 - root - INFO - Epoch: 129, Step: 100, Average Loss: 4.1806, Average Regression Loss 1.9247, Average Classification Loss: 2.2559
+2022-06-14 09:42:32,056 - root - INFO - Epoch: 130, Step: 100, Average Loss: 4.1320, Average Regression Loss 1.8734, Average Classification Loss: 2.2586
+2022-06-14 09:42:35,555 - root - INFO - Epoch: 130, Validation Loss: 4.1328, Validation Regression Loss 1.8852, Validation Classification Loss: 2.2476
+2022-06-14 09:42:35,617 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-130-Loss-4.132753951208932.pth
+2022-06-14 09:42:53,835 - root - INFO - Epoch: 131, Step: 100, Average Loss: 4.1840, Average Regression Loss 1.9241, Average Classification Loss: 2.2599
+2022-06-14 09:43:13,308 - root - INFO - Epoch: 132, Step: 100, Average Loss: 4.1938, Average Regression Loss 1.9327, Average Classification Loss: 2.2611
+2022-06-14 09:43:32,996 - root - INFO - Epoch: 133, Step: 100, Average Loss: 4.2394, Average Regression Loss 1.9822, Average Classification Loss: 2.2573
+2022-06-14 09:43:55,463 - root - INFO - Epoch: 134, Step: 100, Average Loss: 4.1713, Average Regression Loss 1.9108, Average Classification Loss: 2.2605
+2022-06-14 09:44:14,983 - root - INFO - Epoch: 135, Step: 100, Average Loss: 4.1997, Average Regression Loss 1.9409, Average Classification Loss: 2.2588
+2022-06-14 09:44:19,332 - root - INFO - Epoch: 135, Validation Loss: 4.0961, Validation Regression Loss 1.8587, Validation Classification Loss: 2.2374
+2022-06-14 09:44:19,436 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-135-Loss-4.096135599272592.pth
+2022-06-14 09:44:36,454 - root - INFO - Epoch: 136, Step: 100, Average Loss: 4.1651, Average Regression Loss 1.8986, Average Classification Loss: 2.2664
+2022-06-14 09:44:55,531 - root - INFO - Epoch: 137, Step: 100, Average Loss: 4.1898, Average Regression Loss 1.9353, Average Classification Loss: 2.2545
+2022-06-14 09:45:14,469 - root - INFO - Epoch: 138, Step: 100, Average Loss: 4.2561, Average Regression Loss 1.9980, Average Classification Loss: 2.2581
+2022-06-14 09:45:33,836 - root - INFO - Epoch: 139, Step: 100, Average Loss: 4.2169, Average Regression Loss 1.9629, Average Classification Loss: 2.2540
+2022-06-14 09:45:52,793 - root - INFO - Epoch: 140, Step: 100, Average Loss: 4.1461, Average Regression Loss 1.8909, Average Classification Loss: 2.2551
+2022-06-14 09:45:57,147 - root - INFO - Epoch: 140, Validation Loss: 4.0265, Validation Regression Loss 1.7926, Validation Classification Loss: 2.2338
+2022-06-14 09:45:57,195 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-140-Loss-4.026474424770901.pth
+2022-06-14 09:46:13,762 - root - INFO - Epoch: 141, Step: 100, Average Loss: 4.1391, Average Regression Loss 1.8795, Average Classification Loss: 2.2595
+2022-06-14 09:46:33,688 - root - INFO - Epoch: 142, Step: 100, Average Loss: 4.1815, Average Regression Loss 1.9192, Average Classification Loss: 2.2623
+2022-06-14 09:46:56,719 - root - INFO - Epoch: 143, Step: 100, Average Loss: 4.1796, Average Regression Loss 1.9212, Average Classification Loss: 2.2585
+2022-06-14 09:47:19,486 - root - INFO - Epoch: 144, Step: 100, Average Loss: 4.1938, Average Regression Loss 1.9359, Average Classification Loss: 2.2578
+2022-06-14 09:47:37,945 - root - INFO - Epoch: 145, Step: 100, Average Loss: 4.1672, Average Regression Loss 1.9115, Average Classification Loss: 2.2557
+2022-06-14 09:47:41,870 - root - INFO - Epoch: 145, Validation Loss: 4.0579, Validation Regression Loss 1.8201, Validation Classification Loss: 2.2378
+2022-06-14 09:47:41,957 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-145-Loss-4.057866283825466.pth
+2022-06-14 09:47:58,929 - root - INFO - Epoch: 146, Step: 100, Average Loss: 4.1855, Average Regression Loss 1.9246, Average Classification Loss: 2.2609
+2022-06-14 09:48:20,254 - root - INFO - Epoch: 147, Step: 100, Average Loss: 4.1478, Average Regression Loss 1.8949, Average Classification Loss: 2.2528
+2022-06-14 09:48:39,630 - root - INFO - Epoch: 148, Step: 100, Average Loss: 4.1677, Average Regression Loss 1.9069, Average Classification Loss: 2.2608
+2022-06-14 09:48:59,399 - root - INFO - Epoch: 149, Step: 100, Average Loss: 4.2360, Average Regression Loss 1.9814, Average Classification Loss: 2.2546
+2022-06-14 09:49:17,482 - root - INFO - Epoch: 150, Step: 100, Average Loss: 4.1005, Average Regression Loss 1.8475, Average Classification Loss: 2.2530
+2022-06-14 09:49:21,638 - root - INFO - Epoch: 150, Validation Loss: 4.1123, Validation Regression Loss 1.8849, Validation Classification Loss: 2.2274
+2022-06-14 09:49:21,677 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-150-Loss-4.112306152071271.pth
+2022-06-14 09:49:38,360 - root - INFO - Epoch: 151, Step: 100, Average Loss: 4.2492, Average Regression Loss 1.9991, Average Classification Loss: 2.2501
+2022-06-14 09:49:56,936 - root - INFO - Epoch: 152, Step: 100, Average Loss: 4.2152, Average Regression Loss 1.9632, Average Classification Loss: 2.2520
+2022-06-14 09:50:16,857 - root - INFO - Epoch: 153, Step: 100, Average Loss: 4.1418, Average Regression Loss 1.8820, Average Classification Loss: 2.2598
+2022-06-14 09:50:36,321 - root - INFO - Epoch: 154, Step: 100, Average Loss: 4.1638, Average Regression Loss 1.9073, Average Classification Loss: 2.2566
+2022-06-14 09:50:55,135 - root - INFO - Epoch: 155, Step: 100, Average Loss: 4.1507, Average Regression Loss 1.8954, Average Classification Loss: 2.2554
+2022-06-14 09:51:00,217 - root - INFO - Epoch: 155, Validation Loss: 4.1209, Validation Regression Loss 1.8703, Validation Classification Loss: 2.2505
+2022-06-14 09:51:00,262 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-155-Loss-4.120878985949925.pth
+2022-06-14 09:51:17,938 - root - INFO - Epoch: 156, Step: 100, Average Loss: 4.1451, Average Regression Loss 1.8804, Average Classification Loss: 2.2648
+2022-06-14 09:51:38,310 - root - INFO - Epoch: 157, Step: 100, Average Loss: 4.0866, Average Regression Loss 1.8298, Average Classification Loss: 2.2568
+2022-06-14 09:51:56,653 - root - INFO - Epoch: 158, Step: 100, Average Loss: 4.1710, Average Regression Loss 1.9125, Average Classification Loss: 2.2585
+2022-06-14 09:52:15,209 - root - INFO - Epoch: 159, Step: 100, Average Loss: 4.0805, Average Regression Loss 1.8286, Average Classification Loss: 2.2520
+2022-06-14 09:52:34,402 - root - INFO - Epoch: 160, Step: 100, Average Loss: 4.1094, Average Regression Loss 1.8564, Average Classification Loss: 2.2530
+2022-06-14 09:52:39,643 - root - INFO - Epoch: 160, Validation Loss: 4.0726, Validation Regression Loss 1.8406, Validation Classification Loss: 2.2321
+2022-06-14 09:52:39,696 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-160-Loss-4.0726407425744195.pth
+2022-06-14 09:52:55,728 - root - INFO - Epoch: 161, Step: 100, Average Loss: 4.0013, Average Regression Loss 1.7534, Average Classification Loss: 2.2479
+2022-06-14 09:53:14,195 - root - INFO - Epoch: 162, Step: 100, Average Loss: 4.1110, Average Regression Loss 1.8609, Average Classification Loss: 2.2501
+2022-06-14 09:53:34,674 - root - INFO - Epoch: 163, Step: 100, Average Loss: 4.0883, Average Regression Loss 1.8263, Average Classification Loss: 2.2621
+2022-06-14 09:53:53,847 - root - INFO - Epoch: 164, Step: 100, Average Loss: 4.0915, Average Regression Loss 1.8431, Average Classification Loss: 2.2484
+2022-06-14 09:54:12,540 - root - INFO - Epoch: 165, Step: 100, Average Loss: 4.0751, Average Regression Loss 1.8240, Average Classification Loss: 2.2511
+2022-06-14 09:54:16,604 - root - INFO - Epoch: 165, Validation Loss: 4.0735, Validation Regression Loss 1.8420, Validation Classification Loss: 2.2315
+2022-06-14 09:54:16,658 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-165-Loss-4.073472074099949.pth
+2022-06-14 09:54:33,421 - root - INFO - Epoch: 166, Step: 100, Average Loss: 4.0572, Average Regression Loss 1.7978, Average Classification Loss: 2.2594
+2022-06-14 09:54:53,681 - root - INFO - Epoch: 167, Step: 100, Average Loss: 4.1622, Average Regression Loss 1.9143, Average Classification Loss: 2.2479
+2022-06-14 09:55:20,671 - root - INFO - Epoch: 168, Step: 100, Average Loss: 4.0398, Average Regression Loss 1.7888, Average Classification Loss: 2.2511
+2022-06-14 09:55:50,478 - root - INFO - Epoch: 169, Step: 100, Average Loss: 3.9797, Average Regression Loss 1.7374, Average Classification Loss: 2.2423
+2022-06-14 09:56:20,329 - root - INFO - Epoch: 170, Step: 100, Average Loss: 4.0555, Average Regression Loss 1.8066, Average Classification Loss: 2.2489
+2022-06-14 09:56:27,401 - root - INFO - Epoch: 170, Validation Loss: 3.9931, Validation Regression Loss 1.7684, Validation Classification Loss: 2.2247
+2022-06-14 09:56:27,457 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-170-Loss-3.993090442248753.pth
+2022-06-14 09:56:54,390 - root - INFO - Epoch: 171, Step: 100, Average Loss: 4.0734, Average Regression Loss 1.8226, Average Classification Loss: 2.2507
+2022-06-14 09:57:24,003 - root - INFO - Epoch: 172, Step: 100, Average Loss: 4.1089, Average Regression Loss 1.8582, Average Classification Loss: 2.2507
+2022-06-14 09:57:52,492 - root - INFO - Epoch: 173, Step: 100, Average Loss: 4.0847, Average Regression Loss 1.8362, Average Classification Loss: 2.2486
+2022-06-14 09:58:20,626 - root - INFO - Epoch: 174, Step: 100, Average Loss: 4.0135, Average Regression Loss 1.7676, Average Classification Loss: 2.2459
+2022-06-14 09:58:53,028 - root - INFO - Epoch: 175, Step: 100, Average Loss: 4.0471, Average Regression Loss 1.7939, Average Classification Loss: 2.2532
+2022-06-14 09:58:57,429 - root - INFO - Epoch: 175, Validation Loss: 3.9961, Validation Regression Loss 1.7664, Validation Classification Loss: 2.2297
+2022-06-14 09:58:57,511 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-175-Loss-3.996138232094901.pth
+2022-06-14 09:59:24,343 - root - INFO - Epoch: 176, Step: 100, Average Loss: 4.0735, Average Regression Loss 1.8211, Average Classification Loss: 2.2525
+2022-06-14 09:59:55,590 - root - INFO - Epoch: 177, Step: 100, Average Loss: 4.0135, Average Regression Loss 1.7608, Average Classification Loss: 2.2528
+2022-06-14 10:00:26,708 - root - INFO - Epoch: 178, Step: 100, Average Loss: 4.0565, Average Regression Loss 1.8071, Average Classification Loss: 2.2495
+2022-06-14 10:00:55,379 - root - INFO - Epoch: 179, Step: 100, Average Loss: 4.0003, Average Regression Loss 1.7474, Average Classification Loss: 2.2529
+2022-06-14 10:01:26,416 - root - INFO - Epoch: 180, Step: 100, Average Loss: 4.0384, Average Regression Loss 1.7795, Average Classification Loss: 2.2589
+2022-06-14 10:01:32,354 - root - INFO - Epoch: 180, Validation Loss: 3.9752, Validation Regression Loss 1.7507, Validation Classification Loss: 2.2246
+2022-06-14 10:01:32,462 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-180-Loss-3.9752488476889476.pth
+2022-06-14 10:01:56,855 - root - INFO - Epoch: 181, Step: 100, Average Loss: 4.0731, Average Regression Loss 1.8226, Average Classification Loss: 2.2505
+2022-06-14 10:02:27,886 - root - INFO - Epoch: 182, Step: 100, Average Loss: 4.0640, Average Regression Loss 1.8144, Average Classification Loss: 2.2497
+2022-06-14 10:02:57,506 - root - INFO - Epoch: 183, Step: 100, Average Loss: 4.0176, Average Regression Loss 1.7696, Average Classification Loss: 2.2479
+2022-06-14 10:03:28,802 - root - INFO - Epoch: 184, Step: 100, Average Loss: 4.0376, Average Regression Loss 1.7899, Average Classification Loss: 2.2477
+2022-06-14 10:03:57,035 - root - INFO - Epoch: 185, Step: 100, Average Loss: 4.0660, Average Regression Loss 1.8103, Average Classification Loss: 2.2558
+2022-06-14 10:04:04,479 - root - INFO - Epoch: 185, Validation Loss: 4.0011, Validation Regression Loss 1.7774, Validation Classification Loss: 2.2237
+2022-06-14 10:04:04,525 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-185-Loss-4.001083442143032.pth
+2022-06-14 10:04:29,065 - root - INFO - Epoch: 186, Step: 100, Average Loss: 4.0472, Average Regression Loss 1.8000, Average Classification Loss: 2.2472
+2022-06-14 10:04:58,160 - root - INFO - Epoch: 187, Step: 100, Average Loss: 4.0074, Average Regression Loss 1.7504, Average Classification Loss: 2.2570
+2022-06-14 10:05:31,314 - root - INFO - Epoch: 188, Step: 100, Average Loss: 3.9862, Average Regression Loss 1.7421, Average Classification Loss: 2.2441
+2022-06-14 10:06:00,686 - root - INFO - Epoch: 189, Step: 100, Average Loss: 4.0377, Average Regression Loss 1.7902, Average Classification Loss: 2.2476
+2022-06-14 10:06:30,911 - root - INFO - Epoch: 190, Step: 100, Average Loss: 4.0608, Average Regression Loss 1.7981, Average Classification Loss: 2.2626
+2022-06-14 10:06:36,672 - root - INFO - Epoch: 190, Validation Loss: 3.9631, Validation Regression Loss 1.7375, Validation Classification Loss: 2.2255
+2022-06-14 10:06:36,713 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-190-Loss-3.9630740710667203.pth
+2022-06-14 10:07:02,910 - root - INFO - Epoch: 191, Step: 100, Average Loss: 3.9764, Average Regression Loss 1.7254, Average Classification Loss: 2.2509
+2022-06-14 10:07:34,844 - root - INFO - Epoch: 192, Step: 100, Average Loss: 4.0120, Average Regression Loss 1.7628, Average Classification Loss: 2.2492
+2022-06-14 10:08:06,147 - root - INFO - Epoch: 193, Step: 100, Average Loss: 3.9771, Average Regression Loss 1.7289, Average Classification Loss: 2.2483
+2022-06-14 10:08:36,677 - root - INFO - Epoch: 194, Step: 100, Average Loss: 3.9478, Average Regression Loss 1.7049, Average Classification Loss: 2.2428
+2022-06-14 10:09:06,952 - root - INFO - Epoch: 195, Step: 100, Average Loss: 4.0027, Average Regression Loss 1.7575, Average Classification Loss: 2.2452
+2022-06-14 10:09:14,631 - root - INFO - Epoch: 195, Validation Loss: 3.9763, Validation Regression Loss 1.7469, Validation Classification Loss: 2.2294
+2022-06-14 10:09:14,733 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-195-Loss-3.9763039691107616.pth
+2022-06-14 10:09:41,401 - root - INFO - Epoch: 196, Step: 100, Average Loss: 4.0011, Average Regression Loss 1.7564, Average Classification Loss: 2.2447
+2022-06-14 10:10:12,065 - root - INFO - Epoch: 197, Step: 100, Average Loss: 4.0021, Average Regression Loss 1.7503, Average Classification Loss: 2.2518
+2022-06-14 10:10:40,075 - root - INFO - Epoch: 198, Step: 100, Average Loss: 3.9493, Average Regression Loss 1.7085, Average Classification Loss: 2.2408
+2022-06-14 10:11:08,864 - root - INFO - Epoch: 199, Step: 100, Average Loss: 3.9843, Average Regression Loss 1.7406, Average Classification Loss: 2.2437
+2022-06-14 10:11:40,631 - root - INFO - Epoch: 200, Step: 100, Average Loss: 4.0296, Average Regression Loss 1.7821, Average Classification Loss: 2.2475
+2022-06-14 10:11:47,249 - root - INFO - Epoch: 200, Validation Loss: 3.9643, Validation Regression Loss 1.7388, Validation Classification Loss: 2.2255
+2022-06-14 10:11:47,300 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-200-Loss-3.9642566442489624.pth
+2022-06-14 10:12:11,645 - root - INFO - Epoch: 201, Step: 100, Average Loss: 3.9762, Average Regression Loss 1.7278, Average Classification Loss: 2.2484
+2022-06-14 10:12:39,992 - root - INFO - Epoch: 202, Step: 100, Average Loss: 3.9335, Average Regression Loss 1.6823, Average Classification Loss: 2.2512
+2022-06-14 10:13:13,308 - root - INFO - Epoch: 203, Step: 100, Average Loss: 4.0026, Average Regression Loss 1.7502, Average Classification Loss: 2.2523
+2022-06-14 10:13:44,870 - root - INFO - Epoch: 204, Step: 100, Average Loss: 3.9191, Average Regression Loss 1.6857, Average Classification Loss: 2.2334
+2022-06-14 10:14:15,543 - root - INFO - Epoch: 205, Step: 100, Average Loss: 3.9754, Average Regression Loss 1.7316, Average Classification Loss: 2.2438
+2022-06-14 10:14:21,409 - root - INFO - Epoch: 205, Validation Loss: 3.9278, Validation Regression Loss 1.6974, Validation Classification Loss: 2.2303
+2022-06-14 10:14:21,520 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-205-Loss-3.9277647393090382.pth
+2022-06-14 10:14:46,799 - root - INFO - Epoch: 206, Step: 100, Average Loss: 3.9628, Average Regression Loss 1.7101, Average Classification Loss: 2.2527
+2022-06-14 10:15:15,929 - root - INFO - Epoch: 207, Step: 100, Average Loss: 3.9600, Average Regression Loss 1.7098, Average Classification Loss: 2.2502
+2022-06-14 10:15:47,767 - root - INFO - Epoch: 208, Step: 100, Average Loss: 3.9710, Average Regression Loss 1.7354, Average Classification Loss: 2.2356
+2022-06-14 10:16:20,550 - root - INFO - Epoch: 209, Step: 100, Average Loss: 3.9448, Average Regression Loss 1.6938, Average Classification Loss: 2.2510
+2022-06-14 10:16:52,797 - root - INFO - Epoch: 210, Step: 100, Average Loss: 3.9592, Average Regression Loss 1.7206, Average Classification Loss: 2.2385
+2022-06-14 10:16:59,041 - root - INFO - Epoch: 210, Validation Loss: 3.9011, Validation Regression Loss 1.6777, Validation Classification Loss: 2.2234
+2022-06-14 10:16:59,080 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-210-Loss-3.901110444750105.pth
+2022-06-14 10:17:25,444 - root - INFO - Epoch: 211, Step: 100, Average Loss: 3.9121, Average Regression Loss 1.6757, Average Classification Loss: 2.2364
+2022-06-14 10:17:57,489 - root - INFO - Epoch: 212, Step: 100, Average Loss: 3.9183, Average Regression Loss 1.6691, Average Classification Loss: 2.2492
+2022-06-14 10:18:28,662 - root - INFO - Epoch: 213, Step: 100, Average Loss: 3.9404, Average Regression Loss 1.7024, Average Classification Loss: 2.2381
+2022-06-14 10:19:01,481 - root - INFO - Epoch: 214, Step: 100, Average Loss: 3.9603, Average Regression Loss 1.7232, Average Classification Loss: 2.2371
+2022-06-14 10:19:33,125 - root - INFO - Epoch: 215, Step: 100, Average Loss: 3.9410, Average Regression Loss 1.7035, Average Classification Loss: 2.2374
+2022-06-14 10:19:38,004 - root - INFO - Epoch: 215, Validation Loss: 3.8716, Validation Regression Loss 1.6526, Validation Classification Loss: 2.2190
+2022-06-14 10:19:38,082 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-215-Loss-3.871607678277152.pth
+2022-06-14 10:20:04,480 - root - INFO - Epoch: 216, Step: 100, Average Loss: 3.9419, Average Regression Loss 1.7011, Average Classification Loss: 2.2407
+2022-06-14 10:20:35,950 - root - INFO - Epoch: 217, Step: 100, Average Loss: 3.9135, Average Regression Loss 1.6730, Average Classification Loss: 2.2405
+2022-06-14 10:21:08,049 - root - INFO - Epoch: 218, Step: 100, Average Loss: 3.9051, Average Regression Loss 1.6641, Average Classification Loss: 2.2410
+2022-06-14 10:21:40,026 - root - INFO - Epoch: 219, Step: 100, Average Loss: 3.9160, Average Regression Loss 1.6786, Average Classification Loss: 2.2374
+2022-06-14 10:22:08,462 - root - INFO - Epoch: 220, Step: 100, Average Loss: 3.9214, Average Regression Loss 1.6843, Average Classification Loss: 2.2371
+2022-06-14 10:22:14,616 - root - INFO - Epoch: 220, Validation Loss: 3.9651, Validation Regression Loss 1.7512, Validation Classification Loss: 2.2139
+2022-06-14 10:22:14,743 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-220-Loss-3.965085029602051.pth
+2022-06-14 10:22:42,242 - root - INFO - Epoch: 221, Step: 100, Average Loss: 3.9535, Average Regression Loss 1.7165, Average Classification Loss: 2.2370
+2022-06-14 10:23:13,420 - root - INFO - Epoch: 222, Step: 100, Average Loss: 3.8658, Average Regression Loss 1.6236, Average Classification Loss: 2.2422
+2022-06-14 10:23:42,597 - root - INFO - Epoch: 223, Step: 100, Average Loss: 3.9386, Average Regression Loss 1.6986, Average Classification Loss: 2.2400
+2022-06-14 10:24:12,489 - root - INFO - Epoch: 224, Step: 100, Average Loss: 3.9168, Average Regression Loss 1.6717, Average Classification Loss: 2.2451
+2022-06-14 10:24:40,618 - root - INFO - Epoch: 225, Step: 100, Average Loss: 3.9670, Average Regression Loss 1.7345, Average Classification Loss: 2.2325
+2022-06-14 10:24:47,951 - root - INFO - Epoch: 225, Validation Loss: 3.8898, Validation Regression Loss 1.6740, Validation Classification Loss: 2.2158
+2022-06-14 10:24:48,067 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-225-Loss-3.889808620725359.pth
+2022-06-14 10:25:13,354 - root - INFO - Epoch: 226, Step: 100, Average Loss: 3.9072, Average Regression Loss 1.6725, Average Classification Loss: 2.2347
+2022-06-14 10:25:42,264 - root - INFO - Epoch: 227, Step: 100, Average Loss: 3.8545, Average Regression Loss 1.6180, Average Classification Loss: 2.2365
+2022-06-14 10:26:15,867 - root - INFO - Epoch: 228, Step: 100, Average Loss: 3.8476, Average Regression Loss 1.6106, Average Classification Loss: 2.2370
+2022-06-14 10:26:46,299 - root - INFO - Epoch: 229, Step: 100, Average Loss: 3.9821, Average Regression Loss 1.7411, Average Classification Loss: 2.2410
+2022-06-14 10:27:16,217 - root - INFO - Epoch: 230, Step: 100, Average Loss: 3.8964, Average Regression Loss 1.6666, Average Classification Loss: 2.2297
+2022-06-14 10:27:23,499 - root - INFO - Epoch: 230, Validation Loss: 3.8823, Validation Regression Loss 1.6667, Validation Classification Loss: 2.2156
+2022-06-14 10:27:23,603 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-230-Loss-3.8822823592594693.pth
+2022-06-14 10:27:49,261 - root - INFO - Epoch: 231, Step: 100, Average Loss: 3.9204, Average Regression Loss 1.6907, Average Classification Loss: 2.2297
+2022-06-14 10:28:18,223 - root - INFO - Epoch: 232, Step: 100, Average Loss: 3.9158, Average Regression Loss 1.6736, Average Classification Loss: 2.2423
+2022-06-14 10:28:46,591 - root - INFO - Epoch: 233, Step: 100, Average Loss: 3.9326, Average Regression Loss 1.6893, Average Classification Loss: 2.2433
+2022-06-14 10:29:14,933 - root - INFO - Epoch: 234, Step: 100, Average Loss: 3.8684, Average Regression Loss 1.6365, Average Classification Loss: 2.2319
+2022-06-14 10:29:46,213 - root - INFO - Epoch: 235, Step: 100, Average Loss: 3.8582, Average Regression Loss 1.6213, Average Classification Loss: 2.2369
+2022-06-14 10:29:52,478 - root - INFO - Epoch: 235, Validation Loss: 3.8578, Validation Regression Loss 1.6484, Validation Classification Loss: 2.2095
+2022-06-14 10:29:52,567 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-235-Loss-3.8578117745263234.pth
+2022-06-14 10:30:17,781 - root - INFO - Epoch: 236, Step: 100, Average Loss: 3.9308, Average Regression Loss 1.6990, Average Classification Loss: 2.2318
+2022-06-14 10:30:49,019 - root - INFO - Epoch: 237, Step: 100, Average Loss: 3.9459, Average Regression Loss 1.7104, Average Classification Loss: 2.2356
+2022-06-14 10:31:22,435 - root - INFO - Epoch: 238, Step: 100, Average Loss: 3.7855, Average Regression Loss 1.5538, Average Classification Loss: 2.2317
+2022-06-14 10:31:54,065 - root - INFO - Epoch: 239, Step: 100, Average Loss: 3.8638, Average Regression Loss 1.6321, Average Classification Loss: 2.2317
+2022-06-14 10:32:21,627 - root - INFO - Epoch: 240, Step: 100, Average Loss: 3.8522, Average Regression Loss 1.6218, Average Classification Loss: 2.2303
+2022-06-14 10:32:26,993 - root - INFO - Epoch: 240, Validation Loss: 3.8487, Validation Regression Loss 1.6364, Validation Classification Loss: 2.2123
+2022-06-14 10:32:27,084 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-240-Loss-3.8486743484224593.pth
+2022-06-14 10:32:53,633 - root - INFO - Epoch: 241, Step: 100, Average Loss: 3.8997, Average Regression Loss 1.6583, Average Classification Loss: 2.2415
+2022-06-14 10:33:24,283 - root - INFO - Epoch: 242, Step: 100, Average Loss: 3.8929, Average Regression Loss 1.6628, Average Classification Loss: 2.2301
+2022-06-14 10:33:55,183 - root - INFO - Epoch: 243, Step: 100, Average Loss: 3.8485, Average Regression Loss 1.6167, Average Classification Loss: 2.2318
+2022-06-14 10:34:28,060 - root - INFO - Epoch: 244, Step: 100, Average Loss: 3.8362, Average Regression Loss 1.5968, Average Classification Loss: 2.2394
+2022-06-14 10:34:58,381 - root - INFO - Epoch: 245, Step: 100, Average Loss: 3.8538, Average Regression Loss 1.6132, Average Classification Loss: 2.2406
+2022-06-14 10:35:04,897 - root - INFO - Epoch: 245, Validation Loss: 3.8477, Validation Regression Loss 1.6360, Validation Classification Loss: 2.2116
+2022-06-14 10:35:05,015 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-245-Loss-3.8476535081863403.pth
+2022-06-14 10:35:30,962 - root - INFO - Epoch: 246, Step: 100, Average Loss: 3.8463, Average Regression Loss 1.6187, Average Classification Loss: 2.2276
+2022-06-14 10:36:02,188 - root - INFO - Epoch: 247, Step: 100, Average Loss: 3.7932, Average Regression Loss 1.5637, Average Classification Loss: 2.2295
+2022-06-14 10:36:33,506 - root - INFO - Epoch: 248, Step: 100, Average Loss: 3.8226, Average Regression Loss 1.5968, Average Classification Loss: 2.2258
+2022-06-14 10:37:06,231 - root - INFO - Epoch: 249, Step: 100, Average Loss: 3.8449, Average Regression Loss 1.6126, Average Classification Loss: 2.2323
+2022-06-14 10:37:37,683 - root - INFO - Epoch: 250, Step: 100, Average Loss: 3.8436, Average Regression Loss 1.6092, Average Classification Loss: 2.2344
+2022-06-14 10:37:44,891 - root - INFO - Epoch: 250, Validation Loss: 3.8481, Validation Regression Loss 1.6372, Validation Classification Loss: 2.2109
+2022-06-14 10:37:45,025 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-250-Loss-3.848056827272688.pth
+2022-06-14 10:38:09,232 - root - INFO - Epoch: 251, Step: 100, Average Loss: 3.7963, Average Regression Loss 1.5645, Average Classification Loss: 2.2318
+2022-06-14 10:38:39,250 - root - INFO - Epoch: 252, Step: 100, Average Loss: 3.7892, Average Regression Loss 1.5605, Average Classification Loss: 2.2288
+2022-06-14 10:39:13,449 - root - INFO - Epoch: 253, Step: 100, Average Loss: 3.8204, Average Regression Loss 1.5935, Average Classification Loss: 2.2269
+2022-06-14 10:39:43,347 - root - INFO - Epoch: 254, Step: 100, Average Loss: 3.8297, Average Regression Loss 1.5938, Average Classification Loss: 2.2359
+2022-06-14 10:40:13,500 - root - INFO - Epoch: 255, Step: 100, Average Loss: 3.8539, Average Regression Loss 1.6134, Average Classification Loss: 2.2405
+2022-06-14 10:40:20,200 - root - INFO - Epoch: 255, Validation Loss: 3.8480, Validation Regression Loss 1.6378, Validation Classification Loss: 2.2102
+2022-06-14 10:40:20,292 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-255-Loss-3.8479923691068376.pth
+2022-06-14 10:40:46,686 - root - INFO - Epoch: 256, Step: 100, Average Loss: 3.8438, Average Regression Loss 1.6116, Average Classification Loss: 2.2322
+2022-06-14 10:41:18,069 - root - INFO - Epoch: 257, Step: 100, Average Loss: 3.8324, Average Regression Loss 1.6057, Average Classification Loss: 2.2267
+2022-06-14 10:41:47,467 - root - INFO - Epoch: 258, Step: 100, Average Loss: 3.8294, Average Regression Loss 1.6099, Average Classification Loss: 2.2195
+2022-06-14 10:42:20,786 - root - INFO - Epoch: 259, Step: 100, Average Loss: 3.8612, Average Regression Loss 1.6312, Average Classification Loss: 2.2300
+2022-06-14 10:42:51,651 - root - INFO - Epoch: 260, Step: 100, Average Loss: 3.8225, Average Regression Loss 1.5946, Average Classification Loss: 2.2280
+2022-06-14 10:42:58,853 - root - INFO - Epoch: 260, Validation Loss: 3.8323, Validation Regression Loss 1.6195, Validation Classification Loss: 2.2128
+2022-06-14 10:42:58,945 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-260-Loss-3.8322814532688687.pth
+2022-06-14 10:43:23,082 - root - INFO - Epoch: 261, Step: 100, Average Loss: 3.8672, Average Regression Loss 1.6417, Average Classification Loss: 2.2255
+2022-06-14 10:43:53,248 - root - INFO - Epoch: 262, Step: 100, Average Loss: 3.8651, Average Regression Loss 1.6301, Average Classification Loss: 2.2350
+2022-06-14 10:44:22,666 - root - INFO - Epoch: 263, Step: 100, Average Loss: 3.8427, Average Regression Loss 1.6098, Average Classification Loss: 2.2329
+2022-06-14 10:44:54,779 - root - INFO - Epoch: 264, Step: 100, Average Loss: 3.7919, Average Regression Loss 1.5679, Average Classification Loss: 2.2240
+2022-06-14 10:45:24,384 - root - INFO - Epoch: 265, Step: 100, Average Loss: 3.8466, Average Regression Loss 1.6206, Average Classification Loss: 2.2261
+2022-06-14 10:45:30,830 - root - INFO - Epoch: 265, Validation Loss: 3.8225, Validation Regression Loss 1.6126, Validation Classification Loss: 2.2099
+2022-06-14 10:45:30,975 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-265-Loss-3.822459033557347.pth
+2022-06-14 10:45:58,172 - root - INFO - Epoch: 266, Step: 100, Average Loss: 3.8067, Average Regression Loss 1.5800, Average Classification Loss: 2.2267
+2022-06-14 10:46:30,068 - root - INFO - Epoch: 267, Step: 100, Average Loss: 3.8311, Average Regression Loss 1.5939, Average Classification Loss: 2.2373
+2022-06-14 10:47:01,154 - root - INFO - Epoch: 268, Step: 100, Average Loss: 3.8567, Average Regression Loss 1.6219, Average Classification Loss: 2.2349
+2022-06-14 10:47:31,032 - root - INFO - Epoch: 269, Step: 100, Average Loss: 3.8042, Average Regression Loss 1.5719, Average Classification Loss: 2.2324
+2022-06-14 10:48:00,435 - root - INFO - Epoch: 270, Step: 100, Average Loss: 3.7906, Average Regression Loss 1.5673, Average Classification Loss: 2.2232
+2022-06-14 10:48:07,870 - root - INFO - Epoch: 270, Validation Loss: 3.8698, Validation Regression Loss 1.6573, Validation Classification Loss: 2.2125
+2022-06-14 10:48:07,972 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-270-Loss-3.8697851725987027.pth
+2022-06-14 10:48:32,006 - root - INFO - Epoch: 271, Step: 100, Average Loss: 3.7681, Average Regression Loss 1.5410, Average Classification Loss: 2.2270
+2022-06-14 10:49:01,174 - root - INFO - Epoch: 272, Step: 100, Average Loss: 3.7799, Average Regression Loss 1.5533, Average Classification Loss: 2.2267
+2022-06-14 10:49:34,943 - root - INFO - Epoch: 273, Step: 100, Average Loss: 3.8101, Average Regression Loss 1.5840, Average Classification Loss: 2.2261
+2022-06-14 10:50:05,490 - root - INFO - Epoch: 274, Step: 100, Average Loss: 3.8798, Average Regression Loss 1.6515, Average Classification Loss: 2.2283
+2022-06-14 10:50:37,567 - root - INFO - Epoch: 275, Step: 100, Average Loss: 3.7906, Average Regression Loss 1.5615, Average Classification Loss: 2.2291
+2022-06-14 10:50:43,145 - root - INFO - Epoch: 275, Validation Loss: 3.8339, Validation Regression Loss 1.6246, Validation Classification Loss: 2.2093
+2022-06-14 10:50:43,232 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-275-Loss-3.8339029380253384.pth
+2022-06-14 10:51:09,595 - root - INFO - Epoch: 276, Step: 100, Average Loss: 3.8068, Average Regression Loss 1.5774, Average Classification Loss: 2.2294
+2022-06-14 10:51:40,157 - root - INFO - Epoch: 277, Step: 100, Average Loss: 3.8100, Average Regression Loss 1.5817, Average Classification Loss: 2.2282
+2022-06-14 10:52:09,690 - root - INFO - Epoch: 278, Step: 100, Average Loss: 3.8224, Average Regression Loss 1.6051, Average Classification Loss: 2.2173
+2022-06-14 10:52:39,055 - root - INFO - Epoch: 279, Step: 100, Average Loss: 3.7329, Average Regression Loss 1.5031, Average Classification Loss: 2.2298
+2022-06-14 10:53:09,959 - root - INFO - Epoch: 280, Step: 100, Average Loss: 3.8057, Average Regression Loss 1.5710, Average Classification Loss: 2.2347
+2022-06-14 10:53:15,703 - root - INFO - Epoch: 280, Validation Loss: 3.8379, Validation Regression Loss 1.6281, Validation Classification Loss: 2.2098
+2022-06-14 10:53:15,808 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-280-Loss-3.837930338723319.pth
+2022-06-14 10:53:41,744 - root - INFO - Epoch: 281, Step: 100, Average Loss: 3.7801, Average Regression Loss 1.5599, Average Classification Loss: 2.2202
+2022-06-14 10:54:15,300 - root - INFO - Epoch: 282, Step: 100, Average Loss: 3.7620, Average Regression Loss 1.5329, Average Classification Loss: 2.2291
+2022-06-14 10:54:45,967 - root - INFO - Epoch: 283, Step: 100, Average Loss: 3.7948, Average Regression Loss 1.5612, Average Classification Loss: 2.2336
+2022-06-14 10:55:18,675 - root - INFO - Epoch: 284, Step: 100, Average Loss: 3.7705, Average Regression Loss 1.5337, Average Classification Loss: 2.2368
+2022-06-14 10:55:48,847 - root - INFO - Epoch: 285, Step: 100, Average Loss: 3.7395, Average Regression Loss 1.5233, Average Classification Loss: 2.2162
+2022-06-14 10:55:54,840 - root - INFO - Epoch: 285, Validation Loss: 3.8306, Validation Regression Loss 1.6183, Validation Classification Loss: 2.2124
+2022-06-14 10:55:54,946 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-285-Loss-3.830609457833426.pth
+2022-06-14 10:56:21,389 - root - INFO - Epoch: 286, Step: 100, Average Loss: 3.8167, Average Regression Loss 1.5859, Average Classification Loss: 2.2308
+2022-06-14 10:56:51,952 - root - INFO - Epoch: 287, Step: 100, Average Loss: 3.8617, Average Regression Loss 1.6279, Average Classification Loss: 2.2338
+2022-06-14 10:57:22,927 - root - INFO - Epoch: 288, Step: 100, Average Loss: 3.8150, Average Regression Loss 1.5770, Average Classification Loss: 2.2380
+2022-06-14 10:57:55,605 - root - INFO - Epoch: 289, Step: 100, Average Loss: 3.7921, Average Regression Loss 1.5636, Average Classification Loss: 2.2285
+2022-06-14 10:58:24,820 - root - INFO - Epoch: 290, Step: 100, Average Loss: 3.7791, Average Regression Loss 1.5606, Average Classification Loss: 2.2185
+2022-06-14 10:58:30,921 - root - INFO - Epoch: 290, Validation Loss: 3.8341, Validation Regression Loss 1.6246, Validation Classification Loss: 2.2095
+2022-06-14 10:58:31,053 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-290-Loss-3.8341306107384816.pth
+2022-06-14 10:58:57,559 - root - INFO - Epoch: 291, Step: 100, Average Loss: 3.8301, Average Regression Loss 1.6001, Average Classification Loss: 2.2300
+2022-06-14 10:59:28,310 - root - INFO - Epoch: 292, Step: 100, Average Loss: 3.7701, Average Regression Loss 1.5368, Average Classification Loss: 2.2333
+2022-06-14 10:59:57,159 - root - INFO - Epoch: 293, Step: 100, Average Loss: 3.7750, Average Regression Loss 1.5443, Average Classification Loss: 2.2306
+2022-06-14 11:00:30,127 - root - INFO - Epoch: 294, Step: 100, Average Loss: 3.8404, Average Regression Loss 1.6051, Average Classification Loss: 2.2352
+2022-06-14 11:01:01,199 - root - INFO - Epoch: 295, Step: 100, Average Loss: 3.8458, Average Regression Loss 1.6130, Average Classification Loss: 2.2328
+2022-06-14 11:01:06,762 - root - INFO - Epoch: 295, Validation Loss: 3.8408, Validation Regression Loss 1.6301, Validation Classification Loss: 2.2107
+2022-06-14 11:01:06,830 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-295-Loss-3.8408246551241194.pth
+2022-06-14 11:01:33,243 - root - INFO - Epoch: 296, Step: 100, Average Loss: 3.8746, Average Regression Loss 1.6397, Average Classification Loss: 2.2349
+2022-06-14 11:02:04,244 - root - INFO - Epoch: 297, Step: 100, Average Loss: 3.8486, Average Regression Loss 1.6255, Average Classification Loss: 2.2231
+2022-06-14 11:02:36,544 - root - INFO - Epoch: 298, Step: 100, Average Loss: 3.7619, Average Regression Loss 1.5281, Average Classification Loss: 2.2337
+2022-06-14 11:03:06,435 - root - INFO - Epoch: 299, Step: 100, Average Loss: 3.7550, Average Regression Loss 1.5249, Average Classification Loss: 2.2301
+2022-06-14 11:03:13,733 - root - INFO - Epoch: 299, Validation Loss: 3.8324, Validation Regression Loss 1.6212, Validation Classification Loss: 2.2112
+2022-06-14 11:03:13,840 - root - INFO - Saved model models/prune300ep/mb1-ssd-lite-025extra-Epoch-299-Loss-3.8323947872434343.pth

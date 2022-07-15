@@ -1,0 +1,409 @@
+2022-05-19 10:06:07,416 - root - INFO - Use Cuda.
+2022-05-19 10:06:07,416 - root - INFO - Namespace(balance_data=False, base_net='mobilenet_v1_size_224_alpha_0.25_top.pth', base_net_lr=None, batch_size=8, checkpoint_folder='models/diouloss', dataset_type='voc', datasets=['VOC2007'], debug_steps=100, extra_layers_lr=None, freeze_base_net=False, freeze_net=False, gamma=0.1, gpu='2', loss='diou', lr=0.01, mb2_width_mult=1.0, milestones='80,100', momentum=0.9, net='mb1-ssd-lite-025extra', num_epochs=280, num_workers=4, optimizer='SGD', pretrained_ssd=None, resume=None, scheduler='cosine', t_max=280.0, use_cuda=True, validation_dataset='./VOC2007', validation_epochs=5, weight_decay=0.0005, width_mult=0.25)
+2022-05-19 10:06:07,418 - root - INFO - Prepare training datasets.
+2022-05-19 10:06:07,420 - root - INFO - No labels file, using default VOC classes.
+2022-05-19 10:06:07,426 - root - INFO - Stored labels into file models/diouloss/voc-model-labels.txt.
+2022-05-19 10:06:07,426 - root - INFO - Train dataset size: 971
+2022-05-19 10:06:07,427 - root - INFO - Prepare Validation datasets.
+2022-05-19 10:06:07,427 - root - INFO - No labels file, using default VOC classes.
+2022-05-19 10:06:07,427 - root - INFO - validation dataset size: 108
+2022-05-19 10:06:07,427 - root - INFO - Build network.
+2022-05-19 10:06:07,467 - root - INFO - Init from base net mobilenet_v1_size_224_alpha_0.25_top.pth
+2022-05-19 10:06:07,480 - root - INFO - Took 0.01 seconds to load the model.
+2022-05-19 10:06:11,311 - root - INFO - Learning rate: 0.01, Base net learning rate: 0.01, Extra Layers learning rate: 0.01.
+2022-05-19 10:06:11,311 - root - INFO - Uses CosineAnnealingLR scheduler.
+2022-05-19 10:06:11,312 - root - INFO - Start training from epoch 0.
+2022-05-19 10:06:28,159 - root - INFO - Epoch: 0, Step: 100, Average Loss: 3.0345, Average Regression Loss 0.4947, Average Classification Loss: 2.5398
+2022-05-19 10:06:32,679 - root - INFO - Epoch: 0, Validation Loss: 2.7714, Validation Regression Loss 0.4796, Validation Classification Loss: 2.2918
+2022-05-19 10:06:32,789 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-0-Loss-2.7713864701134816.pth
+2022-05-19 10:06:50,672 - root - INFO - Epoch: 1, Step: 100, Average Loss: 2.8032, Average Regression Loss 0.4911, Average Classification Loss: 2.3121
+2022-05-19 10:07:10,425 - root - INFO - Epoch: 2, Step: 100, Average Loss: 2.7963, Average Regression Loss 0.4864, Average Classification Loss: 2.3099
+2022-05-19 10:07:29,097 - root - INFO - Epoch: 3, Step: 100, Average Loss: 2.7939, Average Regression Loss 0.4833, Average Classification Loss: 2.3105
+2022-05-19 10:07:52,626 - root - INFO - Epoch: 4, Step: 100, Average Loss: 2.7946, Average Regression Loss 0.4810, Average Classification Loss: 2.3136
+2022-05-19 10:08:13,163 - root - INFO - Epoch: 5, Step: 100, Average Loss: 2.7940, Average Regression Loss 0.4836, Average Classification Loss: 2.3104
+2022-05-19 10:08:17,988 - root - INFO - Epoch: 5, Validation Loss: 2.7603, Validation Regression Loss 0.4681, Validation Classification Loss: 2.2922
+2022-05-19 10:08:18,112 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-5-Loss-2.760308418955122.pth
+2022-05-19 10:08:38,513 - root - INFO - Epoch: 6, Step: 100, Average Loss: 2.7896, Average Regression Loss 0.4811, Average Classification Loss: 2.3085
+2022-05-19 10:09:00,580 - root - INFO - Epoch: 7, Step: 100, Average Loss: 2.7856, Average Regression Loss 0.4786, Average Classification Loss: 2.3070
+2022-05-19 10:09:19,627 - root - INFO - Epoch: 8, Step: 100, Average Loss: 2.7789, Average Regression Loss 0.4785, Average Classification Loss: 2.3004
+2022-05-19 10:09:40,693 - root - INFO - Epoch: 9, Step: 100, Average Loss: 2.7823, Average Regression Loss 0.4833, Average Classification Loss: 2.2990
+2022-05-19 10:09:59,697 - root - INFO - Epoch: 10, Step: 100, Average Loss: 2.7717, Average Regression Loss 0.4786, Average Classification Loss: 2.2930
+2022-05-19 10:10:04,159 - root - INFO - Epoch: 10, Validation Loss: 2.7298, Validation Regression Loss 0.4647, Validation Classification Loss: 2.2650
+2022-05-19 10:10:04,264 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-10-Loss-2.7297614301953996.pth
+2022-05-19 10:10:23,041 - root - INFO - Epoch: 11, Step: 100, Average Loss: 2.7811, Average Regression Loss 0.4799, Average Classification Loss: 2.3012
+2022-05-19 10:10:44,891 - root - INFO - Epoch: 12, Step: 100, Average Loss: 2.7745, Average Regression Loss 0.4793, Average Classification Loss: 2.2952
+2022-05-19 10:11:04,255 - root - INFO - Epoch: 13, Step: 100, Average Loss: 2.7726, Average Regression Loss 0.4759, Average Classification Loss: 2.2967
+2022-05-19 10:11:25,220 - root - INFO - Epoch: 14, Step: 100, Average Loss: 2.7705, Average Regression Loss 0.4767, Average Classification Loss: 2.2938
+2022-05-19 10:11:46,811 - root - INFO - Epoch: 15, Step: 100, Average Loss: 2.7701, Average Regression Loss 0.4779, Average Classification Loss: 2.2922
+2022-05-19 10:11:50,668 - root - INFO - Epoch: 15, Validation Loss: 2.7299, Validation Regression Loss 0.4624, Validation Classification Loss: 2.2675
+2022-05-19 10:11:50,797 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-15-Loss-2.7298871959958757.pth
+2022-05-19 10:12:07,662 - root - INFO - Epoch: 16, Step: 100, Average Loss: 2.7682, Average Regression Loss 0.4752, Average Classification Loss: 2.2930
+2022-05-19 10:12:27,888 - root - INFO - Epoch: 17, Step: 100, Average Loss: 2.7676, Average Regression Loss 0.4730, Average Classification Loss: 2.2946
+2022-05-19 10:12:48,179 - root - INFO - Epoch: 18, Step: 100, Average Loss: 2.7637, Average Regression Loss 0.4720, Average Classification Loss: 2.2917
+2022-05-19 10:13:08,670 - root - INFO - Epoch: 19, Step: 100, Average Loss: 2.7646, Average Regression Loss 0.4728, Average Classification Loss: 2.2918
+2022-05-19 10:13:28,021 - root - INFO - Epoch: 20, Step: 100, Average Loss: 2.7627, Average Regression Loss 0.4722, Average Classification Loss: 2.2905
+2022-05-19 10:13:33,316 - root - INFO - Epoch: 20, Validation Loss: 2.7288, Validation Regression Loss 0.4607, Validation Classification Loss: 2.2680
+2022-05-19 10:13:33,402 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-20-Loss-2.7287666967936923.pth
+2022-05-19 10:13:48,814 - root - INFO - Epoch: 21, Step: 100, Average Loss: 2.7651, Average Regression Loss 0.4743, Average Classification Loss: 2.2907
+2022-05-19 10:14:10,688 - root - INFO - Epoch: 22, Step: 100, Average Loss: 2.7675, Average Regression Loss 0.4744, Average Classification Loss: 2.2931
+2022-05-19 10:14:30,018 - root - INFO - Epoch: 23, Step: 100, Average Loss: 2.7598, Average Regression Loss 0.4711, Average Classification Loss: 2.2887
+2022-05-19 10:14:51,803 - root - INFO - Epoch: 24, Step: 100, Average Loss: 2.7606, Average Regression Loss 0.4709, Average Classification Loss: 2.2897
+2022-05-19 10:15:13,283 - root - INFO - Epoch: 25, Step: 100, Average Loss: 2.7551, Average Regression Loss 0.4647, Average Classification Loss: 2.2904
+2022-05-19 10:15:16,959 - root - INFO - Epoch: 25, Validation Loss: 2.7189, Validation Regression Loss 0.4565, Validation Classification Loss: 2.2624
+2022-05-19 10:15:17,058 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-25-Loss-2.7188983304159984.pth
+2022-05-19 10:15:32,061 - root - INFO - Epoch: 26, Step: 100, Average Loss: 2.7549, Average Regression Loss 0.4692, Average Classification Loss: 2.2857
+2022-05-19 10:15:53,639 - root - INFO - Epoch: 27, Step: 100, Average Loss: 2.7559, Average Regression Loss 0.4671, Average Classification Loss: 2.2887
+2022-05-19 10:16:15,503 - root - INFO - Epoch: 28, Step: 100, Average Loss: 2.7568, Average Regression Loss 0.4684, Average Classification Loss: 2.2884
+2022-05-19 10:16:35,350 - root - INFO - Epoch: 29, Step: 100, Average Loss: 2.7550, Average Regression Loss 0.4658, Average Classification Loss: 2.2892
+2022-05-19 10:16:57,298 - root - INFO - Epoch: 30, Step: 100, Average Loss: 2.7511, Average Regression Loss 0.4646, Average Classification Loss: 2.2865
+2022-05-19 10:17:00,783 - root - INFO - Epoch: 30, Validation Loss: 2.7104, Validation Regression Loss 0.4537, Validation Classification Loss: 2.2568
+2022-05-19 10:17:00,883 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-30-Loss-2.7104475498199463.pth
+2022-05-19 10:17:18,862 - root - INFO - Epoch: 31, Step: 100, Average Loss: 2.7495, Average Regression Loss 0.4624, Average Classification Loss: 2.2871
+2022-05-19 10:17:42,391 - root - INFO - Epoch: 32, Step: 100, Average Loss: 2.7486, Average Regression Loss 0.4644, Average Classification Loss: 2.2842
+2022-05-19 10:18:03,657 - root - INFO - Epoch: 33, Step: 100, Average Loss: 2.7476, Average Regression Loss 0.4614, Average Classification Loss: 2.2862
+2022-05-19 10:18:24,351 - root - INFO - Epoch: 34, Step: 100, Average Loss: 2.7439, Average Regression Loss 0.4607, Average Classification Loss: 2.2833
+2022-05-19 10:18:46,471 - root - INFO - Epoch: 35, Step: 100, Average Loss: 2.7477, Average Regression Loss 0.4615, Average Classification Loss: 2.2862
+2022-05-19 10:18:49,973 - root - INFO - Epoch: 35, Validation Loss: 2.7141, Validation Regression Loss 0.4502, Validation Classification Loss: 2.2639
+2022-05-19 10:18:50,075 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-35-Loss-2.714128460202898.pth
+2022-05-19 10:19:06,879 - root - INFO - Epoch: 36, Step: 100, Average Loss: 2.7471, Average Regression Loss 0.4604, Average Classification Loss: 2.2867
+2022-05-19 10:19:29,266 - root - INFO - Epoch: 37, Step: 100, Average Loss: 2.7442, Average Regression Loss 0.4588, Average Classification Loss: 2.2854
+2022-05-19 10:19:52,621 - root - INFO - Epoch: 38, Step: 100, Average Loss: 2.7396, Average Regression Loss 0.4543, Average Classification Loss: 2.2853
+2022-05-19 10:20:14,832 - root - INFO - Epoch: 39, Step: 100, Average Loss: 2.7443, Average Regression Loss 0.4582, Average Classification Loss: 2.2861
+2022-05-19 10:20:35,606 - root - INFO - Epoch: 40, Step: 100, Average Loss: 2.7439, Average Regression Loss 0.4570, Average Classification Loss: 2.2869
+2022-05-19 10:20:39,779 - root - INFO - Epoch: 40, Validation Loss: 2.7075, Validation Regression Loss 0.4463, Validation Classification Loss: 2.2612
+2022-05-19 10:20:39,883 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-40-Loss-2.7074913127081737.pth
+2022-05-19 10:20:56,762 - root - INFO - Epoch: 41, Step: 100, Average Loss: 2.7379, Average Regression Loss 0.4524, Average Classification Loss: 2.2855
+2022-05-19 10:21:18,772 - root - INFO - Epoch: 42, Step: 100, Average Loss: 2.7407, Average Regression Loss 0.4572, Average Classification Loss: 2.2835
+2022-05-19 10:21:37,668 - root - INFO - Epoch: 43, Step: 100, Average Loss: 2.7371, Average Regression Loss 0.4528, Average Classification Loss: 2.2843
+2022-05-19 10:21:55,680 - root - INFO - Epoch: 44, Step: 100, Average Loss: 2.7332, Average Regression Loss 0.4503, Average Classification Loss: 2.2829
+2022-05-19 10:22:15,277 - root - INFO - Epoch: 45, Step: 100, Average Loss: 2.7357, Average Regression Loss 0.4504, Average Classification Loss: 2.2853
+2022-05-19 10:22:19,375 - root - INFO - Epoch: 45, Validation Loss: 2.7043, Validation Regression Loss 0.4450, Validation Classification Loss: 2.2593
+2022-05-19 10:22:19,480 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-45-Loss-2.7042864731379916.pth
+2022-05-19 10:22:36,516 - root - INFO - Epoch: 46, Step: 100, Average Loss: 2.7299, Average Regression Loss 0.4458, Average Classification Loss: 2.2842
+2022-05-19 10:22:58,861 - root - INFO - Epoch: 47, Step: 100, Average Loss: 2.7300, Average Regression Loss 0.4476, Average Classification Loss: 2.2825
+2022-05-19 10:23:18,091 - root - INFO - Epoch: 48, Step: 100, Average Loss: 2.7337, Average Regression Loss 0.4503, Average Classification Loss: 2.2834
+2022-05-19 10:23:39,177 - root - INFO - Epoch: 49, Step: 100, Average Loss: 2.7337, Average Regression Loss 0.4500, Average Classification Loss: 2.2836
+2022-05-19 10:23:58,393 - root - INFO - Epoch: 50, Step: 100, Average Loss: 2.7306, Average Regression Loss 0.4453, Average Classification Loss: 2.2853
+2022-05-19 10:24:02,868 - root - INFO - Epoch: 50, Validation Loss: 2.6973, Validation Regression Loss 0.4400, Validation Classification Loss: 2.2573
+2022-05-19 10:24:02,967 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-50-Loss-2.697278789111546.pth
+2022-05-19 10:24:20,132 - root - INFO - Epoch: 51, Step: 100, Average Loss: 2.7274, Average Regression Loss 0.4460, Average Classification Loss: 2.2814
+2022-05-19 10:24:41,074 - root - INFO - Epoch: 52, Step: 100, Average Loss: 2.7308, Average Regression Loss 0.4480, Average Classification Loss: 2.2828
+2022-05-19 10:24:59,941 - root - INFO - Epoch: 53, Step: 100, Average Loss: 2.7290, Average Regression Loss 0.4449, Average Classification Loss: 2.2841
+2022-05-19 10:25:20,024 - root - INFO - Epoch: 54, Step: 100, Average Loss: 2.7253, Average Regression Loss 0.4443, Average Classification Loss: 2.2810
+2022-05-19 10:25:40,124 - root - INFO - Epoch: 55, Step: 100, Average Loss: 2.7242, Average Regression Loss 0.4388, Average Classification Loss: 2.2854
+2022-05-19 10:25:45,065 - root - INFO - Epoch: 55, Validation Loss: 2.7011, Validation Regression Loss 0.4394, Validation Classification Loss: 2.2617
+2022-05-19 10:25:45,174 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-55-Loss-2.701054164341518.pth
+2022-05-19 10:26:03,373 - root - INFO - Epoch: 56, Step: 100, Average Loss: 2.7232, Average Regression Loss 0.4404, Average Classification Loss: 2.2828
+2022-05-19 10:26:24,581 - root - INFO - Epoch: 57, Step: 100, Average Loss: 2.7233, Average Regression Loss 0.4420, Average Classification Loss: 2.2813
+2022-05-19 10:26:46,579 - root - INFO - Epoch: 58, Step: 100, Average Loss: 2.7239, Average Regression Loss 0.4421, Average Classification Loss: 2.2818
+2022-05-19 10:27:06,322 - root - INFO - Epoch: 59, Step: 100, Average Loss: 2.7233, Average Regression Loss 0.4412, Average Classification Loss: 2.2821
+2022-05-19 10:27:30,135 - root - INFO - Epoch: 60, Step: 100, Average Loss: 2.7207, Average Regression Loss 0.4400, Average Classification Loss: 2.2807
+2022-05-19 10:27:34,673 - root - INFO - Epoch: 60, Validation Loss: 2.7006, Validation Regression Loss 0.4400, Validation Classification Loss: 2.2606
+2022-05-19 10:27:34,807 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-60-Loss-2.700647694723947.pth
+2022-05-19 10:27:50,125 - root - INFO - Epoch: 61, Step: 100, Average Loss: 2.7182, Average Regression Loss 0.4376, Average Classification Loss: 2.2806
+2022-05-19 10:28:12,218 - root - INFO - Epoch: 62, Step: 100, Average Loss: 2.7221, Average Regression Loss 0.4388, Average Classification Loss: 2.2834
+2022-05-19 10:28:33,145 - root - INFO - Epoch: 63, Step: 100, Average Loss: 2.7171, Average Regression Loss 0.4366, Average Classification Loss: 2.2805
+2022-05-19 10:28:53,577 - root - INFO - Epoch: 64, Step: 100, Average Loss: 2.7167, Average Regression Loss 0.4343, Average Classification Loss: 2.2825
+2022-05-19 10:29:14,559 - root - INFO - Epoch: 65, Step: 100, Average Loss: 2.7191, Average Regression Loss 0.4356, Average Classification Loss: 2.2835
+2022-05-19 10:29:18,300 - root - INFO - Epoch: 65, Validation Loss: 2.6942, Validation Regression Loss 0.4376, Validation Classification Loss: 2.2565
+2022-05-19 10:29:18,381 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-65-Loss-2.6941886118480136.pth
+2022-05-19 10:29:34,857 - root - INFO - Epoch: 66, Step: 100, Average Loss: 2.7218, Average Regression Loss 0.4381, Average Classification Loss: 2.2837
+2022-05-19 10:29:55,071 - root - INFO - Epoch: 67, Step: 100, Average Loss: 2.7163, Average Regression Loss 0.4346, Average Classification Loss: 2.2817
+2022-05-19 10:30:17,428 - root - INFO - Epoch: 68, Step: 100, Average Loss: 2.7178, Average Regression Loss 0.4351, Average Classification Loss: 2.2827
+2022-05-19 10:30:38,729 - root - INFO - Epoch: 69, Step: 100, Average Loss: 2.7170, Average Regression Loss 0.4359, Average Classification Loss: 2.2810
+2022-05-19 10:30:58,872 - root - INFO - Epoch: 70, Step: 100, Average Loss: 2.7158, Average Regression Loss 0.4340, Average Classification Loss: 2.2818
+2022-05-19 10:31:03,167 - root - INFO - Epoch: 70, Validation Loss: 2.6955, Validation Regression Loss 0.4331, Validation Classification Loss: 2.2624
+2022-05-19 10:31:03,280 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-70-Loss-2.695538112095424.pth
+2022-05-19 10:31:20,759 - root - INFO - Epoch: 71, Step: 100, Average Loss: 2.7163, Average Regression Loss 0.4324, Average Classification Loss: 2.2839
+2022-05-19 10:31:42,355 - root - INFO - Epoch: 72, Step: 100, Average Loss: 2.7128, Average Regression Loss 0.4331, Average Classification Loss: 2.2797
+2022-05-19 10:32:00,015 - root - INFO - Epoch: 73, Step: 100, Average Loss: 2.7121, Average Regression Loss 0.4309, Average Classification Loss: 2.2812
+2022-05-19 10:32:20,853 - root - INFO - Epoch: 74, Step: 100, Average Loss: 2.7092, Average Regression Loss 0.4297, Average Classification Loss: 2.2796
+2022-05-19 10:32:42,890 - root - INFO - Epoch: 75, Step: 100, Average Loss: 2.7150, Average Regression Loss 0.4324, Average Classification Loss: 2.2825
+2022-05-19 10:32:46,956 - root - INFO - Epoch: 75, Validation Loss: 2.6897, Validation Regression Loss 0.4322, Validation Classification Loss: 2.2575
+2022-05-19 10:32:47,050 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-75-Loss-2.68967718737466.pth
+2022-05-19 10:33:05,435 - root - INFO - Epoch: 76, Step: 100, Average Loss: 2.7137, Average Regression Loss 0.4340, Average Classification Loss: 2.2797
+2022-05-19 10:33:28,400 - root - INFO - Epoch: 77, Step: 100, Average Loss: 2.7111, Average Regression Loss 0.4307, Average Classification Loss: 2.2804
+2022-05-19 10:33:48,881 - root - INFO - Epoch: 78, Step: 100, Average Loss: 2.7059, Average Regression Loss 0.4258, Average Classification Loss: 2.2801
+2022-05-19 10:34:11,756 - root - INFO - Epoch: 79, Step: 100, Average Loss: 2.7027, Average Regression Loss 0.4232, Average Classification Loss: 2.2794
+2022-05-19 10:34:33,200 - root - INFO - Epoch: 80, Step: 100, Average Loss: 2.7087, Average Regression Loss 0.4286, Average Classification Loss: 2.2801
+2022-05-19 10:34:37,327 - root - INFO - Epoch: 80, Validation Loss: 2.6845, Validation Regression Loss 0.4298, Validation Classification Loss: 2.2548
+2022-05-19 10:34:37,412 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-80-Loss-2.684523871966771.pth
+2022-05-19 10:34:55,018 - root - INFO - Epoch: 81, Step: 100, Average Loss: 2.7046, Average Regression Loss 0.4263, Average Classification Loss: 2.2783
+2022-05-19 10:35:16,306 - root - INFO - Epoch: 82, Step: 100, Average Loss: 2.7082, Average Regression Loss 0.4287, Average Classification Loss: 2.2795
+2022-05-19 10:35:37,574 - root - INFO - Epoch: 83, Step: 100, Average Loss: 2.7074, Average Regression Loss 0.4260, Average Classification Loss: 2.2813
+2022-05-19 10:36:00,294 - root - INFO - Epoch: 84, Step: 100, Average Loss: 2.7057, Average Regression Loss 0.4260, Average Classification Loss: 2.2798
+2022-05-19 10:36:22,892 - root - INFO - Epoch: 85, Step: 100, Average Loss: 2.7053, Average Regression Loss 0.4251, Average Classification Loss: 2.2802
+2022-05-19 10:36:26,983 - root - INFO - Epoch: 85, Validation Loss: 2.6829, Validation Regression Loss 0.4280, Validation Classification Loss: 2.2549
+2022-05-19 10:36:27,091 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-85-Loss-2.6828578540257046.pth
+2022-05-19 10:36:43,721 - root - INFO - Epoch: 86, Step: 100, Average Loss: 2.7001, Average Regression Loss 0.4219, Average Classification Loss: 2.2782
+2022-05-19 10:37:05,152 - root - INFO - Epoch: 87, Step: 100, Average Loss: 2.7037, Average Regression Loss 0.4239, Average Classification Loss: 2.2798
+2022-05-19 10:37:23,918 - root - INFO - Epoch: 88, Step: 100, Average Loss: 2.7036, Average Regression Loss 0.4237, Average Classification Loss: 2.2799
+2022-05-19 10:37:44,834 - root - INFO - Epoch: 89, Step: 100, Average Loss: 2.6990, Average Regression Loss 0.4206, Average Classification Loss: 2.2784
+2022-05-19 10:38:05,542 - root - INFO - Epoch: 90, Step: 100, Average Loss: 2.7028, Average Regression Loss 0.4242, Average Classification Loss: 2.2786
+2022-05-19 10:38:09,717 - root - INFO - Epoch: 90, Validation Loss: 2.6842, Validation Regression Loss 0.4265, Validation Classification Loss: 2.2577
+2022-05-19 10:38:09,818 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-90-Loss-2.6842354195458547.pth
+2022-05-19 10:38:29,646 - root - INFO - Epoch: 91, Step: 100, Average Loss: 2.7003, Average Regression Loss 0.4216, Average Classification Loss: 2.2787
+2022-05-19 10:38:52,573 - root - INFO - Epoch: 92, Step: 100, Average Loss: 2.6950, Average Regression Loss 0.4179, Average Classification Loss: 2.2771
+2022-05-19 10:39:13,529 - root - INFO - Epoch: 93, Step: 100, Average Loss: 2.6944, Average Regression Loss 0.4177, Average Classification Loss: 2.2767
+2022-05-19 10:39:34,269 - root - INFO - Epoch: 94, Step: 100, Average Loss: 2.6979, Average Regression Loss 0.4202, Average Classification Loss: 2.2777
+2022-05-19 10:39:55,660 - root - INFO - Epoch: 95, Step: 100, Average Loss: 2.6933, Average Regression Loss 0.4151, Average Classification Loss: 2.2782
+2022-05-19 10:39:59,366 - root - INFO - Epoch: 95, Validation Loss: 2.6768, Validation Regression Loss 0.4210, Validation Classification Loss: 2.2558
+2022-05-19 10:39:59,473 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-95-Loss-2.6767608438219344.pth
+2022-05-19 10:40:16,681 - root - INFO - Epoch: 96, Step: 100, Average Loss: 2.6961, Average Regression Loss 0.4174, Average Classification Loss: 2.2788
+2022-05-19 10:40:38,786 - root - INFO - Epoch: 97, Step: 100, Average Loss: 2.6936, Average Regression Loss 0.4142, Average Classification Loss: 2.2794
+2022-05-19 10:40:58,967 - root - INFO - Epoch: 98, Step: 100, Average Loss: 2.6945, Average Regression Loss 0.4165, Average Classification Loss: 2.2780
+2022-05-19 10:41:20,447 - root - INFO - Epoch: 99, Step: 100, Average Loss: 2.6922, Average Regression Loss 0.4148, Average Classification Loss: 2.2774
+2022-05-19 10:41:39,959 - root - INFO - Epoch: 100, Step: 100, Average Loss: 2.6923, Average Regression Loss 0.4144, Average Classification Loss: 2.2779
+2022-05-19 10:41:46,392 - root - INFO - Epoch: 100, Validation Loss: 2.6762, Validation Regression Loss 0.4193, Validation Classification Loss: 2.2569
+2022-05-19 10:41:46,497 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-100-Loss-2.6761918919427052.pth
+2022-05-19 10:42:06,135 - root - INFO - Epoch: 101, Step: 100, Average Loss: 2.6900, Average Regression Loss 0.4130, Average Classification Loss: 2.2770
+2022-05-19 10:42:26,378 - root - INFO - Epoch: 102, Step: 100, Average Loss: 2.6936, Average Regression Loss 0.4159, Average Classification Loss: 2.2777
+2022-05-19 10:42:49,665 - root - INFO - Epoch: 103, Step: 100, Average Loss: 2.6951, Average Regression Loss 0.4169, Average Classification Loss: 2.2782
+2022-05-19 10:43:09,927 - root - INFO - Epoch: 104, Step: 100, Average Loss: 2.6916, Average Regression Loss 0.4147, Average Classification Loss: 2.2769
+2022-05-19 10:43:31,121 - root - INFO - Epoch: 105, Step: 100, Average Loss: 2.6937, Average Regression Loss 0.4167, Average Classification Loss: 2.2770
+2022-05-19 10:43:34,879 - root - INFO - Epoch: 105, Validation Loss: 2.6735, Validation Regression Loss 0.4174, Validation Classification Loss: 2.2561
+2022-05-19 10:43:34,982 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-105-Loss-2.6735001632145474.pth
+2022-05-19 10:43:53,374 - root - INFO - Epoch: 106, Step: 100, Average Loss: 2.6837, Average Regression Loss 0.4066, Average Classification Loss: 2.2771
+2022-05-19 10:44:15,359 - root - INFO - Epoch: 107, Step: 100, Average Loss: 2.6881, Average Regression Loss 0.4121, Average Classification Loss: 2.2760
+2022-05-19 10:44:34,787 - root - INFO - Epoch: 108, Step: 100, Average Loss: 2.6893, Average Regression Loss 0.4130, Average Classification Loss: 2.2763
+2022-05-19 10:44:55,900 - root - INFO - Epoch: 109, Step: 100, Average Loss: 2.6866, Average Regression Loss 0.4100, Average Classification Loss: 2.2767
+2022-05-19 10:45:17,684 - root - INFO - Epoch: 110, Step: 100, Average Loss: 2.6873, Average Regression Loss 0.4116, Average Classification Loss: 2.2757
+2022-05-19 10:45:21,313 - root - INFO - Epoch: 110, Validation Loss: 2.6689, Validation Regression Loss 0.4166, Validation Classification Loss: 2.2523
+2022-05-19 10:45:21,409 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-110-Loss-2.6688749619892667.pth
+2022-05-19 10:45:41,162 - root - INFO - Epoch: 111, Step: 100, Average Loss: 2.6858, Average Regression Loss 0.4096, Average Classification Loss: 2.2762
+2022-05-19 10:46:00,976 - root - INFO - Epoch: 112, Step: 100, Average Loss: 2.6865, Average Regression Loss 0.4103, Average Classification Loss: 2.2762
+2022-05-19 10:46:21,671 - root - INFO - Epoch: 113, Step: 100, Average Loss: 2.6843, Average Regression Loss 0.4085, Average Classification Loss: 2.2758
+2022-05-19 10:46:41,773 - root - INFO - Epoch: 114, Step: 100, Average Loss: 2.6873, Average Regression Loss 0.4112, Average Classification Loss: 2.2761
+2022-05-19 10:47:02,016 - root - INFO - Epoch: 115, Step: 100, Average Loss: 2.6886, Average Regression Loss 0.4131, Average Classification Loss: 2.2756
+2022-05-19 10:47:05,848 - root - INFO - Epoch: 115, Validation Loss: 2.6697, Validation Regression Loss 0.4160, Validation Classification Loss: 2.2537
+2022-05-19 10:47:05,964 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-115-Loss-2.669663190841675.pth
+2022-05-19 10:47:24,542 - root - INFO - Epoch: 116, Step: 100, Average Loss: 2.6847, Average Regression Loss 0.4079, Average Classification Loss: 2.2768
+2022-05-19 10:47:44,163 - root - INFO - Epoch: 117, Step: 100, Average Loss: 2.6857, Average Regression Loss 0.4090, Average Classification Loss: 2.2766
+2022-05-19 10:48:03,945 - root - INFO - Epoch: 118, Step: 100, Average Loss: 2.6882, Average Regression Loss 0.4122, Average Classification Loss: 2.2760
+2022-05-19 10:48:25,168 - root - INFO - Epoch: 119, Step: 100, Average Loss: 2.6838, Average Regression Loss 0.4067, Average Classification Loss: 2.2770
+2022-05-19 10:48:45,765 - root - INFO - Epoch: 120, Step: 100, Average Loss: 2.6942, Average Regression Loss 0.4176, Average Classification Loss: 2.2766
+2022-05-19 10:48:49,672 - root - INFO - Epoch: 120, Validation Loss: 2.6681, Validation Regression Loss 0.4156, Validation Classification Loss: 2.2526
+2022-05-19 10:48:49,778 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-120-Loss-2.6681218998772755.pth
+2022-05-19 10:49:06,654 - root - INFO - Epoch: 121, Step: 100, Average Loss: 2.6839, Average Regression Loss 0.4078, Average Classification Loss: 2.2761
+2022-05-19 10:49:27,065 - root - INFO - Epoch: 122, Step: 100, Average Loss: 2.6831, Average Regression Loss 0.4067, Average Classification Loss: 2.2764
+2022-05-19 10:49:47,933 - root - INFO - Epoch: 123, Step: 100, Average Loss: 2.6881, Average Regression Loss 0.4118, Average Classification Loss: 2.2763
+2022-05-19 10:50:08,736 - root - INFO - Epoch: 124, Step: 100, Average Loss: 2.6881, Average Regression Loss 0.4125, Average Classification Loss: 2.2755
+2022-05-19 10:50:30,484 - root - INFO - Epoch: 125, Step: 100, Average Loss: 2.6776, Average Regression Loss 0.4020, Average Classification Loss: 2.2755
+2022-05-19 10:50:35,271 - root - INFO - Epoch: 125, Validation Loss: 2.6646, Validation Regression Loss 0.4121, Validation Classification Loss: 2.2525
+2022-05-19 10:50:35,378 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-125-Loss-2.664610981941223.pth
+2022-05-19 10:50:54,011 - root - INFO - Epoch: 126, Step: 100, Average Loss: 2.6838, Average Regression Loss 0.4087, Average Classification Loss: 2.2751
+2022-05-19 10:51:13,706 - root - INFO - Epoch: 127, Step: 100, Average Loss: 2.6834, Average Regression Loss 0.4082, Average Classification Loss: 2.2752
+2022-05-19 10:51:34,732 - root - INFO - Epoch: 128, Step: 100, Average Loss: 2.6848, Average Regression Loss 0.4089, Average Classification Loss: 2.2758
+2022-05-19 10:51:55,047 - root - INFO - Epoch: 129, Step: 100, Average Loss: 2.6759, Average Regression Loss 0.4002, Average Classification Loss: 2.2757
+2022-05-19 10:52:15,748 - root - INFO - Epoch: 130, Step: 100, Average Loss: 2.6810, Average Regression Loss 0.4049, Average Classification Loss: 2.2761
+2022-05-19 10:52:19,925 - root - INFO - Epoch: 130, Validation Loss: 2.6625, Validation Regression Loss 0.4098, Validation Classification Loss: 2.2527
+2022-05-19 10:52:20,013 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-130-Loss-2.662528600011553.pth
+2022-05-19 10:52:34,492 - root - INFO - Epoch: 131, Step: 100, Average Loss: 2.6769, Average Regression Loss 0.4011, Average Classification Loss: 2.2758
+2022-05-19 10:52:56,487 - root - INFO - Epoch: 132, Step: 100, Average Loss: 2.6782, Average Regression Loss 0.4027, Average Classification Loss: 2.2755
+2022-05-19 10:53:18,793 - root - INFO - Epoch: 133, Step: 100, Average Loss: 2.6843, Average Regression Loss 0.4090, Average Classification Loss: 2.2754
+2022-05-19 10:53:39,260 - root - INFO - Epoch: 134, Step: 100, Average Loss: 2.6819, Average Regression Loss 0.4061, Average Classification Loss: 2.2758
+2022-05-19 10:53:59,744 - root - INFO - Epoch: 135, Step: 100, Average Loss: 2.6814, Average Regression Loss 0.4061, Average Classification Loss: 2.2753
+2022-05-19 10:54:04,415 - root - INFO - Epoch: 135, Validation Loss: 2.6584, Validation Regression Loss 0.4063, Validation Classification Loss: 2.2521
+2022-05-19 10:54:04,520 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-135-Loss-2.6583887679236278.pth
+2022-05-19 10:54:19,997 - root - INFO - Epoch: 136, Step: 100, Average Loss: 2.6790, Average Regression Loss 0.4038, Average Classification Loss: 2.2751
+2022-05-19 10:54:39,635 - root - INFO - Epoch: 137, Step: 100, Average Loss: 2.6808, Average Regression Loss 0.4057, Average Classification Loss: 2.2751
+2022-05-19 10:54:58,583 - root - INFO - Epoch: 138, Step: 100, Average Loss: 2.6781, Average Regression Loss 0.4024, Average Classification Loss: 2.2757
+2022-05-19 10:55:17,542 - root - INFO - Epoch: 139, Step: 100, Average Loss: 2.6783, Average Regression Loss 0.4032, Average Classification Loss: 2.2751
+2022-05-19 10:55:37,638 - root - INFO - Epoch: 140, Step: 100, Average Loss: 2.6791, Average Regression Loss 0.4036, Average Classification Loss: 2.2755
+2022-05-19 10:55:41,838 - root - INFO - Epoch: 140, Validation Loss: 2.6594, Validation Regression Loss 0.4040, Validation Classification Loss: 2.2554
+2022-05-19 10:55:41,993 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-140-Loss-2.6593878269195557.pth
+2022-05-19 10:56:00,322 - root - INFO - Epoch: 141, Step: 100, Average Loss: 2.6773, Average Regression Loss 0.4022, Average Classification Loss: 2.2752
+2022-05-19 10:56:21,355 - root - INFO - Epoch: 142, Step: 100, Average Loss: 2.6750, Average Regression Loss 0.4005, Average Classification Loss: 2.2745
+2022-05-19 10:56:42,117 - root - INFO - Epoch: 143, Step: 100, Average Loss: 2.6695, Average Regression Loss 0.3945, Average Classification Loss: 2.2750
+2022-05-19 10:57:04,258 - root - INFO - Epoch: 144, Step: 100, Average Loss: 2.6740, Average Regression Loss 0.3992, Average Classification Loss: 2.2748
+2022-05-19 10:57:22,728 - root - INFO - Epoch: 145, Step: 100, Average Loss: 2.6751, Average Regression Loss 0.4007, Average Classification Loss: 2.2745
+2022-05-19 10:57:26,749 - root - INFO - Epoch: 145, Validation Loss: 2.6559, Validation Regression Loss 0.4043, Validation Classification Loss: 2.2516
+2022-05-19 10:57:26,848 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-145-Loss-2.6559166397367204.pth
+2022-05-19 10:57:44,822 - root - INFO - Epoch: 146, Step: 100, Average Loss: 2.6784, Average Regression Loss 0.4036, Average Classification Loss: 2.2748
+2022-05-19 10:58:01,545 - root - INFO - Epoch: 147, Step: 100, Average Loss: 2.6795, Average Regression Loss 0.4047, Average Classification Loss: 2.2747
+2022-05-19 10:58:21,851 - root - INFO - Epoch: 148, Step: 100, Average Loss: 2.6758, Average Regression Loss 0.4009, Average Classification Loss: 2.2749
+2022-05-19 10:58:43,217 - root - INFO - Epoch: 149, Step: 100, Average Loss: 2.6718, Average Regression Loss 0.3973, Average Classification Loss: 2.2745
+2022-05-19 10:59:03,702 - root - INFO - Epoch: 150, Step: 100, Average Loss: 2.6713, Average Regression Loss 0.3966, Average Classification Loss: 2.2747
+2022-05-19 10:59:07,086 - root - INFO - Epoch: 150, Validation Loss: 2.6517, Validation Regression Loss 0.4003, Validation Classification Loss: 2.2514
+2022-05-19 10:59:07,161 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-150-Loss-2.6517422880445207.pth
+2022-05-19 10:59:24,789 - root - INFO - Epoch: 151, Step: 100, Average Loss: 2.6790, Average Regression Loss 0.4042, Average Classification Loss: 2.2748
+2022-05-19 10:59:46,529 - root - INFO - Epoch: 152, Step: 100, Average Loss: 2.6741, Average Regression Loss 0.3994, Average Classification Loss: 2.2748
+2022-05-19 11:00:06,397 - root - INFO - Epoch: 153, Step: 100, Average Loss: 2.6699, Average Regression Loss 0.3960, Average Classification Loss: 2.2739
+2022-05-19 11:00:30,572 - root - INFO - Epoch: 154, Step: 100, Average Loss: 2.6712, Average Regression Loss 0.3973, Average Classification Loss: 2.2739
+2022-05-19 11:00:51,427 - root - INFO - Epoch: 155, Step: 100, Average Loss: 2.6727, Average Regression Loss 0.3984, Average Classification Loss: 2.2743
+2022-05-19 11:00:55,396 - root - INFO - Epoch: 155, Validation Loss: 2.6509, Validation Regression Loss 0.3981, Validation Classification Loss: 2.2528
+2022-05-19 11:00:55,521 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-155-Loss-2.650918517793928.pth
+2022-05-19 11:01:12,991 - root - INFO - Epoch: 156, Step: 100, Average Loss: 2.6725, Average Regression Loss 0.3977, Average Classification Loss: 2.2748
+2022-05-19 11:01:32,802 - root - INFO - Epoch: 157, Step: 100, Average Loss: 2.6724, Average Regression Loss 0.3979, Average Classification Loss: 2.2745
+2022-05-19 11:01:53,520 - root - INFO - Epoch: 158, Step: 100, Average Loss: 2.6683, Average Regression Loss 0.3935, Average Classification Loss: 2.2748
+2022-05-19 11:02:14,284 - root - INFO - Epoch: 159, Step: 100, Average Loss: 2.6710, Average Regression Loss 0.3964, Average Classification Loss: 2.2746
+2022-05-19 11:02:36,170 - root - INFO - Epoch: 160, Step: 100, Average Loss: 2.6718, Average Regression Loss 0.3975, Average Classification Loss: 2.2743
+2022-05-19 11:02:41,479 - root - INFO - Epoch: 160, Validation Loss: 2.6478, Validation Regression Loss 0.3961, Validation Classification Loss: 2.2517
+2022-05-19 11:02:41,599 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-160-Loss-2.647829924310957.pth
+2022-05-19 11:02:58,028 - root - INFO - Epoch: 161, Step: 100, Average Loss: 2.6701, Average Regression Loss 0.3959, Average Classification Loss: 2.2742
+2022-05-19 11:03:20,174 - root - INFO - Epoch: 162, Step: 100, Average Loss: 2.6692, Average Regression Loss 0.3955, Average Classification Loss: 2.2737
+2022-05-19 11:03:42,910 - root - INFO - Epoch: 163, Step: 100, Average Loss: 2.6704, Average Regression Loss 0.3964, Average Classification Loss: 2.2740
+2022-05-19 11:04:04,257 - root - INFO - Epoch: 164, Step: 100, Average Loss: 2.6676, Average Regression Loss 0.3939, Average Classification Loss: 2.2737
+2022-05-19 11:04:22,527 - root - INFO - Epoch: 165, Step: 100, Average Loss: 2.6713, Average Regression Loss 0.3972, Average Classification Loss: 2.2740
+2022-05-19 11:04:26,470 - root - INFO - Epoch: 165, Validation Loss: 2.6442, Validation Regression Loss 0.3934, Validation Classification Loss: 2.2508
+2022-05-19 11:04:26,559 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-165-Loss-2.6441888638905118.pth
+2022-05-19 11:04:43,506 - root - INFO - Epoch: 166, Step: 100, Average Loss: 2.6685, Average Regression Loss 0.3948, Average Classification Loss: 2.2737
+2022-05-19 11:05:04,816 - root - INFO - Epoch: 167, Step: 100, Average Loss: 2.6703, Average Regression Loss 0.3963, Average Classification Loss: 2.2741
+2022-05-19 11:05:25,370 - root - INFO - Epoch: 168, Step: 100, Average Loss: 2.6665, Average Regression Loss 0.3926, Average Classification Loss: 2.2739
+2022-05-19 11:05:48,638 - root - INFO - Epoch: 169, Step: 100, Average Loss: 2.6644, Average Regression Loss 0.3908, Average Classification Loss: 2.2736
+2022-05-19 11:06:07,416 - root - INFO - Epoch: 170, Step: 100, Average Loss: 2.6676, Average Regression Loss 0.3939, Average Classification Loss: 2.2737
+2022-05-19 11:06:12,392 - root - INFO - Epoch: 170, Validation Loss: 2.6482, Validation Regression Loss 0.3967, Validation Classification Loss: 2.2515
+2022-05-19 11:06:12,497 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-170-Loss-2.6481813532965526.pth
+2022-05-19 11:06:29,907 - root - INFO - Epoch: 171, Step: 100, Average Loss: 2.6668, Average Regression Loss 0.3932, Average Classification Loss: 2.2736
+2022-05-19 11:06:49,059 - root - INFO - Epoch: 172, Step: 100, Average Loss: 2.6703, Average Regression Loss 0.3967, Average Classification Loss: 2.2736
+2022-05-19 11:07:09,882 - root - INFO - Epoch: 173, Step: 100, Average Loss: 2.6742, Average Regression Loss 0.4005, Average Classification Loss: 2.2737
+2022-05-19 11:07:30,950 - root - INFO - Epoch: 174, Step: 100, Average Loss: 2.6621, Average Regression Loss 0.3887, Average Classification Loss: 2.2734
+2022-05-19 11:07:51,867 - root - INFO - Epoch: 175, Step: 100, Average Loss: 2.6606, Average Regression Loss 0.3869, Average Classification Loss: 2.2737
+2022-05-19 11:07:54,538 - root - INFO - Epoch: 175, Validation Loss: 2.6454, Validation Regression Loss 0.3946, Validation Classification Loss: 2.2507
+2022-05-19 11:07:54,622 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-175-Loss-2.6453904935291837.pth
+2022-05-19 11:08:11,990 - root - INFO - Epoch: 176, Step: 100, Average Loss: 2.6700, Average Regression Loss 0.3963, Average Classification Loss: 2.2737
+2022-05-19 11:08:33,914 - root - INFO - Epoch: 177, Step: 100, Average Loss: 2.6591, Average Regression Loss 0.3857, Average Classification Loss: 2.2734
+2022-05-19 11:08:54,334 - root - INFO - Epoch: 178, Step: 100, Average Loss: 2.6683, Average Regression Loss 0.3950, Average Classification Loss: 2.2733
+2022-05-19 11:09:11,721 - root - INFO - Epoch: 179, Step: 100, Average Loss: 2.6660, Average Regression Loss 0.3926, Average Classification Loss: 2.2734
+2022-05-19 11:09:31,328 - root - INFO - Epoch: 180, Step: 100, Average Loss: 2.6613, Average Regression Loss 0.3881, Average Classification Loss: 2.2733
+2022-05-19 11:09:34,822 - root - INFO - Epoch: 180, Validation Loss: 2.6453, Validation Regression Loss 0.3941, Validation Classification Loss: 2.2512
+2022-05-19 11:09:34,923 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-180-Loss-2.645284857068743.pth
+2022-05-19 11:09:50,969 - root - INFO - Epoch: 181, Step: 100, Average Loss: 2.6739, Average Regression Loss 0.4004, Average Classification Loss: 2.2735
+2022-05-19 11:10:11,433 - root - INFO - Epoch: 182, Step: 100, Average Loss: 2.6621, Average Regression Loss 0.3886, Average Classification Loss: 2.2735
+2022-05-19 11:10:30,803 - root - INFO - Epoch: 183, Step: 100, Average Loss: 2.6657, Average Regression Loss 0.3924, Average Classification Loss: 2.2734
+2022-05-19 11:10:52,005 - root - INFO - Epoch: 184, Step: 100, Average Loss: 2.6624, Average Regression Loss 0.3891, Average Classification Loss: 2.2733
+2022-05-19 11:11:13,624 - root - INFO - Epoch: 185, Step: 100, Average Loss: 2.6656, Average Regression Loss 0.3923, Average Classification Loss: 2.2733
+2022-05-19 11:11:17,233 - root - INFO - Epoch: 185, Validation Loss: 2.6444, Validation Regression Loss 0.3938, Validation Classification Loss: 2.2506
+2022-05-19 11:11:17,341 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-185-Loss-2.6443614619118825.pth
+2022-05-19 11:11:35,455 - root - INFO - Epoch: 186, Step: 100, Average Loss: 2.6728, Average Regression Loss 0.3995, Average Classification Loss: 2.2733
+2022-05-19 11:11:54,531 - root - INFO - Epoch: 187, Step: 100, Average Loss: 2.6676, Average Regression Loss 0.3946, Average Classification Loss: 2.2731
+2022-05-19 11:12:15,825 - root - INFO - Epoch: 188, Step: 100, Average Loss: 2.6632, Average Regression Loss 0.3901, Average Classification Loss: 2.2732
+2022-05-19 11:12:35,235 - root - INFO - Epoch: 189, Step: 100, Average Loss: 2.6618, Average Regression Loss 0.3889, Average Classification Loss: 2.2729
+2022-05-19 11:12:55,700 - root - INFO - Epoch: 190, Step: 100, Average Loss: 2.6665, Average Regression Loss 0.3934, Average Classification Loss: 2.2730
+2022-05-19 11:13:01,188 - root - INFO - Epoch: 190, Validation Loss: 2.6440, Validation Regression Loss 0.3933, Validation Classification Loss: 2.2506
+2022-05-19 11:13:01,305 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-190-Loss-2.6439865146364485.pth
+2022-05-19 11:13:19,647 - root - INFO - Epoch: 191, Step: 100, Average Loss: 2.6634, Average Regression Loss 0.3902, Average Classification Loss: 2.2732
+2022-05-19 11:13:37,359 - root - INFO - Epoch: 192, Step: 100, Average Loss: 2.6658, Average Regression Loss 0.3928, Average Classification Loss: 2.2729
+2022-05-19 11:13:59,612 - root - INFO - Epoch: 193, Step: 100, Average Loss: 2.6628, Average Regression Loss 0.3899, Average Classification Loss: 2.2729
+2022-05-19 11:14:20,674 - root - INFO - Epoch: 194, Step: 100, Average Loss: 2.6663, Average Regression Loss 0.3933, Average Classification Loss: 2.2731
+2022-05-19 11:14:42,446 - root - INFO - Epoch: 195, Step: 100, Average Loss: 2.6674, Average Regression Loss 0.3944, Average Classification Loss: 2.2730
+2022-05-19 11:14:47,145 - root - INFO - Epoch: 195, Validation Loss: 2.6425, Validation Regression Loss 0.3921, Validation Classification Loss: 2.2504
+2022-05-19 11:14:47,281 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-195-Loss-2.6425193548202515.pth
+2022-05-19 11:15:06,612 - root - INFO - Epoch: 196, Step: 100, Average Loss: 2.6647, Average Regression Loss 0.3918, Average Classification Loss: 2.2729
+2022-05-19 11:15:26,064 - root - INFO - Epoch: 197, Step: 100, Average Loss: 2.6624, Average Regression Loss 0.3896, Average Classification Loss: 2.2727
+2022-05-19 11:15:44,008 - root - INFO - Epoch: 198, Step: 100, Average Loss: 2.6661, Average Regression Loss 0.3931, Average Classification Loss: 2.2730
+2022-05-19 11:16:05,314 - root - INFO - Epoch: 199, Step: 100, Average Loss: 2.6668, Average Regression Loss 0.3940, Average Classification Loss: 2.2728
+2022-05-19 11:16:25,454 - root - INFO - Epoch: 200, Step: 100, Average Loss: 2.6578, Average Regression Loss 0.3850, Average Classification Loss: 2.2727
+2022-05-19 11:16:29,387 - root - INFO - Epoch: 200, Validation Loss: 2.6425, Validation Regression Loss 0.3922, Validation Classification Loss: 2.2503
+2022-05-19 11:16:29,714 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-200-Loss-2.6424572127205983.pth
+2022-05-19 11:16:49,150 - root - INFO - Epoch: 201, Step: 100, Average Loss: 2.6590, Average Regression Loss 0.3864, Average Classification Loss: 2.2727
+2022-05-19 11:17:10,956 - root - INFO - Epoch: 202, Step: 100, Average Loss: 2.6625, Average Regression Loss 0.3897, Average Classification Loss: 2.2728
+2022-05-19 11:17:34,119 - root - INFO - Epoch: 203, Step: 100, Average Loss: 2.6621, Average Regression Loss 0.3895, Average Classification Loss: 2.2727
+2022-05-19 11:17:55,079 - root - INFO - Epoch: 204, Step: 100, Average Loss: 2.6666, Average Regression Loss 0.3939, Average Classification Loss: 2.2727
+2022-05-19 11:18:12,917 - root - INFO - Epoch: 205, Step: 100, Average Loss: 2.6582, Average Regression Loss 0.3855, Average Classification Loss: 2.2727
+2022-05-19 11:18:16,118 - root - INFO - Epoch: 205, Validation Loss: 2.6418, Validation Regression Loss 0.3916, Validation Classification Loss: 2.2503
+2022-05-19 11:18:16,216 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-205-Loss-2.641846639769418.pth
+2022-05-19 11:18:35,123 - root - INFO - Epoch: 206, Step: 100, Average Loss: 2.6609, Average Regression Loss 0.3881, Average Classification Loss: 2.2728
+2022-05-19 11:18:55,257 - root - INFO - Epoch: 207, Step: 100, Average Loss: 2.6604, Average Regression Loss 0.3877, Average Classification Loss: 2.2727
+2022-05-19 11:19:15,049 - root - INFO - Epoch: 208, Step: 100, Average Loss: 2.6566, Average Regression Loss 0.3839, Average Classification Loss: 2.2727
+2022-05-19 11:19:34,839 - root - INFO - Epoch: 209, Step: 100, Average Loss: 2.6688, Average Regression Loss 0.3960, Average Classification Loss: 2.2727
+2022-05-19 11:19:55,710 - root - INFO - Epoch: 210, Step: 100, Average Loss: 2.6609, Average Regression Loss 0.3884, Average Classification Loss: 2.2725
+2022-05-19 11:19:58,905 - root - INFO - Epoch: 210, Validation Loss: 2.6408, Validation Regression Loss 0.3908, Validation Classification Loss: 2.2500
+2022-05-19 11:19:59,013 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-210-Loss-2.640847376414708.pth
+2022-05-19 11:20:17,324 - root - INFO - Epoch: 211, Step: 100, Average Loss: 2.6614, Average Regression Loss 0.3888, Average Classification Loss: 2.2726
+2022-05-19 11:20:37,759 - root - INFO - Epoch: 212, Step: 100, Average Loss: 2.6584, Average Regression Loss 0.3858, Average Classification Loss: 2.2727
+2022-05-19 11:21:00,477 - root - INFO - Epoch: 213, Step: 100, Average Loss: 2.6595, Average Regression Loss 0.3870, Average Classification Loss: 2.2725
+2022-05-19 11:21:19,051 - root - INFO - Epoch: 214, Step: 100, Average Loss: 2.6629, Average Regression Loss 0.3904, Average Classification Loss: 2.2726
+2022-05-19 11:21:38,338 - root - INFO - Epoch: 215, Step: 100, Average Loss: 2.6647, Average Regression Loss 0.3923, Average Classification Loss: 2.2724
+2022-05-19 11:21:42,018 - root - INFO - Epoch: 215, Validation Loss: 2.6405, Validation Regression Loss 0.3904, Validation Classification Loss: 2.2501
+2022-05-19 11:21:42,122 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-215-Loss-2.6404601676123485.pth
+2022-05-19 11:21:59,397 - root - INFO - Epoch: 216, Step: 100, Average Loss: 2.6574, Average Regression Loss 0.3849, Average Classification Loss: 2.2725
+2022-05-19 11:22:19,501 - root - INFO - Epoch: 217, Step: 100, Average Loss: 2.6625, Average Regression Loss 0.3900, Average Classification Loss: 2.2725
+2022-05-19 11:22:41,245 - root - INFO - Epoch: 218, Step: 100, Average Loss: 2.6547, Average Regression Loss 0.3823, Average Classification Loss: 2.2724
+2022-05-19 11:23:01,956 - root - INFO - Epoch: 219, Step: 100, Average Loss: 2.6547, Average Regression Loss 0.3822, Average Classification Loss: 2.2724
+2022-05-19 11:23:23,671 - root - INFO - Epoch: 220, Step: 100, Average Loss: 2.6623, Average Regression Loss 0.3899, Average Classification Loss: 2.2724
+2022-05-19 11:23:28,104 - root - INFO - Epoch: 220, Validation Loss: 2.6405, Validation Regression Loss 0.3905, Validation Classification Loss: 2.2501
+2022-05-19 11:23:28,176 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-220-Loss-2.640544022832598.pth
+2022-05-19 11:23:45,584 - root - INFO - Epoch: 221, Step: 100, Average Loss: 2.6625, Average Regression Loss 0.3901, Average Classification Loss: 2.2724
+2022-05-19 11:24:06,662 - root - INFO - Epoch: 222, Step: 100, Average Loss: 2.6592, Average Regression Loss 0.3868, Average Classification Loss: 2.2724
+2022-05-19 11:24:26,359 - root - INFO - Epoch: 223, Step: 100, Average Loss: 2.6620, Average Regression Loss 0.3897, Average Classification Loss: 2.2724
+2022-05-19 11:24:47,845 - root - INFO - Epoch: 224, Step: 100, Average Loss: 2.6551, Average Regression Loss 0.3828, Average Classification Loss: 2.2723
+2022-05-19 11:25:09,560 - root - INFO - Epoch: 225, Step: 100, Average Loss: 2.6622, Average Regression Loss 0.3899, Average Classification Loss: 2.2723
+2022-05-19 11:25:13,299 - root - INFO - Epoch: 225, Validation Loss: 2.6406, Validation Regression Loss 0.3908, Validation Classification Loss: 2.2497
+2022-05-19 11:25:13,382 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-225-Loss-2.6405873809541975.pth
+2022-05-19 11:25:31,384 - root - INFO - Epoch: 226, Step: 100, Average Loss: 2.6606, Average Regression Loss 0.3882, Average Classification Loss: 2.2724
+2022-05-19 11:25:50,835 - root - INFO - Epoch: 227, Step: 100, Average Loss: 2.6574, Average Regression Loss 0.3851, Average Classification Loss: 2.2723
+2022-05-19 11:26:08,757 - root - INFO - Epoch: 228, Step: 100, Average Loss: 2.6589, Average Regression Loss 0.3867, Average Classification Loss: 2.2723
+2022-05-19 11:26:31,672 - root - INFO - Epoch: 229, Step: 100, Average Loss: 2.6580, Average Regression Loss 0.3857, Average Classification Loss: 2.2724
+2022-05-19 11:26:54,097 - root - INFO - Epoch: 230, Step: 100, Average Loss: 2.6585, Average Regression Loss 0.3863, Average Classification Loss: 2.2723
+2022-05-19 11:26:59,153 - root - INFO - Epoch: 230, Validation Loss: 2.6380, Validation Regression Loss 0.3880, Validation Classification Loss: 2.2500
+2022-05-19 11:26:59,245 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-230-Loss-2.6379887546811784.pth
+2022-05-19 11:27:15,745 - root - INFO - Epoch: 231, Step: 100, Average Loss: 2.6593, Average Regression Loss 0.3870, Average Classification Loss: 2.2723
+2022-05-19 11:27:38,246 - root - INFO - Epoch: 232, Step: 100, Average Loss: 2.6577, Average Regression Loss 0.3855, Average Classification Loss: 2.2722
+2022-05-19 11:28:00,234 - root - INFO - Epoch: 233, Step: 100, Average Loss: 2.6572, Average Regression Loss 0.3850, Average Classification Loss: 2.2722
+2022-05-19 11:28:19,819 - root - INFO - Epoch: 234, Step: 100, Average Loss: 2.6630, Average Regression Loss 0.3908, Average Classification Loss: 2.2722
+2022-05-19 11:28:39,983 - root - INFO - Epoch: 235, Step: 100, Average Loss: 2.6648, Average Regression Loss 0.3925, Average Classification Loss: 2.2722
+2022-05-19 11:28:44,702 - root - INFO - Epoch: 235, Validation Loss: 2.6387, Validation Regression Loss 0.3889, Validation Classification Loss: 2.2498
+2022-05-19 11:28:44,817 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-235-Loss-2.6386916296822682.pth
+2022-05-19 11:29:02,241 - root - INFO - Epoch: 236, Step: 100, Average Loss: 2.6608, Average Regression Loss 0.3886, Average Classification Loss: 2.2722
+2022-05-19 11:29:23,614 - root - INFO - Epoch: 237, Step: 100, Average Loss: 2.6617, Average Regression Loss 0.3894, Average Classification Loss: 2.2722
+2022-05-19 11:29:43,237 - root - INFO - Epoch: 238, Step: 100, Average Loss: 2.6559, Average Regression Loss 0.3838, Average Classification Loss: 2.2722
+2022-05-19 11:30:04,473 - root - INFO - Epoch: 239, Step: 100, Average Loss: 2.6624, Average Regression Loss 0.3902, Average Classification Loss: 2.2722
+2022-05-19 11:30:25,437 - root - INFO - Epoch: 240, Step: 100, Average Loss: 2.6550, Average Regression Loss 0.3829, Average Classification Loss: 2.2721
+2022-05-19 11:30:28,960 - root - INFO - Epoch: 240, Validation Loss: 2.6381, Validation Regression Loss 0.3884, Validation Classification Loss: 2.2497
+2022-05-19 11:30:29,052 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-240-Loss-2.638087204524449.pth
+2022-05-19 11:30:48,403 - root - INFO - Epoch: 241, Step: 100, Average Loss: 2.6582, Average Regression Loss 0.3860, Average Classification Loss: 2.2721
+2022-05-19 11:31:09,019 - root - INFO - Epoch: 242, Step: 100, Average Loss: 2.6633, Average Regression Loss 0.3911, Average Classification Loss: 2.2721
+2022-05-19 11:31:29,665 - root - INFO - Epoch: 243, Step: 100, Average Loss: 2.6574, Average Regression Loss 0.3853, Average Classification Loss: 2.2721
+2022-05-19 11:31:52,916 - root - INFO - Epoch: 244, Step: 100, Average Loss: 2.6578, Average Regression Loss 0.3857, Average Classification Loss: 2.2721
+2022-05-19 11:32:10,582 - root - INFO - Epoch: 245, Step: 100, Average Loss: 2.6592, Average Regression Loss 0.3871, Average Classification Loss: 2.2721
+2022-05-19 11:32:15,839 - root - INFO - Epoch: 245, Validation Loss: 2.6372, Validation Regression Loss 0.3875, Validation Classification Loss: 2.2496
+2022-05-19 11:32:15,957 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-245-Loss-2.63718627180372.pth
+2022-05-19 11:32:31,076 - root - INFO - Epoch: 246, Step: 100, Average Loss: 2.6582, Average Regression Loss 0.3862, Average Classification Loss: 2.2721
+2022-05-19 11:32:50,883 - root - INFO - Epoch: 247, Step: 100, Average Loss: 2.6579, Average Regression Loss 0.3859, Average Classification Loss: 2.2721
+2022-05-19 11:33:13,685 - root - INFO - Epoch: 248, Step: 100, Average Loss: 2.6571, Average Regression Loss 0.3851, Average Classification Loss: 2.2721
+2022-05-19 11:33:31,947 - root - INFO - Epoch: 249, Step: 100, Average Loss: 2.6567, Average Regression Loss 0.3846, Average Classification Loss: 2.2721
+2022-05-19 11:33:54,293 - root - INFO - Epoch: 250, Step: 100, Average Loss: 2.6573, Average Regression Loss 0.3853, Average Classification Loss: 2.2721
+2022-05-19 11:33:59,111 - root - INFO - Epoch: 250, Validation Loss: 2.6374, Validation Regression Loss 0.3879, Validation Classification Loss: 2.2496
+2022-05-19 11:33:59,211 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-250-Loss-2.6374304805483137.pth
+2022-05-19 11:34:16,027 - root - INFO - Epoch: 251, Step: 100, Average Loss: 2.6605, Average Regression Loss 0.3885, Average Classification Loss: 2.2720
+2022-05-19 11:34:36,742 - root - INFO - Epoch: 252, Step: 100, Average Loss: 2.6554, Average Regression Loss 0.3833, Average Classification Loss: 2.2720
+2022-05-19 11:34:59,725 - root - INFO - Epoch: 253, Step: 100, Average Loss: 2.6542, Average Regression Loss 0.3821, Average Classification Loss: 2.2721
+2022-05-19 11:35:21,784 - root - INFO - Epoch: 254, Step: 100, Average Loss: 2.6556, Average Regression Loss 0.3836, Average Classification Loss: 2.2720
+2022-05-19 11:35:39,838 - root - INFO - Epoch: 255, Step: 100, Average Loss: 2.6570, Average Regression Loss 0.3850, Average Classification Loss: 2.2720
+2022-05-19 11:35:44,485 - root - INFO - Epoch: 255, Validation Loss: 2.6378, Validation Regression Loss 0.3882, Validation Classification Loss: 2.2496
+2022-05-19 11:35:44,591 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-255-Loss-2.637813227517264.pth
+2022-05-19 11:36:02,683 - root - INFO - Epoch: 256, Step: 100, Average Loss: 2.6553, Average Regression Loss 0.3833, Average Classification Loss: 2.2720
+2022-05-19 11:36:23,967 - root - INFO - Epoch: 257, Step: 100, Average Loss: 2.6585, Average Regression Loss 0.3865, Average Classification Loss: 2.2720
+2022-05-19 11:36:44,544 - root - INFO - Epoch: 258, Step: 100, Average Loss: 2.6550, Average Regression Loss 0.3830, Average Classification Loss: 2.2720
+2022-05-19 11:37:05,852 - root - INFO - Epoch: 259, Step: 100, Average Loss: 2.6553, Average Regression Loss 0.3833, Average Classification Loss: 2.2720
+2022-05-19 11:37:26,495 - root - INFO - Epoch: 260, Step: 100, Average Loss: 2.6540, Average Regression Loss 0.3820, Average Classification Loss: 2.2720
+2022-05-19 11:37:30,976 - root - INFO - Epoch: 260, Validation Loss: 2.6376, Validation Regression Loss 0.3880, Validation Classification Loss: 2.2495
+2022-05-19 11:37:31,077 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-260-Loss-2.637555718421936.pth
+2022-05-19 11:37:46,990 - root - INFO - Epoch: 261, Step: 100, Average Loss: 2.6554, Average Regression Loss 0.3834, Average Classification Loss: 2.2720
+2022-05-19 11:38:06,804 - root - INFO - Epoch: 262, Step: 100, Average Loss: 2.6528, Average Regression Loss 0.3808, Average Classification Loss: 2.2720
+2022-05-19 11:38:28,352 - root - INFO - Epoch: 263, Step: 100, Average Loss: 2.6528, Average Regression Loss 0.3808, Average Classification Loss: 2.2720
+2022-05-19 11:38:50,725 - root - INFO - Epoch: 264, Step: 100, Average Loss: 2.6607, Average Regression Loss 0.3887, Average Classification Loss: 2.2720
+2022-05-19 11:39:09,394 - root - INFO - Epoch: 265, Step: 100, Average Loss: 2.6547, Average Regression Loss 0.3827, Average Classification Loss: 2.2720
+2022-05-19 11:39:13,830 - root - INFO - Epoch: 265, Validation Loss: 2.6382, Validation Regression Loss 0.3887, Validation Classification Loss: 2.2495
+2022-05-19 11:39:13,935 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-265-Loss-2.638248528753008.pth
+2022-05-19 11:39:31,525 - root - INFO - Epoch: 266, Step: 100, Average Loss: 2.6578, Average Regression Loss 0.3859, Average Classification Loss: 2.2720
+2022-05-19 11:39:50,411 - root - INFO - Epoch: 267, Step: 100, Average Loss: 2.6545, Average Regression Loss 0.3825, Average Classification Loss: 2.2720
+2022-05-19 11:40:10,817 - root - INFO - Epoch: 268, Step: 100, Average Loss: 2.6597, Average Regression Loss 0.3877, Average Classification Loss: 2.2720
+2022-05-19 11:40:33,536 - root - INFO - Epoch: 269, Step: 100, Average Loss: 2.6583, Average Regression Loss 0.3864, Average Classification Loss: 2.2720
+2022-05-19 11:40:53,909 - root - INFO - Epoch: 270, Step: 100, Average Loss: 2.6590, Average Regression Loss 0.3870, Average Classification Loss: 2.2720
+2022-05-19 11:40:58,115 - root - INFO - Epoch: 270, Validation Loss: 2.6372, Validation Regression Loss 0.3876, Validation Classification Loss: 2.2495
+2022-05-19 11:40:58,224 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-270-Loss-2.637162685394287.pth
+2022-05-19 11:41:16,381 - root - INFO - Epoch: 271, Step: 100, Average Loss: 2.6577, Average Regression Loss 0.3858, Average Classification Loss: 2.2720
+2022-05-19 11:41:35,776 - root - INFO - Epoch: 272, Step: 100, Average Loss: 2.6551, Average Regression Loss 0.3831, Average Classification Loss: 2.2720
+2022-05-19 11:41:56,060 - root - INFO - Epoch: 273, Step: 100, Average Loss: 2.6578, Average Regression Loss 0.3859, Average Classification Loss: 2.2720
+2022-05-19 11:42:17,002 - root - INFO - Epoch: 274, Step: 100, Average Loss: 2.6554, Average Regression Loss 0.3834, Average Classification Loss: 2.2720
+2022-05-19 11:42:38,347 - root - INFO - Epoch: 275, Step: 100, Average Loss: 2.6596, Average Regression Loss 0.3877, Average Classification Loss: 2.2720
+2022-05-19 11:42:42,179 - root - INFO - Epoch: 275, Validation Loss: 2.6375, Validation Regression Loss 0.3880, Validation Classification Loss: 2.2495
+2022-05-19 11:42:42,269 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-275-Loss-2.6375477484294345.pth
+2022-05-19 11:42:57,650 - root - INFO - Epoch: 276, Step: 100, Average Loss: 2.6536, Average Regression Loss 0.3817, Average Classification Loss: 2.2720
+2022-05-19 11:43:17,933 - root - INFO - Epoch: 277, Step: 100, Average Loss: 2.6535, Average Regression Loss 0.3815, Average Classification Loss: 2.2720
+2022-05-19 11:43:41,423 - root - INFO - Epoch: 278, Step: 100, Average Loss: 2.6553, Average Regression Loss 0.3833, Average Classification Loss: 2.2720
+2022-05-19 11:44:00,780 - root - INFO - Epoch: 279, Step: 100, Average Loss: 2.6620, Average Regression Loss 0.3900, Average Classification Loss: 2.2720
+2022-05-19 11:44:05,362 - root - INFO - Epoch: 279, Validation Loss: 2.6376, Validation Regression Loss 0.3881, Validation Classification Loss: 2.2495
+2022-05-19 11:44:05,476 - root - INFO - Saved model models/diouloss/mb1-ssd-lite-025extra-Epoch-279-Loss-2.6376309054238454.pth

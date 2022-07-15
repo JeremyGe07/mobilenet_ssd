@@ -1,0 +1,737 @@
+2022-06-24 07:45:41,233 - root - INFO - Use Cuda.
+2022-06-24 07:45:41,233 - root - INFO - Namespace(balance_data=False, base_net=None, base_net_lr=None, batch_size=16, checkpoint_folder='models/scratch277', dataset_type='voc', datasets=['VOC2007'], debug_steps=100, extra_layers_lr=None, freeze_base_net=False, freeze_net=False, gamma=0.1, gpu='3', loss='smoothl1', lr=0.01, mb2_width_mult=1.0, milestones='80,100', momentum=0.9, net='mb1-ssd-lite-277', num_epochs=1800, num_workers=4, optimizer='SGD', pretrained_ssd=None, resume=None, s=0.0001, scheduler='cosine', sr=False, t_max=1800.0, use_cuda=True, validation_dataset='./VOC2007', validation_epochs=5, weight_decay=0.0005, width_mult=0.15)
+2022-06-24 07:45:41,235 - root - INFO - Prepare training datasets.
+root-- VOC2007
+2022-06-24 07:45:41,236 - root - INFO - No labels file, using default VOC classes.
+2022-06-24 07:45:41,248 - root - INFO - Stored labels into file models/scratch277/voc-model-labels.txt.
+2022-06-24 07:45:41,248 - root - INFO - Train dataset size: 971
+2022-06-24 07:45:41,248 - root - INFO - Prepare Validation datasets.
+2022-06-24 07:45:41,249 - root - INFO - No labels file, using default VOC classes.
+2022-06-24 07:45:41,249 - root - INFO - validation dataset size: 108
+2022-06-24 07:45:41,249 - root - INFO - Build network.
+2022-06-24 07:45:41,265 - root - INFO - Took 0.00 seconds to load the model.
+2022-06-24 07:45:45,178 - root - INFO - Learning rate: 0.01, Base net learning rate: 0.01, Extra Layers learning rate: 0.01.
+2022-06-24 07:45:45,178 - root - INFO - Uses CosineAnnealingLR scheduler.
+2022-06-24 07:45:45,178 - root - INFO - Start training from epoch 0.
+2022-06-24 07:46:06,477 - root - INFO - Epoch: 0, Validation Loss: 5.6287, Validation Regression Loss 3.1012, Validation Classification Loss: 2.5275
+2022-06-24 07:46:06,541 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-0-Loss-5.6287046160016745.pth
+2022-06-24 07:47:46,173 - root - INFO - Epoch: 5, Validation Loss: 5.2319, Validation Regression Loss 2.9606, Validation Classification Loss: 2.2712
+2022-06-24 07:47:46,274 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-5-Loss-5.2318622044154575.pth
+2022-06-24 07:49:22,472 - root - INFO - Epoch: 10, Validation Loss: 5.0767, Validation Regression Loss 2.8139, Validation Classification Loss: 2.2628
+2022-06-24 07:49:22,575 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-10-Loss-5.076670169830322.pth
+2022-06-24 07:50:59,678 - root - INFO - Epoch: 15, Validation Loss: 5.0237, Validation Regression Loss 2.7621, Validation Classification Loss: 2.2616
+2022-06-24 07:50:59,738 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-15-Loss-5.023734773908343.pth
+2022-06-24 07:52:38,372 - root - INFO - Epoch: 20, Validation Loss: 4.9985, Validation Regression Loss 2.7402, Validation Classification Loss: 2.2583
+2022-06-24 07:52:38,450 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-20-Loss-4.998480183737619.pth
+2022-06-24 07:54:14,752 - root - INFO - Epoch: 25, Validation Loss: 4.9873, Validation Regression Loss 2.7249, Validation Classification Loss: 2.2624
+2022-06-24 07:54:14,809 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-25-Loss-4.987304755619594.pth
+2022-06-24 07:55:48,615 - root - INFO - Epoch: 30, Validation Loss: 5.0093, Validation Regression Loss 2.7399, Validation Classification Loss: 2.2694
+2022-06-24 07:55:48,690 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-30-Loss-5.009321212768555.pth
+2022-06-24 07:57:24,919 - root - INFO - Epoch: 35, Validation Loss: 4.9086, Validation Regression Loss 2.6520, Validation Classification Loss: 2.2565
+2022-06-24 07:57:25,006 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-35-Loss-4.908579621996198.pth
+2022-06-24 07:59:05,117 - root - INFO - Epoch: 40, Validation Loss: 4.9153, Validation Regression Loss 2.6569, Validation Classification Loss: 2.2585
+2022-06-24 07:59:05,198 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-40-Loss-4.9153105190822055.pth
+2022-06-24 08:00:40,437 - root - INFO - Epoch: 45, Validation Loss: 4.8846, Validation Regression Loss 2.6244, Validation Classification Loss: 2.2601
+2022-06-24 08:00:40,498 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-45-Loss-4.884586129869733.pth
+2022-06-24 08:02:17,828 - root - INFO - Epoch: 50, Validation Loss: 4.8475, Validation Regression Loss 2.5916, Validation Classification Loss: 2.2560
+2022-06-24 08:02:17,906 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-50-Loss-4.8475446701049805.pth
+2022-06-24 08:03:56,418 - root - INFO - Epoch: 55, Validation Loss: 4.8309, Validation Regression Loss 2.5713, Validation Classification Loss: 2.2596
+2022-06-24 08:03:56,484 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-55-Loss-4.830861295972552.pth
+2022-06-24 08:05:36,207 - root - INFO - Epoch: 60, Validation Loss: 4.7578, Validation Regression Loss 2.5016, Validation Classification Loss: 2.2562
+2022-06-24 08:05:36,279 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-60-Loss-4.757750034332275.pth
+2022-06-24 08:07:12,859 - root - INFO - Epoch: 65, Validation Loss: 4.8142, Validation Regression Loss 2.5547, Validation Classification Loss: 2.2595
+2022-06-24 08:07:12,936 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-65-Loss-4.814182962690081.pth
+2022-06-24 08:08:48,713 - root - INFO - Epoch: 70, Validation Loss: 4.6946, Validation Regression Loss 2.4305, Validation Classification Loss: 2.2642
+2022-06-24 08:08:48,795 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-70-Loss-4.694603647504534.pth
+2022-06-24 08:10:23,980 - root - INFO - Epoch: 75, Validation Loss: 4.6695, Validation Regression Loss 2.4113, Validation Classification Loss: 2.2582
+2022-06-24 08:10:24,059 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-75-Loss-4.6695476940699985.pth
+2022-06-24 08:12:02,524 - root - INFO - Epoch: 80, Validation Loss: 4.5325, Validation Regression Loss 2.2765, Validation Classification Loss: 2.2561
+2022-06-24 08:12:02,595 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-80-Loss-4.5325397082737515.pth
+2022-06-24 08:13:34,158 - root - INFO - Epoch: 85, Validation Loss: 4.5183, Validation Regression Loss 2.2623, Validation Classification Loss: 2.2560
+2022-06-24 08:13:34,222 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-85-Loss-4.518260342734201.pth
+2022-06-24 08:15:12,966 - root - INFO - Epoch: 90, Validation Loss: 4.5403, Validation Regression Loss 2.2871, Validation Classification Loss: 2.2532
+2022-06-24 08:15:13,056 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-90-Loss-4.5403201920645575.pth
+2022-06-24 08:16:49,578 - root - INFO - Epoch: 95, Validation Loss: 4.5341, Validation Regression Loss 2.2776, Validation Classification Loss: 2.2565
+2022-06-24 08:16:49,662 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-95-Loss-4.534097807747977.pth
+2022-06-24 08:18:24,883 - root - INFO - Epoch: 100, Validation Loss: 4.5027, Validation Regression Loss 2.2471, Validation Classification Loss: 2.2556
+2022-06-24 08:18:24,969 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-100-Loss-4.5027046884809225.pth
+2022-06-24 08:20:01,931 - root - INFO - Epoch: 105, Validation Loss: 4.4645, Validation Regression Loss 2.2074, Validation Classification Loss: 2.2570
+2022-06-24 08:20:02,028 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-105-Loss-4.4644551277160645.pth
+2022-06-24 08:21:37,070 - root - INFO - Epoch: 110, Validation Loss: 4.4660, Validation Regression Loss 2.2100, Validation Classification Loss: 2.2560
+2022-06-24 08:21:37,142 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-110-Loss-4.4659697668893.pth
+2022-06-24 08:23:12,851 - root - INFO - Epoch: 115, Validation Loss: 4.5546, Validation Regression Loss 2.2969, Validation Classification Loss: 2.2577
+2022-06-24 08:23:12,962 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-115-Loss-4.5545951298304965.pth
+2022-06-24 08:24:49,289 - root - INFO - Epoch: 120, Validation Loss: 4.4361, Validation Regression Loss 2.1816, Validation Classification Loss: 2.2545
+2022-06-24 08:24:49,384 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-120-Loss-4.436131272997175.pth
+2022-06-24 08:26:29,326 - root - INFO - Epoch: 125, Validation Loss: 4.4454, Validation Regression Loss 2.1899, Validation Classification Loss: 2.2555
+2022-06-24 08:26:29,423 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-125-Loss-4.445433820996966.pth
+2022-06-24 08:28:07,857 - root - INFO - Epoch: 130, Validation Loss: 4.4530, Validation Regression Loss 2.1989, Validation Classification Loss: 2.2541
+2022-06-24 08:28:07,950 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-130-Loss-4.452996935163226.pth
+2022-06-24 08:29:45,536 - root - INFO - Epoch: 135, Validation Loss: 4.3995, Validation Regression Loss 2.1415, Validation Classification Loss: 2.2580
+2022-06-24 08:29:45,610 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-135-Loss-4.3995112010410855.pth
+2022-06-24 08:31:20,735 - root - INFO - Epoch: 140, Validation Loss: 4.4148, Validation Regression Loss 2.1587, Validation Classification Loss: 2.2561
+2022-06-24 08:31:20,785 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-140-Loss-4.414774213518415.pth
+2022-06-24 08:32:57,415 - root - INFO - Epoch: 145, Validation Loss: 4.3732, Validation Regression Loss 2.1182, Validation Classification Loss: 2.2550
+2022-06-24 08:32:57,489 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-145-Loss-4.373183795383999.pth
+2022-06-24 08:34:55,097 - root - INFO - Epoch: 150, Validation Loss: 4.4450, Validation Regression Loss 2.1912, Validation Classification Loss: 2.2538
+2022-06-24 08:34:55,176 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-150-Loss-4.445006029946463.pth
+2022-06-24 08:36:56,648 - root - INFO - Epoch: 155, Validation Loss: 4.3641, Validation Regression Loss 2.1107, Validation Classification Loss: 2.2535
+2022-06-24 08:36:56,712 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-155-Loss-4.3641445977347235.pth
+2022-06-24 08:39:10,312 - root - INFO - Epoch: 160, Validation Loss: 4.3563, Validation Regression Loss 2.1023, Validation Classification Loss: 2.2541
+2022-06-24 08:39:10,371 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-160-Loss-4.356330054146903.pth
+2022-06-24 08:41:19,032 - root - INFO - Epoch: 165, Validation Loss: 4.3709, Validation Regression Loss 2.1158, Validation Classification Loss: 2.2551
+2022-06-24 08:41:19,107 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-165-Loss-4.370897497449603.pth
+2022-06-24 08:43:18,232 - root - INFO - Epoch: 170, Validation Loss: 4.5104, Validation Regression Loss 2.2563, Validation Classification Loss: 2.2541
+2022-06-24 08:43:18,301 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-170-Loss-4.510405199868338.pth
+2022-06-24 08:44:58,220 - root - INFO - Epoch: 175, Validation Loss: 4.3459, Validation Regression Loss 2.0886, Validation Classification Loss: 2.2573
+2022-06-24 08:44:58,264 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-175-Loss-4.345921788896833.pth
+2022-06-24 08:46:36,838 - root - INFO - Epoch: 180, Validation Loss: 4.3314, Validation Regression Loss 2.0788, Validation Classification Loss: 2.2526
+2022-06-24 08:46:36,930 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-180-Loss-4.331361906869071.pth
+2022-06-24 08:48:13,061 - root - INFO - Epoch: 185, Validation Loss: 4.3398, Validation Regression Loss 2.0845, Validation Classification Loss: 2.2553
+2022-06-24 08:48:13,129 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-185-Loss-4.3397649356297086.pth
+2022-06-24 08:49:49,920 - root - INFO - Epoch: 190, Validation Loss: 4.3622, Validation Regression Loss 2.1088, Validation Classification Loss: 2.2534
+2022-06-24 08:49:49,954 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-190-Loss-4.3621730123247415.pth
+2022-06-24 08:51:26,012 - root - INFO - Epoch: 195, Validation Loss: 4.3225, Validation Regression Loss 2.0672, Validation Classification Loss: 2.2553
+2022-06-24 08:51:26,085 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-195-Loss-4.322522708347866.pth
+2022-06-24 08:53:01,293 - root - INFO - Epoch: 200, Validation Loss: 4.3010, Validation Regression Loss 2.0436, Validation Classification Loss: 2.2574
+2022-06-24 08:53:01,368 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-200-Loss-4.300994259970529.pth
+2022-06-24 08:54:40,049 - root - INFO - Epoch: 205, Validation Loss: 4.2996, Validation Regression Loss 2.0457, Validation Classification Loss: 2.2539
+2022-06-24 08:54:40,158 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-205-Loss-4.299638271331787.pth
+2022-06-24 08:56:18,836 - root - INFO - Epoch: 210, Validation Loss: 4.3355, Validation Regression Loss 2.0809, Validation Classification Loss: 2.2546
+2022-06-24 08:56:18,900 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-210-Loss-4.335514307022095.pth
+2022-06-24 08:57:51,723 - root - INFO - Epoch: 215, Validation Loss: 4.2834, Validation Regression Loss 2.0288, Validation Classification Loss: 2.2546
+2022-06-24 08:57:51,800 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-215-Loss-4.283371073859079.pth
+2022-06-24 08:59:33,569 - root - INFO - Epoch: 220, Validation Loss: 4.2780, Validation Regression Loss 2.0191, Validation Classification Loss: 2.2588
+2022-06-24 08:59:33,646 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-220-Loss-4.277980123247419.pth
+2022-06-24 09:01:09,292 - root - INFO - Epoch: 225, Validation Loss: 4.2929, Validation Regression Loss 2.0378, Validation Classification Loss: 2.2550
+2022-06-24 09:01:09,364 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-225-Loss-4.292870283126831.pth
+2022-06-24 09:02:44,812 - root - INFO - Epoch: 230, Validation Loss: 4.2597, Validation Regression Loss 2.0060, Validation Classification Loss: 2.2537
+2022-06-24 09:02:44,885 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-230-Loss-4.259688104901995.pth
+2022-06-24 09:04:21,503 - root - INFO - Epoch: 235, Validation Loss: 4.3046, Validation Regression Loss 2.0494, Validation Classification Loss: 2.2551
+2022-06-24 09:04:21,579 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-235-Loss-4.304580892835345.pth
+2022-06-24 09:05:57,682 - root - INFO - Epoch: 240, Validation Loss: 4.2399, Validation Regression Loss 1.9852, Validation Classification Loss: 2.2546
+2022-06-24 09:05:57,742 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-240-Loss-4.239855630057199.pth
+2022-06-24 09:07:36,032 - root - INFO - Epoch: 245, Validation Loss: 4.2249, Validation Regression Loss 1.9722, Validation Classification Loss: 2.2527
+2022-06-24 09:07:36,100 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-245-Loss-4.224935804094587.pth
+2022-06-24 09:09:14,385 - root - INFO - Epoch: 250, Validation Loss: 4.2145, Validation Regression Loss 1.9599, Validation Classification Loss: 2.2546
+2022-06-24 09:09:14,452 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-250-Loss-4.214505638395037.pth
+2022-06-24 09:10:51,851 - root - INFO - Epoch: 255, Validation Loss: 4.3268, Validation Regression Loss 2.0690, Validation Classification Loss: 2.2578
+2022-06-24 09:10:51,934 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-255-Loss-4.326773984091623.pth
+2022-06-24 09:12:29,753 - root - INFO - Epoch: 260, Validation Loss: 4.2293, Validation Regression Loss 1.9756, Validation Classification Loss: 2.2536
+2022-06-24 09:12:29,812 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-260-Loss-4.229278291974749.pth
+2022-06-24 09:14:04,553 - root - INFO - Epoch: 265, Validation Loss: 4.1952, Validation Regression Loss 1.9407, Validation Classification Loss: 2.2545
+2022-06-24 09:14:04,620 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-265-Loss-4.195193290710449.pth
+2022-06-24 09:15:40,469 - root - INFO - Epoch: 270, Validation Loss: 4.2749, Validation Regression Loss 2.0227, Validation Classification Loss: 2.2522
+2022-06-24 09:15:40,521 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-270-Loss-4.274944407599313.pth
+2022-06-24 09:17:17,075 - root - INFO - Epoch: 275, Validation Loss: 4.3090, Validation Regression Loss 2.0554, Validation Classification Loss: 2.2536
+2022-06-24 09:17:17,165 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-275-Loss-4.309011118752616.pth
+2022-06-24 09:18:55,675 - root - INFO - Epoch: 280, Validation Loss: 4.2627, Validation Regression Loss 2.0099, Validation Classification Loss: 2.2527
+2022-06-24 09:18:55,747 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-280-Loss-4.262662615094866.pth
+2022-06-24 09:20:32,594 - root - INFO - Epoch: 285, Validation Loss: 4.2810, Validation Regression Loss 2.0278, Validation Classification Loss: 2.2532
+2022-06-24 09:20:32,666 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-285-Loss-4.280969960348947.pth
+2022-06-24 09:22:05,961 - root - INFO - Epoch: 290, Validation Loss: 4.2531, Validation Regression Loss 2.0042, Validation Classification Loss: 2.2489
+2022-06-24 09:22:06,022 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-290-Loss-4.253096852983747.pth
+2022-06-24 09:23:40,276 - root - INFO - Epoch: 295, Validation Loss: 4.2274, Validation Regression Loss 1.9781, Validation Classification Loss: 2.2492
+2022-06-24 09:23:40,335 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-295-Loss-4.227371828896659.pth
+2022-06-24 09:25:17,108 - root - INFO - Epoch: 300, Validation Loss: 4.2033, Validation Regression Loss 1.9496, Validation Classification Loss: 2.2537
+2022-06-24 09:25:17,216 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-300-Loss-4.2033293928418844.pth
+2022-06-24 09:26:52,518 - root - INFO - Epoch: 305, Validation Loss: 4.1788, Validation Regression Loss 1.9329, Validation Classification Loss: 2.2459
+2022-06-24 09:26:52,597 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-305-Loss-4.178758484976632.pth
+2022-06-24 09:28:35,821 - root - INFO - Epoch: 310, Validation Loss: 4.2491, Validation Regression Loss 2.0039, Validation Classification Loss: 2.2452
+2022-06-24 09:28:35,906 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-310-Loss-4.249143055507115.pth
+2022-06-24 09:30:10,271 - root - INFO - Epoch: 315, Validation Loss: 4.1682, Validation Regression Loss 1.9181, Validation Classification Loss: 2.2501
+2022-06-24 09:30:10,338 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-315-Loss-4.168202468327114.pth
+2022-06-24 09:31:48,562 - root - INFO - Epoch: 320, Validation Loss: 4.1644, Validation Regression Loss 1.9177, Validation Classification Loss: 2.2467
+2022-06-24 09:31:48,634 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-320-Loss-4.164375100816999.pth
+2022-06-24 09:33:23,471 - root - INFO - Epoch: 325, Validation Loss: 4.2072, Validation Regression Loss 1.9631, Validation Classification Loss: 2.2442
+2022-06-24 09:33:23,530 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-325-Loss-4.207216126578195.pth
+2022-06-24 09:34:59,880 - root - INFO - Epoch: 330, Validation Loss: 4.1474, Validation Regression Loss 1.9040, Validation Classification Loss: 2.2435
+2022-06-24 09:34:59,985 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-330-Loss-4.147442374910627.pth
+2022-06-24 09:36:39,870 - root - INFO - Epoch: 335, Validation Loss: 4.1876, Validation Regression Loss 1.9422, Validation Classification Loss: 2.2454
+2022-06-24 09:36:39,927 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-335-Loss-4.187614645276751.pth
+2022-06-24 09:38:12,813 - root - INFO - Epoch: 340, Validation Loss: 4.2274, Validation Regression Loss 1.9798, Validation Classification Loss: 2.2476
+2022-06-24 09:38:12,874 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-340-Loss-4.227366617747715.pth
+2022-06-24 09:39:51,039 - root - INFO - Epoch: 345, Validation Loss: 4.1639, Validation Regression Loss 1.9191, Validation Classification Loss: 2.2448
+2022-06-24 09:39:51,093 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-345-Loss-4.163901601518903.pth
+2022-06-24 09:41:26,996 - root - INFO - Epoch: 350, Validation Loss: 4.1455, Validation Regression Loss 1.9051, Validation Classification Loss: 2.2404
+2022-06-24 09:41:27,045 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-350-Loss-4.145457199641636.pth
+2022-06-24 09:43:07,583 - root - INFO - Epoch: 355, Validation Loss: 4.2021, Validation Regression Loss 1.9589, Validation Classification Loss: 2.2432
+2022-06-24 09:43:07,655 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-355-Loss-4.202113253729684.pth
+2022-06-24 09:44:45,462 - root - INFO - Epoch: 360, Validation Loss: 4.3146, Validation Regression Loss 2.0704, Validation Classification Loss: 2.2443
+2022-06-24 09:44:45,536 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-360-Loss-4.314616986683437.pth
+2022-06-24 09:46:16,603 - root - INFO - Epoch: 365, Validation Loss: 4.1762, Validation Regression Loss 1.9286, Validation Classification Loss: 2.2475
+2022-06-24 09:46:16,665 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-365-Loss-4.176152842385428.pth
+2022-06-24 09:47:51,836 - root - INFO - Epoch: 370, Validation Loss: 4.2132, Validation Regression Loss 1.9696, Validation Classification Loss: 2.2436
+2022-06-24 09:47:51,871 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-370-Loss-4.213233743395124.pth
+2022-06-24 09:49:30,971 - root - INFO - Epoch: 375, Validation Loss: 4.1515, Validation Regression Loss 1.9053, Validation Classification Loss: 2.2462
+2022-06-24 09:49:31,049 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-375-Loss-4.151507002966745.pth
+2022-06-24 09:51:07,477 - root - INFO - Epoch: 380, Validation Loss: 4.2390, Validation Regression Loss 1.9772, Validation Classification Loss: 2.2619
+2022-06-24 09:51:07,541 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-380-Loss-4.239047084535871.pth
+2022-06-24 09:52:40,417 - root - INFO - Epoch: 385, Validation Loss: 4.1938, Validation Regression Loss 1.9547, Validation Classification Loss: 2.2391
+2022-06-24 09:52:40,485 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-385-Loss-4.193787676947458.pth
+2022-06-24 09:54:14,045 - root - INFO - Epoch: 390, Validation Loss: 4.1290, Validation Regression Loss 1.8894, Validation Classification Loss: 2.2396
+2022-06-24 09:54:14,127 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-390-Loss-4.128957271575928.pth
+2022-06-24 09:55:49,455 - root - INFO - Epoch: 395, Validation Loss: 4.2061, Validation Regression Loss 1.9649, Validation Classification Loss: 2.2412
+2022-06-24 09:55:49,513 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-395-Loss-4.206098931176322.pth
+2022-06-24 09:57:25,020 - root - INFO - Epoch: 400, Validation Loss: 4.1461, Validation Regression Loss 1.9066, Validation Classification Loss: 2.2395
+2022-06-24 09:57:25,094 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-400-Loss-4.1460650988987515.pth
+2022-06-24 09:59:03,780 - root - INFO - Epoch: 405, Validation Loss: 4.1451, Validation Regression Loss 1.9087, Validation Classification Loss: 2.2364
+2022-06-24 09:59:03,823 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-405-Loss-4.145113400050572.pth
+2022-06-24 10:00:38,797 - root - INFO - Epoch: 410, Validation Loss: 4.1395, Validation Regression Loss 1.8978, Validation Classification Loss: 2.2418
+2022-06-24 10:00:38,877 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-410-Loss-4.139539480209351.pth
+2022-06-24 10:02:13,030 - root - INFO - Epoch: 415, Validation Loss: 4.0818, Validation Regression Loss 1.8446, Validation Classification Loss: 2.2372
+2022-06-24 10:02:13,132 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-415-Loss-4.081797872270856.pth
+2022-06-24 10:03:50,425 - root - INFO - Epoch: 420, Validation Loss: 4.1191, Validation Regression Loss 1.8818, Validation Classification Loss: 2.2374
+2022-06-24 10:03:50,515 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-420-Loss-4.119145972388131.pth
+2022-06-24 10:05:25,836 - root - INFO - Epoch: 425, Validation Loss: 4.1086, Validation Regression Loss 1.8643, Validation Classification Loss: 2.2444
+2022-06-24 10:05:25,912 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-425-Loss-4.108620779854911.pth
+2022-06-24 10:07:00,941 - root - INFO - Epoch: 430, Validation Loss: 4.1017, Validation Regression Loss 1.8619, Validation Classification Loss: 2.2399
+2022-06-24 10:07:01,017 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-430-Loss-4.101718868528094.pth
+2022-06-24 10:08:40,188 - root - INFO - Epoch: 435, Validation Loss: 4.0505, Validation Regression Loss 1.8094, Validation Classification Loss: 2.2411
+2022-06-24 10:08:40,250 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-435-Loss-4.050465175083706.pth
+2022-06-24 10:10:15,232 - root - INFO - Epoch: 440, Validation Loss: 4.1115, Validation Regression Loss 1.8637, Validation Classification Loss: 2.2479
+2022-06-24 10:10:15,295 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-440-Loss-4.111544268471854.pth
+2022-06-24 10:11:48,773 - root - INFO - Epoch: 445, Validation Loss: 4.1026, Validation Regression Loss 1.8540, Validation Classification Loss: 2.2486
+2022-06-24 10:11:48,841 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-445-Loss-4.102614947727749.pth
+2022-06-24 10:13:22,877 - root - INFO - Epoch: 450, Validation Loss: 4.3853, Validation Regression Loss 2.1508, Validation Classification Loss: 2.2346
+2022-06-24 10:13:22,934 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-450-Loss-4.385322502681187.pth
+2022-06-24 10:15:01,200 - root - INFO - Epoch: 455, Validation Loss: 4.1906, Validation Regression Loss 1.9226, Validation Classification Loss: 2.2680
+2022-06-24 10:15:01,267 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-455-Loss-4.190563610621861.pth
+2022-06-24 10:16:34,544 - root - INFO - Epoch: 460, Validation Loss: 4.1060, Validation Regression Loss 1.8733, Validation Classification Loss: 2.2327
+2022-06-24 10:16:34,626 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-460-Loss-4.105981622423444.pth
+2022-06-24 10:18:10,861 - root - INFO - Epoch: 465, Validation Loss: 4.0160, Validation Regression Loss 1.7822, Validation Classification Loss: 2.2338
+2022-06-24 10:18:10,929 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-465-Loss-4.0159905297415595.pth
+2022-06-24 10:19:48,143 - root - INFO - Epoch: 470, Validation Loss: 4.1427, Validation Regression Loss 1.9060, Validation Classification Loss: 2.2367
+2022-06-24 10:19:48,207 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-470-Loss-4.142715999058315.pth
+2022-06-24 10:21:26,929 - root - INFO - Epoch: 475, Validation Loss: 4.2499, Validation Regression Loss 2.0062, Validation Classification Loss: 2.2437
+2022-06-24 10:21:27,016 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-475-Loss-4.249927793230329.pth
+2022-06-24 10:23:03,830 - root - INFO - Epoch: 480, Validation Loss: 4.1110, Validation Regression Loss 1.8560, Validation Classification Loss: 2.2550
+2022-06-24 10:23:03,896 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-480-Loss-4.111049788338797.pth
+2022-06-24 10:24:42,020 - root - INFO - Epoch: 485, Validation Loss: 4.1293, Validation Regression Loss 1.8846, Validation Classification Loss: 2.2447
+2022-06-24 10:24:42,077 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-485-Loss-4.129269940512521.pth
+2022-06-24 10:26:18,057 - root - INFO - Epoch: 490, Validation Loss: 4.0245, Validation Regression Loss 1.7886, Validation Classification Loss: 2.2360
+2022-06-24 10:26:18,155 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-490-Loss-4.024517059326172.pth
+2022-06-24 10:27:54,277 - root - INFO - Epoch: 495, Validation Loss: 4.0606, Validation Regression Loss 1.8173, Validation Classification Loss: 2.2433
+2022-06-24 10:27:54,364 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-495-Loss-4.060589994703021.pth
+2022-06-24 10:29:31,252 - root - INFO - Epoch: 500, Validation Loss: 4.1614, Validation Regression Loss 1.9314, Validation Classification Loss: 2.2301
+2022-06-24 10:29:31,328 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-500-Loss-4.161447729383196.pth
+2022-06-24 10:31:11,022 - root - INFO - Epoch: 505, Validation Loss: 4.1257, Validation Regression Loss 1.8880, Validation Classification Loss: 2.2377
+2022-06-24 10:31:11,099 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-505-Loss-4.125690766743252.pth
+2022-06-24 10:32:46,418 - root - INFO - Epoch: 510, Validation Loss: 4.1061, Validation Regression Loss 1.8720, Validation Classification Loss: 2.2342
+2022-06-24 10:32:46,478 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-510-Loss-4.106129476002285.pth
+2022-06-24 10:34:20,547 - root - INFO - Epoch: 515, Validation Loss: 4.0900, Validation Regression Loss 1.8573, Validation Classification Loss: 2.2327
+2022-06-24 10:34:20,626 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-515-Loss-4.090032134737287.pth
+2022-06-24 10:35:56,690 - root - INFO - Epoch: 520, Validation Loss: 4.2008, Validation Regression Loss 1.9717, Validation Classification Loss: 2.2291
+2022-06-24 10:35:56,784 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-520-Loss-4.200779097420829.pth
+2022-06-24 10:37:35,402 - root - INFO - Epoch: 525, Validation Loss: 4.0154, Validation Regression Loss 1.7790, Validation Classification Loss: 2.2364
+2022-06-24 10:37:35,462 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-525-Loss-4.015358958925519.pth
+2022-06-24 10:39:14,141 - root - INFO - Epoch: 530, Validation Loss: 4.0770, Validation Regression Loss 1.8337, Validation Classification Loss: 2.2433
+2022-06-24 10:39:14,221 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-530-Loss-4.0769965308053155.pth
+2022-06-24 10:40:56,200 - root - INFO - Epoch: 535, Validation Loss: 4.1645, Validation Regression Loss 1.9198, Validation Classification Loss: 2.2447
+2022-06-24 10:40:56,268 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-535-Loss-4.164511101586478.pth
+2022-06-24 10:42:29,357 - root - INFO - Epoch: 540, Validation Loss: 4.0943, Validation Regression Loss 1.8451, Validation Classification Loss: 2.2492
+2022-06-24 10:42:29,403 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-540-Loss-4.094301530293056.pth
+2022-06-24 10:44:09,587 - root - INFO - Epoch: 545, Validation Loss: 4.1368, Validation Regression Loss 1.9001, Validation Classification Loss: 2.2367
+2022-06-24 10:44:09,659 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-545-Loss-4.136800493512835.pth
+2022-06-24 10:45:51,056 - root - INFO - Epoch: 550, Validation Loss: 4.0732, Validation Regression Loss 1.8418, Validation Classification Loss: 2.2314
+2022-06-24 10:45:51,127 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-550-Loss-4.0732099669320245.pth
+2022-06-24 10:47:25,388 - root - INFO - Epoch: 555, Validation Loss: 4.2380, Validation Regression Loss 1.9845, Validation Classification Loss: 2.2535
+2022-06-24 10:47:25,453 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-555-Loss-4.238036973135812.pth
+2022-06-24 10:49:02,093 - root - INFO - Epoch: 560, Validation Loss: 4.0601, Validation Regression Loss 1.8286, Validation Classification Loss: 2.2314
+2022-06-24 10:49:02,142 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-560-Loss-4.060066529682705.pth
+2022-06-24 10:50:37,492 - root - INFO - Epoch: 565, Validation Loss: 4.0859, Validation Regression Loss 1.8400, Validation Classification Loss: 2.2459
+2022-06-24 10:50:37,557 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-565-Loss-4.085901703153338.pth
+2022-06-24 10:52:13,915 - root - INFO - Epoch: 570, Validation Loss: 4.2367, Validation Regression Loss 1.9879, Validation Classification Loss: 2.2488
+2022-06-24 10:52:13,977 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-570-Loss-4.2367354120527.pth
+2022-06-24 10:53:52,130 - root - INFO - Epoch: 575, Validation Loss: 4.0780, Validation Regression Loss 1.8359, Validation Classification Loss: 2.2421
+2022-06-24 10:53:52,182 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-575-Loss-4.078004666737148.pth
+2022-06-24 10:55:28,513 - root - INFO - Epoch: 580, Validation Loss: 4.2554, Validation Regression Loss 2.0075, Validation Classification Loss: 2.2479
+2022-06-24 10:55:28,604 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-580-Loss-4.255373682294573.pth
+2022-06-24 10:57:03,555 - root - INFO - Epoch: 585, Validation Loss: 4.0398, Validation Regression Loss 1.8081, Validation Classification Loss: 2.2317
+2022-06-24 10:57:03,631 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-585-Loss-4.0398427077702115.pth
+2022-06-24 10:58:38,868 - root - INFO - Epoch: 590, Validation Loss: 4.0706, Validation Regression Loss 1.8336, Validation Classification Loss: 2.2370
+2022-06-24 10:58:38,939 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-590-Loss-4.070604596819196.pth
+2022-06-24 11:00:13,916 - root - INFO - Epoch: 595, Validation Loss: 4.0593, Validation Regression Loss 1.8172, Validation Classification Loss: 2.2421
+2022-06-24 11:00:14,025 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-595-Loss-4.059253556387765.pth
+2022-06-24 11:01:48,664 - root - INFO - Epoch: 600, Validation Loss: 4.0260, Validation Regression Loss 1.7898, Validation Classification Loss: 2.2362
+2022-06-24 11:01:48,740 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-600-Loss-4.026030233928135.pth
+2022-06-24 11:03:24,001 - root - INFO - Epoch: 605, Validation Loss: 4.0656, Validation Regression Loss 1.8334, Validation Classification Loss: 2.2322
+2022-06-24 11:03:24,089 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-605-Loss-4.0655839783804755.pth
+2022-06-24 11:04:59,388 - root - INFO - Epoch: 610, Validation Loss: 4.0767, Validation Regression Loss 1.8470, Validation Classification Loss: 2.2296
+2022-06-24 11:04:59,440 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-610-Loss-4.076688289642334.pth
+2022-06-24 11:06:32,339 - root - INFO - Epoch: 615, Validation Loss: 4.1728, Validation Regression Loss 1.9364, Validation Classification Loss: 2.2364
+2022-06-24 11:06:32,419 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-615-Loss-4.172750064304897.pth
+2022-06-24 11:08:04,457 - root - INFO - Epoch: 620, Validation Loss: 4.0807, Validation Regression Loss 1.8525, Validation Classification Loss: 2.2282
+2022-06-24 11:08:04,533 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-620-Loss-4.080741473606655.pth
+2022-06-24 11:09:37,186 - root - INFO - Epoch: 625, Validation Loss: 4.0844, Validation Regression Loss 1.8440, Validation Classification Loss: 2.2404
+2022-06-24 11:09:37,256 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-625-Loss-4.084382159369333.pth
+2022-06-24 11:11:19,490 - root - INFO - Epoch: 630, Validation Loss: 4.1301, Validation Regression Loss 1.8732, Validation Classification Loss: 2.2570
+2022-06-24 11:11:19,566 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-630-Loss-4.1301460947309225.pth
+2022-06-24 11:12:53,980 - root - INFO - Epoch: 635, Validation Loss: 4.1029, Validation Regression Loss 1.8517, Validation Classification Loss: 2.2512
+2022-06-24 11:12:54,055 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-635-Loss-4.102853945323399.pth
+2022-06-24 11:14:28,719 - root - INFO - Epoch: 640, Validation Loss: 4.1005, Validation Regression Loss 1.8497, Validation Classification Loss: 2.2508
+2022-06-24 11:14:28,775 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-640-Loss-4.100473301751273.pth
+2022-06-24 11:16:04,834 - root - INFO - Epoch: 645, Validation Loss: 4.0527, Validation Regression Loss 1.8186, Validation Classification Loss: 2.2342
+2022-06-24 11:16:04,907 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-645-Loss-4.05274316242763.pth
+2022-06-24 11:17:44,965 - root - INFO - Epoch: 650, Validation Loss: 4.0269, Validation Regression Loss 1.7761, Validation Classification Loss: 2.2508
+2022-06-24 11:17:45,080 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-650-Loss-4.026911735534668.pth
+2022-06-24 11:19:19,976 - root - INFO - Epoch: 655, Validation Loss: 4.1245, Validation Regression Loss 1.8999, Validation Classification Loss: 2.2247
+2022-06-24 11:19:20,057 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-655-Loss-4.12453065599714.pth
+2022-06-24 11:21:01,778 - root - INFO - Epoch: 660, Validation Loss: 4.0572, Validation Regression Loss 1.8240, Validation Classification Loss: 2.2331
+2022-06-24 11:21:01,896 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-660-Loss-4.057166746684483.pth
+2022-06-24 11:22:37,609 - root - INFO - Epoch: 665, Validation Loss: 4.0437, Validation Regression Loss 1.8080, Validation Classification Loss: 2.2357
+2022-06-24 11:22:37,710 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-665-Loss-4.04374361038208.pth
+2022-06-24 11:24:14,116 - root - INFO - Epoch: 670, Validation Loss: 4.0687, Validation Regression Loss 1.8239, Validation Classification Loss: 2.2448
+2022-06-24 11:24:14,169 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-670-Loss-4.068696873528617.pth
+2022-06-24 11:25:50,817 - root - INFO - Epoch: 675, Validation Loss: 4.0224, Validation Regression Loss 1.7787, Validation Classification Loss: 2.2438
+2022-06-24 11:25:50,857 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-675-Loss-4.022448778152466.pth
+2022-06-24 11:27:27,646 - root - INFO - Epoch: 680, Validation Loss: 4.0303, Validation Regression Loss 1.8009, Validation Classification Loss: 2.2295
+2022-06-24 11:27:27,723 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-680-Loss-4.03034724508013.pth
+2022-06-24 11:29:03,973 - root - INFO - Epoch: 685, Validation Loss: 4.0466, Validation Regression Loss 1.8047, Validation Classification Loss: 2.2418
+2022-06-24 11:29:04,024 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-685-Loss-4.046550580433437.pth
+2022-06-24 11:30:34,940 - root - INFO - Epoch: 690, Validation Loss: 4.0499, Validation Regression Loss 1.8180, Validation Classification Loss: 2.2319
+2022-06-24 11:30:35,015 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-690-Loss-4.049881458282471.pth
+2022-06-24 11:32:09,577 - root - INFO - Epoch: 695, Validation Loss: 4.0521, Validation Regression Loss 1.8314, Validation Classification Loss: 2.2207
+2022-06-24 11:32:09,646 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-695-Loss-4.05209697995867.pth
+2022-06-24 11:33:46,026 - root - INFO - Epoch: 700, Validation Loss: 4.0608, Validation Regression Loss 1.8226, Validation Classification Loss: 2.2381
+2022-06-24 11:33:46,111 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-700-Loss-4.06077630179269.pth
+2022-06-24 11:35:21,488 - root - INFO - Epoch: 705, Validation Loss: 4.0243, Validation Regression Loss 1.7922, Validation Classification Loss: 2.2321
+2022-06-24 11:35:21,519 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-705-Loss-4.024334260395595.pth
+2022-06-24 11:36:59,006 - root - INFO - Epoch: 710, Validation Loss: 4.0064, Validation Regression Loss 1.7735, Validation Classification Loss: 2.2330
+2022-06-24 11:36:59,075 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-710-Loss-4.006443228040423.pth
+2022-06-24 11:38:31,829 - root - INFO - Epoch: 715, Validation Loss: 4.0336, Validation Regression Loss 1.8043, Validation Classification Loss: 2.2293
+2022-06-24 11:38:31,908 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-715-Loss-4.033571004867554.pth
+2022-06-24 11:40:10,455 - root - INFO - Epoch: 720, Validation Loss: 3.9292, Validation Regression Loss 1.7080, Validation Classification Loss: 2.2212
+2022-06-24 11:40:10,517 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-720-Loss-3.929154941013881.pth
+2022-06-24 11:41:46,335 - root - INFO - Epoch: 725, Validation Loss: 4.0203, Validation Regression Loss 1.7928, Validation Classification Loss: 2.2274
+2022-06-24 11:41:46,398 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-725-Loss-4.020271471568516.pth
+2022-06-24 11:43:24,031 - root - INFO - Epoch: 730, Validation Loss: 4.0539, Validation Regression Loss 1.8148, Validation Classification Loss: 2.2391
+2022-06-24 11:43:24,120 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-730-Loss-4.053855657577515.pth
+2022-06-24 11:45:04,232 - root - INFO - Epoch: 735, Validation Loss: 3.9986, Validation Regression Loss 1.7775, Validation Classification Loss: 2.2212
+2022-06-24 11:45:04,292 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-735-Loss-3.9986435345241.pth
+2022-06-24 11:46:43,549 - root - INFO - Epoch: 740, Validation Loss: 3.9930, Validation Regression Loss 1.7704, Validation Classification Loss: 2.2226
+2022-06-24 11:46:43,617 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-740-Loss-3.993026086262294.pth
+2022-06-24 11:48:18,883 - root - INFO - Epoch: 745, Validation Loss: 4.0038, Validation Regression Loss 1.7776, Validation Classification Loss: 2.2262
+2022-06-24 11:48:18,953 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-745-Loss-4.003805773598807.pth
+2022-06-24 11:49:59,288 - root - INFO - Epoch: 750, Validation Loss: 4.1024, Validation Regression Loss 1.8414, Validation Classification Loss: 2.2610
+2022-06-24 11:49:59,367 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-750-Loss-4.102442843573434.pth
+2022-06-24 11:51:34,286 - root - INFO - Epoch: 755, Validation Loss: 3.9876, Validation Regression Loss 1.7589, Validation Classification Loss: 2.2287
+2022-06-24 11:51:34,356 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-755-Loss-3.987572022846767.pth
+2022-06-24 11:53:13,205 - root - INFO - Epoch: 760, Validation Loss: 4.0665, Validation Regression Loss 1.8387, Validation Classification Loss: 2.2278
+2022-06-24 11:53:13,311 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-760-Loss-4.066483191081455.pth
+2022-06-24 11:54:50,400 - root - INFO - Epoch: 765, Validation Loss: 4.0194, Validation Regression Loss 1.7959, Validation Classification Loss: 2.2235
+2022-06-24 11:54:50,500 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-765-Loss-4.019393069403512.pth
+2022-06-24 11:56:27,131 - root - INFO - Epoch: 770, Validation Loss: 3.9672, Validation Regression Loss 1.7426, Validation Classification Loss: 2.2246
+2022-06-24 11:56:27,213 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-770-Loss-3.9671545709882463.pth
+2022-06-24 11:58:02,955 - root - INFO - Epoch: 775, Validation Loss: 3.9630, Validation Regression Loss 1.7416, Validation Classification Loss: 2.2214
+2022-06-24 11:58:03,018 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-775-Loss-3.962985174996512.pth
+2022-06-24 11:59:38,537 - root - INFO - Epoch: 780, Validation Loss: 4.0439, Validation Regression Loss 1.8048, Validation Classification Loss: 2.2391
+2022-06-24 11:59:38,638 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-780-Loss-4.043900966644287.pth
+2022-06-24 12:01:16,905 - root - INFO - Epoch: 785, Validation Loss: 3.9871, Validation Regression Loss 1.7596, Validation Classification Loss: 2.2275
+2022-06-24 12:01:16,966 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-785-Loss-3.987078530447824.pth
+2022-06-24 12:02:53,267 - root - INFO - Epoch: 790, Validation Loss: 4.0447, Validation Regression Loss 1.8170, Validation Classification Loss: 2.2277
+2022-06-24 12:02:53,355 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-790-Loss-4.044679607663836.pth
+2022-06-24 12:04:32,482 - root - INFO - Epoch: 795, Validation Loss: 4.0305, Validation Regression Loss 1.7910, Validation Classification Loss: 2.2396
+2022-06-24 12:04:32,557 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-795-Loss-4.030534505844116.pth
+2022-06-24 12:06:09,878 - root - INFO - Epoch: 800, Validation Loss: 4.0707, Validation Regression Loss 1.8305, Validation Classification Loss: 2.2402
+2022-06-24 12:06:09,981 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-800-Loss-4.0707003729684015.pth
+2022-06-24 12:07:48,039 - root - INFO - Epoch: 805, Validation Loss: 4.0192, Validation Regression Loss 1.7816, Validation Classification Loss: 2.2376
+2022-06-24 12:07:48,110 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-805-Loss-4.019240651811872.pth
+2022-06-24 12:09:25,124 - root - INFO - Epoch: 810, Validation Loss: 3.9809, Validation Regression Loss 1.7501, Validation Classification Loss: 2.2308
+2022-06-24 12:09:25,193 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-810-Loss-3.980864933558873.pth
+2022-06-24 12:11:03,084 - root - INFO - Epoch: 815, Validation Loss: 3.9946, Validation Regression Loss 1.7697, Validation Classification Loss: 2.2250
+2022-06-24 12:11:03,159 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-815-Loss-3.994643211364746.pth
+2022-06-24 12:12:42,285 - root - INFO - Epoch: 820, Validation Loss: 4.0029, Validation Regression Loss 1.7679, Validation Classification Loss: 2.2350
+2022-06-24 12:12:42,389 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-820-Loss-4.002901928765433.pth
+2022-06-24 12:14:19,949 - root - INFO - Epoch: 825, Validation Loss: 3.9638, Validation Regression Loss 1.7307, Validation Classification Loss: 2.2331
+2022-06-24 12:14:20,029 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-825-Loss-3.9637576171330045.pth
+2022-06-24 12:15:53,509 - root - INFO - Epoch: 830, Validation Loss: 4.0222, Validation Regression Loss 1.7897, Validation Classification Loss: 2.2324
+2022-06-24 12:15:53,583 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-830-Loss-4.022152491978237.pth
+2022-06-24 12:17:29,187 - root - INFO - Epoch: 835, Validation Loss: 4.0013, Validation Regression Loss 1.7586, Validation Classification Loss: 2.2427
+2022-06-24 12:17:29,294 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-835-Loss-4.001283236912319.pth
+2022-06-24 12:19:02,328 - root - INFO - Epoch: 840, Validation Loss: 3.9868, Validation Regression Loss 1.7637, Validation Classification Loss: 2.2232
+2022-06-24 12:19:02,412 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-840-Loss-3.986839873450143.pth
+2022-06-24 12:20:41,113 - root - INFO - Epoch: 845, Validation Loss: 4.0295, Validation Regression Loss 1.8053, Validation Classification Loss: 2.2242
+2022-06-24 12:20:41,188 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-845-Loss-4.02954489844186.pth
+2022-06-24 12:22:14,095 - root - INFO - Epoch: 850, Validation Loss: 3.9852, Validation Regression Loss 1.7566, Validation Classification Loss: 2.2286
+2022-06-24 12:22:14,162 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-850-Loss-3.9852209772382463.pth
+2022-06-24 12:23:52,747 - root - INFO - Epoch: 855, Validation Loss: 3.9917, Validation Regression Loss 1.7461, Validation Classification Loss: 2.2455
+2022-06-24 12:23:52,819 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-855-Loss-3.9916762624468123.pth
+2022-06-24 12:25:28,348 - root - INFO - Epoch: 860, Validation Loss: 4.0062, Validation Regression Loss 1.7744, Validation Classification Loss: 2.2318
+2022-06-24 12:25:28,417 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-860-Loss-4.006220272609165.pth
+2022-06-24 12:27:05,399 - root - INFO - Epoch: 865, Validation Loss: 3.9860, Validation Regression Loss 1.7682, Validation Classification Loss: 2.2178
+2022-06-24 12:27:05,489 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-865-Loss-3.986034836087908.pth
+2022-06-24 12:28:41,861 - root - INFO - Epoch: 870, Validation Loss: 3.9620, Validation Regression Loss 1.7387, Validation Classification Loss: 2.2233
+2022-06-24 12:28:41,926 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-870-Loss-3.9619856561933244.pth
+2022-06-24 12:30:20,301 - root - INFO - Epoch: 875, Validation Loss: 4.0542, Validation Regression Loss 1.8247, Validation Classification Loss: 2.2295
+2022-06-24 12:30:20,363 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-875-Loss-4.054242747170584.pth
+2022-06-24 12:31:56,174 - root - INFO - Epoch: 880, Validation Loss: 4.0403, Validation Regression Loss 1.8125, Validation Classification Loss: 2.2278
+2022-06-24 12:31:56,251 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-880-Loss-4.04027213369097.pth
+2022-06-24 12:33:33,751 - root - INFO - Epoch: 885, Validation Loss: 3.9957, Validation Regression Loss 1.7633, Validation Classification Loss: 2.2324
+2022-06-24 12:33:33,825 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-885-Loss-3.9957166058676585.pth
+2022-06-24 12:35:12,936 - root - INFO - Epoch: 890, Validation Loss: 3.9828, Validation Regression Loss 1.7568, Validation Classification Loss: 2.2261
+2022-06-24 12:35:12,999 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-890-Loss-3.9828479971204485.pth
+2022-06-24 12:36:51,807 - root - INFO - Epoch: 895, Validation Loss: 3.9880, Validation Regression Loss 1.7528, Validation Classification Loss: 2.2351
+2022-06-24 12:36:51,875 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-895-Loss-3.987973894391741.pth
+2022-06-24 12:38:25,939 - root - INFO - Epoch: 900, Validation Loss: 3.9912, Validation Regression Loss 1.7635, Validation Classification Loss: 2.2278
+2022-06-24 12:38:26,009 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-900-Loss-3.991229329790388.pth
+2022-06-24 12:40:01,605 - root - INFO - Epoch: 905, Validation Loss: 3.9675, Validation Regression Loss 1.7413, Validation Classification Loss: 2.2262
+2022-06-24 12:40:01,690 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-905-Loss-3.9675065789903914.pth
+2022-06-24 12:41:33,256 - root - INFO - Epoch: 910, Validation Loss: 3.9441, Validation Regression Loss 1.7043, Validation Classification Loss: 2.2399
+2022-06-24 12:41:33,333 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-910-Loss-3.9441493919917514.pth
+2022-06-24 12:43:15,195 - root - INFO - Epoch: 915, Validation Loss: 3.9985, Validation Regression Loss 1.7741, Validation Classification Loss: 2.2244
+2022-06-24 12:43:15,268 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-915-Loss-3.998502458844866.pth
+2022-06-24 12:44:54,070 - root - INFO - Epoch: 920, Validation Loss: 4.0169, Validation Regression Loss 1.7419, Validation Classification Loss: 2.2751
+2022-06-24 12:44:54,140 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-920-Loss-4.016946281705584.pth
+2022-06-24 12:46:30,429 - root - INFO - Epoch: 925, Validation Loss: 3.9586, Validation Regression Loss 1.7420, Validation Classification Loss: 2.2166
+2022-06-24 12:46:30,499 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-925-Loss-3.958557060786656.pth
+2022-06-24 12:48:08,228 - root - INFO - Epoch: 930, Validation Loss: 3.9824, Validation Regression Loss 1.7628, Validation Classification Loss: 2.2197
+2022-06-24 12:48:08,290 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-930-Loss-3.9824404375893727.pth
+2022-06-24 12:49:42,598 - root - INFO - Epoch: 935, Validation Loss: 4.0123, Validation Regression Loss 1.7813, Validation Classification Loss: 2.2310
+2022-06-24 12:49:42,699 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-935-Loss-4.012317078454154.pth
+2022-06-24 12:51:16,214 - root - INFO - Epoch: 940, Validation Loss: 4.0237, Validation Regression Loss 1.7724, Validation Classification Loss: 2.2513
+2022-06-24 12:51:16,279 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-940-Loss-4.023699556078229.pth
+2022-06-24 12:52:53,554 - root - INFO - Epoch: 945, Validation Loss: 4.0020, Validation Regression Loss 1.7783, Validation Classification Loss: 2.2237
+2022-06-24 12:52:53,664 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-945-Loss-4.001956530979702.pth
+2022-06-24 12:54:28,732 - root - INFO - Epoch: 950, Validation Loss: 4.1123, Validation Regression Loss 1.8905, Validation Classification Loss: 2.2217
+2022-06-24 12:54:28,800 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-950-Loss-4.112260205405099.pth
+2022-06-24 12:56:07,675 - root - INFO - Epoch: 955, Validation Loss: 4.0188, Validation Regression Loss 1.7977, Validation Classification Loss: 2.2211
+2022-06-24 12:56:07,748 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-955-Loss-4.018844161714826.pth
+2022-06-24 12:57:40,544 - root - INFO - Epoch: 960, Validation Loss: 3.9989, Validation Regression Loss 1.7453, Validation Classification Loss: 2.2535
+2022-06-24 12:57:40,607 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-960-Loss-3.9988831792558943.pth
+2022-06-24 12:59:16,885 - root - INFO - Epoch: 965, Validation Loss: 3.9612, Validation Regression Loss 1.7263, Validation Classification Loss: 2.2348
+2022-06-24 12:59:16,956 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-965-Loss-3.961163180215018.pth
+2022-06-24 13:00:54,330 - root - INFO - Epoch: 970, Validation Loss: 4.0168, Validation Regression Loss 1.7920, Validation Classification Loss: 2.2248
+2022-06-24 13:00:54,397 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-970-Loss-4.016760723931449.pth
+2022-06-24 13:02:33,223 - root - INFO - Epoch: 975, Validation Loss: 3.9429, Validation Regression Loss 1.7253, Validation Classification Loss: 2.2176
+2022-06-24 13:02:33,301 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-975-Loss-3.94287177494594.pth
+2022-06-24 13:04:10,943 - root - INFO - Epoch: 980, Validation Loss: 3.9697, Validation Regression Loss 1.7505, Validation Classification Loss: 2.2192
+2022-06-24 13:04:11,018 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-980-Loss-3.9697365079607283.pth
+2022-06-24 13:05:44,477 - root - INFO - Epoch: 985, Validation Loss: 3.9972, Validation Regression Loss 1.7604, Validation Classification Loss: 2.2367
+2022-06-24 13:05:44,543 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-985-Loss-3.9971536908830916.pth
+2022-06-24 13:07:22,862 - root - INFO - Epoch: 990, Validation Loss: 3.9724, Validation Regression Loss 1.7451, Validation Classification Loss: 2.2273
+2022-06-24 13:07:22,928 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-990-Loss-3.9723806040627614.pth
+2022-06-24 13:08:54,452 - root - INFO - Epoch: 995, Validation Loss: 3.9597, Validation Regression Loss 1.7149, Validation Classification Loss: 2.2448
+2022-06-24 13:08:54,519 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-995-Loss-3.9596916266850064.pth
+2022-06-24 13:10:31,662 - root - INFO - Epoch: 1000, Validation Loss: 3.9902, Validation Regression Loss 1.7568, Validation Classification Loss: 2.2335
+2022-06-24 13:10:31,755 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1000-Loss-3.9902448654174805.pth
+2022-06-24 13:12:11,034 - root - INFO - Epoch: 1005, Validation Loss: 4.0031, Validation Regression Loss 1.7752, Validation Classification Loss: 2.2279
+2022-06-24 13:12:11,104 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1005-Loss-4.003127302442278.pth
+2022-06-24 13:13:48,857 - root - INFO - Epoch: 1010, Validation Loss: 4.0090, Validation Regression Loss 1.7756, Validation Classification Loss: 2.2334
+2022-06-24 13:13:48,939 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1010-Loss-4.0089584078107565.pth
+2022-06-24 13:15:30,630 - root - INFO - Epoch: 1015, Validation Loss: 3.9730, Validation Regression Loss 1.7492, Validation Classification Loss: 2.2238
+2022-06-24 13:15:30,692 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1015-Loss-3.972974811281477.pth
+2022-06-24 13:17:07,799 - root - INFO - Epoch: 1020, Validation Loss: 3.9514, Validation Regression Loss 1.7073, Validation Classification Loss: 2.2441
+2022-06-24 13:17:07,872 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1020-Loss-3.9513779367719377.pth
+2022-06-24 13:18:49,171 - root - INFO - Epoch: 1025, Validation Loss: 3.9564, Validation Regression Loss 1.7303, Validation Classification Loss: 2.2261
+2022-06-24 13:18:49,237 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1025-Loss-3.9563917432512556.pth
+2022-06-24 13:20:27,790 - root - INFO - Epoch: 1030, Validation Loss: 3.9544, Validation Regression Loss 1.7311, Validation Classification Loss: 2.2234
+2022-06-24 13:20:27,872 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1030-Loss-3.9544478825160434.pth
+2022-06-24 13:22:08,561 - root - INFO - Epoch: 1035, Validation Loss: 3.9931, Validation Regression Loss 1.7840, Validation Classification Loss: 2.2091
+2022-06-24 13:22:08,637 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1035-Loss-3.9930593286241804.pth
+2022-06-24 13:23:46,452 - root - INFO - Epoch: 1040, Validation Loss: 3.9889, Validation Regression Loss 1.7734, Validation Classification Loss: 2.2155
+2022-06-24 13:23:46,523 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1040-Loss-3.988872596195766.pth
+2022-06-24 13:25:28,760 - root - INFO - Epoch: 1045, Validation Loss: 3.9777, Validation Regression Loss 1.7574, Validation Classification Loss: 2.2203
+2022-06-24 13:25:28,856 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1045-Loss-3.9777260507856096.pth
+2022-06-24 13:27:02,129 - root - INFO - Epoch: 1050, Validation Loss: 3.9953, Validation Regression Loss 1.7775, Validation Classification Loss: 2.2178
+2022-06-24 13:27:02,179 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1050-Loss-3.995292697634016.pth
+2022-06-24 13:28:38,846 - root - INFO - Epoch: 1055, Validation Loss: 3.9528, Validation Regression Loss 1.7154, Validation Classification Loss: 2.2374
+2022-06-24 13:28:38,917 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1055-Loss-3.9527554171425954.pth
+2022-06-24 13:30:16,195 - root - INFO - Epoch: 1060, Validation Loss: 3.9622, Validation Regression Loss 1.7307, Validation Classification Loss: 2.2315
+2022-06-24 13:30:16,253 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1060-Loss-3.962170498711722.pth
+2022-06-24 13:31:53,481 - root - INFO - Epoch: 1065, Validation Loss: 4.0010, Validation Regression Loss 1.7622, Validation Classification Loss: 2.2388
+2022-06-24 13:31:53,560 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1065-Loss-4.00104478427342.pth
+2022-06-24 13:33:31,016 - root - INFO - Epoch: 1070, Validation Loss: 3.9211, Validation Regression Loss 1.6986, Validation Classification Loss: 2.2225
+2022-06-24 13:33:31,060 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1070-Loss-3.921114887510027.pth
+2022-06-24 13:35:10,206 - root - INFO - Epoch: 1075, Validation Loss: 3.9445, Validation Regression Loss 1.7236, Validation Classification Loss: 2.2209
+2022-06-24 13:35:10,272 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1075-Loss-3.944538184574672.pth
+2022-06-24 13:36:44,933 - root - INFO - Epoch: 1080, Validation Loss: 3.9834, Validation Regression Loss 1.7505, Validation Classification Loss: 2.2329
+2022-06-24 13:36:44,995 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1080-Loss-3.9833832127707347.pth
+2022-06-24 13:38:22,184 - root - INFO - Epoch: 1085, Validation Loss: 4.0419, Validation Regression Loss 1.8066, Validation Classification Loss: 2.2352
+2022-06-24 13:38:22,259 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1085-Loss-4.041889599391392.pth
+2022-06-24 13:39:58,918 - root - INFO - Epoch: 1090, Validation Loss: 3.9624, Validation Regression Loss 1.7406, Validation Classification Loss: 2.2218
+2022-06-24 13:39:58,999 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1090-Loss-3.962409734725952.pth
+2022-06-24 13:41:35,985 - root - INFO - Epoch: 1095, Validation Loss: 3.9150, Validation Regression Loss 1.6992, Validation Classification Loss: 2.2158
+2022-06-24 13:41:36,041 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1095-Loss-3.9150163446153914.pth
+2022-06-24 13:43:14,270 - root - INFO - Epoch: 1100, Validation Loss: 3.9886, Validation Regression Loss 1.7515, Validation Classification Loss: 2.2371
+2022-06-24 13:43:14,369 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1100-Loss-3.9886058398655484.pth
+2022-06-24 13:44:51,074 - root - INFO - Epoch: 1105, Validation Loss: 3.9446, Validation Regression Loss 1.7241, Validation Classification Loss: 2.2205
+2022-06-24 13:44:51,137 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1105-Loss-3.944646120071411.pth
+2022-06-24 13:46:26,115 - root - INFO - Epoch: 1110, Validation Loss: 4.0014, Validation Regression Loss 1.7597, Validation Classification Loss: 2.2416
+2022-06-24 13:46:26,177 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1110-Loss-4.001352548599243.pth
+2022-06-24 13:47:58,241 - root - INFO - Epoch: 1115, Validation Loss: 3.9729, Validation Regression Loss 1.7415, Validation Classification Loss: 2.2315
+2022-06-24 13:47:58,330 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1115-Loss-3.972930295126779.pth
+2022-06-24 13:49:35,098 - root - INFO - Epoch: 1120, Validation Loss: 3.9628, Validation Regression Loss 1.7115, Validation Classification Loss: 2.2513
+2022-06-24 13:49:35,165 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1120-Loss-3.962814841951643.pth
+2022-06-24 13:51:15,064 - root - INFO - Epoch: 1125, Validation Loss: 3.9718, Validation Regression Loss 1.7439, Validation Classification Loss: 2.2280
+2022-06-24 13:51:15,151 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1125-Loss-3.9718312535967146.pth
+2022-06-24 13:52:54,759 - root - INFO - Epoch: 1130, Validation Loss: 3.9236, Validation Regression Loss 1.7112, Validation Classification Loss: 2.2124
+2022-06-24 13:52:54,824 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1130-Loss-3.9235679422106062.pth
+2022-06-24 13:54:30,032 - root - INFO - Epoch: 1135, Validation Loss: 3.9861, Validation Regression Loss 1.7496, Validation Classification Loss: 2.2365
+2022-06-24 13:54:30,131 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1135-Loss-3.9861221654074535.pth
+2022-06-24 13:56:07,822 - root - INFO - Epoch: 1140, Validation Loss: 3.9894, Validation Regression Loss 1.7578, Validation Classification Loss: 2.2316
+2022-06-24 13:56:07,905 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1140-Loss-3.9893968445914134.pth
+2022-06-24 13:57:44,700 - root - INFO - Epoch: 1145, Validation Loss: 3.9241, Validation Regression Loss 1.7087, Validation Classification Loss: 2.2154
+2022-06-24 13:57:44,789 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1145-Loss-3.924137660435268.pth
+2022-06-24 13:59:18,543 - root - INFO - Epoch: 1150, Validation Loss: 3.9184, Validation Regression Loss 1.6964, Validation Classification Loss: 2.2220
+2022-06-24 13:59:18,666 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1150-Loss-3.918410233088902.pth
+2022-06-24 14:00:55,149 - root - INFO - Epoch: 1155, Validation Loss: 3.9227, Validation Regression Loss 1.6981, Validation Classification Loss: 2.2246
+2022-06-24 14:00:55,210 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1155-Loss-3.922743729182652.pth
+2022-06-24 14:02:34,038 - root - INFO - Epoch: 1160, Validation Loss: 3.9583, Validation Regression Loss 1.7217, Validation Classification Loss: 2.2366
+2022-06-24 14:02:34,123 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1160-Loss-3.9583332538604736.pth
+2022-06-24 14:04:13,467 - root - INFO - Epoch: 1165, Validation Loss: 3.9725, Validation Regression Loss 1.7570, Validation Classification Loss: 2.2154
+2022-06-24 14:04:13,530 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1165-Loss-3.972452299935477.pth
+2022-06-24 14:05:50,202 - root - INFO - Epoch: 1170, Validation Loss: 3.9297, Validation Regression Loss 1.6999, Validation Classification Loss: 2.2298
+2022-06-24 14:05:50,271 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1170-Loss-3.9297168254852295.pth
+2022-06-24 14:07:24,831 - root - INFO - Epoch: 1175, Validation Loss: 3.9532, Validation Regression Loss 1.7284, Validation Classification Loss: 2.2248
+2022-06-24 14:07:24,884 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1175-Loss-3.9531727177756175.pth
+2022-06-24 14:08:56,219 - root - INFO - Epoch: 1180, Validation Loss: 3.9600, Validation Regression Loss 1.7214, Validation Classification Loss: 2.2386
+2022-06-24 14:08:56,283 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1180-Loss-3.9599753447941373.pth
+2022-06-24 14:10:36,373 - root - INFO - Epoch: 1185, Validation Loss: 3.9519, Validation Regression Loss 1.7228, Validation Classification Loss: 2.2291
+2022-06-24 14:10:36,467 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1185-Loss-3.9519057273864746.pth
+2022-06-24 14:11:56,997 - root - INFO - Epoch: 1190, Validation Loss: 3.9499, Validation Regression Loss 1.7186, Validation Classification Loss: 2.2313
+2022-06-24 14:11:57,076 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1190-Loss-3.9498740945543562.pth
+2022-06-24 14:12:48,242 - root - INFO - Epoch: 1195, Validation Loss: 3.9373, Validation Regression Loss 1.7071, Validation Classification Loss: 2.2302
+2022-06-24 14:12:48,309 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1195-Loss-3.937260491507394.pth
+2022-06-24 14:13:44,235 - root - INFO - Epoch: 1200, Validation Loss: 3.9620, Validation Regression Loss 1.7119, Validation Classification Loss: 2.2501
+2022-06-24 14:13:44,284 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1200-Loss-3.96196825163705.pth
+2022-06-24 14:14:38,279 - root - INFO - Epoch: 1205, Validation Loss: 3.9215, Validation Regression Loss 1.6904, Validation Classification Loss: 2.2311
+2022-06-24 14:14:38,372 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1205-Loss-3.921525546482631.pth
+2022-06-24 14:15:29,546 - root - INFO - Epoch: 1210, Validation Loss: 3.9223, Validation Regression Loss 1.6847, Validation Classification Loss: 2.2376
+2022-06-24 14:15:29,638 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1210-Loss-3.92225228037153.pth
+2022-06-24 14:16:24,001 - root - INFO - Epoch: 1215, Validation Loss: 3.9360, Validation Regression Loss 1.6978, Validation Classification Loss: 2.2382
+2022-06-24 14:16:24,105 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1215-Loss-3.9359773908342635.pth
+2022-06-24 14:17:17,810 - root - INFO - Epoch: 1220, Validation Loss: 3.9505, Validation Regression Loss 1.7016, Validation Classification Loss: 2.2489
+2022-06-24 14:17:17,873 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1220-Loss-3.9505015781947543.pth
+2022-06-24 14:18:08,991 - root - INFO - Epoch: 1225, Validation Loss: 3.9337, Validation Regression Loss 1.6995, Validation Classification Loss: 2.2341
+2022-06-24 14:18:09,045 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1225-Loss-3.9336789676121304.pth
+2022-06-24 14:19:03,197 - root - INFO - Epoch: 1230, Validation Loss: 3.8902, Validation Regression Loss 1.6741, Validation Classification Loss: 2.2161
+2022-06-24 14:19:03,275 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1230-Loss-3.89019775390625.pth
+2022-06-24 14:19:55,332 - root - INFO - Epoch: 1235, Validation Loss: 3.9403, Validation Regression Loss 1.7053, Validation Classification Loss: 2.2350
+2022-06-24 14:19:55,411 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1235-Loss-3.940260103770665.pth
+2022-06-24 14:20:49,462 - root - INFO - Epoch: 1240, Validation Loss: 3.9465, Validation Regression Loss 1.7277, Validation Classification Loss: 2.2188
+2022-06-24 14:20:49,543 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1240-Loss-3.9464724404471263.pth
+2022-06-24 14:21:42,566 - root - INFO - Epoch: 1245, Validation Loss: 3.9528, Validation Regression Loss 1.7183, Validation Classification Loss: 2.2345
+2022-06-24 14:21:42,651 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1245-Loss-3.9528233664376393.pth
+2022-06-24 14:22:36,480 - root - INFO - Epoch: 1250, Validation Loss: 3.9527, Validation Regression Loss 1.7232, Validation Classification Loss: 2.2295
+2022-06-24 14:22:36,532 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1250-Loss-3.952749082020351.pth
+2022-06-24 14:23:30,905 - root - INFO - Epoch: 1255, Validation Loss: 3.9514, Validation Regression Loss 1.7172, Validation Classification Loss: 2.2341
+2022-06-24 14:23:30,969 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1255-Loss-3.951371601649693.pth
+2022-06-24 14:24:23,537 - root - INFO - Epoch: 1260, Validation Loss: 3.9424, Validation Regression Loss 1.7032, Validation Classification Loss: 2.2392
+2022-06-24 14:24:23,611 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1260-Loss-3.9424010685511996.pth
+2022-06-24 14:25:15,968 - root - INFO - Epoch: 1265, Validation Loss: 3.9965, Validation Regression Loss 1.7373, Validation Classification Loss: 2.2591
+2022-06-24 14:25:16,044 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1265-Loss-3.996471200670515.pth
+2022-06-24 14:26:09,454 - root - INFO - Epoch: 1270, Validation Loss: 3.9209, Validation Regression Loss 1.6895, Validation Classification Loss: 2.2314
+2022-06-24 14:26:09,551 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1270-Loss-3.9208957127162387.pth
+2022-06-24 14:27:01,925 - root - INFO - Epoch: 1275, Validation Loss: 3.8965, Validation Regression Loss 1.6775, Validation Classification Loss: 2.2190
+2022-06-24 14:27:01,998 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1275-Loss-3.8965377807617188.pth
+2022-06-24 14:27:54,814 - root - INFO - Epoch: 1280, Validation Loss: 3.8735, Validation Regression Loss 1.6553, Validation Classification Loss: 2.2182
+2022-06-24 14:27:54,871 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1280-Loss-3.873502799442836.pth
+2022-06-24 14:28:46,019 - root - INFO - Epoch: 1285, Validation Loss: 3.9027, Validation Regression Loss 1.6854, Validation Classification Loss: 2.2172
+2022-06-24 14:28:46,086 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1285-Loss-3.902660063334874.pth
+2022-06-24 14:29:41,482 - root - INFO - Epoch: 1290, Validation Loss: 3.9134, Validation Regression Loss 1.6933, Validation Classification Loss: 2.2201
+2022-06-24 14:29:41,580 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1290-Loss-3.9134159428732738.pth
+2022-06-24 14:30:37,064 - root - INFO - Epoch: 1295, Validation Loss: 3.8877, Validation Regression Loss 1.6653, Validation Classification Loss: 2.2224
+2022-06-24 14:30:37,177 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1295-Loss-3.8877413954053606.pth
+2022-06-24 14:31:31,822 - root - INFO - Epoch: 1300, Validation Loss: 3.8544, Validation Regression Loss 1.6469, Validation Classification Loss: 2.2075
+2022-06-24 14:31:31,913 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1300-Loss-3.8544182777404785.pth
+2022-06-24 14:32:27,135 - root - INFO - Epoch: 1305, Validation Loss: 3.9029, Validation Regression Loss 1.6801, Validation Classification Loss: 2.2228
+2022-06-24 14:32:27,295 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1305-Loss-3.902907303401402.pth
+2022-06-24 14:33:19,531 - root - INFO - Epoch: 1310, Validation Loss: 3.9052, Validation Regression Loss 1.6891, Validation Classification Loss: 2.2162
+2022-06-24 14:33:19,602 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1310-Loss-3.905243839536394.pth
+2022-06-24 14:34:13,032 - root - INFO - Epoch: 1315, Validation Loss: 3.8963, Validation Regression Loss 1.6778, Validation Classification Loss: 2.2184
+2022-06-24 14:34:13,116 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1315-Loss-3.8962631225585938.pth
+2022-06-24 14:35:06,566 - root - INFO - Epoch: 1320, Validation Loss: 3.8971, Validation Regression Loss 1.6862, Validation Classification Loss: 2.2110
+2022-06-24 14:35:06,637 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1320-Loss-3.89713784626552.pth
+2022-06-24 14:35:58,479 - root - INFO - Epoch: 1325, Validation Loss: 3.8940, Validation Regression Loss 1.6841, Validation Classification Loss: 2.2099
+2022-06-24 14:35:58,547 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1325-Loss-3.8940452507564.pth
+2022-06-24 14:36:53,816 - root - INFO - Epoch: 1330, Validation Loss: 3.8753, Validation Regression Loss 1.6550, Validation Classification Loss: 2.2203
+2022-06-24 14:36:53,887 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1330-Loss-3.8752949237823486.pth
+2022-06-24 14:37:49,510 - root - INFO - Epoch: 1335, Validation Loss: 3.9539, Validation Regression Loss 1.7126, Validation Classification Loss: 2.2413
+2022-06-24 14:37:49,603 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1335-Loss-3.953893252781459.pth
+2022-06-24 14:38:43,751 - root - INFO - Epoch: 1340, Validation Loss: 3.9267, Validation Regression Loss 1.7027, Validation Classification Loss: 2.2240
+2022-06-24 14:38:43,847 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1340-Loss-3.9267461640494212.pth
+2022-06-24 14:39:36,742 - root - INFO - Epoch: 1345, Validation Loss: 3.9173, Validation Regression Loss 1.6899, Validation Classification Loss: 2.2274
+2022-06-24 14:39:36,843 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1345-Loss-3.9173216819763184.pth
+2022-06-24 14:40:30,170 - root - INFO - Epoch: 1350, Validation Loss: 3.9248, Validation Regression Loss 1.7005, Validation Classification Loss: 2.2244
+2022-06-24 14:40:30,244 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1350-Loss-3.924816472189767.pth
+2022-06-24 14:41:23,493 - root - INFO - Epoch: 1355, Validation Loss: 3.9169, Validation Regression Loss 1.6964, Validation Classification Loss: 2.2205
+2022-06-24 14:41:23,557 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1355-Loss-3.916853189468384.pth
+2022-06-24 14:42:19,055 - root - INFO - Epoch: 1360, Validation Loss: 3.9342, Validation Regression Loss 1.6923, Validation Classification Loss: 2.2420
+2022-06-24 14:42:19,133 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1360-Loss-3.9342388084956577.pth
+2022-06-24 14:43:16,228 - root - INFO - Epoch: 1365, Validation Loss: 3.9470, Validation Regression Loss 1.7131, Validation Classification Loss: 2.2339
+2022-06-24 14:43:16,339 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1365-Loss-3.9470146724155972.pth
+2022-06-24 14:44:09,535 - root - INFO - Epoch: 1370, Validation Loss: 3.9401, Validation Regression Loss 1.7086, Validation Classification Loss: 2.2315
+2022-06-24 14:44:09,615 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1370-Loss-3.9401393958500455.pth
+2022-06-24 14:45:04,145 - root - INFO - Epoch: 1375, Validation Loss: 3.8967, Validation Regression Loss 1.6844, Validation Classification Loss: 2.2123
+2022-06-24 14:45:04,264 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1375-Loss-3.896658045904977.pth
+2022-06-24 14:45:55,562 - root - INFO - Epoch: 1380, Validation Loss: 3.9002, Validation Regression Loss 1.6816, Validation Classification Loss: 2.2186
+2022-06-24 14:45:55,669 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1380-Loss-3.900165115083967.pth
+2022-06-24 14:46:46,198 - root - INFO - Epoch: 1385, Validation Loss: 3.9130, Validation Regression Loss 1.6880, Validation Classification Loss: 2.2250
+2022-06-24 14:46:46,281 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1385-Loss-3.913020508629935.pth
+2022-06-24 14:47:38,555 - root - INFO - Epoch: 1390, Validation Loss: 3.9458, Validation Regression Loss 1.7068, Validation Classification Loss: 2.2389
+2022-06-24 14:47:38,632 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1390-Loss-3.945758206503732.pth
+2022-06-24 14:48:30,987 - root - INFO - Epoch: 1395, Validation Loss: 3.9399, Validation Regression Loss 1.7007, Validation Classification Loss: 2.2392
+2022-06-24 14:48:31,084 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1395-Loss-3.9398510796683177.pth
+2022-06-24 14:49:28,231 - root - INFO - Epoch: 1400, Validation Loss: 3.9108, Validation Regression Loss 1.6943, Validation Classification Loss: 2.2164
+2022-06-24 14:49:28,311 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1400-Loss-3.9107517174312045.pth
+2022-06-24 14:50:23,913 - root - INFO - Epoch: 1405, Validation Loss: 3.9429, Validation Regression Loss 1.7028, Validation Classification Loss: 2.2400
+2022-06-24 14:50:23,990 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1405-Loss-3.9428557668413435.pth
+2022-06-24 14:51:18,335 - root - INFO - Epoch: 1410, Validation Loss: 3.9045, Validation Regression Loss 1.6802, Validation Classification Loss: 2.2244
+2022-06-24 14:51:18,422 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1410-Loss-3.9045275279453824.pth
+2022-06-24 14:52:12,369 - root - INFO - Epoch: 1415, Validation Loss: 3.9022, Validation Regression Loss 1.6846, Validation Classification Loss: 2.2176
+2022-06-24 14:52:12,442 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1415-Loss-3.902226448059082.pth
+2022-06-24 14:53:09,878 - root - INFO - Epoch: 1420, Validation Loss: 3.9026, Validation Regression Loss 1.6744, Validation Classification Loss: 2.2281
+2022-06-24 14:53:09,965 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1420-Loss-3.902567114148821.pth
+2022-06-24 14:54:03,474 - root - INFO - Epoch: 1425, Validation Loss: 3.8777, Validation Regression Loss 1.6641, Validation Classification Loss: 2.2136
+2022-06-24 14:54:03,564 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1425-Loss-3.8776625224522183.pth
+2022-06-24 14:54:55,853 - root - INFO - Epoch: 1430, Validation Loss: 3.8781, Validation Regression Loss 1.6579, Validation Classification Loss: 2.2202
+2022-06-24 14:54:55,941 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1430-Loss-3.878136328288487.pth
+2022-06-24 14:55:49,827 - root - INFO - Epoch: 1435, Validation Loss: 3.8878, Validation Regression Loss 1.6646, Validation Classification Loss: 2.2232
+2022-06-24 14:55:49,884 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1435-Loss-3.887833629335676.pth
+2022-06-24 14:56:44,295 - root - INFO - Epoch: 1440, Validation Loss: 3.8832, Validation Regression Loss 1.6466, Validation Classification Loss: 2.2367
+2022-06-24 14:56:44,346 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1440-Loss-3.883227893284389.pth
+2022-06-24 14:57:35,850 - root - INFO - Epoch: 1445, Validation Loss: 3.8977, Validation Regression Loss 1.6746, Validation Classification Loss: 2.2231
+2022-06-24 14:57:35,917 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1445-Loss-3.897662707737514.pth
+2022-06-24 14:58:29,274 - root - INFO - Epoch: 1450, Validation Loss: 3.8891, Validation Regression Loss 1.6622, Validation Classification Loss: 2.2269
+2022-06-24 14:58:29,328 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1450-Loss-3.889104093824114.pth
+2022-06-24 14:59:24,059 - root - INFO - Epoch: 1455, Validation Loss: 3.8814, Validation Regression Loss 1.6518, Validation Classification Loss: 2.2296
+2022-06-24 14:59:24,132 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1455-Loss-3.881429774420602.pth
+2022-06-24 15:00:17,123 - root - INFO - Epoch: 1460, Validation Loss: 3.8948, Validation Regression Loss 1.6742, Validation Classification Loss: 2.2206
+2022-06-24 15:00:17,196 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1460-Loss-3.894840581076486.pth
+2022-06-24 15:01:12,156 - root - INFO - Epoch: 1465, Validation Loss: 3.8802, Validation Regression Loss 1.6605, Validation Classification Loss: 2.2197
+2022-06-24 15:01:12,267 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1465-Loss-3.880184139524187.pth
+2022-06-24 15:02:05,516 - root - INFO - Epoch: 1470, Validation Loss: 3.8988, Validation Regression Loss 1.6763, Validation Classification Loss: 2.2225
+2022-06-24 15:02:05,593 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1470-Loss-3.8987692083631242.pth
+2022-06-24 15:02:58,448 - root - INFO - Epoch: 1475, Validation Loss: 3.8826, Validation Regression Loss 1.6698, Validation Classification Loss: 2.2128
+2022-06-24 15:02:58,521 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1475-Loss-3.8826414176395962.pth
+2022-06-24 15:03:51,355 - root - INFO - Epoch: 1480, Validation Loss: 3.8731, Validation Regression Loss 1.6504, Validation Classification Loss: 2.2227
+2022-06-24 15:03:51,442 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1480-Loss-3.8731178556169783.pth
+2022-06-24 15:04:44,144 - root - INFO - Epoch: 1485, Validation Loss: 3.8810, Validation Regression Loss 1.6569, Validation Classification Loss: 2.2241
+2022-06-24 15:04:44,238 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1485-Loss-3.8809710911342075.pth
+2022-06-24 15:05:36,086 - root - INFO - Epoch: 1490, Validation Loss: 3.8737, Validation Regression Loss 1.6598, Validation Classification Loss: 2.2139
+2022-06-24 15:05:36,175 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1490-Loss-3.8737198284694125.pth
+2022-06-24 15:06:27,194 - root - INFO - Epoch: 1495, Validation Loss: 3.8978, Validation Regression Loss 1.6775, Validation Classification Loss: 2.2203
+2022-06-24 15:06:27,291 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1495-Loss-3.897806780678885.pth
+2022-06-24 15:07:18,912 - root - INFO - Epoch: 1500, Validation Loss: 3.8637, Validation Regression Loss 1.6508, Validation Classification Loss: 2.2130
+2022-06-24 15:07:18,994 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1500-Loss-3.8637190205710277.pth
+2022-06-24 15:08:10,736 - root - INFO - Epoch: 1505, Validation Loss: 3.8757, Validation Regression Loss 1.6718, Validation Classification Loss: 2.2039
+2022-06-24 15:08:10,815 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1505-Loss-3.8756987367357527.pth
+2022-06-24 15:09:03,036 - root - INFO - Epoch: 1510, Validation Loss: 3.9000, Validation Regression Loss 1.6861, Validation Classification Loss: 2.2139
+2022-06-24 15:09:03,130 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1510-Loss-3.9000369140080045.pth
+2022-06-24 15:09:57,474 - root - INFO - Epoch: 1515, Validation Loss: 3.8694, Validation Regression Loss 1.6549, Validation Classification Loss: 2.2145
+2022-06-24 15:09:57,569 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1515-Loss-3.8693958691188266.pth
+2022-06-24 15:10:49,737 - root - INFO - Epoch: 1520, Validation Loss: 3.8792, Validation Regression Loss 1.6649, Validation Classification Loss: 2.2143
+2022-06-24 15:10:49,814 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1520-Loss-3.879162924630301.pth
+2022-06-24 15:11:46,180 - root - INFO - Epoch: 1525, Validation Loss: 3.8709, Validation Regression Loss 1.6561, Validation Classification Loss: 2.2148
+2022-06-24 15:11:46,247 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1525-Loss-3.8708835669926236.pth
+2022-06-24 15:12:40,968 - root - INFO - Epoch: 1530, Validation Loss: 3.8791, Validation Regression Loss 1.6542, Validation Classification Loss: 2.2248
+2022-06-24 15:12:41,059 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1530-Loss-3.879065547670637.pth
+2022-06-24 15:13:34,245 - root - INFO - Epoch: 1535, Validation Loss: 3.8920, Validation Regression Loss 1.6777, Validation Classification Loss: 2.2143
+2022-06-24 15:13:34,328 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1535-Loss-3.8919635159628734.pth
+2022-06-24 15:14:30,166 - root - INFO - Epoch: 1540, Validation Loss: 3.8715, Validation Regression Loss 1.6534, Validation Classification Loss: 2.2181
+2022-06-24 15:14:30,242 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1540-Loss-3.871512310845511.pth
+2022-06-24 15:15:22,260 - root - INFO - Epoch: 1545, Validation Loss: 3.8702, Validation Regression Loss 1.6503, Validation Classification Loss: 2.2200
+2022-06-24 15:15:22,339 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1545-Loss-3.8702099323272705.pth
+2022-06-24 15:16:17,445 - root - INFO - Epoch: 1550, Validation Loss: 3.8902, Validation Regression Loss 1.6637, Validation Classification Loss: 2.2265
+2022-06-24 15:16:17,546 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1550-Loss-3.8901997974940707.pth
+2022-06-24 15:17:09,187 - root - INFO - Epoch: 1555, Validation Loss: 3.8583, Validation Regression Loss 1.6369, Validation Classification Loss: 2.2214
+2022-06-24 15:17:09,276 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1555-Loss-3.8582625729697093.pth
+2022-06-24 15:18:00,063 - root - INFO - Epoch: 1560, Validation Loss: 3.8711, Validation Regression Loss 1.6492, Validation Classification Loss: 2.2219
+2022-06-24 15:18:00,140 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1560-Loss-3.871101583753313.pth
+2022-06-24 15:18:51,647 - root - INFO - Epoch: 1565, Validation Loss: 3.8634, Validation Regression Loss 1.6442, Validation Classification Loss: 2.2191
+2022-06-24 15:18:51,732 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1565-Loss-3.863383940287999.pth
+2022-06-24 15:19:43,157 - root - INFO - Epoch: 1570, Validation Loss: 3.8526, Validation Regression Loss 1.6396, Validation Classification Loss: 2.2130
+2022-06-24 15:19:43,258 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1570-Loss-3.8525801726749966.pth
+2022-06-24 15:20:38,344 - root - INFO - Epoch: 1575, Validation Loss: 3.8757, Validation Regression Loss 1.6551, Validation Classification Loss: 2.2206
+2022-06-24 15:20:38,419 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1575-Loss-3.8756542887006487.pth
+2022-06-24 15:21:33,368 - root - INFO - Epoch: 1580, Validation Loss: 3.8668, Validation Regression Loss 1.6473, Validation Classification Loss: 2.2195
+2022-06-24 15:21:33,451 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1580-Loss-3.866778237479074.pth
+2022-06-24 15:22:29,834 - root - INFO - Epoch: 1585, Validation Loss: 3.8787, Validation Regression Loss 1.6576, Validation Classification Loss: 2.2211
+2022-06-24 15:22:29,912 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1585-Loss-3.8787061146327426.pth
+2022-06-24 15:23:19,521 - root - INFO - Epoch: 1590, Validation Loss: 3.8652, Validation Regression Loss 1.6403, Validation Classification Loss: 2.2249
+2022-06-24 15:23:19,604 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1590-Loss-3.865232127053397.pth
+2022-06-24 15:24:13,577 - root - INFO - Epoch: 1595, Validation Loss: 3.8480, Validation Regression Loss 1.6246, Validation Classification Loss: 2.2234
+2022-06-24 15:24:13,680 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1595-Loss-3.8479892185756137.pth
+2022-06-24 15:25:05,577 - root - INFO - Epoch: 1600, Validation Loss: 3.8572, Validation Regression Loss 1.6401, Validation Classification Loss: 2.2171
+2022-06-24 15:25:05,644 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1600-Loss-3.8571977615356445.pth
+2022-06-24 15:25:59,832 - root - INFO - Epoch: 1605, Validation Loss: 3.8486, Validation Regression Loss 1.6321, Validation Classification Loss: 2.2165
+2022-06-24 15:25:59,900 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1605-Loss-3.8485564163752963.pth
+2022-06-24 15:26:52,346 - root - INFO - Epoch: 1610, Validation Loss: 3.8504, Validation Regression Loss 1.6390, Validation Classification Loss: 2.2114
+2022-06-24 15:26:52,419 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1610-Loss-3.8503710201808383.pth
+2022-06-24 15:27:48,473 - root - INFO - Epoch: 1615, Validation Loss: 3.8593, Validation Regression Loss 1.6370, Validation Classification Loss: 2.2223
+2022-06-24 15:27:48,563 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1615-Loss-3.8592920984540666.pth
+2022-06-24 15:28:43,322 - root - INFO - Epoch: 1620, Validation Loss: 3.8697, Validation Regression Loss 1.6422, Validation Classification Loss: 2.2276
+2022-06-24 15:28:43,405 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1620-Loss-3.8697312218802318.pth
+2022-06-24 15:29:39,228 - root - INFO - Epoch: 1625, Validation Loss: 3.8538, Validation Regression Loss 1.6397, Validation Classification Loss: 2.2141
+2022-06-24 15:29:39,308 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1625-Loss-3.85382308278765.pth
+2022-06-24 15:30:35,462 - root - INFO - Epoch: 1630, Validation Loss: 3.8685, Validation Regression Loss 1.6545, Validation Classification Loss: 2.2140
+2022-06-24 15:30:35,538 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1630-Loss-3.8684736660548618.pth
+2022-06-24 15:31:26,467 - root - INFO - Epoch: 1635, Validation Loss: 3.8595, Validation Regression Loss 1.6473, Validation Classification Loss: 2.2121
+2022-06-24 15:31:26,532 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1635-Loss-3.859470844268799.pth
+2022-06-24 15:32:18,092 - root - INFO - Epoch: 1640, Validation Loss: 3.8576, Validation Regression Loss 1.6414, Validation Classification Loss: 2.2162
+2022-06-24 15:32:18,181 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1640-Loss-3.8576034818376814.pth
+2022-06-24 15:33:10,506 - root - INFO - Epoch: 1645, Validation Loss: 3.8474, Validation Regression Loss 1.6387, Validation Classification Loss: 2.2087
+2022-06-24 15:33:10,575 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1645-Loss-3.8474113600594655.pth
+2022-06-24 15:34:03,298 - root - INFO - Epoch: 1650, Validation Loss: 3.8551, Validation Regression Loss 1.6386, Validation Classification Loss: 2.2165
+2022-06-24 15:34:03,380 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1650-Loss-3.8550983497074673.pth
+2022-06-24 15:34:54,188 - root - INFO - Epoch: 1655, Validation Loss: 3.8539, Validation Regression Loss 1.6393, Validation Classification Loss: 2.2146
+2022-06-24 15:34:54,264 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1655-Loss-3.85388377734593.pth
+2022-06-24 15:35:47,181 - root - INFO - Epoch: 1660, Validation Loss: 3.8507, Validation Regression Loss 1.6378, Validation Classification Loss: 2.2129
+2022-06-24 15:35:47,284 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1660-Loss-3.8507016386304582.pth
+2022-06-24 15:36:39,223 - root - INFO - Epoch: 1665, Validation Loss: 3.8488, Validation Regression Loss 1.6299, Validation Classification Loss: 2.2190
+2022-06-24 15:36:39,301 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1665-Loss-3.8488477638789584.pth
+2022-06-24 15:37:33,595 - root - INFO - Epoch: 1670, Validation Loss: 3.8567, Validation Regression Loss 1.6369, Validation Classification Loss: 2.2198
+2022-06-24 15:37:33,665 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1670-Loss-3.8567378520965576.pth
+2022-06-24 15:38:25,745 - root - INFO - Epoch: 1675, Validation Loss: 3.8588, Validation Regression Loss 1.6398, Validation Classification Loss: 2.2191
+2022-06-24 15:38:25,825 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1675-Loss-3.8588449954986572.pth
+2022-06-24 15:39:19,057 - root - INFO - Epoch: 1680, Validation Loss: 3.8768, Validation Regression Loss 1.6543, Validation Classification Loss: 2.2225
+2022-06-24 15:39:19,124 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1680-Loss-3.876817907605852.pth
+2022-06-24 15:40:12,798 - root - INFO - Epoch: 1685, Validation Loss: 3.8578, Validation Regression Loss 1.6416, Validation Classification Loss: 2.2162
+2022-06-24 15:40:12,879 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1685-Loss-3.857825653893607.pth
+2022-06-24 15:41:08,600 - root - INFO - Epoch: 1690, Validation Loss: 3.8560, Validation Regression Loss 1.6393, Validation Classification Loss: 2.2168
+2022-06-24 15:41:08,669 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1690-Loss-3.8560429641178677.pth
+2022-06-24 15:42:02,725 - root - INFO - Epoch: 1695, Validation Loss: 3.8624, Validation Regression Loss 1.6434, Validation Classification Loss: 2.2189
+2022-06-24 15:42:02,798 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1695-Loss-3.8623969554901123.pth
+2022-06-24 15:42:53,368 - root - INFO - Epoch: 1700, Validation Loss: 3.8667, Validation Regression Loss 1.6459, Validation Classification Loss: 2.2207
+2022-06-24 15:42:53,451 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1700-Loss-3.8666531017848422.pth
+2022-06-24 15:43:43,888 - root - INFO - Epoch: 1705, Validation Loss: 3.8509, Validation Regression Loss 1.6376, Validation Classification Loss: 2.2133
+2022-06-24 15:43:43,958 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1705-Loss-3.8509113107408797.pth
+2022-06-24 15:44:36,248 - root - INFO - Epoch: 1710, Validation Loss: 3.8635, Validation Regression Loss 1.6497, Validation Classification Loss: 2.2139
+2022-06-24 15:44:36,363 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1710-Loss-3.863549607140677.pth
+2022-06-24 15:45:33,515 - root - INFO - Epoch: 1715, Validation Loss: 3.8597, Validation Regression Loss 1.6481, Validation Classification Loss: 2.2116
+2022-06-24 15:45:33,589 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1715-Loss-3.85970595904759.pth
+2022-06-24 15:46:24,250 - root - INFO - Epoch: 1720, Validation Loss: 3.8623, Validation Regression Loss 1.6480, Validation Classification Loss: 2.2143
+2022-06-24 15:46:24,336 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1720-Loss-3.862330436706543.pth
+2022-06-24 15:47:18,692 - root - INFO - Epoch: 1725, Validation Loss: 3.8585, Validation Regression Loss 1.6439, Validation Classification Loss: 2.2146
+2022-06-24 15:47:18,767 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1725-Loss-3.8585001741136824.pth
+2022-06-24 15:48:12,358 - root - INFO - Epoch: 1730, Validation Loss: 3.8625, Validation Regression Loss 1.6449, Validation Classification Loss: 2.2177
+2022-06-24 15:48:12,435 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1730-Loss-3.8625262464795793.pth
+2022-06-24 15:49:07,707 - root - INFO - Epoch: 1735, Validation Loss: 3.8565, Validation Regression Loss 1.6452, Validation Classification Loss: 2.2113
+2022-06-24 15:49:07,790 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1735-Loss-3.8565471512930736.pth
+2022-06-24 15:50:00,867 - root - INFO - Epoch: 1740, Validation Loss: 3.8550, Validation Regression Loss 1.6438, Validation Classification Loss: 2.2112
+2022-06-24 15:50:00,964 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1740-Loss-3.854984794344221.pth
+2022-06-24 15:50:56,744 - root - INFO - Epoch: 1745, Validation Loss: 3.8629, Validation Regression Loss 1.6444, Validation Classification Loss: 2.2185
+2022-06-24 15:50:56,817 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1745-Loss-3.8629211017063687.pth
+2022-06-24 15:51:50,494 - root - INFO - Epoch: 1750, Validation Loss: 3.8524, Validation Regression Loss 1.6393, Validation Classification Loss: 2.2130
+2022-06-24 15:51:50,555 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1750-Loss-3.8523757117135182.pth
+2022-06-24 15:52:42,743 - root - INFO - Epoch: 1755, Validation Loss: 3.8553, Validation Regression Loss 1.6419, Validation Classification Loss: 2.2134
+2022-06-24 15:52:42,832 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1755-Loss-3.85530686378479.pth
+2022-06-24 15:53:37,205 - root - INFO - Epoch: 1760, Validation Loss: 3.8586, Validation Regression Loss 1.6446, Validation Classification Loss: 2.2140
+2022-06-24 15:53:37,280 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1760-Loss-3.858600275857108.pth
+2022-06-24 15:54:33,280 - root - INFO - Epoch: 1765, Validation Loss: 3.8620, Validation Regression Loss 1.6456, Validation Classification Loss: 2.2163
+2022-06-24 15:54:33,374 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1765-Loss-3.861966746194022.pth
+2022-06-24 15:55:26,654 - root - INFO - Epoch: 1770, Validation Loss: 3.8581, Validation Regression Loss 1.6441, Validation Classification Loss: 2.2141
+2022-06-24 15:55:26,748 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1770-Loss-3.858142069407872.pth
+2022-06-24 15:56:18,265 - root - INFO - Epoch: 1775, Validation Loss: 3.8649, Validation Regression Loss 1.6459, Validation Classification Loss: 2.2190
+2022-06-24 15:56:18,344 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1775-Loss-3.864877019609724.pth
+2022-06-24 15:57:10,891 - root - INFO - Epoch: 1780, Validation Loss: 3.8614, Validation Regression Loss 1.6440, Validation Classification Loss: 2.2174
+2022-06-24 15:57:10,970 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1780-Loss-3.8614185878208707.pth
+2022-06-24 15:58:04,355 - root - INFO - Epoch: 1785, Validation Loss: 3.8585, Validation Regression Loss 1.6472, Validation Classification Loss: 2.2113
+2022-06-24 15:58:04,448 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1785-Loss-3.8584510598863875.pth
+2022-06-24 15:58:58,859 - root - INFO - Epoch: 1790, Validation Loss: 3.8587, Validation Regression Loss 1.6432, Validation Classification Loss: 2.2155
+2022-06-24 15:58:58,926 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1790-Loss-3.858720098223005.pth
+2022-06-24 15:59:51,606 - root - INFO - Epoch: 1795, Validation Loss: 3.8666, Validation Regression Loss 1.6461, Validation Classification Loss: 2.2204
+2022-06-24 15:59:51,685 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1795-Loss-3.8665501390184676.pth
+2022-06-24 16:00:33,527 - root - INFO - Epoch: 1799, Validation Loss: 3.8647, Validation Regression Loss 1.6465, Validation Classification Loss: 2.2183
+2022-06-24 16:00:33,604 - root - INFO - Saved model models/scratch277/mb1-ssd-lite-277-Epoch-1799-Loss-3.8647171429225375.pth

@@ -1,0 +1,40 @@
+2022-06-10 01:50:26,585 - root - INFO - Use Cuda.
+2022-06-10 01:50:26,585 - root - INFO - Namespace(balance_data=False, base_net=None, base_net_lr=None, batch_size=32, checkpoint_folder='models/crowdnew', dataset_type='voc', datasets=['CrowdHuman'], debug_steps=100, extra_layers_lr=None, freeze_base_net=False, freeze_net=False, gamma=0.1, gpu='6', loss='smoothl1', lr=0.001, mb2_width_mult=1.0, milestones='30,190', momentum=0.9, net='mb1-ssd-lite-025extra', num_epochs=200, num_workers=8, optimizer='SGD', pretrained_ssd='models/crowdnew/mb1-ssd-lite-025extra-Epoch-5-Loss-4.631256823637048.pth', resume=None, scheduler='multi-step', t_max=120, use_cuda=True, validation_dataset='CrowdHuman', validation_epochs=5, weight_decay=0.0005, width_mult=0.25)
+2022-06-10 01:50:26,586 - root - INFO - Prepare training datasets.
+2022-06-10 01:50:26,588 - root - INFO - No labels file, using default VOC classes.
+2022-06-10 01:50:26,596 - root - INFO - Stored labels into file models/crowdnew/voc-model-labels.txt.
+2022-06-10 01:50:26,597 - root - INFO - Train dataset size: 4140
+2022-06-10 01:50:26,597 - root - INFO - Prepare Validation datasets.
+2022-06-10 01:50:26,598 - root - INFO - No labels file, using default VOC classes.
+2022-06-10 01:50:26,598 - root - INFO - validation dataset size: 360
+2022-06-10 01:50:26,598 - root - INFO - Build network.
+2022-06-10 01:50:26,618 - root - INFO - Init from pretrained ssd models/crowdnew/mb1-ssd-lite-025extra-Epoch-5-Loss-4.631256823637048.pth
+2022-06-10 01:50:26,638 - root - INFO - Took 0.02 seconds to load the model.
+2022-06-10 01:50:30,348 - root - INFO - Learning rate: 0.001, Base net learning rate: 0.001, Extra Layers learning rate: 0.001.
+2022-06-10 01:50:30,349 - root - INFO - Uses MultiStepLR scheduler.
+2022-06-10 01:50:30,351 - root - INFO - Start training from epoch 0.
+2022-06-10 01:52:02,658 - root - INFO - Epoch: 0, Step: 100, Average Loss: 9.1476, Average Regression Loss 6.2050, Average Classification Loss: 2.9426
+2022-06-10 01:52:29,596 - root - INFO - Epoch: 0, Validation Loss: 8.3649, Validation Regression Loss 5.8677, Validation Classification Loss: 2.4972
+2022-06-10 01:52:29,707 - root - INFO - Saved model models/crowdnew/mb1-ssd-lite-025extra-Epoch-0-Loss-8.364890615145365.pth
+2022-06-10 01:53:56,084 - root - INFO - Epoch: 1, Step: 100, Average Loss: 8.2573, Average Regression Loss 5.8004, Average Classification Loss: 2.4569
+2022-06-10 01:55:43,438 - root - INFO - Epoch: 2, Step: 100, Average Loss: 7.5197, Average Regression Loss 5.1782, Average Classification Loss: 2.3414
+2022-06-10 01:57:34,925 - root - INFO - Epoch: 3, Step: 100, Average Loss: 6.5857, Average Regression Loss 4.2849, Average Classification Loss: 2.3008
+2022-06-10 01:59:17,122 - root - INFO - Epoch: 4, Step: 100, Average Loss: 6.1469, Average Regression Loss 3.8654, Average Classification Loss: 2.2815
+2022-06-10 02:00:59,572 - root - INFO - Epoch: 5, Step: 100, Average Loss: 5.9874, Average Regression Loss 3.7154, Average Classification Loss: 2.2720
+2022-06-10 02:01:29,436 - root - INFO - Epoch: 5, Validation Loss: 5.7245, Validation Regression Loss 3.4884, Validation Classification Loss: 2.2361
+2022-06-10 02:01:29,504 - root - INFO - Saved model models/crowdnew/mb1-ssd-lite-025extra-Epoch-5-Loss-5.7245170672734575.pth
+2022-06-10 02:02:56,325 - root - INFO - Epoch: 6, Step: 100, Average Loss: 5.8191, Average Regression Loss 3.5548, Average Classification Loss: 2.2643
+2022-06-10 02:04:42,609 - root - INFO - Epoch: 7, Step: 100, Average Loss: 5.7105, Average Regression Loss 3.4552, Average Classification Loss: 2.2553
+2022-06-10 02:06:33,852 - root - INFO - Epoch: 8, Step: 100, Average Loss: 5.6675, Average Regression Loss 3.4174, Average Classification Loss: 2.2501
+2022-06-10 02:08:32,653 - root - INFO - Epoch: 9, Step: 100, Average Loss: 5.5708, Average Regression Loss 3.3304, Average Classification Loss: 2.2404
+2022-06-10 02:10:19,300 - root - INFO - Epoch: 10, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 02:10:47,760 - root - INFO - Epoch: 10, Validation Loss: nan, Validation Regression Loss nan, Validation Classification Loss: nan
+2022-06-10 02:10:47,914 - root - INFO - Saved model models/crowdnew/mb1-ssd-lite-025extra-Epoch-10-Loss-nan.pth
+2022-06-10 02:12:13,221 - root - INFO - Epoch: 11, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 02:14:04,938 - root - INFO - Epoch: 12, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 02:15:47,863 - root - INFO - Epoch: 13, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 02:17:28,102 - root - INFO - Epoch: 14, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 02:19:24,086 - root - INFO - Epoch: 15, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 02:19:52,252 - root - INFO - Epoch: 15, Validation Loss: nan, Validation Regression Loss nan, Validation Classification Loss: nan
+2022-06-10 02:19:52,291 - root - INFO - Saved model models/crowdnew/mb1-ssd-lite-025extra-Epoch-15-Loss-nan.pth
+2022-06-10 02:21:25,637 - root - INFO - Epoch: 16, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan

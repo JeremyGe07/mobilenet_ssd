@@ -1,0 +1,574 @@
+root-- VOC2007
+Pruning round 1, load model from models/ep1000ws1pr/mb1-ssd-lite-Epoch-945-Loss-3.2492578540529524.pth
+SSD(
+  (base_net): Sequential(
+    (0): Sequential(
+      (0): Conv2d(3, 6, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (1): BatchNorm2d(6, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+    )
+    (1): Sequential(
+      (0): Conv2d(6, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=6, bias=False)
+      (1): BatchNorm2d(6, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(6, 11, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (4): BatchNorm2d(11, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+    )
+    (2): Sequential(
+      (0): Conv2d(11, 11, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=11, bias=False)
+      (1): BatchNorm2d(11, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(11, 21, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (4): BatchNorm2d(21, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+    )
+    (3): Sequential(
+      (0): Conv2d(21, 21, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=21, bias=False)
+      (1): BatchNorm2d(21, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(21, 21, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (4): BatchNorm2d(21, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+    )
+    (4): Sequential(
+      (0): Conv2d(21, 21, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=21, bias=False)
+      (1): BatchNorm2d(21, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(21, 42, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (4): BatchNorm2d(42, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+    )
+    (5): Sequential(
+      (0): Conv2d(42, 42, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=42, bias=False)
+      (1): BatchNorm2d(42, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(42, 42, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (4): BatchNorm2d(42, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+    )
+    (6): Sequential(
+      (0): Conv2d(42, 42, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=42, bias=False)
+      (1): BatchNorm2d(42, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(42, 82, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (4): BatchNorm2d(82, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+    )
+    (7): Sequential(
+      (0): Conv2d(82, 82, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=82, bias=False)
+      (1): BatchNorm2d(82, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(82, 82, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (4): BatchNorm2d(82, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+    )
+    (8): Sequential(
+      (0): Conv2d(82, 82, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=82, bias=False)
+      (1): BatchNorm2d(82, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(82, 82, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (4): BatchNorm2d(82, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+    )
+    (9): Sequential(
+      (0): Conv2d(82, 82, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=82, bias=False)
+      (1): BatchNorm2d(82, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(82, 82, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (4): BatchNorm2d(82, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+    )
+    (10): Sequential(
+      (0): Conv2d(82, 82, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=82, bias=False)
+      (1): BatchNorm2d(82, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(82, 82, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (4): BatchNorm2d(82, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+    )
+    (11): Sequential(
+      (0): Conv2d(82, 82, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=82, bias=False)
+      (1): BatchNorm2d(82, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(82, 14, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (4): BatchNorm2d(14, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+    )
+    (12): Sequential(
+      (0): Conv2d(14, 14, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=14, bias=False)
+      (1): BatchNorm2d(14, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(14, 164, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (4): BatchNorm2d(164, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+    )
+    (13): Sequential(
+      (0): Conv2d(164, 164, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=164, bias=False)
+      (1): BatchNorm2d(164, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(164, 66, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (4): BatchNorm2d(66, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+    )
+  )
+  (extras): ModuleList(
+    (0): Sequential(
+      (0): Conv2d(66, 42, kernel_size=(1, 1), stride=(1, 1))
+      (1): ReLU()
+      (2): Sequential(
+        (0): Conv2d(42, 42, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=42)
+        (1): ReLU()
+        (2): Conv2d(42, 33, kernel_size=(1, 1), stride=(1, 1))
+      )
+    )
+    (1): Sequential(
+      (0): Conv2d(33, 21, kernel_size=(1, 1), stride=(1, 1))
+      (1): ReLU()
+      (2): Sequential(
+        (0): Conv2d(21, 21, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=21)
+        (1): ReLU()
+        (2): Conv2d(21, 17, kernel_size=(1, 1), stride=(1, 1))
+      )
+    )
+    (2): Sequential(
+      (0): Conv2d(17, 21, kernel_size=(1, 1), stride=(1, 1))
+      (1): ReLU()
+      (2): Sequential(
+        (0): Conv2d(21, 21, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=21)
+        (1): ReLU()
+        (2): Conv2d(21, 17, kernel_size=(1, 1), stride=(1, 1))
+      )
+    )
+    (3): Sequential(
+      (0): Conv2d(17, 21, kernel_size=(1, 1), stride=(1, 1))
+      (1): ReLU()
+      (2): Sequential(
+        (0): Conv2d(21, 21, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), groups=21)
+        (1): ReLU()
+        (2): Conv2d(21, 103, kernel_size=(1, 1), stride=(1, 1))
+      )
+    )
+  )
+  (classification_headers): ModuleList(
+    (0): Sequential(
+      (0): Conv2d(14, 14, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=14)
+      (1): ReLU()
+      (2): Conv2d(14, 12, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (1): Sequential(
+      (0): Conv2d(66, 66, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=66)
+      (1): ReLU()
+      (2): Conv2d(66, 12, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (2): Sequential(
+      (0): Conv2d(33, 33, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=33)
+      (1): ReLU()
+      (2): Conv2d(33, 12, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (3): Sequential(
+      (0): Conv2d(17, 17, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=17)
+      (1): ReLU()
+      (2): Conv2d(17, 12, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (4): Sequential(
+      (0): Conv2d(17, 17, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=17)
+      (1): ReLU()
+      (2): Conv2d(17, 12, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (5): Conv2d(103, 12, kernel_size=(1, 1), stride=(1, 1))
+  )
+  (regression_headers): ModuleList(
+    (0): Sequential(
+      (0): Conv2d(14, 14, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=14)
+      (1): ReLU()
+      (2): Conv2d(14, 24, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (1): Sequential(
+      (0): Conv2d(66, 66, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=66)
+      (1): ReLU()
+      (2): Conv2d(66, 24, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (2): Sequential(
+      (0): Conv2d(33, 33, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=33)
+      (1): ReLU()
+      (2): Conv2d(33, 24, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (3): Sequential(
+      (0): Conv2d(17, 17, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=17)
+      (1): ReLU()
+      (2): Conv2d(17, 24, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (4): Sequential(
+      (0): Conv2d(17, 17, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=17)
+      (1): ReLU()
+      (2): Conv2d(17, 24, kernel_size=(1, 1), stride=(1, 1))
+    )
+    (5): Conv2d(103, 24, kernel_size=(1, 1), stride=(1, 1))
+  )
+  (source_layer_add_ons): ModuleList()
+)
+Saved prune model models/prunefromws1per0.7lr0.01ep1800/prune.pth
+Number of Parameters: 0.1M
+Epoch: 0, Validation Loss: 5.2062, Validation Regression Loss 2.9176, Validation Classification Loss: 2.2886
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-0-Loss-5.206220286233084.pth
+Epoch: 10, Validation Loss: 4.7283, Validation Regression Loss 2.4645, Validation Classification Loss: 2.2638
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-10-Loss-4.728303636823382.pth
+Epoch: 20, Validation Loss: 4.5245, Validation Regression Loss 2.2798, Validation Classification Loss: 2.2446
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-20-Loss-4.524487631661551.pth
+Epoch: 30, Validation Loss: 4.4455, Validation Regression Loss 2.1621, Validation Classification Loss: 2.2833
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-30-Loss-4.4454586165291925.pth
+Epoch: 40, Validation Loss: 4.3155, Validation Regression Loss 2.0716, Validation Classification Loss: 2.2439
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-40-Loss-4.31549859046936.pth
+Epoch: 50, Validation Loss: 4.2460, Validation Regression Loss 2.0192, Validation Classification Loss: 2.2268
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-50-Loss-4.246033361979893.pth
+Epoch: 60, Validation Loss: 4.1860, Validation Regression Loss 1.9215, Validation Classification Loss: 2.2645
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-60-Loss-4.186012813023159.pth
+Epoch: 70, Validation Loss: 4.1069, Validation Regression Loss 1.8669, Validation Classification Loss: 2.2400
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-70-Loss-4.106911795479911.pth
+Epoch: 80, Validation Loss: 4.2700, Validation Regression Loss 2.0307, Validation Classification Loss: 2.2393
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-80-Loss-4.270025048937116.pth
+Epoch: 90, Validation Loss: 4.0745, Validation Regression Loss 1.8431, Validation Classification Loss: 2.2314
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-90-Loss-4.074529307229178.pth
+Epoch: 100, Validation Loss: 4.1451, Validation Regression Loss 1.9187, Validation Classification Loss: 2.2264
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-100-Loss-4.145117861883981.pth
+Epoch: 110, Validation Loss: 3.9708, Validation Regression Loss 1.7439, Validation Classification Loss: 2.2269
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-110-Loss-3.970794473375593.pth
+Epoch: 120, Validation Loss: 3.9027, Validation Regression Loss 1.6904, Validation Classification Loss: 2.2124
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-120-Loss-3.902742692402431.pth
+Epoch: 130, Validation Loss: 4.0368, Validation Regression Loss 1.7748, Validation Classification Loss: 2.2621
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-130-Loss-4.03681789125715.pth
+Epoch: 140, Validation Loss: 4.0056, Validation Regression Loss 1.7603, Validation Classification Loss: 2.2453
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-140-Loss-4.005598647253854.pth
+Epoch: 150, Validation Loss: 4.0021, Validation Regression Loss 1.7734, Validation Classification Loss: 2.2288
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-150-Loss-4.002135276794434.pth
+Epoch: 160, Validation Loss: 3.9912, Validation Regression Loss 1.7671, Validation Classification Loss: 2.2241
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-160-Loss-3.9912217344556535.pth
+Epoch: 170, Validation Loss: 3.8654, Validation Regression Loss 1.6631, Validation Classification Loss: 2.2022
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-170-Loss-3.8653842381068637.pth
+Epoch: 180, Validation Loss: 3.9568, Validation Regression Loss 1.7200, Validation Classification Loss: 2.2368
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-180-Loss-3.956838471548898.pth
+Epoch: 190, Validation Loss: 3.9038, Validation Regression Loss 1.7000, Validation Classification Loss: 2.2037
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-190-Loss-3.9037982055119107.pth
+Epoch: 200, Validation Loss: 3.8492, Validation Regression Loss 1.6454, Validation Classification Loss: 2.2038
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-200-Loss-3.849205902644566.pth
+Epoch: 210, Validation Loss: 3.7886, Validation Regression Loss 1.6173, Validation Classification Loss: 2.1713
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-210-Loss-3.788576909473964.pth
+Epoch: 220, Validation Loss: 3.8836, Validation Regression Loss 1.6843, Validation Classification Loss: 2.1993
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-220-Loss-3.883613279887608.pth
+Epoch: 230, Validation Loss: 3.8823, Validation Regression Loss 1.6840, Validation Classification Loss: 2.1984
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-230-Loss-3.8823328018188477.pth
+Epoch: 240, Validation Loss: 3.8676, Validation Regression Loss 1.6650, Validation Classification Loss: 2.2026
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-240-Loss-3.86761702810015.pth
+Epoch: 250, Validation Loss: 3.9857, Validation Regression Loss 1.7733, Validation Classification Loss: 2.2124
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-250-Loss-3.985715934208461.pth
+Epoch: 260, Validation Loss: 3.9460, Validation Regression Loss 1.7618, Validation Classification Loss: 2.1842
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-260-Loss-3.94604298046657.pth
+Epoch: 270, Validation Loss: 3.8265, Validation Regression Loss 1.6372, Validation Classification Loss: 2.1893
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-270-Loss-3.826542752129691.pth
+Epoch: 280, Validation Loss: 3.8483, Validation Regression Loss 1.6382, Validation Classification Loss: 2.2101
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-280-Loss-3.848344564437866.pth
+Epoch: 290, Validation Loss: 3.8292, Validation Regression Loss 1.6421, Validation Classification Loss: 2.1872
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-290-Loss-3.829232386180333.pth
+Epoch: 300, Validation Loss: 3.8043, Validation Regression Loss 1.6175, Validation Classification Loss: 2.1867
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-300-Loss-3.8042558261326382.pth
+Epoch: 310, Validation Loss: 3.8110, Validation Regression Loss 1.6250, Validation Classification Loss: 2.1860
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-310-Loss-3.811022554125105.pth
+Epoch: 320, Validation Loss: 3.7749, Validation Regression Loss 1.6057, Validation Classification Loss: 2.1691
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-320-Loss-3.7748714174543108.pth
+Epoch: 330, Validation Loss: 3.7241, Validation Regression Loss 1.5517, Validation Classification Loss: 2.1724
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-330-Loss-3.72414687701634.pth
+Epoch: 340, Validation Loss: 3.7157, Validation Regression Loss 1.5430, Validation Classification Loss: 2.1727
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-340-Loss-3.715745142527989.pth
+Epoch: 350, Validation Loss: 4.0179, Validation Regression Loss 1.8069, Validation Classification Loss: 2.2110
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-350-Loss-4.017880201339722.pth
+Epoch: 360, Validation Loss: 3.8737, Validation Regression Loss 1.6772, Validation Classification Loss: 2.1964
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-360-Loss-3.873654161180769.pth
+Epoch: 370, Validation Loss: 3.7927, Validation Regression Loss 1.5891, Validation Classification Loss: 2.2036
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-370-Loss-3.792677095958165.pth
+Epoch: 380, Validation Loss: 3.8050, Validation Regression Loss 1.6281, Validation Classification Loss: 2.1769
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-380-Loss-3.8049528939383372.pth
+Epoch: 390, Validation Loss: 3.7794, Validation Regression Loss 1.5509, Validation Classification Loss: 2.2285
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-390-Loss-3.7794013704572404.pth
+Epoch: 400, Validation Loss: 3.8167, Validation Regression Loss 1.6233, Validation Classification Loss: 2.1934
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-400-Loss-3.8166545799800327.pth
+Epoch: 410, Validation Loss: 3.7641, Validation Regression Loss 1.5889, Validation Classification Loss: 2.1752
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-410-Loss-3.7641124044145857.pth
+Epoch: 420, Validation Loss: 3.7472, Validation Regression Loss 1.5516, Validation Classification Loss: 2.1956
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-420-Loss-3.747211217880249.pth
+Epoch: 430, Validation Loss: 3.7729, Validation Regression Loss 1.5838, Validation Classification Loss: 2.1891
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-430-Loss-3.7729218006134033.pth
+Epoch: 440, Validation Loss: 3.7703, Validation Regression Loss 1.5949, Validation Classification Loss: 2.1754
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-440-Loss-3.7703183719090054.pth
+Epoch: 450, Validation Loss: 3.7447, Validation Regression Loss 1.5514, Validation Classification Loss: 2.1933
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-450-Loss-3.744743687765939.pth
+Epoch: 460, Validation Loss: 3.7589, Validation Regression Loss 1.5858, Validation Classification Loss: 2.1731
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-460-Loss-3.7589453288487027.pth
+Epoch: 470, Validation Loss: 3.7337, Validation Regression Loss 1.5629, Validation Classification Loss: 2.1708
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-470-Loss-3.7337216990334645.pth
+Epoch: 480, Validation Loss: 3.7068, Validation Regression Loss 1.5199, Validation Classification Loss: 2.1869
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-480-Loss-3.7068231105804443.pth
+Epoch: 490, Validation Loss: 3.7559, Validation Regression Loss 1.5791, Validation Classification Loss: 2.1768
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-490-Loss-3.755931411470686.pth
+Epoch: 500, Validation Loss: 3.7750, Validation Regression Loss 1.5922, Validation Classification Loss: 2.1828
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-500-Loss-3.775000980922154.pth
+Epoch: 510, Validation Loss: 3.7705, Validation Regression Loss 1.5526, Validation Classification Loss: 2.2178
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-510-Loss-3.7704650333949496.pth
+Epoch: 520, Validation Loss: 3.8324, Validation Regression Loss 1.6327, Validation Classification Loss: 2.1997
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-520-Loss-3.8323678970336914.pth
+Epoch: 530, Validation Loss: 3.9784, Validation Regression Loss 1.7772, Validation Classification Loss: 2.2012
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-530-Loss-3.97837724004473.pth
+Epoch: 540, Validation Loss: 3.7185, Validation Regression Loss 1.5062, Validation Classification Loss: 2.2123
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-540-Loss-3.7184813022613525.pth
+Epoch: 550, Validation Loss: 3.7196, Validation Regression Loss 1.5552, Validation Classification Loss: 2.1644
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-550-Loss-3.7195601803915843.pth
+Epoch: 560, Validation Loss: 3.8659, Validation Regression Loss 1.6826, Validation Classification Loss: 2.1833
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-560-Loss-3.865872825895037.pth
+Epoch: 570, Validation Loss: 3.6711, Validation Regression Loss 1.5109, Validation Classification Loss: 2.1602
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-570-Loss-3.671112264905657.pth
+Epoch: 580, Validation Loss: 3.7296, Validation Regression Loss 1.5774, Validation Classification Loss: 2.1522
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-580-Loss-3.729627779551915.pth
+Epoch: 590, Validation Loss: 3.9127, Validation Regression Loss 1.7391, Validation Classification Loss: 2.1736
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-590-Loss-3.9127024241856168.pth
+Epoch: 600, Validation Loss: 3.8093, Validation Regression Loss 1.6204, Validation Classification Loss: 2.1888
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-600-Loss-3.8092925548553467.pth
+Epoch: 610, Validation Loss: 3.7456, Validation Regression Loss 1.5961, Validation Classification Loss: 2.1494
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-610-Loss-3.745565755026681.pth
+Epoch: 620, Validation Loss: 3.7946, Validation Regression Loss 1.5878, Validation Classification Loss: 2.2068
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-620-Loss-3.7946431636810303.pth
+Epoch: 630, Validation Loss: 3.6852, Validation Regression Loss 1.5017, Validation Classification Loss: 2.1835
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-630-Loss-3.6851840019226074.pth
+Epoch: 640, Validation Loss: 3.7258, Validation Regression Loss 1.5652, Validation Classification Loss: 2.1606
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-640-Loss-3.7257969038827077.pth
+Epoch: 650, Validation Loss: 3.6682, Validation Regression Loss 1.5095, Validation Classification Loss: 2.1587
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-650-Loss-3.6681844847542897.pth
+Epoch: 660, Validation Loss: 3.7721, Validation Regression Loss 1.5460, Validation Classification Loss: 2.2260
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-660-Loss-3.772052458354405.pth
+Epoch: 670, Validation Loss: 3.7043, Validation Regression Loss 1.5064, Validation Classification Loss: 2.1979
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-670-Loss-3.7042923314230785.pth
+Epoch: 680, Validation Loss: 3.6754, Validation Regression Loss 1.4947, Validation Classification Loss: 2.1806
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-680-Loss-3.6753769602094377.pth
+Epoch: 690, Validation Loss: 3.7773, Validation Regression Loss 1.5970, Validation Classification Loss: 2.1804
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-690-Loss-3.777320521218436.pth
+Epoch: 700, Validation Loss: 3.7425, Validation Regression Loss 1.5635, Validation Classification Loss: 2.1790
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-700-Loss-3.742520604814802.pth
+Epoch: 710, Validation Loss: 3.8483, Validation Regression Loss 1.6468, Validation Classification Loss: 2.2015
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-710-Loss-3.848325150353568.pth
+Epoch: 720, Validation Loss: 3.7251, Validation Regression Loss 1.5507, Validation Classification Loss: 2.1744
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-720-Loss-3.7250607354300365.pth
+Epoch: 730, Validation Loss: 3.6269, Validation Regression Loss 1.4770, Validation Classification Loss: 2.1499
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-730-Loss-3.6268904549734935.pth
+Epoch: 740, Validation Loss: 3.6302, Validation Regression Loss 1.4760, Validation Classification Loss: 2.1542
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-740-Loss-3.6302172797066823.pth
+Epoch: 750, Validation Loss: 3.7508, Validation Regression Loss 1.5524, Validation Classification Loss: 2.1985
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-750-Loss-3.7508088520595004.pth
+Epoch: 760, Validation Loss: 3.6299, Validation Regression Loss 1.4704, Validation Classification Loss: 2.1595
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-760-Loss-3.629855224064418.pth
+Epoch: 770, Validation Loss: 3.7200, Validation Regression Loss 1.5546, Validation Classification Loss: 2.1654
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-770-Loss-3.7200449875422885.pth
+Epoch: 780, Validation Loss: 3.7257, Validation Regression Loss 1.5652, Validation Classification Loss: 2.1605
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-780-Loss-3.7257464953831265.pth
+Epoch: 790, Validation Loss: 3.6579, Validation Regression Loss 1.4701, Validation Classification Loss: 2.1878
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-790-Loss-3.6579429422106062.pth
+Epoch: 800, Validation Loss: 3.6831, Validation Regression Loss 1.5189, Validation Classification Loss: 2.1642
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-800-Loss-3.6831458636692593.pth
+Epoch: 810, Validation Loss: 3.5955, Validation Regression Loss 1.4491, Validation Classification Loss: 2.1464
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-810-Loss-3.5954714843205045.pth
+Epoch: 820, Validation Loss: 3.7859, Validation Regression Loss 1.5889, Validation Classification Loss: 2.1970
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-820-Loss-3.7858773980821883.pth
+Epoch: 830, Validation Loss: 3.6299, Validation Regression Loss 1.4639, Validation Classification Loss: 2.1660
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-830-Loss-3.6299428939819336.pth
+Epoch: 840, Validation Loss: 3.8501, Validation Regression Loss 1.6727, Validation Classification Loss: 2.1773
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-840-Loss-3.850053310394287.pth
+Epoch: 850, Validation Loss: 3.6344, Validation Regression Loss 1.4960, Validation Classification Loss: 2.1385
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-850-Loss-3.6344428403036937.pth
+Epoch: 860, Validation Loss: 3.7059, Validation Regression Loss 1.5340, Validation Classification Loss: 2.1718
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-860-Loss-3.7058650766100203.pth
+Epoch: 870, Validation Loss: 3.7074, Validation Regression Loss 1.5472, Validation Classification Loss: 2.1602
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-870-Loss-3.7074083600725447.pth
+Epoch: 880, Validation Loss: 3.7424, Validation Regression Loss 1.5526, Validation Classification Loss: 2.1898
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-880-Loss-3.742405687059675.pth
+Epoch: 890, Validation Loss: 3.7290, Validation Regression Loss 1.5476, Validation Classification Loss: 2.1815
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-890-Loss-3.72902056149074.pth
+Epoch: 900, Validation Loss: 3.6606, Validation Regression Loss 1.4946, Validation Classification Loss: 2.1660
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-900-Loss-3.6605666364942278.pth
+Epoch: 910, Validation Loss: 3.6090, Validation Regression Loss 1.4743, Validation Classification Loss: 2.1347
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-910-Loss-3.6089771815708707.pth
+Epoch: 920, Validation Loss: 3.6866, Validation Regression Loss 1.5336, Validation Classification Loss: 2.1529
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-920-Loss-3.6865505831582204.pth
+Epoch: 930, Validation Loss: 3.6534, Validation Regression Loss 1.4903, Validation Classification Loss: 2.1631
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-930-Loss-3.653430870601109.pth
+Epoch: 940, Validation Loss: 3.6844, Validation Regression Loss 1.5270, Validation Classification Loss: 2.1573
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-940-Loss-3.6843759332384383.pth
+Epoch: 950, Validation Loss: 3.6837, Validation Regression Loss 1.5045, Validation Classification Loss: 2.1791
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-950-Loss-3.683656760624477.pth
+Epoch: 960, Validation Loss: 3.7001, Validation Regression Loss 1.5311, Validation Classification Loss: 2.1689
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-960-Loss-3.700068371636527.pth
+Epoch: 970, Validation Loss: 3.6623, Validation Regression Loss 1.4907, Validation Classification Loss: 2.1716
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-970-Loss-3.6622919014522006.pth
+Epoch: 980, Validation Loss: 3.9170, Validation Regression Loss 1.6744, Validation Classification Loss: 2.2426
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-980-Loss-3.916978325162615.pth
+Epoch: 990, Validation Loss: 3.6273, Validation Regression Loss 1.4849, Validation Classification Loss: 2.1423
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-990-Loss-3.6272548266819546.pth
+Epoch: 1000, Validation Loss: 3.6871, Validation Regression Loss 1.4988, Validation Classification Loss: 2.1883
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1000-Loss-3.6871300765446255.pth
+Epoch: 1010, Validation Loss: 3.5563, Validation Regression Loss 1.4114, Validation Classification Loss: 2.1449
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1010-Loss-3.556267670222691.pth
+Epoch: 1020, Validation Loss: 3.6161, Validation Regression Loss 1.4614, Validation Classification Loss: 2.1548
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1020-Loss-3.616140195301601.pth
+Epoch: 1030, Validation Loss: 3.6170, Validation Regression Loss 1.4447, Validation Classification Loss: 2.1723
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1030-Loss-3.617030824933733.pth
+Epoch: 1040, Validation Loss: 3.7014, Validation Regression Loss 1.5474, Validation Classification Loss: 2.1540
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1040-Loss-3.7013961247035434.pth
+Epoch: 1050, Validation Loss: 3.6086, Validation Regression Loss 1.4654, Validation Classification Loss: 2.1432
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1050-Loss-3.6085808277130127.pth
+Epoch: 1060, Validation Loss: 3.6939, Validation Regression Loss 1.5337, Validation Classification Loss: 2.1602
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1060-Loss-3.6938918999263217.pth
+Epoch: 1070, Validation Loss: 3.6423, Validation Regression Loss 1.4715, Validation Classification Loss: 2.1708
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1070-Loss-3.6422681467873708.pth
+Epoch: 1080, Validation Loss: 3.6578, Validation Regression Loss 1.4895, Validation Classification Loss: 2.1683
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1080-Loss-3.657803535461426.pth
+Epoch: 1090, Validation Loss: 3.6653, Validation Regression Loss 1.5001, Validation Classification Loss: 2.1652
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1090-Loss-3.665257045200893.pth
+Epoch: 1100, Validation Loss: 3.6373, Validation Regression Loss 1.4797, Validation Classification Loss: 2.1576
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1100-Loss-3.6372548852648054.pth
+Epoch: 1110, Validation Loss: 3.6822, Validation Regression Loss 1.5241, Validation Classification Loss: 2.1581
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1110-Loss-3.6822472299848283.pth
+Epoch: 1120, Validation Loss: 3.6563, Validation Regression Loss 1.5043, Validation Classification Loss: 2.1519
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1120-Loss-3.6562513283320834.pth
+Epoch: 1130, Validation Loss: 3.7098, Validation Regression Loss 1.5110, Validation Classification Loss: 2.1989
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1130-Loss-3.7098471437181746.pth
+Epoch: 1140, Validation Loss: 3.6371, Validation Regression Loss 1.4886, Validation Classification Loss: 2.1485
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1140-Loss-3.637146098273141.pth
+Epoch: 1150, Validation Loss: 3.5984, Validation Regression Loss 1.4487, Validation Classification Loss: 2.1497
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1150-Loss-3.5984223570142473.pth
+Epoch: 1160, Validation Loss: 3.6456, Validation Regression Loss 1.4962, Validation Classification Loss: 2.1495
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1160-Loss-3.6456222534179688.pth
+Epoch: 1170, Validation Loss: 3.7320, Validation Regression Loss 1.5436, Validation Classification Loss: 2.1883
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1170-Loss-3.731980698449271.pth
+Epoch: 1180, Validation Loss: 3.6737, Validation Regression Loss 1.5462, Validation Classification Loss: 2.1275
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1180-Loss-3.6736980846949985.pth
+Epoch: 1190, Validation Loss: 3.7012, Validation Regression Loss 1.5574, Validation Classification Loss: 2.1438
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1190-Loss-3.7012178897857666.pth
+Epoch: 1200, Validation Loss: 3.6544, Validation Regression Loss 1.4858, Validation Classification Loss: 2.1685
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1200-Loss-3.65435859135219.pth
+Epoch: 1210, Validation Loss: 3.5732, Validation Regression Loss 1.4279, Validation Classification Loss: 2.1453
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1210-Loss-3.573188134602138.pth
+Epoch: 1220, Validation Loss: 3.6317, Validation Regression Loss 1.4701, Validation Classification Loss: 2.1617
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1220-Loss-3.6317120620182584.pth
+Epoch: 1230, Validation Loss: 3.6366, Validation Regression Loss 1.4810, Validation Classification Loss: 2.1556
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1230-Loss-3.636598587036133.pth
+Epoch: 1240, Validation Loss: 3.6111, Validation Regression Loss 1.4690, Validation Classification Loss: 2.1420
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1240-Loss-3.6110593591417586.pth
+Epoch: 1250, Validation Loss: 3.6589, Validation Regression Loss 1.4823, Validation Classification Loss: 2.1766
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1250-Loss-3.6588766234261647.pth
+Epoch: 1260, Validation Loss: 3.6624, Validation Regression Loss 1.4740, Validation Classification Loss: 2.1884
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1260-Loss-3.6624112810407365.pth
+Epoch: 1270, Validation Loss: 3.6336, Validation Regression Loss 1.4611, Validation Classification Loss: 2.1725
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1270-Loss-3.633574894496373.pth
+Epoch: 1280, Validation Loss: 3.6419, Validation Regression Loss 1.4849, Validation Classification Loss: 2.1570
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1280-Loss-3.6419152872903005.pth
+Epoch: 1290, Validation Loss: 3.6610, Validation Regression Loss 1.4849, Validation Classification Loss: 2.1762
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1290-Loss-3.6610322339194163.pth
+Epoch: 1300, Validation Loss: 3.6115, Validation Regression Loss 1.4567, Validation Classification Loss: 2.1548
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1300-Loss-3.6114629677363803.pth
+Epoch: 1310, Validation Loss: 3.6058, Validation Regression Loss 1.4370, Validation Classification Loss: 2.1688
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1310-Loss-3.6057536602020264.pth
+Epoch: 1320, Validation Loss: 3.6489, Validation Regression Loss 1.4739, Validation Classification Loss: 2.1750
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1320-Loss-3.6489244529179166.pth
+Epoch: 1330, Validation Loss: 3.6169, Validation Regression Loss 1.4610, Validation Classification Loss: 2.1558
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1330-Loss-3.616853816168649.pth
+Epoch: 1340, Validation Loss: 3.5727, Validation Regression Loss 1.4183, Validation Classification Loss: 2.1545
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1340-Loss-3.5727428708757674.pth
+Epoch: 1350, Validation Loss: 3.6001, Validation Regression Loss 1.4417, Validation Classification Loss: 2.1584
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1350-Loss-3.6000990867614746.pth
+Epoch: 1360, Validation Loss: 3.6102, Validation Regression Loss 1.4423, Validation Classification Loss: 2.1679
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1360-Loss-3.610175745827811.pth
+Epoch: 1370, Validation Loss: 3.5944, Validation Regression Loss 1.4435, Validation Classification Loss: 2.1508
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1370-Loss-3.5943563325064525.pth
+Epoch: 1380, Validation Loss: 3.5921, Validation Regression Loss 1.4304, Validation Classification Loss: 2.1618
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1380-Loss-3.5921153681618825.pth
+Epoch: 1390, Validation Loss: 3.5959, Validation Regression Loss 1.4320, Validation Classification Loss: 2.1638
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1390-Loss-3.5958529199872697.pth
+Epoch: 1400, Validation Loss: 3.6227, Validation Regression Loss 1.4605, Validation Classification Loss: 2.1622
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1400-Loss-3.622666393007551.pth
+Epoch: 1410, Validation Loss: 3.6013, Validation Regression Loss 1.4501, Validation Classification Loss: 2.1512
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1410-Loss-3.601299217769078.pth
+Epoch: 1420, Validation Loss: 3.6363, Validation Regression Loss 1.4485, Validation Classification Loss: 2.1878
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1420-Loss-3.6363283566066196.pth
+Epoch: 1430, Validation Loss: 3.6105, Validation Regression Loss 1.4323, Validation Classification Loss: 2.1782
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1430-Loss-3.6104885510035922.pth
+Epoch: 1440, Validation Loss: 3.6265, Validation Regression Loss 1.4425, Validation Classification Loss: 2.1840
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1440-Loss-3.6265243121555875.pth
+Epoch: 1450, Validation Loss: 3.6062, Validation Regression Loss 1.4471, Validation Classification Loss: 2.1590
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1450-Loss-3.6061631611415317.pth
+Epoch: 1460, Validation Loss: 3.6138, Validation Regression Loss 1.4638, Validation Classification Loss: 2.1500
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1460-Loss-3.6137751851763045.pth
+Epoch: 1470, Validation Loss: 3.6367, Validation Regression Loss 1.4711, Validation Classification Loss: 2.1655
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1470-Loss-3.6366665022713796.pth
+Epoch: 1480, Validation Loss: 3.6305, Validation Regression Loss 1.4569, Validation Classification Loss: 2.1736
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1480-Loss-3.6304998057229176.pth
+Epoch: 1490, Validation Loss: 3.6077, Validation Regression Loss 1.4316, Validation Classification Loss: 2.1761
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1490-Loss-3.6076933997017995.pth
+Epoch: 1500, Validation Loss: 3.5795, Validation Regression Loss 1.4076, Validation Classification Loss: 2.1719
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1500-Loss-3.579495225633894.pth
+Epoch: 1510, Validation Loss: 3.6082, Validation Regression Loss 1.4255, Validation Classification Loss: 2.1827
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1510-Loss-3.6081743240356445.pth
+Epoch: 1520, Validation Loss: 3.6114, Validation Regression Loss 1.4342, Validation Classification Loss: 2.1772
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1520-Loss-3.61139372416905.pth
+Epoch: 1530, Validation Loss: 3.5716, Validation Regression Loss 1.4168, Validation Classification Loss: 2.1548
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1530-Loss-3.571636983326503.pth
+Epoch: 1540, Validation Loss: 3.5956, Validation Regression Loss 1.4384, Validation Classification Loss: 2.1571
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1540-Loss-3.595552785055978.pth
+Epoch: 1550, Validation Loss: 3.5918, Validation Regression Loss 1.4313, Validation Classification Loss: 2.1604
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1550-Loss-3.591758966445923.pth
+Epoch: 1560, Validation Loss: 3.5684, Validation Regression Loss 1.4132, Validation Classification Loss: 2.1551
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1560-Loss-3.5683567183358327.pth
+Epoch: 1570, Validation Loss: 3.5832, Validation Regression Loss 1.4266, Validation Classification Loss: 2.1567
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1570-Loss-3.583225590842111.pth
+Epoch: 1580, Validation Loss: 3.5622, Validation Regression Loss 1.4104, Validation Classification Loss: 2.1518
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1580-Loss-3.5622432913099016.pth
+Epoch: 1590, Validation Loss: 3.5812, Validation Regression Loss 1.4196, Validation Classification Loss: 2.1616
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1590-Loss-3.5812249864850725.pth
+Epoch: 1600, Validation Loss: 3.5767, Validation Regression Loss 1.4133, Validation Classification Loss: 2.1634
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1600-Loss-3.576685769217355.pth
+Epoch: 1610, Validation Loss: 3.5612, Validation Regression Loss 1.4092, Validation Classification Loss: 2.1520
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1610-Loss-3.5611723831721713.pth
+Epoch: 1620, Validation Loss: 3.5586, Validation Regression Loss 1.4029, Validation Classification Loss: 2.1558
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1620-Loss-3.558635984148298.pth
+Epoch: 1630, Validation Loss: 3.5769, Validation Regression Loss 1.4155, Validation Classification Loss: 2.1614
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1630-Loss-3.5768934317997525.pth
+Epoch: 1640, Validation Loss: 3.5546, Validation Regression Loss 1.3916, Validation Classification Loss: 2.1630
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1640-Loss-3.554645368031093.pth
+Epoch: 1650, Validation Loss: 3.5764, Validation Regression Loss 1.4122, Validation Classification Loss: 2.1642
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1650-Loss-3.5764477252960205.pth
+Epoch: 1660, Validation Loss: 3.5829, Validation Regression Loss 1.4186, Validation Classification Loss: 2.1643
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1660-Loss-3.582899638584682.pth
+Epoch: 1670, Validation Loss: 3.5876, Validation Regression Loss 1.4213, Validation Classification Loss: 2.1663
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1670-Loss-3.587585994175502.pth
+Epoch: 1680, Validation Loss: 3.5774, Validation Regression Loss 1.4209, Validation Classification Loss: 2.1565
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1680-Loss-3.5774381841932024.pth
+Epoch: 1690, Validation Loss: 3.5730, Validation Regression Loss 1.4145, Validation Classification Loss: 2.1585
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1690-Loss-3.5729733535221646.pth
+Epoch: 1700, Validation Loss: 3.5832, Validation Regression Loss 1.4187, Validation Classification Loss: 2.1645
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1700-Loss-3.5831992626190186.pth
+Epoch: 1710, Validation Loss: 3.5641, Validation Regression Loss 1.4065, Validation Classification Loss: 2.1577
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1710-Loss-3.56414566721235.pth
+Epoch: 1720, Validation Loss: 3.5830, Validation Regression Loss 1.4224, Validation Classification Loss: 2.1605
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1720-Loss-3.582960844039917.pth
+Epoch: 1730, Validation Loss: 3.5784, Validation Regression Loss 1.4219, Validation Classification Loss: 2.1564
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1730-Loss-3.5783634866986955.pth
+Epoch: 1740, Validation Loss: 3.5721, Validation Regression Loss 1.4170, Validation Classification Loss: 2.1551
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1740-Loss-3.572103806904384.pth
+Epoch: 1750, Validation Loss: 3.5801, Validation Regression Loss 1.4177, Validation Classification Loss: 2.1624
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1750-Loss-3.5801046916416714.pth
+Epoch: 1760, Validation Loss: 3.5653, Validation Regression Loss 1.4103, Validation Classification Loss: 2.1551
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1760-Loss-3.5653370107923235.pth
+Epoch: 1770, Validation Loss: 3.5731, Validation Regression Loss 1.4094, Validation Classification Loss: 2.1637
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1770-Loss-3.573135103498186.pth
+Epoch: 1780, Validation Loss: 3.5671, Validation Regression Loss 1.4095, Validation Classification Loss: 2.1576
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1780-Loss-3.5670929295676097.pth
+Epoch: 1790, Validation Loss: 3.5669, Validation Regression Loss 1.4109, Validation Classification Loss: 2.1560
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1790-Loss-3.5668674537113736.pth
+Epoch: 1799, Validation Loss: 3.5760, Validation Regression Loss 1.4200, Validation Classification Loss: 2.1561
+Saved model models/prunefromws1per0.7lr0.01ep1800/Epoch-1799-Loss-3.576047658920288.pth

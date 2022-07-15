@@ -1,0 +1,337 @@
+2022-06-21 03:11:45,812 - root - INFO - Use Cuda.
+2022-06-21 03:11:45,812 - root - INFO - Namespace(balance_data=False, base_net=None, base_net_lr=None, batch_size=16, checkpoint_folder='models/ws0.15kaimingbs16', dataset_type='voc', datasets=['VOC2007'], debug_steps=100, extra_layers_lr=None, freeze_base_net=False, freeze_net=False, gamma=0.1, gpu='2', loss='smoothl1', lr=0.005, mb2_width_mult=1.0, milestones='80,100', momentum=0.9, net='mb1-ssd-lite-025extra', num_epochs=800, num_workers=4, optimizer='SGD', pretrained_ssd='models/ws0.15/mb1-ssd-lite-025extra-Epoch-1599-Loss-3.476525221552168.pth', resume=None, s=0.0001, scheduler='cosine', sr=False, t_max=800.0, use_cuda=True, validation_dataset='./VOC2007', validation_epochs=5, weight_decay=0.0005, width_mult=0.15)
+2022-06-21 03:11:45,813 - root - INFO - Prepare training datasets.
+2022-06-21 03:11:45,828 - root - INFO - No labels file, using default VOC classes.
+2022-06-21 03:11:45,878 - root - INFO - Stored labels into file models/ws0.15kaimingbs16/voc-model-labels.txt.
+2022-06-21 03:11:45,881 - root - INFO - Train dataset size: 971
+2022-06-21 03:11:45,881 - root - INFO - Prepare Validation datasets.
+2022-06-21 03:11:45,882 - root - INFO - No labels file, using default VOC classes.
+2022-06-21 03:11:45,882 - root - INFO - validation dataset size: 108
+2022-06-21 03:11:45,882 - root - INFO - Build network.
+2022-06-21 03:11:45,916 - root - INFO - Init from pretrained ssd models/ws0.15/mb1-ssd-lite-025extra-Epoch-1599-Loss-3.476525221552168.pth
+2022-06-21 03:11:45,946 - root - INFO - Took 0.03 seconds to load the model.
+2022-06-21 03:11:50,653 - root - INFO - Learning rate: 0.005, Base net learning rate: 0.005, Extra Layers learning rate: 0.005.
+2022-06-21 03:11:50,653 - root - INFO - Uses CosineAnnealingLR scheduler.
+2022-06-21 03:11:50,654 - root - INFO - Start training from epoch 0.
+2022-06-21 03:12:58,366 - root - INFO - Epoch: 0, Validation Loss: 5.2438, Validation Regression Loss 2.9255, Validation Classification Loss: 2.3183
+2022-06-21 03:12:58,456 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-0-Loss-5.243779523032052.pth
+2022-06-21 03:18:02,377 - root - INFO - Epoch: 5, Validation Loss: 4.2252, Validation Regression Loss 1.9726, Validation Classification Loss: 2.2525
+2022-06-21 03:18:02,475 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-5-Loss-4.225158963884626.pth
+2022-06-21 03:23:10,840 - root - INFO - Epoch: 10, Validation Loss: 4.0777, Validation Regression Loss 1.8277, Validation Classification Loss: 2.2499
+2022-06-21 03:23:10,928 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-10-Loss-4.077659913471767.pth
+2022-06-21 03:28:14,431 - root - INFO - Epoch: 15, Validation Loss: 4.0627, Validation Regression Loss 1.7946, Validation Classification Loss: 2.2681
+2022-06-21 03:28:14,534 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-15-Loss-4.0626842975616455.pth
+2022-06-21 03:33:17,019 - root - INFO - Epoch: 20, Validation Loss: 3.9192, Validation Regression Loss 1.7028, Validation Classification Loss: 2.2164
+2022-06-21 03:33:17,103 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-20-Loss-3.9191769531794955.pth
+2022-06-21 03:38:20,113 - root - INFO - Epoch: 25, Validation Loss: 3.9248, Validation Regression Loss 1.6898, Validation Classification Loss: 2.2350
+2022-06-21 03:38:20,201 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-25-Loss-3.9247738293239047.pth
+2022-06-21 03:43:28,341 - root - INFO - Epoch: 30, Validation Loss: 3.9476, Validation Regression Loss 1.7313, Validation Classification Loss: 2.2162
+2022-06-21 03:43:28,470 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-30-Loss-3.947568314416068.pth
+2022-06-21 03:47:46,159 - root - INFO - Epoch: 35, Validation Loss: 3.9811, Validation Regression Loss 1.7539, Validation Classification Loss: 2.2272
+2022-06-21 03:47:46,259 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-35-Loss-3.9810961995806013.pth
+2022-06-21 03:52:07,095 - root - INFO - Epoch: 40, Validation Loss: 3.9181, Validation Regression Loss 1.6835, Validation Classification Loss: 2.2346
+2022-06-21 03:52:07,204 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-40-Loss-3.918076719556536.pth
+2022-06-21 03:56:27,857 - root - INFO - Epoch: 45, Validation Loss: 3.8704, Validation Regression Loss 1.6793, Validation Classification Loss: 2.1911
+2022-06-21 03:56:27,966 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-45-Loss-3.870389870234898.pth
+2022-06-21 04:00:44,384 - root - INFO - Epoch: 50, Validation Loss: 3.8496, Validation Regression Loss 1.6548, Validation Classification Loss: 2.1947
+2022-06-21 04:00:44,463 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-50-Loss-3.849564245768956.pth
+2022-06-21 04:05:07,578 - root - INFO - Epoch: 55, Validation Loss: 3.8195, Validation Regression Loss 1.6375, Validation Classification Loss: 2.1819
+2022-06-21 04:05:07,680 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-55-Loss-3.8194545337132046.pth
+2022-06-21 04:09:25,734 - root - INFO - Epoch: 60, Validation Loss: 3.8869, Validation Regression Loss 1.6483, Validation Classification Loss: 2.2386
+2022-06-21 04:09:25,834 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-60-Loss-3.886896882738386.pth
+2022-06-21 04:13:45,969 - root - INFO - Epoch: 65, Validation Loss: 3.8557, Validation Regression Loss 1.6569, Validation Classification Loss: 2.1988
+2022-06-21 04:13:46,075 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-65-Loss-3.855721746172224.pth
+2022-06-21 04:18:10,290 - root - INFO - Epoch: 70, Validation Loss: 3.8592, Validation Regression Loss 1.6570, Validation Classification Loss: 2.2023
+2022-06-21 04:18:10,401 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-70-Loss-3.8592169284820557.pth
+2022-06-21 04:22:31,500 - root - INFO - Epoch: 75, Validation Loss: 3.8629, Validation Regression Loss 1.6288, Validation Classification Loss: 2.2341
+2022-06-21 04:22:31,604 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-75-Loss-3.86289187840053.pth
+2022-06-21 04:26:52,054 - root - INFO - Epoch: 80, Validation Loss: 3.7216, Validation Regression Loss 1.5549, Validation Classification Loss: 2.1668
+2022-06-21 04:26:52,157 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-80-Loss-3.7216262136186873.pth
+2022-06-21 04:31:09,958 - root - INFO - Epoch: 85, Validation Loss: 3.7823, Validation Regression Loss 1.5838, Validation Classification Loss: 2.1985
+2022-06-21 04:31:10,064 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-85-Loss-3.782285043171474.pth
+2022-06-21 04:35:31,187 - root - INFO - Epoch: 90, Validation Loss: 3.8381, Validation Regression Loss 1.6397, Validation Classification Loss: 2.1984
+2022-06-21 04:35:31,288 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-90-Loss-3.838071584701538.pth
+2022-06-21 04:39:50,665 - root - INFO - Epoch: 95, Validation Loss: 3.7805, Validation Regression Loss 1.6107, Validation Classification Loss: 2.1698
+2022-06-21 04:39:50,764 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-95-Loss-3.7805373328072682.pth
+2022-06-21 04:44:10,436 - root - INFO - Epoch: 100, Validation Loss: 3.8125, Validation Regression Loss 1.6347, Validation Classification Loss: 2.1779
+2022-06-21 04:44:10,543 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-100-Loss-3.8125271456582204.pth
+2022-06-21 04:48:31,691 - root - INFO - Epoch: 105, Validation Loss: 3.7884, Validation Regression Loss 1.5853, Validation Classification Loss: 2.2031
+2022-06-21 04:48:31,778 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-105-Loss-3.7884231976100375.pth
+2022-06-21 04:52:52,150 - root - INFO - Epoch: 110, Validation Loss: 3.7124, Validation Regression Loss 1.5460, Validation Classification Loss: 2.1664
+2022-06-21 04:52:52,263 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-110-Loss-3.712400027683803.pth
+2022-06-21 04:57:18,356 - root - INFO - Epoch: 115, Validation Loss: 3.7043, Validation Regression Loss 1.5388, Validation Classification Loss: 2.1656
+2022-06-21 04:57:18,483 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-115-Loss-3.704315628324236.pth
+2022-06-21 05:01:40,002 - root - INFO - Epoch: 120, Validation Loss: 3.7591, Validation Regression Loss 1.6020, Validation Classification Loss: 2.1571
+2022-06-21 05:01:40,198 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-120-Loss-3.7591302394866943.pth
+2022-06-21 05:05:39,342 - root - INFO - Epoch: 125, Validation Loss: 3.7817, Validation Regression Loss 1.5932, Validation Classification Loss: 2.1885
+2022-06-21 05:05:39,447 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-125-Loss-3.78173075403486.pth
+2022-06-21 05:09:07,348 - root - INFO - Epoch: 130, Validation Loss: 3.7903, Validation Regression Loss 1.5693, Validation Classification Loss: 2.2210
+2022-06-21 05:09:07,468 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-130-Loss-3.790262392589024.pth
+2022-06-21 05:12:33,845 - root - INFO - Epoch: 135, Validation Loss: 3.8041, Validation Regression Loss 1.6099, Validation Classification Loss: 2.1942
+2022-06-21 05:12:33,974 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-135-Loss-3.8040723460061208.pth
+2022-06-21 05:15:40,503 - root - INFO - Epoch: 140, Validation Loss: 3.7598, Validation Regression Loss 1.5943, Validation Classification Loss: 2.1655
+2022-06-21 05:15:40,631 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-140-Loss-3.7598168509347096.pth
+2022-06-21 05:18:11,881 - root - INFO - Epoch: 145, Validation Loss: 3.7425, Validation Regression Loss 1.5700, Validation Classification Loss: 2.1725
+2022-06-21 05:18:12,003 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-145-Loss-3.742530175617763.pth
+2022-06-21 05:20:39,395 - root - INFO - Epoch: 150, Validation Loss: 3.7287, Validation Regression Loss 1.5591, Validation Classification Loss: 2.1696
+2022-06-21 05:20:39,490 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-150-Loss-3.728663376399449.pth
+2022-06-21 05:23:04,505 - root - INFO - Epoch: 155, Validation Loss: 3.7323, Validation Regression Loss 1.5836, Validation Classification Loss: 2.1487
+2022-06-21 05:23:04,578 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-155-Loss-3.732281514576503.pth
+2022-06-21 05:25:39,393 - root - INFO - Epoch: 160, Validation Loss: 3.7337, Validation Regression Loss 1.5742, Validation Classification Loss: 2.1595
+2022-06-21 05:25:39,507 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-160-Loss-3.7337043285369873.pth
+2022-06-21 05:28:04,010 - root - INFO - Epoch: 165, Validation Loss: 3.6794, Validation Regression Loss 1.5222, Validation Classification Loss: 2.1573
+2022-06-21 05:28:04,115 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-165-Loss-3.679429394858224.pth
+2022-06-21 05:30:28,531 - root - INFO - Epoch: 170, Validation Loss: 3.7057, Validation Regression Loss 1.5705, Validation Classification Loss: 2.1352
+2022-06-21 05:30:28,639 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-170-Loss-3.7057416439056396.pth
+2022-06-21 05:33:01,368 - root - INFO - Epoch: 175, Validation Loss: 3.7401, Validation Regression Loss 1.5993, Validation Classification Loss: 2.1408
+2022-06-21 05:33:01,469 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-175-Loss-3.7400825704847063.pth
+2022-06-21 05:35:25,907 - root - INFO - Epoch: 180, Validation Loss: 3.7161, Validation Regression Loss 1.5537, Validation Classification Loss: 2.1624
+2022-06-21 05:35:26,017 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-180-Loss-3.716127395629883.pth
+2022-06-21 05:37:55,878 - root - INFO - Epoch: 185, Validation Loss: 3.7953, Validation Regression Loss 1.6044, Validation Classification Loss: 2.1909
+2022-06-21 05:37:55,979 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-185-Loss-3.795285769871303.pth
+2022-06-21 05:40:23,405 - root - INFO - Epoch: 190, Validation Loss: 3.7583, Validation Regression Loss 1.5974, Validation Classification Loss: 2.1609
+2022-06-21 05:40:23,544 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-190-Loss-3.7583447865077426.pth
+2022-06-21 05:42:53,485 - root - INFO - Epoch: 195, Validation Loss: 3.7908, Validation Regression Loss 1.6209, Validation Classification Loss: 2.1699
+2022-06-21 05:42:53,593 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-195-Loss-3.790794883455549.pth
+2022-06-21 05:45:15,717 - root - INFO - Epoch: 200, Validation Loss: 3.7126, Validation Regression Loss 1.5744, Validation Classification Loss: 2.1382
+2022-06-21 05:45:15,829 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-200-Loss-3.7125963824135915.pth
+2022-06-21 05:47:44,953 - root - INFO - Epoch: 205, Validation Loss: 3.7227, Validation Regression Loss 1.5610, Validation Classification Loss: 2.1617
+2022-06-21 05:47:45,039 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-205-Loss-3.722719873700823.pth
+2022-06-21 05:50:01,898 - root - INFO - Epoch: 210, Validation Loss: 3.7117, Validation Regression Loss 1.5642, Validation Classification Loss: 2.1476
+2022-06-21 05:50:02,002 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-210-Loss-3.711721522467477.pth
+2022-06-21 05:51:40,931 - root - INFO - Epoch: 215, Validation Loss: 3.7481, Validation Regression Loss 1.5591, Validation Classification Loss: 2.1891
+2022-06-21 05:51:40,994 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-215-Loss-3.748138904571533.pth
+2022-06-21 05:53:17,085 - root - INFO - Epoch: 220, Validation Loss: 3.7999, Validation Regression Loss 1.6224, Validation Classification Loss: 2.1775
+2022-06-21 05:53:17,195 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-220-Loss-3.7998549257005965.pth
+2022-06-21 05:54:53,099 - root - INFO - Epoch: 225, Validation Loss: 3.7473, Validation Regression Loss 1.5645, Validation Classification Loss: 2.1828
+2022-06-21 05:54:53,192 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-225-Loss-3.7472542354038785.pth
+2022-06-21 05:56:27,294 - root - INFO - Epoch: 230, Validation Loss: 3.7345, Validation Regression Loss 1.5973, Validation Classification Loss: 2.1373
+2022-06-21 05:56:27,392 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-230-Loss-3.7345098086765836.pth
+2022-06-21 05:58:02,958 - root - INFO - Epoch: 235, Validation Loss: 3.7080, Validation Regression Loss 1.5712, Validation Classification Loss: 2.1368
+2022-06-21 05:58:03,048 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-235-Loss-3.7079783167157854.pth
+2022-06-21 05:59:38,789 - root - INFO - Epoch: 240, Validation Loss: 3.7381, Validation Regression Loss 1.5552, Validation Classification Loss: 2.1829
+2022-06-21 05:59:38,887 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-240-Loss-3.7381129946027483.pth
+2022-06-21 06:01:15,677 - root - INFO - Epoch: 245, Validation Loss: 3.7309, Validation Regression Loss 1.5729, Validation Classification Loss: 2.1579
+2022-06-21 06:01:15,745 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-245-Loss-3.7308614935193742.pth
+2022-06-21 06:02:50,791 - root - INFO - Epoch: 250, Validation Loss: 3.7496, Validation Regression Loss 1.5967, Validation Classification Loss: 2.1528
+2022-06-21 06:02:50,926 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-250-Loss-3.749558244432722.pth
+2022-06-21 06:04:31,232 - root - INFO - Epoch: 255, Validation Loss: 3.6773, Validation Regression Loss 1.5452, Validation Classification Loss: 2.1320
+2022-06-21 06:04:31,325 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-255-Loss-3.677269526890346.pth
+2022-06-21 06:06:06,407 - root - INFO - Epoch: 260, Validation Loss: 3.7205, Validation Regression Loss 1.5632, Validation Classification Loss: 2.1574
+2022-06-21 06:06:06,539 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-260-Loss-3.7205462796347484.pth
+2022-06-21 06:07:43,087 - root - INFO - Epoch: 265, Validation Loss: 3.6268, Validation Regression Loss 1.5033, Validation Classification Loss: 2.1235
+2022-06-21 06:07:43,185 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-265-Loss-3.6267546585627963.pth
+2022-06-21 06:09:19,912 - root - INFO - Epoch: 270, Validation Loss: 3.5902, Validation Regression Loss 1.4774, Validation Classification Loss: 2.1128
+2022-06-21 06:09:20,016 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-270-Loss-3.590194123131888.pth
+2022-06-21 06:10:57,169 - root - INFO - Epoch: 275, Validation Loss: 3.6996, Validation Regression Loss 1.5676, Validation Classification Loss: 2.1320
+2022-06-21 06:10:57,257 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-275-Loss-3.6995913301195418.pth
+2022-06-21 06:12:30,882 - root - INFO - Epoch: 280, Validation Loss: 3.6144, Validation Regression Loss 1.4942, Validation Classification Loss: 2.1203
+2022-06-21 06:12:30,982 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-280-Loss-3.614445447921753.pth
+2022-06-21 06:14:03,288 - root - INFO - Epoch: 285, Validation Loss: 3.6866, Validation Regression Loss 1.5230, Validation Classification Loss: 2.1637
+2022-06-21 06:14:03,325 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-285-Loss-3.68664618900844.pth
+2022-06-21 06:15:35,950 - root - INFO - Epoch: 290, Validation Loss: 3.6145, Validation Regression Loss 1.4853, Validation Classification Loss: 2.1292
+2022-06-21 06:15:35,993 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-290-Loss-3.6145226614815846.pth
+2022-06-21 06:17:14,943 - root - INFO - Epoch: 295, Validation Loss: 3.6684, Validation Regression Loss 1.5416, Validation Classification Loss: 2.1268
+2022-06-21 06:17:14,997 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-295-Loss-3.668429817472185.pth
+2022-06-21 06:18:47,151 - root - INFO - Epoch: 300, Validation Loss: 3.6986, Validation Regression Loss 1.5202, Validation Classification Loss: 2.1784
+2022-06-21 06:18:47,198 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-300-Loss-3.698622567313058.pth
+2022-06-21 06:20:23,997 - root - INFO - Epoch: 305, Validation Loss: 3.6504, Validation Regression Loss 1.5041, Validation Classification Loss: 2.1463
+2022-06-21 06:20:24,029 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-305-Loss-3.650416237967355.pth
+2022-06-21 06:21:58,594 - root - INFO - Epoch: 310, Validation Loss: 3.6550, Validation Regression Loss 1.5030, Validation Classification Loss: 2.1520
+2022-06-21 06:21:58,658 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-310-Loss-3.6550309317452565.pth
+2022-06-21 06:23:33,468 - root - INFO - Epoch: 315, Validation Loss: 3.6463, Validation Regression Loss 1.4962, Validation Classification Loss: 2.1501
+2022-06-21 06:23:33,498 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-315-Loss-3.646310567855835.pth
+2022-06-21 06:25:07,272 - root - INFO - Epoch: 320, Validation Loss: 3.6678, Validation Regression Loss 1.5274, Validation Classification Loss: 2.1405
+2022-06-21 06:25:07,333 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-320-Loss-3.6678225312914168.pth
+2022-06-21 06:26:43,069 - root - INFO - Epoch: 325, Validation Loss: 3.5815, Validation Regression Loss 1.4676, Validation Classification Loss: 2.1138
+2022-06-21 06:26:43,115 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-325-Loss-3.581451109477452.pth
+2022-06-21 06:28:19,411 - root - INFO - Epoch: 330, Validation Loss: 3.6852, Validation Regression Loss 1.5397, Validation Classification Loss: 2.1455
+2022-06-21 06:28:19,442 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-330-Loss-3.6852340357644215.pth
+2022-06-21 06:29:55,204 - root - INFO - Epoch: 335, Validation Loss: 3.6615, Validation Regression Loss 1.5051, Validation Classification Loss: 2.1564
+2022-06-21 06:29:55,298 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-335-Loss-3.661503417151315.pth
+2022-06-21 06:31:31,523 - root - INFO - Epoch: 340, Validation Loss: 3.6083, Validation Regression Loss 1.4707, Validation Classification Loss: 2.1376
+2022-06-21 06:31:31,617 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-340-Loss-3.608278581074306.pth
+2022-06-21 06:33:09,806 - root - INFO - Epoch: 345, Validation Loss: 3.6448, Validation Regression Loss 1.5097, Validation Classification Loss: 2.1350
+2022-06-21 06:33:09,898 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-345-Loss-3.6447555678231374.pth
+2022-06-21 06:34:41,310 - root - INFO - Epoch: 350, Validation Loss: 3.7311, Validation Regression Loss 1.5825, Validation Classification Loss: 2.1486
+2022-06-21 06:34:41,401 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-350-Loss-3.7311417715890065.pth
+2022-06-21 06:36:15,347 - root - INFO - Epoch: 355, Validation Loss: 3.6664, Validation Regression Loss 1.5142, Validation Classification Loss: 2.1523
+2022-06-21 06:36:15,416 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-355-Loss-3.66644617489406.pth
+2022-06-21 06:37:47,942 - root - INFO - Epoch: 360, Validation Loss: 3.6969, Validation Regression Loss 1.5764, Validation Classification Loss: 2.1205
+2022-06-21 06:37:47,994 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-360-Loss-3.6968880721500943.pth
+2022-06-21 06:39:21,795 - root - INFO - Epoch: 365, Validation Loss: 3.6524, Validation Regression Loss 1.5039, Validation Classification Loss: 2.1485
+2022-06-21 06:39:21,860 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-365-Loss-3.652430295944214.pth
+2022-06-21 06:40:58,408 - root - INFO - Epoch: 370, Validation Loss: 3.6838, Validation Regression Loss 1.5315, Validation Classification Loss: 2.1524
+2022-06-21 06:40:58,490 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-370-Loss-3.683835812977382.pth
+2022-06-21 06:42:35,026 - root - INFO - Epoch: 375, Validation Loss: 3.6167, Validation Regression Loss 1.4675, Validation Classification Loss: 2.1493
+2022-06-21 06:42:35,101 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-375-Loss-3.616748094558716.pth
+2022-06-21 06:44:13,146 - root - INFO - Epoch: 380, Validation Loss: 3.6276, Validation Regression Loss 1.4810, Validation Classification Loss: 2.1466
+2022-06-21 06:44:13,240 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-380-Loss-3.627633946282523.pth
+2022-06-21 06:45:46,328 - root - INFO - Epoch: 385, Validation Loss: 3.6305, Validation Regression Loss 1.4891, Validation Classification Loss: 2.1414
+2022-06-21 06:45:46,441 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-385-Loss-3.630518300192697.pth
+2022-06-21 06:47:24,505 - root - INFO - Epoch: 390, Validation Loss: 3.6303, Validation Regression Loss 1.4900, Validation Classification Loss: 2.1404
+2022-06-21 06:47:24,631 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-390-Loss-3.6303226947784424.pth
+2022-06-21 06:48:59,274 - root - INFO - Epoch: 395, Validation Loss: 3.7233, Validation Regression Loss 1.5903, Validation Classification Loss: 2.1330
+2022-06-21 06:48:59,401 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-395-Loss-3.7232824053083147.pth
+2022-06-21 06:50:37,162 - root - INFO - Epoch: 400, Validation Loss: 3.6974, Validation Regression Loss 1.5266, Validation Classification Loss: 2.1707
+2022-06-21 06:50:37,262 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-400-Loss-3.6973658289228166.pth
+2022-06-21 06:52:12,161 - root - INFO - Epoch: 405, Validation Loss: 3.6784, Validation Regression Loss 1.5320, Validation Classification Loss: 2.1464
+2022-06-21 06:52:12,248 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-405-Loss-3.678440979548863.pth
+2022-06-21 06:53:46,988 - root - INFO - Epoch: 410, Validation Loss: 3.6686, Validation Regression Loss 1.5376, Validation Classification Loss: 2.1310
+2022-06-21 06:53:47,093 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-410-Loss-3.6685638087136403.pth
+2022-06-21 06:55:20,037 - root - INFO - Epoch: 415, Validation Loss: 3.6489, Validation Regression Loss 1.4757, Validation Classification Loss: 2.1732
+2022-06-21 06:55:20,139 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-415-Loss-3.6489081382751465.pth
+2022-06-21 06:57:01,367 - root - INFO - Epoch: 420, Validation Loss: 3.5963, Validation Regression Loss 1.4534, Validation Classification Loss: 2.1429
+2022-06-21 06:57:01,471 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-420-Loss-3.5963359900883267.pth
+2022-06-21 06:58:35,975 - root - INFO - Epoch: 425, Validation Loss: 3.6053, Validation Regression Loss 1.4735, Validation Classification Loss: 2.1319
+2022-06-21 06:58:36,179 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-425-Loss-3.605341706957136.pth
+2022-06-21 07:00:11,510 - root - INFO - Epoch: 430, Validation Loss: 3.6070, Validation Regression Loss 1.4861, Validation Classification Loss: 2.1210
+2022-06-21 07:00:11,624 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-430-Loss-3.607041801725115.pth
+2022-06-21 07:01:43,885 - root - INFO - Epoch: 435, Validation Loss: 3.5833, Validation Regression Loss 1.4409, Validation Classification Loss: 2.1424
+2022-06-21 07:01:44,013 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-435-Loss-3.583312920161656.pth
+2022-06-21 07:03:18,174 - root - INFO - Epoch: 440, Validation Loss: 3.5849, Validation Regression Loss 1.4543, Validation Classification Loss: 2.1306
+2022-06-21 07:03:18,291 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-440-Loss-3.5848738125392368.pth
+2022-06-21 07:04:54,060 - root - INFO - Epoch: 445, Validation Loss: 3.6657, Validation Regression Loss 1.5114, Validation Classification Loss: 2.1543
+2022-06-21 07:04:54,154 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-445-Loss-3.665684700012207.pth
+2022-06-21 07:06:32,147 - root - INFO - Epoch: 450, Validation Loss: 3.6858, Validation Regression Loss 1.5333, Validation Classification Loss: 2.1525
+2022-06-21 07:06:32,241 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-450-Loss-3.685772861753191.pth
+2022-06-21 07:08:08,002 - root - INFO - Epoch: 455, Validation Loss: 3.6704, Validation Regression Loss 1.5347, Validation Classification Loss: 2.1357
+2022-06-21 07:08:08,117 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-455-Loss-3.670366048812866.pth
+2022-06-21 07:09:47,002 - root - INFO - Epoch: 460, Validation Loss: 3.6472, Validation Regression Loss 1.4939, Validation Classification Loss: 2.1533
+2022-06-21 07:09:47,099 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-460-Loss-3.64718154498509.pth
+2022-06-21 07:11:23,113 - root - INFO - Epoch: 465, Validation Loss: 3.6377, Validation Regression Loss 1.4972, Validation Classification Loss: 2.1405
+2022-06-21 07:11:23,207 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-465-Loss-3.6376957212175642.pth
+2022-06-21 07:12:58,493 - root - INFO - Epoch: 470, Validation Loss: 3.6165, Validation Regression Loss 1.4771, Validation Classification Loss: 2.1394
+2022-06-21 07:12:58,600 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-470-Loss-3.6164517402648926.pth
+2022-06-21 07:14:31,321 - root - INFO - Epoch: 475, Validation Loss: 3.5744, Validation Regression Loss 1.4565, Validation Classification Loss: 2.1179
+2022-06-21 07:14:31,372 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-475-Loss-3.5743942260742188.pth
+2022-06-21 07:16:01,665 - root - INFO - Epoch: 480, Validation Loss: 3.6428, Validation Regression Loss 1.4990, Validation Classification Loss: 2.1438
+2022-06-21 07:16:01,742 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-480-Loss-3.6428118092673167.pth
+2022-06-21 07:17:37,767 - root - INFO - Epoch: 485, Validation Loss: 3.6179, Validation Regression Loss 1.4829, Validation Classification Loss: 2.1350
+2022-06-21 07:17:37,846 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-485-Loss-3.6178902217320035.pth
+2022-06-21 07:19:16,786 - root - INFO - Epoch: 490, Validation Loss: 3.5933, Validation Regression Loss 1.4655, Validation Classification Loss: 2.1277
+2022-06-21 07:19:16,858 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-490-Loss-3.593259198325021.pth
+2022-06-21 07:20:52,740 - root - INFO - Epoch: 495, Validation Loss: 3.6251, Validation Regression Loss 1.4755, Validation Classification Loss: 2.1496
+2022-06-21 07:20:52,815 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-495-Loss-3.6251461505889893.pth
+2022-06-21 07:22:28,520 - root - INFO - Epoch: 500, Validation Loss: 3.6400, Validation Regression Loss 1.5025, Validation Classification Loss: 2.1376
+2022-06-21 07:22:28,610 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-500-Loss-3.6400275911603654.pth
+2022-06-21 07:24:03,803 - root - INFO - Epoch: 505, Validation Loss: 3.6536, Validation Regression Loss 1.4921, Validation Classification Loss: 2.1615
+2022-06-21 07:24:03,847 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-505-Loss-3.6536058357783725.pth
+2022-06-21 07:25:36,091 - root - INFO - Epoch: 510, Validation Loss: 3.5783, Validation Regression Loss 1.4391, Validation Classification Loss: 2.1392
+2022-06-21 07:25:36,159 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-510-Loss-3.578255823680333.pth
+2022-06-21 07:27:11,384 - root - INFO - Epoch: 515, Validation Loss: 3.6848, Validation Regression Loss 1.5061, Validation Classification Loss: 2.1787
+2022-06-21 07:27:11,425 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-515-Loss-3.6847808361053467.pth
+2022-06-21 07:28:51,599 - root - INFO - Epoch: 520, Validation Loss: 3.6331, Validation Regression Loss 1.4903, Validation Classification Loss: 2.1428
+2022-06-21 07:28:51,673 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-520-Loss-3.6331008843013217.pth
+2022-06-21 07:30:30,370 - root - INFO - Epoch: 525, Validation Loss: 3.6073, Validation Regression Loss 1.4485, Validation Classification Loss: 2.1588
+2022-06-21 07:30:30,439 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-525-Loss-3.6073077746800015.pth
+2022-06-21 07:32:10,719 - root - INFO - Epoch: 530, Validation Loss: 3.6023, Validation Regression Loss 1.4685, Validation Classification Loss: 2.1338
+2022-06-21 07:32:10,769 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-530-Loss-3.6023380756378174.pth
+2022-06-21 07:33:43,926 - root - INFO - Epoch: 535, Validation Loss: 3.6464, Validation Regression Loss 1.4956, Validation Classification Loss: 2.1508
+2022-06-21 07:33:43,980 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-535-Loss-3.646432433809553.pth
+2022-06-21 07:35:21,751 - root - INFO - Epoch: 540, Validation Loss: 3.6162, Validation Regression Loss 1.4838, Validation Classification Loss: 2.1324
+2022-06-21 07:35:21,776 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-540-Loss-3.616217851638794.pth
+2022-06-21 07:36:54,759 - root - INFO - Epoch: 545, Validation Loss: 3.6137, Validation Regression Loss 1.4880, Validation Classification Loss: 2.1257
+2022-06-21 07:36:54,819 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-545-Loss-3.6137404441833496.pth
+2022-06-21 07:38:26,594 - root - INFO - Epoch: 550, Validation Loss: 3.6140, Validation Regression Loss 1.4927, Validation Classification Loss: 2.1213
+2022-06-21 07:38:26,621 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-550-Loss-3.613997255052839.pth
+2022-06-21 07:40:02,439 - root - INFO - Epoch: 555, Validation Loss: 3.6545, Validation Regression Loss 1.5143, Validation Classification Loss: 2.1402
+2022-06-21 07:40:02,486 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-555-Loss-3.654507432665144.pth
+2022-06-21 07:41:39,229 - root - INFO - Epoch: 560, Validation Loss: 3.6447, Validation Regression Loss 1.4916, Validation Classification Loss: 2.1531
+2022-06-21 07:41:39,262 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-560-Loss-3.644655466079712.pth
+2022-06-21 07:43:13,981 - root - INFO - Epoch: 565, Validation Loss: 3.7038, Validation Regression Loss 1.5217, Validation Classification Loss: 2.1820
+2022-06-21 07:43:14,010 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-565-Loss-3.70375326701573.pth
+2022-06-21 07:44:47,938 - root - INFO - Epoch: 570, Validation Loss: 3.5847, Validation Regression Loss 1.4685, Validation Classification Loss: 2.1162
+2022-06-21 07:44:48,031 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-570-Loss-3.584719385419573.pth
+2022-06-21 07:46:20,567 - root - INFO - Epoch: 575, Validation Loss: 3.6356, Validation Regression Loss 1.4894, Validation Classification Loss: 2.1462
+2022-06-21 07:46:20,673 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-575-Loss-3.6356237956455777.pth
+2022-06-21 07:47:56,324 - root - INFO - Epoch: 580, Validation Loss: 3.6245, Validation Regression Loss 1.4799, Validation Classification Loss: 2.1446
+2022-06-21 07:47:56,396 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-580-Loss-3.624549559184483.pth
+2022-06-21 07:49:33,912 - root - INFO - Epoch: 585, Validation Loss: 3.5864, Validation Regression Loss 1.4457, Validation Classification Loss: 2.1407
+2022-06-21 07:49:34,027 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-585-Loss-3.586366517203195.pth
+2022-06-21 07:51:05,089 - root - INFO - Epoch: 590, Validation Loss: 3.6001, Validation Regression Loss 1.4719, Validation Classification Loss: 2.1282
+2022-06-21 07:51:05,143 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-590-Loss-3.600095885140555.pth
+2022-06-21 07:52:40,188 - root - INFO - Epoch: 595, Validation Loss: 3.5730, Validation Regression Loss 1.4559, Validation Classification Loss: 2.1171
+2022-06-21 07:52:40,275 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-595-Loss-3.5730137484414235.pth
+2022-06-21 07:54:14,729 - root - INFO - Epoch: 600, Validation Loss: 3.6155, Validation Regression Loss 1.4726, Validation Classification Loss: 2.1429
+2022-06-21 07:54:14,825 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-600-Loss-3.6154797758374895.pth
+2022-06-21 07:55:47,743 - root - INFO - Epoch: 605, Validation Loss: 3.5980, Validation Regression Loss 1.4697, Validation Classification Loss: 2.1284
+2022-06-21 07:55:47,776 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-605-Loss-3.5980331557137624.pth
+2022-06-21 07:57:25,300 - root - INFO - Epoch: 610, Validation Loss: 3.6151, Validation Regression Loss 1.4713, Validation Classification Loss: 2.1438
+2022-06-21 07:57:25,354 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-610-Loss-3.615088837487357.pth
+2022-06-21 07:59:00,616 - root - INFO - Epoch: 615, Validation Loss: 3.5732, Validation Regression Loss 1.4476, Validation Classification Loss: 2.1256
+2022-06-21 07:59:00,723 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-615-Loss-3.573215825217111.pth
+2022-06-21 08:00:33,248 - root - INFO - Epoch: 620, Validation Loss: 3.5817, Validation Regression Loss 1.4615, Validation Classification Loss: 2.1202
+2022-06-21 08:00:33,358 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-620-Loss-3.5817088740212575.pth
+2022-06-21 08:02:08,408 - root - INFO - Epoch: 625, Validation Loss: 3.5885, Validation Regression Loss 1.4715, Validation Classification Loss: 2.1170
+2022-06-21 08:02:08,489 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-625-Loss-3.5884921550750732.pth
+2022-06-21 08:03:39,311 - root - INFO - Epoch: 630, Validation Loss: 3.5616, Validation Regression Loss 1.4498, Validation Classification Loss: 2.1118
+2022-06-21 08:03:39,412 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-630-Loss-3.5616300106048584.pth
+2022-06-21 08:05:16,337 - root - INFO - Epoch: 635, Validation Loss: 3.5898, Validation Regression Loss 1.4573, Validation Classification Loss: 2.1324
+2022-06-21 08:05:16,437 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-635-Loss-3.589766808918544.pth
+2022-06-21 08:06:51,025 - root - INFO - Epoch: 640, Validation Loss: 3.5709, Validation Regression Loss 1.4462, Validation Classification Loss: 2.1246
+2022-06-21 08:06:51,129 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-640-Loss-3.5708623273032054.pth
+2022-06-21 08:08:23,279 - root - INFO - Epoch: 645, Validation Loss: 3.5520, Validation Regression Loss 1.4322, Validation Classification Loss: 2.1198
+2022-06-21 08:08:23,393 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-645-Loss-3.5519553252628873.pth
+2022-06-21 08:09:59,323 - root - INFO - Epoch: 650, Validation Loss: 3.5474, Validation Regression Loss 1.4368, Validation Classification Loss: 2.1106
+2022-06-21 08:09:59,365 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-650-Loss-3.5473997933523997.pth
+2022-06-21 08:11:30,690 - root - INFO - Epoch: 655, Validation Loss: 3.5643, Validation Regression Loss 1.4373, Validation Classification Loss: 2.1270
+2022-06-21 08:11:30,726 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-655-Loss-3.56434052331107.pth
+2022-06-21 08:13:05,791 - root - INFO - Epoch: 660, Validation Loss: 3.5757, Validation Regression Loss 1.4506, Validation Classification Loss: 2.1251
+2022-06-21 08:13:05,870 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-660-Loss-3.5757154396602084.pth
+2022-06-21 08:14:46,210 - root - INFO - Epoch: 665, Validation Loss: 3.5814, Validation Regression Loss 1.4584, Validation Classification Loss: 2.1230
+2022-06-21 08:14:46,326 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-665-Loss-3.5813958644866943.pth
+2022-06-21 08:16:21,205 - root - INFO - Epoch: 670, Validation Loss: 3.5900, Validation Regression Loss 1.4630, Validation Classification Loss: 2.1271
+2022-06-21 08:16:21,288 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-670-Loss-3.5900240625653947.pth
+2022-06-21 08:17:55,211 - root - INFO - Epoch: 675, Validation Loss: 3.6054, Validation Regression Loss 1.4663, Validation Classification Loss: 2.1391
+2022-06-21 08:17:55,312 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-675-Loss-3.6053972244262695.pth
+2022-06-21 08:19:29,969 - root - INFO - Epoch: 680, Validation Loss: 3.5850, Validation Regression Loss 1.4500, Validation Classification Loss: 2.1350
+2022-06-21 08:19:30,072 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-680-Loss-3.5849810327802385.pth
+2022-06-21 08:21:05,891 - root - INFO - Epoch: 685, Validation Loss: 3.5918, Validation Regression Loss 1.4570, Validation Classification Loss: 2.1348
+2022-06-21 08:21:05,953 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-685-Loss-3.591769218444824.pth
+2022-06-21 08:22:42,301 - root - INFO - Epoch: 690, Validation Loss: 3.5861, Validation Regression Loss 1.4478, Validation Classification Loss: 2.1383
+2022-06-21 08:22:42,381 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-690-Loss-3.5860906669071744.pth
+2022-06-21 08:24:16,207 - root - INFO - Epoch: 695, Validation Loss: 3.5781, Validation Regression Loss 1.4513, Validation Classification Loss: 2.1268
+2022-06-21 08:24:16,290 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-695-Loss-3.578148671558925.pth
+2022-06-21 08:25:50,043 - root - INFO - Epoch: 700, Validation Loss: 3.5698, Validation Regression Loss 1.4414, Validation Classification Loss: 2.1284
+2022-06-21 08:25:50,107 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-700-Loss-3.5697550433022633.pth
+2022-06-21 08:27:25,711 - root - INFO - Epoch: 705, Validation Loss: 3.5840, Validation Regression Loss 1.4557, Validation Classification Loss: 2.1283
+2022-06-21 08:27:25,804 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-705-Loss-3.583998271397182.pth
+2022-06-21 08:29:02,205 - root - INFO - Epoch: 710, Validation Loss: 3.5848, Validation Regression Loss 1.4519, Validation Classification Loss: 2.1329
+2022-06-21 08:29:02,335 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-710-Loss-3.5847618920462474.pth
+2022-06-21 08:30:35,129 - root - INFO - Epoch: 715, Validation Loss: 3.6024, Validation Regression Loss 1.4599, Validation Classification Loss: 2.1424
+2022-06-21 08:30:35,183 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-715-Loss-3.6023806503840854.pth
+2022-06-21 08:32:07,328 - root - INFO - Epoch: 720, Validation Loss: 3.5803, Validation Regression Loss 1.4472, Validation Classification Loss: 2.1331
+2022-06-21 08:32:07,438 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-720-Loss-3.58031804221017.pth
+2022-06-21 08:33:43,458 - root - INFO - Epoch: 725, Validation Loss: 3.5973, Validation Regression Loss 1.4588, Validation Classification Loss: 2.1385
+2022-06-21 08:33:43,565 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-725-Loss-3.597336564745222.pth
+2022-06-21 08:35:21,572 - root - INFO - Epoch: 730, Validation Loss: 3.6012, Validation Regression Loss 1.4630, Validation Classification Loss: 2.1382
+2022-06-21 08:35:21,706 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-730-Loss-3.6012252058301653.pth
+2022-06-21 08:36:57,682 - root - INFO - Epoch: 735, Validation Loss: 3.5986, Validation Regression Loss 1.4589, Validation Classification Loss: 2.1397
+2022-06-21 08:36:57,772 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-735-Loss-3.5986172471727644.pth
+2022-06-21 08:38:33,782 - root - INFO - Epoch: 740, Validation Loss: 3.5916, Validation Regression Loss 1.4562, Validation Classification Loss: 2.1354
+2022-06-21 08:38:33,869 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-740-Loss-3.591613939830235.pth
+2022-06-21 08:40:13,166 - root - INFO - Epoch: 745, Validation Loss: 3.6005, Validation Regression Loss 1.4621, Validation Classification Loss: 2.1384
+2022-06-21 08:40:13,271 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-745-Loss-3.6004928180149625.pth
+2022-06-21 08:41:48,704 - root - INFO - Epoch: 750, Validation Loss: 3.5933, Validation Regression Loss 1.4578, Validation Classification Loss: 2.1355
+2022-06-21 08:41:48,753 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-750-Loss-3.5932536465781078.pth
+2022-06-21 08:43:19,341 - root - INFO - Epoch: 755, Validation Loss: 3.6023, Validation Regression Loss 1.4612, Validation Classification Loss: 2.1411
+2022-06-21 08:43:19,408 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-755-Loss-3.602278913770403.pth
+2022-06-21 08:44:54,162 - root - INFO - Epoch: 760, Validation Loss: 3.5905, Validation Regression Loss 1.4601, Validation Classification Loss: 2.1304
+2022-06-21 08:44:54,227 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-760-Loss-3.590477296284267.pth
+2022-06-21 08:46:27,741 - root - INFO - Epoch: 765, Validation Loss: 3.5991, Validation Regression Loss 1.4574, Validation Classification Loss: 2.1416
+2022-06-21 08:46:27,811 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-765-Loss-3.599069254738944.pth
+2022-06-21 08:48:02,309 - root - INFO - Epoch: 770, Validation Loss: 3.5924, Validation Regression Loss 1.4569, Validation Classification Loss: 2.1355
+2022-06-21 08:48:02,411 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-770-Loss-3.592353412083217.pth
+2022-06-21 08:49:41,092 - root - INFO - Epoch: 775, Validation Loss: 3.6055, Validation Regression Loss 1.4622, Validation Classification Loss: 2.1433
+2022-06-21 08:49:41,170 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-775-Loss-3.6055442605699812.pth
+2022-06-21 08:51:19,816 - root - INFO - Epoch: 780, Validation Loss: 3.5843, Validation Regression Loss 1.4541, Validation Classification Loss: 2.1302
+2022-06-21 08:51:19,869 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-780-Loss-3.584291015352522.pth
+2022-06-21 08:52:56,420 - root - INFO - Epoch: 785, Validation Loss: 3.5943, Validation Regression Loss 1.4590, Validation Classification Loss: 2.1352
+2022-06-21 08:52:56,501 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-785-Loss-3.5942700590406145.pth
+2022-06-21 08:54:32,123 - root - INFO - Epoch: 790, Validation Loss: 3.5948, Validation Regression Loss 1.4582, Validation Classification Loss: 2.1366
+2022-06-21 08:54:32,197 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-790-Loss-3.5947753361293246.pth
+2022-06-21 08:56:09,428 - root - INFO - Epoch: 795, Validation Loss: 3.6023, Validation Regression Loss 1.4617, Validation Classification Loss: 2.1407
+2022-06-21 08:56:09,552 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-795-Loss-3.6023315020969937.pth
+2022-06-21 08:57:27,689 - root - INFO - Epoch: 799, Validation Loss: 3.6038, Validation Regression Loss 1.4650, Validation Classification Loss: 2.1388
+2022-06-21 08:57:27,797 - root - INFO - Saved model models/ws0.15kaimingbs16/mb1-ssd-lite-025extra-Epoch-799-Loss-3.6038061550685336.pth

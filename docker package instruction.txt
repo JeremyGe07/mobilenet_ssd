@@ -1,0 +1,3 @@
+image.tar file path:  root/ssd.tar
+
+use method:   on new server   , run : docker load --input ssd.tar 

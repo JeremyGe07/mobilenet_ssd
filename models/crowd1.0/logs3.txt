@@ -1,0 +1,63 @@
+2022-06-02 08:44:23,411 - root - INFO - Use Cuda.
+2022-06-02 08:44:23,411 - root - INFO - Namespace(balance_data=False, base_net=None, base_net_lr=None, batch_size=32, checkpoint_folder='models/crowd1.0', dataset_type='voc', datasets=['CrowdHuman'], debug_steps=100, extra_layers_lr=None, freeze_base_net=False, freeze_net=False, gamma=0.1, gpu='6', loss='smoothl1', lr=0.01, mb2_width_mult=1.0, milestones='80,100', momentum=0.9, net='mb1-ssd-lite', num_epochs=300, num_workers=8, optimizer='SGD', pretrained_ssd=None, resume=None, scheduler='cosine', t_max=300.0, use_cuda=True, validation_dataset='CrowdHuman', validation_epochs=5, weight_decay=0.0005, width_mult=1.0)
+2022-06-02 08:44:23,412 - root - INFO - Prepare training datasets.
+2022-06-02 08:44:23,413 - root - INFO - No labels file, using default VOC classes.
+2022-06-02 08:44:23,443 - root - INFO - Stored labels into file models/crowd1.0/voc-model-labels.txt.
+2022-06-02 08:44:23,443 - root - INFO - Train dataset size: 4140
+2022-06-02 08:44:23,443 - root - INFO - Prepare Validation datasets.
+2022-06-02 08:44:23,444 - root - INFO - No labels file, using default VOC classes.
+2022-06-02 08:44:23,444 - root - INFO - validation dataset size: 360
+2022-06-02 08:44:23,445 - root - INFO - Build network.
+2022-06-02 08:44:23,512 - root - INFO - Took 0.00 seconds to load the model.
+2022-06-02 08:44:27,227 - root - INFO - Learning rate: 0.01, Base net learning rate: 0.01, Extra Layers learning rate: 0.01.
+2022-06-02 08:44:27,227 - root - INFO - Uses CosineAnnealingLR scheduler.
+2022-06-02 08:44:27,227 - root - INFO - Start training from epoch 0.
+2022-06-02 08:45:57,837 - root - INFO - Epoch: 0, Step: 100, Average Loss: 7.8136, Average Regression Loss 5.2653, Average Classification Loss: 2.5483
+2022-06-02 08:46:21,811 - root - INFO - Epoch: 0, Validation Loss: nan, Validation Regression Loss nan, Validation Classification Loss: nan
+2022-06-02 08:46:21,976 - root - INFO - Saved model models/crowd1.0/mb1-ssd-lite-Epoch-0-Loss-nan.pth
+2022-06-02 08:47:52,610 - root - INFO - Epoch: 1, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 08:49:47,354 - root - INFO - Epoch: 2, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 08:51:32,000 - root - INFO - Epoch: 3, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 08:53:17,415 - root - INFO - Epoch: 4, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 08:55:00,028 - root - INFO - Epoch: 5, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 08:55:23,185 - root - INFO - Epoch: 5, Validation Loss: nan, Validation Regression Loss nan, Validation Classification Loss: nan
+2022-06-02 08:55:23,325 - root - INFO - Saved model models/crowd1.0/mb1-ssd-lite-Epoch-5-Loss-nan.pth
+2022-06-02 08:56:47,819 - root - INFO - Epoch: 6, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 08:58:42,059 - root - INFO - Epoch: 7, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 09:00:38,115 - root - INFO - Epoch: 8, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 09:02:25,304 - root - INFO - Epoch: 9, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 09:04:21,726 - root - INFO - Epoch: 10, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 09:04:44,937 - root - INFO - Epoch: 10, Validation Loss: nan, Validation Regression Loss nan, Validation Classification Loss: nan
+2022-06-02 09:04:45,116 - root - INFO - Saved model models/crowd1.0/mb1-ssd-lite-Epoch-10-Loss-nan.pth
+2022-06-02 09:06:13,979 - root - INFO - Epoch: 11, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 09:08:00,097 - root - INFO - Epoch: 12, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 09:09:51,332 - root - INFO - Epoch: 13, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 09:11:38,228 - root - INFO - Epoch: 14, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 09:13:26,365 - root - INFO - Epoch: 15, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 09:13:50,186 - root - INFO - Epoch: 15, Validation Loss: nan, Validation Regression Loss nan, Validation Classification Loss: nan
+2022-06-02 09:13:50,347 - root - INFO - Saved model models/crowd1.0/mb1-ssd-lite-Epoch-15-Loss-nan.pth
+2022-06-02 09:15:16,041 - root - INFO - Epoch: 16, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 09:17:04,897 - root - INFO - Epoch: 17, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 09:18:55,733 - root - INFO - Epoch: 18, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 09:20:43,101 - root - INFO - Epoch: 19, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 09:22:40,591 - root - INFO - Epoch: 20, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 09:23:03,598 - root - INFO - Epoch: 20, Validation Loss: nan, Validation Regression Loss nan, Validation Classification Loss: nan
+2022-06-02 09:23:03,786 - root - INFO - Saved model models/crowd1.0/mb1-ssd-lite-Epoch-20-Loss-nan.pth
+2022-06-02 09:24:38,111 - root - INFO - Epoch: 21, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 09:26:27,611 - root - INFO - Epoch: 22, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 09:28:11,864 - root - INFO - Epoch: 23, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 09:30:08,967 - root - INFO - Epoch: 24, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 09:31:55,761 - root - INFO - Epoch: 25, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 09:32:22,178 - root - INFO - Epoch: 25, Validation Loss: nan, Validation Regression Loss nan, Validation Classification Loss: nan
+2022-06-02 09:32:22,348 - root - INFO - Saved model models/crowd1.0/mb1-ssd-lite-Epoch-25-Loss-nan.pth
+2022-06-02 09:33:48,318 - root - INFO - Epoch: 26, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 09:35:39,866 - root - INFO - Epoch: 27, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 09:37:40,537 - root - INFO - Epoch: 28, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 09:39:25,842 - root - INFO - Epoch: 29, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 09:41:14,430 - root - INFO - Epoch: 30, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 09:41:48,099 - root - INFO - Epoch: 30, Validation Loss: nan, Validation Regression Loss nan, Validation Classification Loss: nan
+2022-06-02 09:41:48,299 - root - INFO - Saved model models/crowd1.0/mb1-ssd-lite-Epoch-30-Loss-nan.pth
+2022-06-02 09:43:21,028 - root - INFO - Epoch: 31, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 09:45:06,766 - root - INFO - Epoch: 32, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 09:46:45,082 - root - INFO - Epoch: 33, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-02 09:48:40,042 - root - INFO - Epoch: 34, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan

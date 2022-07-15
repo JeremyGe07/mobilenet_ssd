@@ -1,0 +1,17 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "train_ssd.py", line 353, in <module>
+    )}
+  File "/usr/local/lib/python3.6/dist-packages/torch/nn/modules/module.py", line 673, in to
+    return self._apply(convert)
+  File "/usr/local/lib/python3.6/dist-packages/torch/nn/modules/module.py", line 387, in _apply
+    module._apply(fn)
+  File "/usr/local/lib/python3.6/dist-packages/torch/nn/modules/module.py", line 387, in _apply
+    module._apply(fn)
+  File "/usr/local/lib/python3.6/dist-packages/torch/nn/modules/module.py", line 387, in _apply
+    module._apply(fn)
+  File "/usr/local/lib/python3.6/dist-packages/torch/nn/modules/module.py", line 409, in _apply
+    param_applied = fn(param)
+  File "/usr/local/lib/python3.6/dist-packages/torch/nn/modules/module.py", line 671, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+KeyboardInterrupt

@@ -1,0 +1,75 @@
+2022-06-10 03:41:48,191 - root - INFO - Use Cuda.
+2022-06-10 03:41:48,191 - root - INFO - Namespace(balance_data=False, base_net='mobilenet_v1_size_224_alpha_0.25_top.pth', base_net_lr=None, batch_size=32, checkpoint_folder='models/KainmingFan_in', dataset_type='voc', datasets=['CrowdHuman'], debug_steps=100, extra_layers_lr=None, freeze_base_net=False, freeze_net=False, gamma=0.1, gpu='6', loss='smoothl1', lr=0.01, mb2_width_mult=1.0, milestones='80,100', momentum=0.9, net='mb1-ssd-lite-025extra', num_epochs=200, num_workers=8, optimizer='SGD', pretrained_ssd=None, resume=None, scheduler='cosine', t_max=200.0, use_cuda=True, validation_dataset='CrowdHuman', validation_epochs=5, weight_decay=0.0005, width_mult=0.25)
+2022-06-10 03:41:48,192 - root - INFO - Prepare training datasets.
+2022-06-10 03:41:48,194 - root - INFO - No labels file, using default VOC classes.
+2022-06-10 03:41:48,202 - root - INFO - Stored labels into file models/KainmingFan_in/voc-model-labels.txt.
+2022-06-10 03:41:48,203 - root - INFO - Train dataset size: 4140
+2022-06-10 03:41:48,203 - root - INFO - Prepare Validation datasets.
+2022-06-10 03:41:48,204 - root - INFO - No labels file, using default VOC classes.
+2022-06-10 03:41:48,204 - root - INFO - validation dataset size: 360
+2022-06-10 03:41:48,204 - root - INFO - Build network.
+2022-06-10 03:41:48,234 - root - INFO - Init from base net mobilenet_v1_size_224_alpha_0.25_top.pth
+2022-06-10 03:41:48,251 - root - INFO - Took 0.02 seconds to load the model.
+2022-06-10 03:41:52,123 - root - INFO - Learning rate: 0.01, Base net learning rate: 0.01, Extra Layers learning rate: 0.01.
+2022-06-10 03:41:52,123 - root - INFO - Uses CosineAnnealingLR scheduler.
+2022-06-10 03:41:52,123 - root - INFO - Start training from epoch 0.
+2022-06-10 03:43:55,356 - root - INFO - Epoch: 0, Step: 100, Average Loss: 8.5024, Average Regression Loss 5.5028, Average Classification Loss: 2.9996
+2022-06-10 03:44:29,603 - root - INFO - Epoch: 0, Validation Loss: nan, Validation Regression Loss nan, Validation Classification Loss: nan
+2022-06-10 03:44:29,706 - root - INFO - Saved model models/KainmingFan_in/mb1-ssd-lite-025extra-Epoch-0-Loss-nan.pth
+2022-06-10 03:47:04,564 - root - INFO - Epoch: 1, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 03:50:07,482 - root - INFO - Epoch: 2, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 03:53:18,282 - root - INFO - Epoch: 3, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 03:56:35,396 - root - INFO - Epoch: 4, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 03:59:57,217 - root - INFO - Epoch: 5, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 04:00:37,927 - root - INFO - Epoch: 5, Validation Loss: nan, Validation Regression Loss nan, Validation Classification Loss: nan
+2022-06-10 04:00:38,041 - root - INFO - Saved model models/KainmingFan_in/mb1-ssd-lite-025extra-Epoch-5-Loss-nan.pth
+2022-06-10 04:03:16,409 - root - INFO - Epoch: 6, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 04:06:27,545 - root - INFO - Epoch: 7, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 04:09:36,581 - root - INFO - Epoch: 8, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 04:12:52,410 - root - INFO - Epoch: 9, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 04:16:09,419 - root - INFO - Epoch: 10, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 04:16:50,113 - root - INFO - Epoch: 10, Validation Loss: nan, Validation Regression Loss nan, Validation Classification Loss: nan
+2022-06-10 04:16:50,205 - root - INFO - Saved model models/KainmingFan_in/mb1-ssd-lite-025extra-Epoch-10-Loss-nan.pth
+2022-06-10 04:19:17,503 - root - INFO - Epoch: 11, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 04:22:34,229 - root - INFO - Epoch: 12, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 04:25:54,249 - root - INFO - Epoch: 13, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 04:29:01,472 - root - INFO - Epoch: 14, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 04:32:26,011 - root - INFO - Epoch: 15, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 04:33:15,770 - root - INFO - Epoch: 15, Validation Loss: nan, Validation Regression Loss nan, Validation Classification Loss: nan
+2022-06-10 04:33:15,875 - root - INFO - Saved model models/KainmingFan_in/mb1-ssd-lite-025extra-Epoch-15-Loss-nan.pth
+2022-06-10 04:35:43,975 - root - INFO - Epoch: 16, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 04:39:04,270 - root - INFO - Epoch: 17, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 04:42:25,454 - root - INFO - Epoch: 18, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 04:45:36,696 - root - INFO - Epoch: 19, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 04:48:50,429 - root - INFO - Epoch: 20, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 04:49:33,845 - root - INFO - Epoch: 20, Validation Loss: nan, Validation Regression Loss nan, Validation Classification Loss: nan
+2022-06-10 04:49:33,954 - root - INFO - Saved model models/KainmingFan_in/mb1-ssd-lite-025extra-Epoch-20-Loss-nan.pth
+2022-06-10 04:52:03,819 - root - INFO - Epoch: 21, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 04:55:25,516 - root - INFO - Epoch: 22, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 04:58:38,312 - root - INFO - Epoch: 23, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 05:01:54,629 - root - INFO - Epoch: 24, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 05:05:05,858 - root - INFO - Epoch: 25, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 05:05:39,511 - root - INFO - Epoch: 25, Validation Loss: nan, Validation Regression Loss nan, Validation Classification Loss: nan
+2022-06-10 05:05:39,611 - root - INFO - Saved model models/KainmingFan_in/mb1-ssd-lite-025extra-Epoch-25-Loss-nan.pth
+2022-06-10 05:07:47,397 - root - INFO - Epoch: 26, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 05:10:19,758 - root - INFO - Epoch: 27, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 05:12:56,320 - root - INFO - Epoch: 28, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 05:15:35,485 - root - INFO - Epoch: 29, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 05:18:09,128 - root - INFO - Epoch: 30, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 05:18:42,781 - root - INFO - Epoch: 30, Validation Loss: nan, Validation Regression Loss nan, Validation Classification Loss: nan
+2022-06-10 05:18:42,893 - root - INFO - Saved model models/KainmingFan_in/mb1-ssd-lite-025extra-Epoch-30-Loss-nan.pth
+2022-06-10 05:20:51,461 - root - INFO - Epoch: 31, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 05:23:25,296 - root - INFO - Epoch: 32, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 05:25:48,082 - root - INFO - Epoch: 33, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 05:28:28,657 - root - INFO - Epoch: 34, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 05:30:58,641 - root - INFO - Epoch: 35, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 05:31:37,859 - root - INFO - Epoch: 35, Validation Loss: nan, Validation Regression Loss nan, Validation Classification Loss: nan
+2022-06-10 05:31:37,974 - root - INFO - Saved model models/KainmingFan_in/mb1-ssd-lite-025extra-Epoch-35-Loss-nan.pth
+2022-06-10 05:33:47,168 - root - INFO - Epoch: 36, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 05:36:15,173 - root - INFO - Epoch: 37, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 05:38:54,137 - root - INFO - Epoch: 38, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 05:41:20,998 - root - INFO - Epoch: 39, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 05:43:56,326 - root - INFO - Epoch: 40, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-06-10 05:44:31,733 - root - INFO - Epoch: 40, Validation Loss: nan, Validation Regression Loss nan, Validation Classification Loss: nan
+2022-06-10 05:44:31,872 - root - INFO - Saved model models/KainmingFan_in/mb1-ssd-lite-025extra-Epoch-40-Loss-nan.pth
+2022-06-10 05:46:43,382 - root - INFO - Epoch: 41, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan

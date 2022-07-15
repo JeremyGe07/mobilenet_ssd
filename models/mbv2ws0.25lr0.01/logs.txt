@@ -1,0 +1,297 @@
+2022-06-08 05:48:09,281 - root - INFO - Use Cuda.
+2022-06-08 05:48:09,281 - root - INFO - Namespace(balance_data=False, base_net=None, base_net_lr=None, batch_size=8, checkpoint_folder='models/mbv2ws0.25lr0.01', dataset_type='voc', datasets=['VOC2007'], debug_steps=100, extra_layers_lr=None, freeze_base_net=False, freeze_net=False, gamma=0.1, gpu='0', loss='smoothl1', lr=0.01, mb2_width_mult=0.25, milestones='80,100', momentum=0.9, net='mb2-ssd-lite', num_epochs=200, num_workers=4, optimizer='SGD', pretrained_ssd='models/mbv2ws0.25lr0.1/mb2-ssd-lite-Epoch-399-Loss-4.859316280909947.pth', resume=None, scheduler='cosine', t_max=200.0, use_cuda=True, validation_dataset='./VOC2007', validation_epochs=5, weight_decay=0.0005, width_mult=1.0)
+2022-06-08 05:48:09,282 - root - INFO - Prepare training datasets.
+2022-06-08 05:48:09,283 - root - INFO - No labels file, using default VOC classes.
+2022-06-08 05:48:09,289 - root - INFO - Stored labels into file models/mbv2ws0.25lr0.01/voc-model-labels.txt.
+2022-06-08 05:48:09,289 - root - INFO - Train dataset size: 971
+2022-06-08 05:48:09,289 - root - INFO - Prepare Validation datasets.
+2022-06-08 05:48:09,290 - root - INFO - No labels file, using default VOC classes.
+2022-06-08 05:48:09,290 - root - INFO - validation dataset size: 108
+2022-06-08 05:48:09,290 - root - INFO - Build network.
+2022-06-08 05:48:09,345 - root - INFO - Init from pretrained ssd models/mbv2ws0.25lr0.1/mb2-ssd-lite-Epoch-399-Loss-4.859316280909947.pth
+2022-06-08 05:48:09,427 - root - INFO - Took 0.08 seconds to load the model.
+2022-06-08 05:48:13,177 - root - INFO - Learning rate: 0.01, Base net learning rate: 0.01, Extra Layers learning rate: 0.01.
+2022-06-08 05:48:13,177 - root - INFO - Uses CosineAnnealingLR scheduler.
+2022-06-08 05:48:13,178 - root - INFO - Start training from epoch 0.
+2022-06-08 05:48:22,684 - root - INFO - Epoch: 0, Step: 100, Average Loss: 6.0488, Average Regression Loss 3.3941, Average Classification Loss: 2.6547
+2022-06-08 05:48:26,602 - root - INFO - Epoch: 0, Validation Loss: 5.2466, Validation Regression Loss 2.8075, Validation Classification Loss: 2.4391
+2022-06-08 05:48:26,718 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-0-Loss-5.24662276676723.pth
+2022-06-08 05:48:35,842 - root - INFO - Epoch: 1, Step: 100, Average Loss: 5.4966, Average Regression Loss 3.1104, Average Classification Loss: 2.3862
+2022-06-08 05:48:46,281 - root - INFO - Epoch: 2, Step: 100, Average Loss: 5.4853, Average Regression Loss 3.1154, Average Classification Loss: 2.3700
+2022-06-08 05:48:57,504 - root - INFO - Epoch: 3, Step: 100, Average Loss: 5.4291, Average Regression Loss 3.0825, Average Classification Loss: 2.3466
+2022-06-08 05:49:09,427 - root - INFO - Epoch: 4, Step: 100, Average Loss: 5.4628, Average Regression Loss 3.1232, Average Classification Loss: 2.3397
+2022-06-08 05:49:22,021 - root - INFO - Epoch: 5, Step: 100, Average Loss: 5.3865, Average Regression Loss 3.0555, Average Classification Loss: 2.3310
+2022-06-08 05:49:24,559 - root - INFO - Epoch: 5, Validation Loss: 5.0090, Validation Regression Loss 2.6790, Validation Classification Loss: 2.3300
+2022-06-08 05:49:24,665 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-5-Loss-5.008972406387329.pth
+2022-06-08 05:49:34,601 - root - INFO - Epoch: 6, Step: 100, Average Loss: 5.4491, Average Regression Loss 3.1251, Average Classification Loss: 2.3240
+2022-06-08 05:49:45,516 - root - INFO - Epoch: 7, Step: 100, Average Loss: 5.3720, Average Regression Loss 3.0501, Average Classification Loss: 2.3219
+2022-06-08 05:49:56,658 - root - INFO - Epoch: 8, Step: 100, Average Loss: 5.5279, Average Regression Loss 3.2063, Average Classification Loss: 2.3217
+2022-06-08 05:50:07,807 - root - INFO - Epoch: 9, Step: 100, Average Loss: 5.4687, Average Regression Loss 3.1484, Average Classification Loss: 2.3203
+2022-06-08 05:50:20,376 - root - INFO - Epoch: 10, Step: 100, Average Loss: 5.3134, Average Regression Loss 2.9963, Average Classification Loss: 2.3171
+2022-06-08 05:50:22,836 - root - INFO - Epoch: 10, Validation Loss: 4.9791, Validation Regression Loss 2.6592, Validation Classification Loss: 2.3199
+2022-06-08 05:50:22,954 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-10-Loss-4.97909723009382.pth
+2022-06-08 05:50:32,533 - root - INFO - Epoch: 11, Step: 100, Average Loss: 5.4371, Average Regression Loss 3.1217, Average Classification Loss: 2.3154
+2022-06-08 05:50:43,643 - root - INFO - Epoch: 12, Step: 100, Average Loss: 5.3295, Average Regression Loss 3.0190, Average Classification Loss: 2.3106
+2022-06-08 05:50:56,766 - root - INFO - Epoch: 13, Step: 100, Average Loss: 5.3909, Average Regression Loss 3.0823, Average Classification Loss: 2.3086
+2022-06-08 05:51:06,878 - root - INFO - Epoch: 14, Step: 100, Average Loss: 5.4156, Average Regression Loss 3.1057, Average Classification Loss: 2.3099
+2022-06-08 05:51:19,693 - root - INFO - Epoch: 15, Step: 100, Average Loss: 5.3359, Average Regression Loss 3.0306, Average Classification Loss: 2.3053
+2022-06-08 05:51:22,198 - root - INFO - Epoch: 15, Validation Loss: 4.9275, Validation Regression Loss 2.6342, Validation Classification Loss: 2.2933
+2022-06-08 05:51:22,314 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-15-Loss-4.927526269640241.pth
+2022-06-08 05:51:32,725 - root - INFO - Epoch: 16, Step: 100, Average Loss: 5.3566, Average Regression Loss 3.0514, Average Classification Loss: 2.3052
+2022-06-08 05:51:42,590 - root - INFO - Epoch: 17, Step: 100, Average Loss: 5.4312, Average Regression Loss 3.1260, Average Classification Loss: 2.3052
+2022-06-08 05:51:53,899 - root - INFO - Epoch: 18, Step: 100, Average Loss: 5.3533, Average Regression Loss 3.0477, Average Classification Loss: 2.3056
+2022-06-08 05:52:04,417 - root - INFO - Epoch: 19, Step: 100, Average Loss: 5.2623, Average Regression Loss 2.9592, Average Classification Loss: 2.3030
+2022-06-08 05:52:15,392 - root - INFO - Epoch: 20, Step: 100, Average Loss: 5.3378, Average Regression Loss 3.0358, Average Classification Loss: 2.3019
+2022-06-08 05:52:18,111 - root - INFO - Epoch: 20, Validation Loss: 4.9253, Validation Regression Loss 2.6298, Validation Classification Loss: 2.2955
+2022-06-08 05:52:18,225 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-20-Loss-4.925316299710955.pth
+2022-06-08 05:52:28,691 - root - INFO - Epoch: 21, Step: 100, Average Loss: 5.3884, Average Regression Loss 3.0871, Average Classification Loss: 2.3014
+2022-06-08 05:52:39,545 - root - INFO - Epoch: 22, Step: 100, Average Loss: 5.3722, Average Regression Loss 3.0735, Average Classification Loss: 2.2987
+2022-06-08 05:52:52,271 - root - INFO - Epoch: 23, Step: 100, Average Loss: 5.3311, Average Regression Loss 3.0329, Average Classification Loss: 2.2982
+2022-06-08 05:53:03,514 - root - INFO - Epoch: 24, Step: 100, Average Loss: 5.2480, Average Regression Loss 2.9486, Average Classification Loss: 2.2994
+2022-06-08 05:53:15,945 - root - INFO - Epoch: 25, Step: 100, Average Loss: 5.2869, Average Regression Loss 2.9874, Average Classification Loss: 2.2995
+2022-06-08 05:53:18,625 - root - INFO - Epoch: 25, Validation Loss: 4.9403, Validation Regression Loss 2.6341, Validation Classification Loss: 2.3062
+2022-06-08 05:53:18,784 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-25-Loss-4.940314905984061.pth
+2022-06-08 05:53:27,833 - root - INFO - Epoch: 26, Step: 100, Average Loss: 5.3594, Average Regression Loss 3.0623, Average Classification Loss: 2.2970
+2022-06-08 05:53:40,139 - root - INFO - Epoch: 27, Step: 100, Average Loss: 5.3744, Average Regression Loss 3.0765, Average Classification Loss: 2.2979
+2022-06-08 05:53:54,451 - root - INFO - Epoch: 28, Step: 100, Average Loss: 5.3263, Average Regression Loss 3.0255, Average Classification Loss: 2.3008
+2022-06-08 05:54:07,458 - root - INFO - Epoch: 29, Step: 100, Average Loss: 5.3396, Average Regression Loss 3.0435, Average Classification Loss: 2.2961
+2022-06-08 05:54:18,182 - root - INFO - Epoch: 30, Step: 100, Average Loss: 5.3221, Average Regression Loss 3.0272, Average Classification Loss: 2.2949
+2022-06-08 05:54:21,983 - root - INFO - Epoch: 30, Validation Loss: 4.9325, Validation Regression Loss 2.6382, Validation Classification Loss: 2.2944
+2022-06-08 05:54:22,087 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-30-Loss-4.932524851390293.pth
+2022-06-08 05:54:32,017 - root - INFO - Epoch: 31, Step: 100, Average Loss: 5.2525, Average Regression Loss 2.9589, Average Classification Loss: 2.2937
+2022-06-08 05:54:43,210 - root - INFO - Epoch: 32, Step: 100, Average Loss: 5.3368, Average Regression Loss 3.0442, Average Classification Loss: 2.2926
+2022-06-08 05:54:54,008 - root - INFO - Epoch: 33, Step: 100, Average Loss: 5.3107, Average Regression Loss 3.0155, Average Classification Loss: 2.2952
+2022-06-08 05:55:05,385 - root - INFO - Epoch: 34, Step: 100, Average Loss: 5.2312, Average Regression Loss 2.9391, Average Classification Loss: 2.2921
+2022-06-08 05:55:16,530 - root - INFO - Epoch: 35, Step: 100, Average Loss: 5.3083, Average Regression Loss 3.0156, Average Classification Loss: 2.2927
+2022-06-08 05:55:19,702 - root - INFO - Epoch: 35, Validation Loss: 4.9307, Validation Regression Loss 2.6416, Validation Classification Loss: 2.2890
+2022-06-08 05:55:19,803 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-35-Loss-4.930652379989624.pth
+2022-06-08 05:55:32,504 - root - INFO - Epoch: 36, Step: 100, Average Loss: 5.3158, Average Regression Loss 3.0224, Average Classification Loss: 2.2934
+2022-06-08 05:55:43,510 - root - INFO - Epoch: 37, Step: 100, Average Loss: 5.3829, Average Regression Loss 3.0882, Average Classification Loss: 2.2947
+2022-06-08 05:55:53,931 - root - INFO - Epoch: 38, Step: 100, Average Loss: 5.3700, Average Regression Loss 3.0747, Average Classification Loss: 2.2953
+2022-06-08 05:56:07,258 - root - INFO - Epoch: 39, Step: 100, Average Loss: 5.3288, Average Regression Loss 3.0394, Average Classification Loss: 2.2894
+2022-06-08 05:56:17,735 - root - INFO - Epoch: 40, Step: 100, Average Loss: 5.3086, Average Regression Loss 3.0178, Average Classification Loss: 2.2908
+2022-06-08 05:56:20,394 - root - INFO - Epoch: 40, Validation Loss: 4.8967, Validation Regression Loss 2.6146, Validation Classification Loss: 2.2821
+2022-06-08 05:56:20,495 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-40-Loss-4.896701846803937.pth
+2022-06-08 05:56:30,712 - root - INFO - Epoch: 41, Step: 100, Average Loss: 5.3225, Average Regression Loss 3.0316, Average Classification Loss: 2.2908
+2022-06-08 05:56:41,038 - root - INFO - Epoch: 42, Step: 100, Average Loss: 5.3215, Average Regression Loss 3.0318, Average Classification Loss: 2.2896
+2022-06-08 05:56:51,068 - root - INFO - Epoch: 43, Step: 100, Average Loss: 5.2629, Average Regression Loss 2.9708, Average Classification Loss: 2.2920
+2022-06-08 05:57:02,605 - root - INFO - Epoch: 44, Step: 100, Average Loss: 5.2326, Average Regression Loss 2.9431, Average Classification Loss: 2.2895
+2022-06-08 05:57:13,405 - root - INFO - Epoch: 45, Step: 100, Average Loss: 5.2420, Average Regression Loss 2.9518, Average Classification Loss: 2.2902
+2022-06-08 05:57:16,260 - root - INFO - Epoch: 45, Validation Loss: 4.9101, Validation Regression Loss 2.6356, Validation Classification Loss: 2.2745
+2022-06-08 05:57:16,365 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-45-Loss-4.910079615456717.pth
+2022-06-08 05:57:26,822 - root - INFO - Epoch: 46, Step: 100, Average Loss: 5.3117, Average Regression Loss 3.0225, Average Classification Loss: 2.2892
+2022-06-08 05:57:38,425 - root - INFO - Epoch: 47, Step: 100, Average Loss: 5.3087, Average Regression Loss 3.0205, Average Classification Loss: 2.2882
+2022-06-08 05:57:50,723 - root - INFO - Epoch: 48, Step: 100, Average Loss: 5.3700, Average Regression Loss 3.0797, Average Classification Loss: 2.2903
+2022-06-08 05:58:01,878 - root - INFO - Epoch: 49, Step: 100, Average Loss: 5.3809, Average Regression Loss 3.0926, Average Classification Loss: 2.2883
+2022-06-08 05:58:13,104 - root - INFO - Epoch: 50, Step: 100, Average Loss: 5.2855, Average Regression Loss 2.9968, Average Classification Loss: 2.2887
+2022-06-08 05:58:15,835 - root - INFO - Epoch: 50, Validation Loss: 4.9049, Validation Regression Loss 2.6281, Validation Classification Loss: 2.2768
+2022-06-08 05:58:15,936 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-50-Loss-4.904864753995623.pth
+2022-06-08 05:58:25,178 - root - INFO - Epoch: 51, Step: 100, Average Loss: 5.2448, Average Regression Loss 2.9575, Average Classification Loss: 2.2873
+2022-06-08 05:58:40,056 - root - INFO - Epoch: 52, Step: 100, Average Loss: 5.4167, Average Regression Loss 3.1303, Average Classification Loss: 2.2863
+2022-06-08 05:58:51,902 - root - INFO - Epoch: 53, Step: 100, Average Loss: 5.3229, Average Regression Loss 3.0329, Average Classification Loss: 2.2899
+2022-06-08 05:59:02,894 - root - INFO - Epoch: 54, Step: 100, Average Loss: 5.2335, Average Regression Loss 2.9474, Average Classification Loss: 2.2861
+2022-06-08 05:59:13,960 - root - INFO - Epoch: 55, Step: 100, Average Loss: 5.3209, Average Regression Loss 3.0344, Average Classification Loss: 2.2865
+2022-06-08 05:59:17,888 - root - INFO - Epoch: 55, Validation Loss: 4.9001, Validation Regression Loss 2.6206, Validation Classification Loss: 2.2796
+2022-06-08 05:59:17,988 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-55-Loss-4.900125128882272.pth
+2022-06-08 05:59:26,712 - root - INFO - Epoch: 56, Step: 100, Average Loss: 5.2134, Average Regression Loss 2.9252, Average Classification Loss: 2.2882
+2022-06-08 05:59:38,409 - root - INFO - Epoch: 57, Step: 100, Average Loss: 5.3219, Average Regression Loss 3.0361, Average Classification Loss: 2.2857
+2022-06-08 05:59:50,070 - root - INFO - Epoch: 58, Step: 100, Average Loss: 5.2499, Average Regression Loss 2.9642, Average Classification Loss: 2.2857
+2022-06-08 06:00:02,741 - root - INFO - Epoch: 59, Step: 100, Average Loss: 5.3970, Average Regression Loss 3.1107, Average Classification Loss: 2.2862
+2022-06-08 06:00:14,650 - root - INFO - Epoch: 60, Step: 100, Average Loss: 5.3160, Average Regression Loss 3.0298, Average Classification Loss: 2.2862
+2022-06-08 06:00:17,102 - root - INFO - Epoch: 60, Validation Loss: 4.9061, Validation Regression Loss 2.6287, Validation Classification Loss: 2.2774
+2022-06-08 06:00:17,224 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-60-Loss-4.906095232282366.pth
+2022-06-08 06:00:28,507 - root - INFO - Epoch: 61, Step: 100, Average Loss: 5.3377, Average Regression Loss 3.0491, Average Classification Loss: 2.2886
+2022-06-08 06:00:38,969 - root - INFO - Epoch: 62, Step: 100, Average Loss: 5.2382, Average Regression Loss 2.9519, Average Classification Loss: 2.2863
+2022-06-08 06:00:50,932 - root - INFO - Epoch: 63, Step: 100, Average Loss: 5.4112, Average Regression Loss 3.1253, Average Classification Loss: 2.2859
+2022-06-08 06:01:02,136 - root - INFO - Epoch: 64, Step: 100, Average Loss: 5.2426, Average Regression Loss 2.9571, Average Classification Loss: 2.2855
+2022-06-08 06:01:13,871 - root - INFO - Epoch: 65, Step: 100, Average Loss: 5.3026, Average Regression Loss 3.0183, Average Classification Loss: 2.2844
+2022-06-08 06:01:17,318 - root - INFO - Epoch: 65, Validation Loss: 4.9057, Validation Regression Loss 2.6367, Validation Classification Loss: 2.2690
+2022-06-08 06:01:17,480 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-65-Loss-4.905701432909284.pth
+2022-06-08 06:01:27,413 - root - INFO - Epoch: 66, Step: 100, Average Loss: 5.4007, Average Regression Loss 3.1149, Average Classification Loss: 2.2859
+2022-06-08 06:01:39,594 - root - INFO - Epoch: 67, Step: 100, Average Loss: 5.3177, Average Regression Loss 3.0330, Average Classification Loss: 2.2847
+2022-06-08 06:01:52,672 - root - INFO - Epoch: 68, Step: 100, Average Loss: 5.3328, Average Regression Loss 3.0473, Average Classification Loss: 2.2855
+2022-06-08 06:02:02,925 - root - INFO - Epoch: 69, Step: 100, Average Loss: 5.2843, Average Regression Loss 2.9998, Average Classification Loss: 2.2845
+2022-06-08 06:02:13,561 - root - INFO - Epoch: 70, Step: 100, Average Loss: 5.3071, Average Regression Loss 3.0218, Average Classification Loss: 2.2853
+2022-06-08 06:02:15,913 - root - INFO - Epoch: 70, Validation Loss: 4.8996, Validation Regression Loss 2.6295, Validation Classification Loss: 2.2700
+2022-06-08 06:02:15,993 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-70-Loss-4.899568557739258.pth
+2022-06-08 06:02:25,399 - root - INFO - Epoch: 71, Step: 100, Average Loss: 5.2994, Average Regression Loss 3.0152, Average Classification Loss: 2.2842
+2022-06-08 06:02:36,417 - root - INFO - Epoch: 72, Step: 100, Average Loss: 5.2854, Average Regression Loss 3.0023, Average Classification Loss: 2.2830
+2022-06-08 06:02:47,098 - root - INFO - Epoch: 73, Step: 100, Average Loss: 5.2940, Average Regression Loss 3.0106, Average Classification Loss: 2.2834
+2022-06-08 06:02:59,149 - root - INFO - Epoch: 74, Step: 100, Average Loss: 5.2520, Average Regression Loss 2.9694, Average Classification Loss: 2.2826
+2022-06-08 06:03:09,748 - root - INFO - Epoch: 75, Step: 100, Average Loss: 5.2624, Average Regression Loss 2.9795, Average Classification Loss: 2.2829
+2022-06-08 06:03:12,231 - root - INFO - Epoch: 75, Validation Loss: 4.8966, Validation Regression Loss 2.6286, Validation Classification Loss: 2.2681
+2022-06-08 06:03:12,321 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-75-Loss-4.896632126399449.pth
+2022-06-08 06:03:22,929 - root - INFO - Epoch: 76, Step: 100, Average Loss: 5.3487, Average Regression Loss 3.0667, Average Classification Loss: 2.2820
+2022-06-08 06:03:37,091 - root - INFO - Epoch: 77, Step: 100, Average Loss: 5.3115, Average Regression Loss 3.0300, Average Classification Loss: 2.2816
+2022-06-08 06:03:49,732 - root - INFO - Epoch: 78, Step: 100, Average Loss: 5.2412, Average Regression Loss 2.9590, Average Classification Loss: 2.2822
+2022-06-08 06:04:00,526 - root - INFO - Epoch: 79, Step: 100, Average Loss: 5.2691, Average Regression Loss 2.9868, Average Classification Loss: 2.2823
+2022-06-08 06:04:11,168 - root - INFO - Epoch: 80, Step: 100, Average Loss: 5.2300, Average Regression Loss 2.9456, Average Classification Loss: 2.2844
+2022-06-08 06:04:13,749 - root - INFO - Epoch: 80, Validation Loss: 4.8802, Validation Regression Loss 2.6156, Validation Classification Loss: 2.2646
+2022-06-08 06:04:13,828 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-80-Loss-4.880196298871722.pth
+2022-06-08 06:04:22,454 - root - INFO - Epoch: 81, Step: 100, Average Loss: 5.2384, Average Regression Loss 2.9559, Average Classification Loss: 2.2825
+2022-06-08 06:04:32,764 - root - INFO - Epoch: 82, Step: 100, Average Loss: 5.1965, Average Regression Loss 2.9147, Average Classification Loss: 2.2818
+2022-06-08 06:04:44,414 - root - INFO - Epoch: 83, Step: 100, Average Loss: 5.2590, Average Regression Loss 2.9775, Average Classification Loss: 2.2815
+2022-06-08 06:04:55,932 - root - INFO - Epoch: 84, Step: 100, Average Loss: 5.3426, Average Regression Loss 3.0596, Average Classification Loss: 2.2829
+2022-06-08 06:05:08,461 - root - INFO - Epoch: 85, Step: 100, Average Loss: 5.3782, Average Regression Loss 3.0971, Average Classification Loss: 2.2811
+2022-06-08 06:05:11,299 - root - INFO - Epoch: 85, Validation Loss: 4.8797, Validation Regression Loss 2.6170, Validation Classification Loss: 2.2627
+2022-06-08 06:05:11,422 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-85-Loss-4.879723855427334.pth
+2022-06-08 06:05:22,091 - root - INFO - Epoch: 86, Step: 100, Average Loss: 5.3115, Average Regression Loss 3.0294, Average Classification Loss: 2.2821
+2022-06-08 06:05:35,431 - root - INFO - Epoch: 87, Step: 100, Average Loss: 5.1753, Average Regression Loss 2.8939, Average Classification Loss: 2.2814
+2022-06-08 06:05:48,019 - root - INFO - Epoch: 88, Step: 100, Average Loss: 5.2085, Average Regression Loss 2.9261, Average Classification Loss: 2.2824
+2022-06-08 06:05:59,054 - root - INFO - Epoch: 89, Step: 100, Average Loss: 5.2523, Average Regression Loss 2.9707, Average Classification Loss: 2.2816
+2022-06-08 06:06:09,963 - root - INFO - Epoch: 90, Step: 100, Average Loss: 5.2641, Average Regression Loss 2.9813, Average Classification Loss: 2.2827
+2022-06-08 06:06:13,321 - root - INFO - Epoch: 90, Validation Loss: 4.8784, Validation Regression Loss 2.6163, Validation Classification Loss: 2.2621
+2022-06-08 06:06:13,437 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-90-Loss-4.878425359725952.pth
+2022-06-08 06:06:23,557 - root - INFO - Epoch: 91, Step: 100, Average Loss: 5.3474, Average Regression Loss 3.0662, Average Classification Loss: 2.2813
+2022-06-08 06:06:35,607 - root - INFO - Epoch: 92, Step: 100, Average Loss: 5.1926, Average Regression Loss 2.9124, Average Classification Loss: 2.2802
+2022-06-08 06:06:49,464 - root - INFO - Epoch: 93, Step: 100, Average Loss: 5.1402, Average Regression Loss 2.8593, Average Classification Loss: 2.2809
+2022-06-08 06:07:00,212 - root - INFO - Epoch: 94, Step: 100, Average Loss: 5.2055, Average Regression Loss 2.9252, Average Classification Loss: 2.2803
+2022-06-08 06:07:12,754 - root - INFO - Epoch: 95, Step: 100, Average Loss: 5.3762, Average Regression Loss 3.0951, Average Classification Loss: 2.2811
+2022-06-08 06:07:15,132 - root - INFO - Epoch: 95, Validation Loss: 4.8906, Validation Regression Loss 2.6241, Validation Classification Loss: 2.2666
+2022-06-08 06:07:15,201 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-95-Loss-4.890636954988752.pth
+2022-06-08 06:07:27,330 - root - INFO - Epoch: 96, Step: 100, Average Loss: 5.3183, Average Regression Loss 3.0384, Average Classification Loss: 2.2799
+2022-06-08 06:07:40,024 - root - INFO - Epoch: 97, Step: 100, Average Loss: 5.2342, Average Regression Loss 2.9546, Average Classification Loss: 2.2796
+2022-06-08 06:07:50,158 - root - INFO - Epoch: 98, Step: 100, Average Loss: 5.2594, Average Regression Loss 2.9785, Average Classification Loss: 2.2808
+2022-06-08 06:08:00,581 - root - INFO - Epoch: 99, Step: 100, Average Loss: 5.2611, Average Regression Loss 2.9823, Average Classification Loss: 2.2788
+2022-06-08 06:08:12,586 - root - INFO - Epoch: 100, Step: 100, Average Loss: 5.3010, Average Regression Loss 3.0217, Average Classification Loss: 2.2793
+2022-06-08 06:08:15,026 - root - INFO - Epoch: 100, Validation Loss: 4.8774, Validation Regression Loss 2.6140, Validation Classification Loss: 2.2634
+2022-06-08 06:08:15,148 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-100-Loss-4.877424410411289.pth
+2022-06-08 06:08:24,005 - root - INFO - Epoch: 101, Step: 100, Average Loss: 5.2758, Average Regression Loss 2.9967, Average Classification Loss: 2.2791
+2022-06-08 06:08:37,621 - root - INFO - Epoch: 102, Step: 100, Average Loss: 5.2990, Average Regression Loss 3.0197, Average Classification Loss: 2.2793
+2022-06-08 06:08:47,506 - root - INFO - Epoch: 103, Step: 100, Average Loss: 5.2510, Average Regression Loss 2.9723, Average Classification Loss: 2.2787
+2022-06-08 06:08:57,792 - root - INFO - Epoch: 104, Step: 100, Average Loss: 5.2770, Average Regression Loss 2.9982, Average Classification Loss: 2.2788
+2022-06-08 06:09:09,702 - root - INFO - Epoch: 105, Step: 100, Average Loss: 5.3354, Average Regression Loss 3.0564, Average Classification Loss: 2.2789
+2022-06-08 06:09:12,687 - root - INFO - Epoch: 105, Validation Loss: 4.8882, Validation Regression Loss 2.6213, Validation Classification Loss: 2.2669
+2022-06-08 06:09:12,793 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-105-Loss-4.888202428817749.pth
+2022-06-08 06:09:21,736 - root - INFO - Epoch: 106, Step: 100, Average Loss: 5.2840, Average Regression Loss 3.0054, Average Classification Loss: 2.2786
+2022-06-08 06:09:33,143 - root - INFO - Epoch: 107, Step: 100, Average Loss: 5.2982, Average Regression Loss 3.0211, Average Classification Loss: 2.2771
+2022-06-08 06:09:44,073 - root - INFO - Epoch: 108, Step: 100, Average Loss: 5.2444, Average Regression Loss 2.9656, Average Classification Loss: 2.2788
+2022-06-08 06:09:54,433 - root - INFO - Epoch: 109, Step: 100, Average Loss: 5.1960, Average Regression Loss 2.9185, Average Classification Loss: 2.2776
+2022-06-08 06:10:05,523 - root - INFO - Epoch: 110, Step: 100, Average Loss: 5.2206, Average Regression Loss 2.9421, Average Classification Loss: 2.2785
+2022-06-08 06:10:08,223 - root - INFO - Epoch: 110, Validation Loss: 4.8810, Validation Regression Loss 2.6151, Validation Classification Loss: 2.2659
+2022-06-08 06:10:08,332 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-110-Loss-4.881047623498099.pth
+2022-06-08 06:10:17,996 - root - INFO - Epoch: 111, Step: 100, Average Loss: 5.2304, Average Regression Loss 2.9524, Average Classification Loss: 2.2779
+2022-06-08 06:10:29,512 - root - INFO - Epoch: 112, Step: 100, Average Loss: 5.2775, Average Regression Loss 2.9995, Average Classification Loss: 2.2780
+2022-06-08 06:10:40,031 - root - INFO - Epoch: 113, Step: 100, Average Loss: 5.4012, Average Regression Loss 3.1237, Average Classification Loss: 2.2775
+2022-06-08 06:10:50,877 - root - INFO - Epoch: 114, Step: 100, Average Loss: 5.1859, Average Regression Loss 2.9084, Average Classification Loss: 2.2775
+2022-06-08 06:11:03,055 - root - INFO - Epoch: 115, Step: 100, Average Loss: 5.2530, Average Regression Loss 2.9753, Average Classification Loss: 2.2776
+2022-06-08 06:11:05,388 - root - INFO - Epoch: 115, Validation Loss: 4.8832, Validation Regression Loss 2.6199, Validation Classification Loss: 2.2633
+2022-06-08 06:11:05,534 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-115-Loss-4.883221626281738.pth
+2022-06-08 06:11:15,226 - root - INFO - Epoch: 116, Step: 100, Average Loss: 5.2822, Average Regression Loss 3.0044, Average Classification Loss: 2.2778
+2022-06-08 06:11:27,511 - root - INFO - Epoch: 117, Step: 100, Average Loss: 5.3445, Average Regression Loss 3.0675, Average Classification Loss: 2.2771
+2022-06-08 06:11:38,761 - root - INFO - Epoch: 118, Step: 100, Average Loss: 5.3194, Average Regression Loss 3.0420, Average Classification Loss: 2.2774
+2022-06-08 06:11:48,966 - root - INFO - Epoch: 119, Step: 100, Average Loss: 5.2397, Average Regression Loss 2.9626, Average Classification Loss: 2.2770
+2022-06-08 06:12:01,063 - root - INFO - Epoch: 120, Step: 100, Average Loss: 5.2203, Average Regression Loss 2.9427, Average Classification Loss: 2.2776
+2022-06-08 06:12:03,525 - root - INFO - Epoch: 120, Validation Loss: 4.8834, Validation Regression Loss 2.6179, Validation Classification Loss: 2.2655
+2022-06-08 06:12:03,659 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-120-Loss-4.883364745548794.pth
+2022-06-08 06:12:13,658 - root - INFO - Epoch: 121, Step: 100, Average Loss: 5.2402, Average Regression Loss 2.9625, Average Classification Loss: 2.2778
+2022-06-08 06:12:25,058 - root - INFO - Epoch: 122, Step: 100, Average Loss: 5.2771, Average Regression Loss 3.0001, Average Classification Loss: 2.2770
+2022-06-08 06:12:37,071 - root - INFO - Epoch: 123, Step: 100, Average Loss: 5.1885, Average Regression Loss 2.9123, Average Classification Loss: 2.2762
+2022-06-08 06:12:48,195 - root - INFO - Epoch: 124, Step: 100, Average Loss: 5.1842, Average Regression Loss 2.9077, Average Classification Loss: 2.2765
+2022-06-08 06:13:00,013 - root - INFO - Epoch: 125, Step: 100, Average Loss: 5.2810, Average Regression Loss 3.0043, Average Classification Loss: 2.2766
+2022-06-08 06:13:04,095 - root - INFO - Epoch: 125, Validation Loss: 4.8893, Validation Regression Loss 2.6232, Validation Classification Loss: 2.2662
+2022-06-08 06:13:04,267 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-125-Loss-4.889322314943586.pth
+2022-06-08 06:13:13,533 - root - INFO - Epoch: 126, Step: 100, Average Loss: 5.2964, Average Regression Loss 3.0206, Average Classification Loss: 2.2758
+2022-06-08 06:13:24,616 - root - INFO - Epoch: 127, Step: 100, Average Loss: 5.1116, Average Regression Loss 2.8349, Average Classification Loss: 2.2767
+2022-06-08 06:13:36,531 - root - INFO - Epoch: 128, Step: 100, Average Loss: 5.2689, Average Regression Loss 2.9928, Average Classification Loss: 2.2760
+2022-06-08 06:13:48,150 - root - INFO - Epoch: 129, Step: 100, Average Loss: 5.2216, Average Regression Loss 2.9458, Average Classification Loss: 2.2758
+2022-06-08 06:13:59,734 - root - INFO - Epoch: 130, Step: 100, Average Loss: 5.2244, Average Regression Loss 2.9486, Average Classification Loss: 2.2758
+2022-06-08 06:14:02,668 - root - INFO - Epoch: 130, Validation Loss: 4.8757, Validation Regression Loss 2.6119, Validation Classification Loss: 2.2638
+2022-06-08 06:14:02,774 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-130-Loss-4.875652960368565.pth
+2022-06-08 06:14:12,755 - root - INFO - Epoch: 131, Step: 100, Average Loss: 5.2293, Average Regression Loss 2.9535, Average Classification Loss: 2.2757
+2022-06-08 06:14:26,080 - root - INFO - Epoch: 132, Step: 100, Average Loss: 5.1962, Average Regression Loss 2.9206, Average Classification Loss: 2.2756
+2022-06-08 06:14:36,878 - root - INFO - Epoch: 133, Step: 100, Average Loss: 5.2408, Average Regression Loss 2.9650, Average Classification Loss: 2.2758
+2022-06-08 06:14:48,169 - root - INFO - Epoch: 134, Step: 100, Average Loss: 5.2658, Average Regression Loss 2.9907, Average Classification Loss: 2.2751
+2022-06-08 06:15:00,630 - root - INFO - Epoch: 135, Step: 100, Average Loss: 5.2133, Average Regression Loss 2.9379, Average Classification Loss: 2.2753
+2022-06-08 06:15:03,009 - root - INFO - Epoch: 135, Validation Loss: 4.8849, Validation Regression Loss 2.6203, Validation Classification Loss: 2.2647
+2022-06-08 06:15:03,094 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-135-Loss-4.884943110602243.pth
+2022-06-08 06:15:13,938 - root - INFO - Epoch: 136, Step: 100, Average Loss: 5.2314, Average Regression Loss 2.9560, Average Classification Loss: 2.2753
+2022-06-08 06:15:25,044 - root - INFO - Epoch: 137, Step: 100, Average Loss: 5.1981, Average Regression Loss 2.9231, Average Classification Loss: 2.2751
+2022-06-08 06:15:36,511 - root - INFO - Epoch: 138, Step: 100, Average Loss: 5.2616, Average Regression Loss 2.9867, Average Classification Loss: 2.2749
+2022-06-08 06:15:49,160 - root - INFO - Epoch: 139, Step: 100, Average Loss: 5.1739, Average Regression Loss 2.8988, Average Classification Loss: 2.2751
+2022-06-08 06:15:59,538 - root - INFO - Epoch: 140, Step: 100, Average Loss: 5.2023, Average Regression Loss 2.9271, Average Classification Loss: 2.2752
+2022-06-08 06:16:02,006 - root - INFO - Epoch: 140, Validation Loss: 4.8793, Validation Regression Loss 2.6151, Validation Classification Loss: 2.2642
+2022-06-08 06:16:02,108 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-140-Loss-4.879318305424282.pth
+2022-06-08 06:16:13,021 - root - INFO - Epoch: 141, Step: 100, Average Loss: 5.2306, Average Regression Loss 2.9558, Average Classification Loss: 2.2748
+2022-06-08 06:16:25,179 - root - INFO - Epoch: 142, Step: 100, Average Loss: 5.3683, Average Regression Loss 3.0934, Average Classification Loss: 2.2749
+2022-06-08 06:16:36,596 - root - INFO - Epoch: 143, Step: 100, Average Loss: 5.2559, Average Regression Loss 2.9810, Average Classification Loss: 2.2749
+2022-06-08 06:16:48,398 - root - INFO - Epoch: 144, Step: 100, Average Loss: 5.1505, Average Regression Loss 2.8760, Average Classification Loss: 2.2745
+2022-06-08 06:17:03,516 - root - INFO - Epoch: 145, Step: 100, Average Loss: 5.3679, Average Regression Loss 3.0933, Average Classification Loss: 2.2746
+2022-06-08 06:17:05,825 - root - INFO - Epoch: 145, Validation Loss: 4.8761, Validation Regression Loss 2.6136, Validation Classification Loss: 2.2625
+2022-06-08 06:17:05,914 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-145-Loss-4.876092502049038.pth
+2022-06-08 06:17:14,719 - root - INFO - Epoch: 146, Step: 100, Average Loss: 5.2289, Average Regression Loss 2.9544, Average Classification Loss: 2.2746
+2022-06-08 06:17:28,016 - root - INFO - Epoch: 147, Step: 100, Average Loss: 5.2201, Average Regression Loss 2.9458, Average Classification Loss: 2.2743
+2022-06-08 06:17:39,858 - root - INFO - Epoch: 148, Step: 100, Average Loss: 5.2573, Average Regression Loss 2.9830, Average Classification Loss: 2.2743
+2022-06-08 06:17:52,180 - root - INFO - Epoch: 149, Step: 100, Average Loss: 5.2734, Average Regression Loss 2.9993, Average Classification Loss: 2.2741
+2022-06-08 06:18:05,013 - root - INFO - Epoch: 150, Step: 100, Average Loss: 5.3067, Average Regression Loss 3.0324, Average Classification Loss: 2.2743
+2022-06-08 06:18:07,247 - root - INFO - Epoch: 150, Validation Loss: 4.8814, Validation Regression Loss 2.6177, Validation Classification Loss: 2.2637
+2022-06-08 06:18:07,339 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-150-Loss-4.881398439407349.pth
+2022-06-08 06:18:16,843 - root - INFO - Epoch: 151, Step: 100, Average Loss: 5.2535, Average Regression Loss 2.9793, Average Classification Loss: 2.2742
+2022-06-08 06:18:29,437 - root - INFO - Epoch: 152, Step: 100, Average Loss: 5.3157, Average Regression Loss 3.0421, Average Classification Loss: 2.2735
+2022-06-08 06:18:42,276 - root - INFO - Epoch: 153, Step: 100, Average Loss: 5.3127, Average Regression Loss 3.0392, Average Classification Loss: 2.2735
+2022-06-08 06:18:52,835 - root - INFO - Epoch: 154, Step: 100, Average Loss: 5.1899, Average Regression Loss 2.9161, Average Classification Loss: 2.2738
+2022-06-08 06:19:07,205 - root - INFO - Epoch: 155, Step: 100, Average Loss: 5.2509, Average Regression Loss 2.9773, Average Classification Loss: 2.2737
+2022-06-08 06:19:09,698 - root - INFO - Epoch: 155, Validation Loss: 4.8747, Validation Regression Loss 2.6109, Validation Classification Loss: 2.2638
+2022-06-08 06:19:09,802 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-155-Loss-4.874718597957066.pth
+2022-06-08 06:19:19,740 - root - INFO - Epoch: 156, Step: 100, Average Loss: 5.2903, Average Regression Loss 3.0167, Average Classification Loss: 2.2735
+2022-06-08 06:19:29,658 - root - INFO - Epoch: 157, Step: 100, Average Loss: 5.3051, Average Regression Loss 3.0314, Average Classification Loss: 2.2736
+2022-06-08 06:19:40,861 - root - INFO - Epoch: 158, Step: 100, Average Loss: 5.1952, Average Regression Loss 2.9219, Average Classification Loss: 2.2733
+2022-06-08 06:19:53,506 - root - INFO - Epoch: 159, Step: 100, Average Loss: 5.2937, Average Regression Loss 3.0205, Average Classification Loss: 2.2732
+2022-06-08 06:20:05,103 - root - INFO - Epoch: 160, Step: 100, Average Loss: 5.1958, Average Regression Loss 2.9226, Average Classification Loss: 2.2733
+2022-06-08 06:20:07,507 - root - INFO - Epoch: 160, Validation Loss: 4.8720, Validation Regression Loss 2.6079, Validation Classification Loss: 2.2642
+2022-06-08 06:20:07,573 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-160-Loss-4.87203277860369.pth
+2022-06-08 06:20:17,316 - root - INFO - Epoch: 161, Step: 100, Average Loss: 5.3373, Average Regression Loss 3.0640, Average Classification Loss: 2.2733
+2022-06-08 06:20:28,014 - root - INFO - Epoch: 162, Step: 100, Average Loss: 5.2425, Average Regression Loss 2.9693, Average Classification Loss: 2.2731
+2022-06-08 06:20:38,611 - root - INFO - Epoch: 163, Step: 100, Average Loss: 5.2095, Average Regression Loss 2.9365, Average Classification Loss: 2.2730
+2022-06-08 06:20:51,157 - root - INFO - Epoch: 164, Step: 100, Average Loss: 5.2509, Average Regression Loss 2.9779, Average Classification Loss: 2.2729
+2022-06-08 06:21:05,382 - root - INFO - Epoch: 165, Step: 100, Average Loss: 5.4106, Average Regression Loss 3.1376, Average Classification Loss: 2.2730
+2022-06-08 06:21:07,807 - root - INFO - Epoch: 165, Validation Loss: 4.8691, Validation Regression Loss 2.6047, Validation Classification Loss: 2.2645
+2022-06-08 06:21:07,909 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-165-Loss-4.869113377162388.pth
+2022-06-08 06:21:17,360 - root - INFO - Epoch: 166, Step: 100, Average Loss: 5.2905, Average Regression Loss 3.0176, Average Classification Loss: 2.2728
+2022-06-08 06:21:29,347 - root - INFO - Epoch: 167, Step: 100, Average Loss: 5.2696, Average Regression Loss 2.9968, Average Classification Loss: 2.2728
+2022-06-08 06:21:40,271 - root - INFO - Epoch: 168, Step: 100, Average Loss: 5.1013, Average Regression Loss 2.8285, Average Classification Loss: 2.2728
+2022-06-08 06:21:52,465 - root - INFO - Epoch: 169, Step: 100, Average Loss: 5.2701, Average Regression Loss 2.9974, Average Classification Loss: 2.2727
+2022-06-08 06:22:05,652 - root - INFO - Epoch: 170, Step: 100, Average Loss: 5.2842, Average Regression Loss 3.0115, Average Classification Loss: 2.2726
+2022-06-08 06:22:08,026 - root - INFO - Epoch: 170, Validation Loss: 4.8721, Validation Regression Loss 2.6078, Validation Classification Loss: 2.2643
+2022-06-08 06:22:08,134 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-170-Loss-4.872106007167271.pth
+2022-06-08 06:22:19,537 - root - INFO - Epoch: 171, Step: 100, Average Loss: 5.2881, Average Regression Loss 3.0156, Average Classification Loss: 2.2725
+2022-06-08 06:22:29,762 - root - INFO - Epoch: 172, Step: 100, Average Loss: 5.2357, Average Regression Loss 2.9632, Average Classification Loss: 2.2725
+2022-06-08 06:22:40,316 - root - INFO - Epoch: 173, Step: 100, Average Loss: 5.1777, Average Regression Loss 2.9053, Average Classification Loss: 2.2725
+2022-06-08 06:22:51,145 - root - INFO - Epoch: 174, Step: 100, Average Loss: 5.1887, Average Regression Loss 2.9163, Average Classification Loss: 2.2724
+2022-06-08 06:23:01,666 - root - INFO - Epoch: 175, Step: 100, Average Loss: 5.2995, Average Regression Loss 3.0271, Average Classification Loss: 2.2724
+2022-06-08 06:23:04,753 - root - INFO - Epoch: 175, Validation Loss: 4.8757, Validation Regression Loss 2.6111, Validation Classification Loss: 2.2646
+2022-06-08 06:23:04,875 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-175-Loss-4.875748429979597.pth
+2022-06-08 06:23:14,033 - root - INFO - Epoch: 176, Step: 100, Average Loss: 5.3640, Average Regression Loss 3.0916, Average Classification Loss: 2.2724
+2022-06-08 06:23:25,496 - root - INFO - Epoch: 177, Step: 100, Average Loss: 5.1774, Average Regression Loss 2.9052, Average Classification Loss: 2.2722
+2022-06-08 06:23:36,247 - root - INFO - Epoch: 178, Step: 100, Average Loss: 5.1865, Average Regression Loss 2.9143, Average Classification Loss: 2.2722
+2022-06-08 06:23:47,043 - root - INFO - Epoch: 179, Step: 100, Average Loss: 5.2031, Average Regression Loss 2.9309, Average Classification Loss: 2.2722
+2022-06-08 06:23:59,092 - root - INFO - Epoch: 180, Step: 100, Average Loss: 5.0996, Average Regression Loss 2.8274, Average Classification Loss: 2.2721
+2022-06-08 06:24:01,679 - root - INFO - Epoch: 180, Validation Loss: 4.8737, Validation Regression Loss 2.6090, Validation Classification Loss: 2.2646
+2022-06-08 06:24:01,780 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-180-Loss-4.873650687081473.pth
+2022-06-08 06:24:11,179 - root - INFO - Epoch: 181, Step: 100, Average Loss: 5.2988, Average Regression Loss 3.0267, Average Classification Loss: 2.2722
+2022-06-08 06:24:23,364 - root - INFO - Epoch: 182, Step: 100, Average Loss: 5.2632, Average Regression Loss 2.9912, Average Classification Loss: 2.2721
+2022-06-08 06:24:34,888 - root - INFO - Epoch: 183, Step: 100, Average Loss: 5.2351, Average Regression Loss 2.9631, Average Classification Loss: 2.2721
+2022-06-08 06:24:46,961 - root - INFO - Epoch: 184, Step: 100, Average Loss: 5.2760, Average Regression Loss 3.0039, Average Classification Loss: 2.2721
+2022-06-08 06:24:57,995 - root - INFO - Epoch: 185, Step: 100, Average Loss: 5.2399, Average Regression Loss 2.9678, Average Classification Loss: 2.2720
+2022-06-08 06:25:01,070 - root - INFO - Epoch: 185, Validation Loss: 4.8746, Validation Regression Loss 2.6095, Validation Classification Loss: 2.2652
+2022-06-08 06:25:01,183 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-185-Loss-4.874645471572876.pth
+2022-06-08 06:25:12,656 - root - INFO - Epoch: 186, Step: 100, Average Loss: 5.3099, Average Regression Loss 3.0379, Average Classification Loss: 2.2720
+2022-06-08 06:25:23,654 - root - INFO - Epoch: 187, Step: 100, Average Loss: 5.1181, Average Regression Loss 2.8461, Average Classification Loss: 2.2720
+2022-06-08 06:25:38,478 - root - INFO - Epoch: 188, Step: 100, Average Loss: 5.2910, Average Regression Loss 3.0190, Average Classification Loss: 2.2720
+2022-06-08 06:25:48,897 - root - INFO - Epoch: 189, Step: 100, Average Loss: 5.2854, Average Regression Loss 3.0134, Average Classification Loss: 2.2720
+2022-06-08 06:26:00,328 - root - INFO - Epoch: 190, Step: 100, Average Loss: 5.3361, Average Regression Loss 3.0641, Average Classification Loss: 2.2719
+2022-06-08 06:26:03,103 - root - INFO - Epoch: 190, Validation Loss: 4.8748, Validation Regression Loss 2.6095, Validation Classification Loss: 2.2653
+2022-06-08 06:26:03,223 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-190-Loss-4.874790259769985.pth
+2022-06-08 06:26:13,031 - root - INFO - Epoch: 191, Step: 100, Average Loss: 5.2257, Average Regression Loss 2.9538, Average Classification Loss: 2.2719
+2022-06-08 06:26:23,151 - root - INFO - Epoch: 192, Step: 100, Average Loss: 5.2679, Average Regression Loss 2.9959, Average Classification Loss: 2.2719
+2022-06-08 06:26:33,939 - root - INFO - Epoch: 193, Step: 100, Average Loss: 5.1426, Average Regression Loss 2.8707, Average Classification Loss: 2.2719
+2022-06-08 06:26:46,146 - root - INFO - Epoch: 194, Step: 100, Average Loss: 5.1867, Average Regression Loss 2.9147, Average Classification Loss: 2.2719
+2022-06-08 06:26:57,990 - root - INFO - Epoch: 195, Step: 100, Average Loss: 5.2273, Average Regression Loss 2.9554, Average Classification Loss: 2.2719
+2022-06-08 06:27:00,556 - root - INFO - Epoch: 195, Validation Loss: 4.8748, Validation Regression Loss 2.6094, Validation Classification Loss: 2.2654
+2022-06-08 06:27:00,674 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-195-Loss-4.874774490083967.pth
+2022-06-08 06:27:09,950 - root - INFO - Epoch: 196, Step: 100, Average Loss: 5.2599, Average Regression Loss 2.9880, Average Classification Loss: 2.2719
+2022-06-08 06:27:20,736 - root - INFO - Epoch: 197, Step: 100, Average Loss: 5.2856, Average Regression Loss 3.0138, Average Classification Loss: 2.2719
+2022-06-08 06:27:32,031 - root - INFO - Epoch: 198, Step: 100, Average Loss: 5.1291, Average Regression Loss 2.8572, Average Classification Loss: 2.2719
+2022-06-08 06:27:43,204 - root - INFO - Epoch: 199, Step: 100, Average Loss: 5.2777, Average Regression Loss 3.0058, Average Classification Loss: 2.2719
+2022-06-08 06:27:45,912 - root - INFO - Epoch: 199, Validation Loss: 4.8748, Validation Regression Loss 2.6094, Validation Classification Loss: 2.2654
+2022-06-08 06:27:46,030 - root - INFO - Saved model models/mbv2ws0.25lr0.01/mb2-ssd-lite-Epoch-199-Loss-4.874793120792934.pth

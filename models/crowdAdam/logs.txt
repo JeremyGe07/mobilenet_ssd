@@ -1,0 +1,190 @@
+2022-05-25 09:56:57,595 - root - INFO - Use Cuda.
+2022-05-25 09:56:57,596 - root - INFO - Namespace(balance_data=False, base_net='mobilenet_v1_size_224_alpha_0.25_top.pth', base_net_lr=None, batch_size=8, checkpoint_folder='models/crowdAdam', dataset_type='voc', datasets=['CrowdHuman'], debug_steps=100, extra_layers_lr=None, freeze_base_net=False, freeze_net=False, gamma=0.1, gpu='4', loss='smoothl1', lr=0.001, mb2_width_mult=1.0, milestones='80,100', momentum=0.9, net='mb1-ssd-lite-025extra', num_epochs=300, num_workers=4, optimizer='SGD', pretrained_ssd=None, resume=None, scheduler='cosine', t_max=300.0, use_cuda=True, validation_dataset='CrowdHuman', validation_epochs=5, weight_decay=0.0005, width_mult=0.25)
+2022-05-25 09:56:57,598 - root - INFO - Prepare training datasets.
+2022-05-25 09:56:57,608 - root - INFO - No labels file, using default VOC classes.
+2022-05-25 09:56:57,635 - root - INFO - Stored labels into file models/crowdAdam/voc-model-labels.txt.
+2022-05-25 09:56:57,636 - root - INFO - Train dataset size: 4140
+2022-05-25 09:56:57,636 - root - INFO - Prepare Validation datasets.
+2022-05-25 09:56:57,637 - root - INFO - No labels file, using default VOC classes.
+2022-05-25 09:56:57,637 - root - INFO - validation dataset size: 360
+2022-05-25 09:56:57,637 - root - INFO - Build network.
+2022-05-25 09:56:57,658 - root - INFO - Init from base net mobilenet_v1_size_224_alpha_0.25_top.pth
+2022-05-25 09:56:57,668 - root - INFO - Took 0.01 seconds to load the model.
+2022-05-25 09:57:01,559 - root - INFO - Learning rate: 0.001, Base net learning rate: 0.001, Extra Layers learning rate: 0.001.
+2022-05-25 09:57:01,560 - root - INFO - Uses CosineAnnealingLR scheduler.
+2022-05-25 09:57:01,560 - root - INFO - Start training from epoch 0.
+2022-05-25 09:57:49,579 - root - INFO - Epoch: 0, Step: 100, Average Loss: 8.5874, Average Regression Loss 5.6323, Average Classification Loss: 2.9551
+2022-05-25 09:58:28,222 - root - INFO - Epoch: 0, Step: 200, Average Loss: 8.3833, Average Regression Loss 5.7407, Average Classification Loss: 2.6426
+2022-05-25 09:59:15,684 - root - INFO - Epoch: 0, Step: 300, Average Loss: 8.4899, Average Regression Loss 5.9661, Average Classification Loss: 2.5239
+2022-05-25 10:00:01,806 - root - INFO - Epoch: 0, Step: 400, Average Loss: 8.2131, Average Regression Loss 5.7655, Average Classification Loss: 2.4477
+2022-05-25 10:00:41,864 - root - INFO - Epoch: 0, Step: 500, Average Loss: 8.0477, Average Regression Loss 5.6520, Average Classification Loss: 2.3958
+2022-05-25 10:00:55,371 - root - INFO - Epoch: 0, Validation Loss: 7.7669, Validation Regression Loss 5.4051, Validation Classification Loss: 2.3619
+2022-05-25 10:00:55,464 - root - INFO - Saved model models/crowdAdam/mb1-ssd-lite-025extra-Epoch-0-Loss-7.766927909851074.pth
+2022-05-25 10:01:38,002 - root - INFO - Epoch: 1, Step: 100, Average Loss: 7.9911, Average Regression Loss 5.6103, Average Classification Loss: 2.3808
+2022-05-25 10:02:23,829 - root - INFO - Epoch: 1, Step: 200, Average Loss: 7.4688, Average Regression Loss 5.1384, Average Classification Loss: 2.3304
+2022-05-25 10:03:01,083 - root - INFO - Epoch: 1, Step: 300, Average Loss: 7.4731, Average Regression Loss 5.1592, Average Classification Loss: 2.3138
+2022-05-25 10:03:44,769 - root - INFO - Epoch: 1, Step: 400, Average Loss: 7.2635, Average Regression Loss 4.9635, Average Classification Loss: 2.2999
+2022-05-25 10:04:23,692 - root - INFO - Epoch: 1, Step: 500, Average Loss: 7.2956, Average Regression Loss 5.0051, Average Classification Loss: 2.2905
+2022-05-25 10:05:09,338 - root - INFO - Epoch: 2, Step: 100, Average Loss: 7.1345, Average Regression Loss 4.8281, Average Classification Loss: 2.3064
+2022-05-25 10:05:53,609 - root - INFO - Epoch: 2, Step: 200, Average Loss: 7.4518, Average Regression Loss 5.1742, Average Classification Loss: 2.2775
+2022-05-25 10:06:40,630 - root - INFO - Epoch: 2, Step: 300, Average Loss: 7.0851, Average Regression Loss 4.8126, Average Classification Loss: 2.2725
+2022-05-25 10:07:23,575 - root - INFO - Epoch: 2, Step: 400, Average Loss: 7.0401, Average Regression Loss 4.7689, Average Classification Loss: 2.2712
+2022-05-25 10:08:13,177 - root - INFO - Epoch: 2, Step: 500, Average Loss: 6.9983, Average Regression Loss 4.7303, Average Classification Loss: 2.2680
+2022-05-25 10:09:07,795 - root - INFO - Epoch: 3, Step: 100, Average Loss: 7.0696, Average Regression Loss 4.7814, Average Classification Loss: 2.2882
+2022-05-25 10:09:53,708 - root - INFO - Epoch: 3, Step: 200, Average Loss: 7.0666, Average Regression Loss 4.8026, Average Classification Loss: 2.2640
+2022-05-25 10:10:31,128 - root - INFO - Epoch: 3, Step: 300, Average Loss: 6.7163, Average Regression Loss 4.4524, Average Classification Loss: 2.2639
+2022-05-25 10:11:20,143 - root - INFO - Epoch: 3, Step: 400, Average Loss: 6.8921, Average Regression Loss 4.6300, Average Classification Loss: 2.2621
+2022-05-25 10:12:05,829 - root - INFO - Epoch: 3, Step: 500, Average Loss: 6.8040, Average Regression Loss 4.5425, Average Classification Loss: 2.2615
+2022-05-25 10:12:55,461 - root - INFO - Epoch: 4, Step: 100, Average Loss: 6.7972, Average Regression Loss 4.5138, Average Classification Loss: 2.2834
+2022-05-25 10:13:37,757 - root - INFO - Epoch: 4, Step: 200, Average Loss: 6.9360, Average Regression Loss 4.6761, Average Classification Loss: 2.2600
+2022-05-25 10:14:20,057 - root - INFO - Epoch: 4, Step: 300, Average Loss: 6.7335, Average Regression Loss 4.4740, Average Classification Loss: 2.2595
+2022-05-25 10:15:02,668 - root - INFO - Epoch: 4, Step: 400, Average Loss: 6.8044, Average Regression Loss 4.5447, Average Classification Loss: 2.2597
+2022-05-25 10:15:50,603 - root - INFO - Epoch: 4, Step: 500, Average Loss: 6.6750, Average Regression Loss 4.4158, Average Classification Loss: 2.2592
+2022-05-25 10:16:39,609 - root - INFO - Epoch: 5, Step: 100, Average Loss: 6.7216, Average Regression Loss 4.4404, Average Classification Loss: 2.2812
+2022-05-25 10:17:20,066 - root - INFO - Epoch: 5, Step: 200, Average Loss: 6.5225, Average Regression Loss 4.2648, Average Classification Loss: 2.2578
+2022-05-25 10:18:07,775 - root - INFO - Epoch: 5, Step: 300, Average Loss: 6.5807, Average Regression Loss 4.3224, Average Classification Loss: 2.2583
+2022-05-25 10:18:51,844 - root - INFO - Epoch: 5, Step: 400, Average Loss: 6.5072, Average Regression Loss 4.2491, Average Classification Loss: 2.2581
+2022-05-25 10:19:35,621 - root - INFO - Epoch: 5, Step: 500, Average Loss: 6.4521, Average Regression Loss 4.1947, Average Classification Loss: 2.2574
+2022-05-25 10:19:49,112 - root - INFO - Epoch: 5, Validation Loss: 6.3420, Validation Regression Loss 4.0862, Validation Classification Loss: 2.2558
+2022-05-25 10:19:49,224 - root - INFO - Saved model models/crowdAdam/mb1-ssd-lite-025extra-Epoch-5-Loss-6.342042202419705.pth
+2022-05-25 10:20:34,166 - root - INFO - Epoch: 6, Step: 100, Average Loss: 6.3723, Average Regression Loss 4.0928, Average Classification Loss: 2.2795
+2022-05-25 10:21:21,551 - root - INFO - Epoch: 6, Step: 200, Average Loss: 6.5226, Average Regression Loss 4.2658, Average Classification Loss: 2.2568
+2022-05-25 10:22:02,226 - root - INFO - Epoch: 6, Step: 300, Average Loss: 6.5259, Average Regression Loss 4.2691, Average Classification Loss: 2.2568
+2022-05-25 10:22:43,452 - root - INFO - Epoch: 6, Step: 400, Average Loss: 6.3326, Average Regression Loss 4.0755, Average Classification Loss: 2.2571
+2022-05-25 10:23:31,788 - root - INFO - Epoch: 6, Step: 500, Average Loss: 6.4551, Average Regression Loss 4.1987, Average Classification Loss: 2.2564
+2022-05-25 10:24:17,317 - root - INFO - Epoch: 7, Step: 100, Average Loss: 6.4061, Average Regression Loss 4.1277, Average Classification Loss: 2.2784
+2022-05-25 10:25:06,230 - root - INFO - Epoch: 7, Step: 200, Average Loss: 6.3428, Average Regression Loss 4.0864, Average Classification Loss: 2.2564
+2022-05-25 10:25:47,457 - root - INFO - Epoch: 7, Step: 300, Average Loss: 6.3721, Average Regression Loss 4.1162, Average Classification Loss: 2.2560
+2022-05-25 10:26:34,375 - root - INFO - Epoch: 7, Step: 400, Average Loss: 6.2962, Average Regression Loss 4.0406, Average Classification Loss: 2.2556
+2022-05-25 10:27:16,243 - root - INFO - Epoch: 7, Step: 500, Average Loss: 6.2915, Average Regression Loss 4.0362, Average Classification Loss: 2.2554
+2022-05-25 10:28:09,145 - root - INFO - Epoch: 8, Step: 100, Average Loss: 6.3515, Average Regression Loss 4.0733, Average Classification Loss: 2.2783
+2022-05-25 10:28:49,843 - root - INFO - Epoch: 8, Step: 200, Average Loss: 6.2692, Average Regression Loss 4.0135, Average Classification Loss: 2.2556
+2022-05-25 10:29:32,654 - root - INFO - Epoch: 8, Step: 300, Average Loss: 6.2234, Average Regression Loss 3.9683, Average Classification Loss: 2.2551
+2022-05-25 10:30:16,361 - root - INFO - Epoch: 8, Step: 400, Average Loss: 6.1853, Average Regression Loss 3.9302, Average Classification Loss: 2.2551
+2022-05-25 10:31:04,916 - root - INFO - Epoch: 8, Step: 500, Average Loss: 6.2865, Average Regression Loss 4.0315, Average Classification Loss: 2.2550
+2022-05-25 10:31:59,188 - root - INFO - Epoch: 9, Step: 100, Average Loss: 6.4459, Average Regression Loss 4.1681, Average Classification Loss: 2.2777
+2022-05-25 10:32:44,573 - root - INFO - Epoch: 9, Step: 200, Average Loss: 6.3210, Average Regression Loss 4.0664, Average Classification Loss: 2.2546
+2022-05-25 10:33:24,284 - root - INFO - Epoch: 9, Step: 300, Average Loss: 6.2537, Average Regression Loss 3.9989, Average Classification Loss: 2.2548
+2022-05-25 10:34:05,553 - root - INFO - Epoch: 9, Step: 400, Average Loss: 6.2404, Average Regression Loss 3.9860, Average Classification Loss: 2.2544
+2022-05-25 10:34:48,373 - root - INFO - Epoch: 9, Step: 500, Average Loss: 6.0295, Average Regression Loss 3.7751, Average Classification Loss: 2.2543
+2022-05-25 10:35:42,830 - root - INFO - Epoch: 10, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:36:28,264 - root - INFO - Epoch: 10, Step: 200, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:37:10,374 - root - INFO - Epoch: 10, Step: 300, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:37:51,362 - root - INFO - Epoch: 10, Step: 400, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:38:37,193 - root - INFO - Epoch: 10, Step: 500, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:38:49,775 - root - INFO - Epoch: 10, Validation Loss: nan, Validation Regression Loss nan, Validation Classification Loss: nan
+2022-05-25 10:38:49,819 - root - INFO - Saved model models/crowdAdam/mb1-ssd-lite-025extra-Epoch-10-Loss-nan.pth
+2022-05-25 10:39:33,626 - root - INFO - Epoch: 11, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:40:12,867 - root - INFO - Epoch: 11, Step: 200, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:40:57,472 - root - INFO - Epoch: 11, Step: 300, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:41:38,667 - root - INFO - Epoch: 11, Step: 400, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:42:23,687 - root - INFO - Epoch: 11, Step: 500, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:43:17,512 - root - INFO - Epoch: 12, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:43:59,850 - root - INFO - Epoch: 12, Step: 200, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:44:49,838 - root - INFO - Epoch: 12, Step: 300, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:45:28,393 - root - INFO - Epoch: 12, Step: 400, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:46:11,704 - root - INFO - Epoch: 12, Step: 500, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:47:09,083 - root - INFO - Epoch: 13, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:47:53,834 - root - INFO - Epoch: 13, Step: 200, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:48:42,998 - root - INFO - Epoch: 13, Step: 300, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:49:20,672 - root - INFO - Epoch: 13, Step: 400, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:50:11,892 - root - INFO - Epoch: 13, Step: 500, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:51:06,770 - root - INFO - Epoch: 14, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:51:57,002 - root - INFO - Epoch: 14, Step: 200, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:52:46,273 - root - INFO - Epoch: 14, Step: 300, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:53:26,789 - root - INFO - Epoch: 14, Step: 400, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:54:04,821 - root - INFO - Epoch: 14, Step: 500, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:54:59,399 - root - INFO - Epoch: 15, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:55:37,076 - root - INFO - Epoch: 15, Step: 200, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:56:27,364 - root - INFO - Epoch: 15, Step: 300, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:57:07,244 - root - INFO - Epoch: 15, Step: 400, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:57:50,653 - root - INFO - Epoch: 15, Step: 500, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:58:00,858 - root - INFO - Epoch: 15, Validation Loss: nan, Validation Regression Loss nan, Validation Classification Loss: nan
+2022-05-25 10:58:00,963 - root - INFO - Saved model models/crowdAdam/mb1-ssd-lite-025extra-Epoch-15-Loss-nan.pth
+2022-05-25 10:58:47,018 - root - INFO - Epoch: 16, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 10:59:32,036 - root - INFO - Epoch: 16, Step: 200, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:00:24,257 - root - INFO - Epoch: 16, Step: 300, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:01:05,234 - root - INFO - Epoch: 16, Step: 400, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:01:46,227 - root - INFO - Epoch: 16, Step: 500, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:02:34,416 - root - INFO - Epoch: 17, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:03:18,302 - root - INFO - Epoch: 17, Step: 200, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:04:07,439 - root - INFO - Epoch: 17, Step: 300, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:04:51,269 - root - INFO - Epoch: 17, Step: 400, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:05:34,112 - root - INFO - Epoch: 17, Step: 500, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:06:27,506 - root - INFO - Epoch: 18, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:07:16,557 - root - INFO - Epoch: 18, Step: 200, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:07:56,090 - root - INFO - Epoch: 18, Step: 300, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:08:42,406 - root - INFO - Epoch: 18, Step: 400, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:09:28,442 - root - INFO - Epoch: 18, Step: 500, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:10:22,217 - root - INFO - Epoch: 19, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:11:10,288 - root - INFO - Epoch: 19, Step: 200, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:11:48,905 - root - INFO - Epoch: 19, Step: 300, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:12:38,037 - root - INFO - Epoch: 19, Step: 400, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:13:16,906 - root - INFO - Epoch: 19, Step: 500, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:14:10,047 - root - INFO - Epoch: 20, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:15:01,510 - root - INFO - Epoch: 20, Step: 200, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:15:39,105 - root - INFO - Epoch: 20, Step: 300, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:16:19,491 - root - INFO - Epoch: 20, Step: 400, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:16:58,818 - root - INFO - Epoch: 20, Step: 500, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:17:10,738 - root - INFO - Epoch: 20, Validation Loss: nan, Validation Regression Loss nan, Validation Classification Loss: nan
+2022-05-25 11:17:10,872 - root - INFO - Saved model models/crowdAdam/mb1-ssd-lite-025extra-Epoch-20-Loss-nan.pth
+2022-05-25 11:17:57,381 - root - INFO - Epoch: 21, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:18:47,455 - root - INFO - Epoch: 21, Step: 200, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:19:27,391 - root - INFO - Epoch: 21, Step: 300, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:20:08,802 - root - INFO - Epoch: 21, Step: 400, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:20:55,851 - root - INFO - Epoch: 21, Step: 500, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:21:51,602 - root - INFO - Epoch: 22, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:22:30,509 - root - INFO - Epoch: 22, Step: 200, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:23:16,150 - root - INFO - Epoch: 22, Step: 300, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:23:58,430 - root - INFO - Epoch: 22, Step: 400, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:24:40,165 - root - INFO - Epoch: 22, Step: 500, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:25:37,046 - root - INFO - Epoch: 23, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:26:19,240 - root - INFO - Epoch: 23, Step: 200, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:27:06,445 - root - INFO - Epoch: 23, Step: 300, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:27:50,651 - root - INFO - Epoch: 23, Step: 400, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:28:36,498 - root - INFO - Epoch: 23, Step: 500, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:29:20,427 - root - INFO - Epoch: 24, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:30:04,264 - root - INFO - Epoch: 24, Step: 200, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:30:49,818 - root - INFO - Epoch: 24, Step: 300, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:31:33,430 - root - INFO - Epoch: 24, Step: 400, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:32:14,768 - root - INFO - Epoch: 24, Step: 500, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:33:07,840 - root - INFO - Epoch: 25, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:33:48,841 - root - INFO - Epoch: 25, Step: 200, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:34:33,334 - root - INFO - Epoch: 25, Step: 300, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:35:15,321 - root - INFO - Epoch: 25, Step: 400, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:35:57,509 - root - INFO - Epoch: 25, Step: 500, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:36:10,152 - root - INFO - Epoch: 25, Validation Loss: nan, Validation Regression Loss nan, Validation Classification Loss: nan
+2022-05-25 11:36:10,275 - root - INFO - Saved model models/crowdAdam/mb1-ssd-lite-025extra-Epoch-25-Loss-nan.pth
+2022-05-25 11:36:55,356 - root - INFO - Epoch: 26, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:37:36,056 - root - INFO - Epoch: 26, Step: 200, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:38:23,498 - root - INFO - Epoch: 26, Step: 300, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:39:17,850 - root - INFO - Epoch: 26, Step: 400, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:40:00,084 - root - INFO - Epoch: 26, Step: 500, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:40:48,649 - root - INFO - Epoch: 27, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:41:30,082 - root - INFO - Epoch: 27, Step: 200, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:42:19,518 - root - INFO - Epoch: 27, Step: 300, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:42:57,577 - root - INFO - Epoch: 27, Step: 400, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:43:45,421 - root - INFO - Epoch: 27, Step: 500, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:44:42,160 - root - INFO - Epoch: 28, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:45:25,892 - root - INFO - Epoch: 28, Step: 200, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:46:13,055 - root - INFO - Epoch: 28, Step: 300, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:46:50,957 - root - INFO - Epoch: 28, Step: 400, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:47:34,009 - root - INFO - Epoch: 28, Step: 500, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:48:24,726 - root - INFO - Epoch: 29, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:49:07,170 - root - INFO - Epoch: 29, Step: 200, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:49:55,767 - root - INFO - Epoch: 29, Step: 300, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:50:35,380 - root - INFO - Epoch: 29, Step: 400, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:51:20,840 - root - INFO - Epoch: 29, Step: 500, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:52:09,143 - root - INFO - Epoch: 30, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:52:55,627 - root - INFO - Epoch: 30, Step: 200, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:53:39,264 - root - INFO - Epoch: 30, Step: 300, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:54:18,915 - root - INFO - Epoch: 30, Step: 400, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:55:09,747 - root - INFO - Epoch: 30, Step: 500, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:55:21,387 - root - INFO - Epoch: 30, Validation Loss: nan, Validation Regression Loss nan, Validation Classification Loss: nan
+2022-05-25 11:55:21,498 - root - INFO - Saved model models/crowdAdam/mb1-ssd-lite-025extra-Epoch-30-Loss-nan.pth
+2022-05-25 11:56:12,528 - root - INFO - Epoch: 31, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:56:53,677 - root - INFO - Epoch: 31, Step: 200, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:57:37,991 - root - INFO - Epoch: 31, Step: 300, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:58:15,296 - root - INFO - Epoch: 31, Step: 400, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:58:59,786 - root - INFO - Epoch: 31, Step: 500, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-25 11:59:53,711 - root - INFO - Epoch: 32, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan

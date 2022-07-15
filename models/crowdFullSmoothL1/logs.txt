@@ -1,0 +1,43 @@
+2022-05-27 10:01:26,260 - root - INFO - Use Cuda.
+2022-05-27 10:01:26,260 - root - INFO - Namespace(balance_data=False, base_net=None, base_net_lr=None, batch_size=32, checkpoint_folder='models/crowdFullSmoothL1', dataset_type='voc', datasets=['CrowdHuman'], debug_steps=100, extra_layers_lr=None, freeze_base_net=False, freeze_net=False, gamma=0.1, gpu='2', loss='smoothl1', lr=0.01, mb2_width_mult=1.0, milestones='80,100', momentum=0.9, net='mb1-ssd-lite-025extra', num_epochs=300, num_workers=4, optimizer='SGD', pretrained_ssd='models/remake/mb1-ssd-lite-025extra-Epoch-399-Loss-3.6709517410823276.pth', resume=None, scheduler='cosine', t_max=300.0, use_cuda=True, validation_dataset='CrowdHuman', validation_epochs=5, weight_decay=0.0005, width_mult=0.25)
+2022-05-27 10:01:26,262 - root - INFO - Prepare training datasets.
+2022-05-27 10:01:26,272 - root - INFO - No labels file, using default VOC classes.
+2022-05-27 10:01:26,274 - root - INFO - Stored labels into file models/crowdFullSmoothL1/voc-model-labels.txt.
+2022-05-27 10:01:26,275 - root - INFO - Train dataset size: 13800
+2022-05-27 10:01:26,275 - root - INFO - Prepare Validation datasets.
+2022-05-27 10:01:26,276 - root - INFO - No labels file, using default VOC classes.
+2022-05-27 10:01:26,276 - root - INFO - validation dataset size: 1200
+2022-05-27 10:01:26,276 - root - INFO - Build network.
+2022-05-27 10:01:26,296 - root - INFO - Init from pretrained ssd models/remake/mb1-ssd-lite-025extra-Epoch-399-Loss-3.6709517410823276.pth
+2022-05-27 10:01:26,328 - root - INFO - Took 0.03 seconds to load the model.
+2022-05-27 10:01:30,136 - root - INFO - Learning rate: 0.01, Base net learning rate: 0.01, Extra Layers learning rate: 0.01.
+2022-05-27 10:01:30,137 - root - INFO - Uses CosineAnnealingLR scheduler.
+2022-05-27 10:01:30,137 - root - INFO - Start training from epoch 0.
+2022-05-27 10:04:19,214 - root - INFO - Epoch: 0, Step: 100, Average Loss: 7.4254, Average Regression Loss 4.9598, Average Classification Loss: 2.4656
+2022-05-27 10:06:42,253 - root - INFO - Epoch: 0, Step: 200, Average Loss: 5.9832, Average Regression Loss 3.7275, Average Classification Loss: 2.2557
+2022-05-27 10:09:19,520 - root - INFO - Epoch: 0, Step: 300, Average Loss: 5.6931, Average Regression Loss 3.4457, Average Classification Loss: 2.2474
+2022-05-27 10:11:53,225 - root - INFO - Epoch: 0, Step: 400, Average Loss: 5.4568, Average Regression Loss 3.2196, Average Classification Loss: 2.2371
+2022-05-27 10:12:51,857 - root - INFO - Epoch: 0, Validation Loss: 5.2581, Validation Regression Loss 3.0320, Validation Classification Loss: 2.2261
+2022-05-27 10:12:51,968 - root - INFO - Saved model models/crowdFullSmoothL1/mb1-ssd-lite-025extra-Epoch-0-Loss-5.2581213148016674.pth
+2022-05-27 10:15:24,685 - root - INFO - Epoch: 1, Step: 100, Average Loss: 5.4022, Average Regression Loss 3.1500, Average Classification Loss: 2.2522
+2022-05-27 10:18:07,680 - root - INFO - Epoch: 1, Step: 200, Average Loss: 5.2334, Average Regression Loss 3.0063, Average Classification Loss: 2.2271
+2022-05-27 10:20:37,012 - root - INFO - Epoch: 1, Step: 300, Average Loss: 5.1534, Average Regression Loss 2.9326, Average Classification Loss: 2.2208
+2022-05-27 10:22:57,226 - root - INFO - Epoch: 1, Step: 400, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-27 10:26:33,900 - root - INFO - Epoch: 2, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-27 10:29:19,614 - root - INFO - Epoch: 2, Step: 200, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-27 10:31:49,653 - root - INFO - Epoch: 2, Step: 300, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-27 10:34:19,190 - root - INFO - Epoch: 2, Step: 400, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-27 10:37:43,047 - root - INFO - Epoch: 3, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-27 10:40:13,394 - root - INFO - Epoch: 3, Step: 200, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-27 10:42:52,775 - root - INFO - Epoch: 3, Step: 300, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-27 10:45:31,745 - root - INFO - Epoch: 3, Step: 400, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-27 10:49:05,611 - root - INFO - Epoch: 4, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-27 10:51:34,432 - root - INFO - Epoch: 4, Step: 200, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-27 10:54:18,836 - root - INFO - Epoch: 4, Step: 300, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-27 10:56:52,700 - root - INFO - Epoch: 4, Step: 400, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-27 11:00:26,211 - root - INFO - Epoch: 5, Step: 100, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-27 11:02:54,757 - root - INFO - Epoch: 5, Step: 200, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-27 11:05:36,057 - root - INFO - Epoch: 5, Step: 300, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-27 11:08:07,695 - root - INFO - Epoch: 5, Step: 400, Average Loss: nan, Average Regression Loss nan, Average Classification Loss: nan
+2022-05-27 11:09:11,417 - root - INFO - Epoch: 5, Validation Loss: nan, Validation Regression Loss nan, Validation Classification Loss: nan
+2022-05-27 11:09:11,528 - root - INFO - Saved model models/crowdFullSmoothL1/mb1-ssd-lite-025extra-Epoch-5-Loss-nan.pth
