@@ -27,9 +27,14 @@ from vision.ssd.mobilenetv1_ssd_lite_3184kb import create_mobilenetv1_ssd_lite_3
 from vision.ssd.mobilenetv1_ssd_lite_830kb import create_mobilenetv1_ssd_lite_830, create_mobilenetv1_ssd_lite_predictor_830
 from vision.ssd.mobilenetv1_ssd_lite_2197kb import create_mobilenetv1_ssd_lite_2197, create_mobilenetv1_ssd_lite_predictor_2197
 from vision.ssd.mobilenetv1_ssd_lite_303kb import create_mobilenetv1_ssd_lite_303
+from vision.ssd.mobilenet_v2_ssd_lite_v2 import create_mobilenetv2_ssd_lite_v2
+from vision.ssd.mobilenetv1_ssd_lite_025extra_4box_same import create_mobilenetv1_ssd_lite_025extra_4box_same
+from vision.ssd.mobilenetv1_ssd_lite_4box import create_mobilenetv1_ssd_lite_4box
+
+
 
 # new ↓
-# python eval_ssd.py --net mb1-ssd-lite-025extra  --dataset VOC2007/ --trained_model models/prune277ep2000/Epoch-1660-Loss-3.4978534153529575.pth --label_file models/voc-model-labels.txt --width_mult 0.25
+# python eval_ssd.py --net mb1-ssd-lite-025extra  --dataset VOC2007/ --label_file models/voc-model-labels.txt --width_mult 0.25 --trained_model models/prune277ep2000/Epoch-1660-Loss-3.4978534153529575.pth 
 
 #python eval_ssd.py --net mb1-ssd-lite-025extra  --dataset VOC2007my/ --trained_model models/ws0.25tmax400extra0.25/mb1-ssd-lite-025extra-Epoch-395-Loss-3.2181860378810336.pth --label_file models/voc-model-labels.txt --width 0.25
 
@@ -179,6 +184,11 @@ if __name__ == '__main__':
         net = create_mobilenetv1_ssd_lite_025extra_224(len(class_names),  width_mult=args.width_mult ,is_test=True)
     elif args.net == 'mb1-ssd-lite-025extra-4box':
         net = create_mobilenetv1_ssd_lite_025extra_4box(len(class_names),  width_mult=args.width_mult ,is_test=True)
+    elif args.net == 'mb1-ssd-lite-025extra-4box-same':
+        net = create_mobilenetv1_ssd_lite_025extra_4box_same(len(class_names),  width_mult=args.width_mult ,is_test=True)
+        
+    elif args.net == 'mb1-ssd-lite-4box':
+        net = create_mobilenetv1_ssd_lite_4box(len(class_names),  width_mult=args.width_mult ,is_test=True)
     elif args.net == 'mb1-ssd-lite-025extra-3box':
         net = create_mobilenetv1_ssd_lite_025extra_3box(len(class_names),  width_mult=args.width_mult ,is_test=True)
     elif args.net == 'mb1-ssd-lite-025extra-384':
@@ -187,6 +197,8 @@ if __name__ == '__main__':
         net = create_squeezenet_ssd_lite(len(class_names), is_test=True)
     elif args.net == 'mb2-ssd-lite':
         net = create_mobilenetv2_ssd_lite(len(class_names), width_mult=args.mb2_width_mult, is_test=True)
+    elif args.net == 'mb2-ssd-lite-v2':
+        net = create_mobilenetv2_ssd_lite_v2(len(class_names), width_mult=args.mb2_width_mult, is_test=True)        
     elif args.net == 'mb3-large-ssd-lite':
         net = create_mobilenetv3_large_ssd_lite(len(class_names), is_test=True)
     elif args.net == 'mb3-small-ssd-lite':
@@ -222,7 +234,7 @@ if __name__ == '__main__':
         predictor = create_mobilenetv1_ssd_lite_predictor_2197(net, nms_method=args.nms_method, device=DEVICE)
     elif args.net == 'mb1-ssd-lite-3184':
         predictor = create_mobilenetv1_ssd_lite_predictor_3184(net, nms_method=args.nms_method, device=DEVICE)
-    elif args.net == 'mb1-ssd-lite-025extra-4box':
+    elif args.net == 'mb1-ssd-lite-025extra-4box' or  args.net == 'mb1-ssd-lite-025extra-4box':
         predictor = create_mobilenetv1_ssd_lite_predictor4box(net, nms_method=args.nms_method, device=DEVICE)
     elif args.net == 'mb1-ssd-lite-025extra-3box':
         predictor = create_mobilenetv1_ssd_lite_predictor_3box(net, nms_method=args.nms_method, device=DEVICE)
@@ -230,7 +242,7 @@ if __name__ == '__main__':
         predictor = create_mobilenetv1_ssd_lite_predictor384(net, nms_method=args.nms_method, device=DEVICE)
     elif args.net == 'sq-ssd-lite':
         predictor = create_squeezenet_ssd_lite_predictor(net,nms_method=args.nms_method, device=DEVICE)
-    elif args.net == 'mb2-ssd-lite' or args.net == "mb3-large-ssd-lite" or args.net == "mb3-small-ssd-lite":
+    elif args.net == 'mb2-ssd-lite' or args.net == "mb3-large-ssd-lite" or args.net == "mb3-small-ssd-lite" or 'mb2-ssd-lite-v2':
         predictor = create_mobilenetv2_ssd_lite_predictor(net, nms_method=args.nms_method, device=DEVICE)
     else:
         logging.fatal("The net type is wrong. It should be one of vgg16-ssd, mb1-ssd and mb1-ssd-lite.")

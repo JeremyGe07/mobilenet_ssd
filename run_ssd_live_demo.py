@@ -13,6 +13,7 @@ from vision.ssd.mobilenetv1_ssd_lite_025extra_4box import create_mobilenetv1_ssd
 from vision.ssd.mobilenetv1_ssd_lite_025extra_384 import create_mobilenetv1_ssd_lite_025extra384, create_mobilenetv1_ssd_lite_predictor384
 from vision.ssd.mobilenetv1_ssd_lite_025extra_3box import create_mobilenetv1_ssd_lite_025extra_3box, create_mobilenetv1_ssd_lite_predictor_3box
 from vision.ssd.mobilenetv1_ssd_lite_277kb import create_mobilenetv1_ssd_lite_277, create_mobilenetv1_ssd_lite_predictor_277
+from vision.ssd.mobilenetv1_ssd_lite_025extra_4box_same import create_mobilenetv1_ssd_lite_025extra_4box_same
 
 
 if len(sys.argv) < 4:
@@ -47,6 +48,8 @@ elif net_type == 'mb1-ssd-lite-025extra-224':
      net = create_mobilenetv1_ssd_lite_025extra_224(len(class_names), width_mult=0.25, is_test=True)
 elif net_type == 'mb1-ssd-lite-025extra-4box':
     net = create_mobilenetv1_ssd_lite_025extra_4box(len(class_names),  width_mult=0.25 ,is_test=True)
+elif net_type == 'mb1-ssd-lite-025extra-4box-same':
+    net = create_mobilenetv1_ssd_lite_025extra_4box_same(len(class_names),  width_mult=0.25 ,is_test=True)
 elif net_type == 'mb1-ssd-lite-025extra-384':
      net = create_mobilenetv1_ssd_lite_025extra384(len(class_names), width_mult=0.25, is_test=True)
 elif net_type == 'mb1-ssd-lite-025extra-3box':
@@ -74,7 +77,7 @@ elif net_type == 'mb1-ssd-lite' or net_type == 'mb1-ssd-lite-025extra':
     predictor = create_mobilenetv1_ssd_lite_predictor(net, candidate_size=200,nms_method='hard')
 elif net_type == 'mb1-ssd-lite-025extra-224':
     predictor = create_mobilenetv1_ssd_lite_predictor224(net, candidate_size=200)
-elif net_type == 'mb1-ssd-lite-025extra-4box':
+elif net_type == 'mb1-ssd-lite-025extra-4box' or net_type ==  'mb1-ssd-lite-025extra-4box-same' :
     predictor = create_mobilenetv1_ssd_lite_predictor4box(net, candidate_size=200)
 elif net_type == 'mb1-ssd-lite-025extra-384':
     predictor = create_mobilenetv1_ssd_lite_predictor384(net, candidate_size=200,nms_method='hard')
@@ -94,7 +97,7 @@ fps = cap.get(cv2.CAP_PROP_FPS)
 width  = cap.get(cv2.CAP_PROP_FRAME_WIDTH)   # float
 height = cap.get(cv2.CAP_PROP_FRAME_HEIGHT)  # floatq
 fourcc = cv2.VideoWriter_fourcc(*'XVID')#视频编码格式
-out = cv2.VideoWriter('SP_277_Resultscore0.45num13candi200.avi',fourcc,fps,(int(width),int(height)))#第三个参数为帧率，第四个参数为每帧大小
+out = cv2.VideoWriter('4box_me.avi',fourcc,fps,(int(width),int(height)))#第三个参数为帧率，第四个参数为每帧大小
 # baseResultdiouHard0.23num13candi200   base+sepConvResultdiouHard0.23num13candi200
 timer = Timer()
 while True:
@@ -104,7 +107,7 @@ while True:
         continue
     image = cv2.cvtColor(orig_image, cv2.COLOR_BGR2RGB)
     timer.start()
-    boxes, labels, probs = predictor.predict(image, 13, 0.45) # 这个改的是probs score，不是nms的iou，nms的iou在predictor的第十行改。
+    boxes, labels, probs = predictor.predict(image, 13, 0.35) # 这个改的是probs score，不是nms的iou，nms的iou在predictor的第十行改。
     interval = timer.end()
     print('Time: {:.2f}s, Detect Objects: {:d}.'.format(interval, labels.size(0)))
     for i in range(boxes.size(0)):
